@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import team_data from "../data/team.js";
+import team_data from "../data/team.ts";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link.js";
 import { Navigation } from "swiper";
