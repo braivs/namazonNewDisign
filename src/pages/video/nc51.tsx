@@ -1,11 +1,20 @@
 import {useExtractVideoID} from "../../../hooks/extractVideo"
 import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
+import {MyYouTube} from "@/common/common"
+import Wrapper from "@/layout/wrapper"
+import HeaderTwo from "@/layout/header/header-two"
+import Banner from "@/components/research/banner"
+import React from "react"
+import FooterFour from "@/layout/footer/footer-4"
 
-export const nc51 = () => {
+const nc51 = () => {
   const videoNumber = useExtractVideoID()
   const youtubeID = 'zvHDGMyqyXc'
   return (
     <>
+      <Banner />
+      <HeaderTwo />
       <>
         <h3>{videoNumber}</h3>
         <h4>Kara, Darya, Tais. 08.05.2012</h4>
@@ -24,6 +33,11 @@ export const nc51 = () => {
           </p>
         </Row>
       </>
-      </>
+      <FooterFour />
+    </>
+
+
   )
 }
+
+export default nc51

@@ -1,7 +1,7 @@
-import {useLocation} from "react-router-dom"
+import {useRouter} from "next/router"
 
 export const useExtractVideoID = () => {
-  const location = useLocation();
+  const location = useRouter();
 
   const extractValueUsingRegex = (url: string) => {
     const match = url.match(/\/video\/(.*)/);
