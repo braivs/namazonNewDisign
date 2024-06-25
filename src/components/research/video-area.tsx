@@ -1,8 +1,8 @@
-import research_data from "@/data/research-data";
+import research_data from "@/data/video-data";
 import Link from "next/link";
 import React from "react";
 
-const ResearchArea = () => {
+const VideoArea = () => {
   return (
     <>
       <section className="research-area pt-130 pb-130">
@@ -18,12 +18,12 @@ const ResearchArea = () => {
                     <img src={item.img} alt="research-thumb" />
                   </div>
                   <div className="research-item__content">
-                    <span>{item.category}</span>
+                    <span>{item.category} - NC{item.id}</span>
                     <h4 className="research-item__title mb-20">
                       <Link href="/services-details">{item.title}</Link>
                     </h4>
                     <p>{item.des}</p>
-                    <Link href="/services-3" className="research-item__btn">
+                    <Link href="/video/nc51" className="research-item__btn">
                       Read More
                     </Link>
                   </div>
@@ -37,24 +37,24 @@ const ResearchArea = () => {
                 <nav>
                   <ul>
                     <li>
-                      <Link href="/src/pages/research">
+                      <Link href="/src/pages/video">
                         <i className="fa-light fa-arrow-left-long"></i>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/src/pages/research">1</Link>
+                      <Link href="/src/pages/video">1</Link>
                     </li>
                     <li>
                       <span className="current">2</span>
                     </li>
                     <li>
-                      <Link href="/src/pages/research">3</Link>
+                      <Link href="/src/pages/video">3</Link>
                     </li>
                     <li>
-                      <Link href="/src/pages/research">...</Link>
+                      <Link href="/src/pages/video">...</Link>
                     </li>
                     <li>
-                      <Link href="/src/pages/research">
+                      <Link href="/src/pages/video">
                         <i className="fa-light fa-arrow-right-long"></i>
                       </Link>
                     </li>
@@ -69,4 +69,4 @@ const ResearchArea = () => {
   );
 };
 
-export default ResearchArea;
+export default VideoArea;

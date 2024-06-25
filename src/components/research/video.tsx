@@ -2,17 +2,17 @@ import FooterFour from "@/layout/footer/footer-4";
 import HeaderTwo from "@/layout/header/header-two";
 import React from "react";
 import Banner from "./banner";
-import ResearchArea from "./research-area";
+import VideoArea from "./video-area";
 
-const Research = () => {
+const Video = () => {
   return (
     <>
       <HeaderTwo />
       <Banner />
-      <ResearchArea />
+      <VideoArea />
       <FooterFour />
     </>
   );
 };
 
-export default Research;
+export default Video;

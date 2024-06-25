@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import NavMenu from "./nav-menu";
-import useSticky from "hooks/use-sticky";
+import useSticky from "../../../hooks/use-sticky";
 import Sidebar from "@/common/sidebar";
 
 

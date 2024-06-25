@@ -16,7 +16,7 @@ const menu_data = [
     id: 2,
     mega_menu: false,
     has_dropdown: true,
-    title: "Pages",
+    title: "Shop",
     link: "/about",
     active: "",
     sub_menus: [
@@ -37,7 +37,7 @@ const menu_data = [
     id: 3,
     mega_menu: false,
     has_dropdown: true,
-    title: "Service",
+    title: "Girls",
     link: "/service",
     active: "",
     sub_menus: [
@@ -51,15 +51,15 @@ const menu_data = [
     id: 4,
     mega_menu: false,
     has_dropdown: false,
-    title: "Research",
-    link: "/research",
+    title: "Video",
+    link: "/video",
     active: "",
   },
   {
     id: 5,
     mega_menu: false,
     has_dropdown: true,
-    title: "Blog",
+    title: "Competitions",
     link: "/blog",
     active: "",
     sub_menus: [
