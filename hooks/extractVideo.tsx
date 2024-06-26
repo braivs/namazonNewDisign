@@ -4,7 +4,7 @@ export const useExtractVideoID = () => {
   const location = useRouter();
 
   const extractValueUsingRegex = (url: string) => {
-    const match = url.match(/\/video\/(.*)/);
+    const match = url.match(/\/video\/nc(.*)/);
     return match ? match[1].toUpperCase() : null;
   };
 

@@ -1,34 +1,22 @@
 import {useExtractVideoID} from "../../../hooks/extractVideo"
-import {Col, Row} from "react-bootstrap"
+import {Col, Container, Row} from "react-bootstrap"
 import cn from "classnames"
 import {MyYouTube} from "@/common/common"
 import React from "react"
 import VideoDetails from "@/components/video-details"
+import videoData, {Video_data} from "@/data/video-data"
+import video_data from "@/data/video-data"
+import VideoData from "@/components/video-details/video-data"
+
 
 const Nc48 = () => {
-  const videoNumber = useExtractVideoID()
-  const youtubeID = 'zvHDGMyqyXc'
+  const videoNumber = +useExtractVideoID()
+  const videoData: Video_data | undefined = video_data.find((item) => item.id === videoNumber )
+  const youtubeID = videoData?.youtubeID
+
   return (
     <VideoDetails>
-      <>
-        <h3>{videoNumber}</h3>
-        <h4>NC48 - Competitions Spring 2017</h4>
-        <Row>
-          <Col className={cn('d-flex', 'justify-content-center')}>
-            <MyYouTube videoId={youtubeID}/>
-          </Col>
-        </Row>
-        <p>
-          Women&apos;s strength competition at 16.03.2017. Armwrestling & submission/pin grappling. Girls: Grigorenko Oksana
-          (Tais), Murtazalieva Kurmandi, Piven Alyona.
-        </p>
-        <Row>
-          <hr/>
-          <p>
-            You can purchase <b>VIDEO {videoNumber}</b> on <a href="https://namazonclub.gumroad.com/l/nc51">Gumroad</a>.
-          </p>
-        </Row>
-      </>
+      <VideoData videoData={videoData} youtubeID={youtubeID} />
     </VideoDetails>
   )
 }

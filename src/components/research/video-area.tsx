@@ -1,4 +1,4 @@
-import research_data from "@/data/video-data";
+import video_data from "@/data/video-data";
 import Link from "next/link";
 import React from "react";
 
@@ -8,7 +8,7 @@ const VideoArea = () => {
       <section className="research-area pt-130 pb-130">
         <div className="container">
           <div className="row">
-            {research_data.map((item) => (
+            {video_data.map((item) => (
               <div key={item.id} className="col-lg-4 col-md-6">
                 <div
                   className={`research-item ${item.color} mb-50 wow fadeInUp`}
