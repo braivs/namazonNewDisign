@@ -23,7 +23,7 @@ const VideoArea = () => {
                       <Link href="/services-details">{item.title}</Link>
                     </h4>
                     <p>{item.des}</p>
-                    <Link href="/video/nc51" className="research-item__btn">
+                    <Link href={`/video/nc${item.id}`} className="research-item__btn">
                       Read More
                     </Link>
                   </div>

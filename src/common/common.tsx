@@ -18,39 +18,44 @@ export const CustomButtonGallery: React.FC<CustomButtonGalleryType> = ({ gallery
 };
 
 export const MyYouTube = (props: YoutubePropsType) => {
+  const [width, setWidth] = useState(0); // Initial state doesn't depend on window
+  const [frameWidth, setFrameWidth] = useState(640);
+  const [frameHeight, setFrameHeight] = useState(360);
 
-  const [width, setWidth] = useState(window.innerWidth)
-  const [frameWidth, setFrameWidth] = useState(640)
-  const [frameHeight, setFrameHeight] = useState(360)
-
-  useEffect(() => { // for adaptive
+  useEffect(() => {
+    // This will only run on the client side
     const updateWindowDimensions = () => {
-      const newWidth = window.innerWidth
-      setWidth(newWidth)
-    }
-    window.addEventListener("resize", updateWindowDimensions)
-    if (width < 992) {
-      setFrameWidth(480)
-      setFrameHeight(270)
-    } else if (width < 768) {
-      setFrameWidth(340)
-      setFrameHeight(190)
-    } else {
-      setFrameWidth(640)
-      setFrameHeight(360)
-    }
-    return () => window.removeEventListener("resize", updateWindowDimensions)
-  }, [width])
+      const newWidth = window.innerWidth;
+      setWidth(newWidth);
 
+      if (newWidth < 768) {
+        setFrameWidth(340);
+        setFrameHeight(190);
+      } else if (newWidth < 992) {
+        setFrameWidth(480);
+        setFrameHeight(270);
+      } else {
+        setFrameWidth(640);
+        setFrameHeight(360);
+      }
+    };
 
-  return <iframe
-    width={frameWidth}
-    height={frameHeight}
-    src={`https://www.youtube-nocookie.com/embed/${props.videoId}`}
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-  />
-}
+    updateWindowDimensions(); // Initial call to set dimensions based on current width
+    window.addEventListener("resize", updateWindowDimensions);
+
+    return () => window.removeEventListener("resize", updateWindowDimensions);
+  }, []);
+
+  return (
+    <iframe
+      width={frameWidth}
+      height={frameHeight}
+      src={`https://www.youtube-nocookie.com/embed/${props.videoId}`}
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
+  );
+};
 
 type GalleryType = {
   index: number;
