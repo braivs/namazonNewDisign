@@ -23,7 +23,7 @@ export default function VideoData({videoData, youtubeID}: Props) {
         <Row>
           <hr/>
           <p>
-            You can purchase <b>video {`NC${videoData?.id}`}</b> on <a href={`https://namazonclub.gumroad.com/l/${videoData?.id}`}>Gumroad</a>.
+            You can purchase <b>video {`NC${videoData?.id}`}</b> on <a href={`https://namazonclub.gumroad.com/l/nc${videoData?.id}`}>Gumroad</a>.
           </p>
         </Row>
       </>

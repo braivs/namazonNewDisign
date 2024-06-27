@@ -1,6 +1,5 @@
-// this returns array of photos for react-grid-gallery
 import {Photo} from "react-photo-album"
-import {CardComponentType} from "./types"
+import {CardComponentType} from "@/shared/assets/types/types"
 
 export const getGalleryPhotosFromRequire = (requreData: __WebpackModuleApi.RequireContext, width: number = 270, height: number = 152) => {
     const images: Array<string> = requreData.keys().map(image => requreData(image));
