@@ -19,7 +19,7 @@ export const PhotoAlbumMy = (props: PhotoAlbumPropsType) => {
     return (
         <div className={s.photoAlbum}>
             <PhotoAlbum layout={props.layout ? props.layout : 'masonry'}
-                        photos={props.photos}
+                        photos={props.photos as Array<Photo>}
                         onClick={({index}) => props.openCallback(index)}/>
         </div>
 
@@ -35,7 +35,7 @@ type LightboxPropsType = {
 
 type PhotoAlbumPropsType = {
     layout?: LayoutType
-    photos: Photo[]
+    photos: Array<Photo>
     openCallback: (value: number) => void
 }
 
