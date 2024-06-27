@@ -2,10 +2,10 @@ import {Photo} from "react-photo-album"
 import {CardComponentType} from "@/shared/assets/types/types"
 
 export const getGalleryPhotosFromRequire = (requreData: __WebpackModuleApi.RequireContext, width: number = 270, height: number = 152) => {
-    const images: Array<string> = requreData.keys().map(image => requreData(image));
+    const images: Array<ImageModule> = requreData.keys().map(image => requreData(image));
     return images.map(e => {
         return {
-            src: e,
+            src: e.default.src,
             width,
             height
         }
@@ -42,3 +42,9 @@ export const yearsConverter = (years: string | undefined): string | undefined =>
 
     return `${startYear} - ${endYear}`; // Return the formatted date range
 };
+
+interface ImageModule {
+    default: {
+        src: string;
+    };
+}
