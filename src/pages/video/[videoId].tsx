@@ -1,5 +1,5 @@
 import {useRouter} from 'next/router'
-import video_data, {Video_data} from "@/data/video-data"
+import {video_data, Video_data} from "@/data/video-data"
 import VideoDetails from "@/components/video-details"
 import VideoData from "@/components/video-details/video-data"
 import React from "react"
@@ -8,7 +8,7 @@ function VideoComponent({ Video }) {
   const router = useRouter();
   const { videoId } = router.query;
 
-  const videoData: Video_data | undefined = video_data.find((item) => item.id === Number(videoId.substring(2)) )
+  const videoData: Video_data | undefined = video_data[Number(videoId.substring(2))];
   const youtubeID = videoData?.youtubeID
 
   return (
@@ -19,9 +19,16 @@ function VideoComponent({ Video }) {
 }
 
 export const getStaticPaths = async () => {
-  const paths = video_data.map(video => ({
-    params: { videoId: 'nc'+ video.id.toString() }
+  const paths = Object.keys(video_data).map(id => ({
+    params: { videoId: 'nc' + id }
   }));
+
+  const staticPaths = [
+    { params: { videoId: 'nc51' } },
+    { params: { videoId: 'nc48' } },
+    { params: { videoId: 'nc47' } },
+    { params: { videoId: 'nc46' } }
+  ]
 
   return {
     paths,

@@ -1,35 +1,41 @@
-import video_data from "@/data/video-data";
-import Link from "next/link";
-import React from "react";
+import Link from "next/link"
+import React from "react"
+import {video_data} from "@/data/video-data"
 
 const VideoArea = () => {
+  // Convert object keys to an array of numbers
+  const videoIds = Object.keys(video_data).map(Number);
+
   return (
     <>
       <section className="research-area pt-130 pb-130">
         <div className="container">
           <div className="row">
-            {video_data.map((item) => (
-              <div key={item.id} className="col-lg-4 col-md-6">
-                <div
-                  className={`research-item ${item.color} mb-50 wow fadeInUp`}
-                  data-wow-delay=".6s"
-                >
-                  <div className="research-item__thum fix mb-20">
-                    <img src={item.img} alt="research-thumb" />
-                  </div>
-                  <div className="research-item__content">
-                    <span>{item.category} - NC{item.id}</span>
-                    <h4 className="research-item__title mb-20">
-                      <Link href="/services-details">{item.title}</Link>
-                    </h4>
-                    <p>{item.des}</p>
-                    <Link href={`/video/nc${item.id}`} className="research-item__btn">
-                      Read More
-                    </Link>
+            {videoIds.map((id) => {
+              const item = video_data[id];
+              return (
+                <div key={item.id} className="col-lg-4 col-md-6">
+                  <div
+                    className={`research-item ${item.color} mb-50 wow fadeInUp`}
+                    data-wow-delay=".6s"
+                  >
+                    <div className="research-item__thum fix mb-20">
+                      <img src={item.img} alt="research-thumb" />
+                    </div>
+                    <div className="research-item__content">
+                      <span>{item.category} - NC{item.id}</span>
+                      <h4 className="research-item__title mb-20">
+                        <Link href="/services-details">{item.title}</Link>
+                      </h4>
+                      <p>{item.des}</p>
+                      <Link href={`/video/nc${item.id}`} className="research-item__btn">
+                        Read More
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
           <div className="row">
             <div className="col-12">

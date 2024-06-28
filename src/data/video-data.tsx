@@ -2,15 +2,15 @@ import React from "react"
 import {DIR_NC46, DIR_NC47} from "@/common/ImageContexts"
 import GalleryNext from "@/common/GalleryNext/GalleryNext"
 
-export const video_data: Array<Video_data> = [
-  {
+export const video_data: Record<number, Video_data> = {
+  51: {
     id: 51,
     youtubeID: 'zvHDGMyqyXc',
-    color: "",
-    img: "/assets/img/video/NC51.jpg",
-    category: "Submission wrestling",
-    title: "Kara, Darya, Tais. 08.05.2012",
-    des: "This is a short video, but the price for the full version is not high. You can enjoy it)",
+    color: '',
+    img: '/assets/img/video/NC51.jpg',
+    category: 'Submission wrestling',
+    title: 'Kara, Darya, Tais. 08.05.2012',
+    des: 'This is a short video, but the price for the full version is not high. You can enjoy it)',
     description: (
       <p>
         This is a short video, but the price for the full version is not high. You can enjoy it)
@@ -18,14 +18,14 @@ export const video_data: Array<Video_data> = [
       </p>
     )
   },
-  {
+  48: {
     id: 48,
     youtubeID: 'fb5NUMSB2qg',
-    color: "",
-    img: "/assets/img/video/NC48.jpg",
-    category: "Submission wrestling",
-    title: "Competitions Spring 2017",
-    des: "Armwrestling & submission/pin grappling. Girls: Grigorenko Oksana (Tais), Murtazalieva Kurmandi, Piven Alyona.",
+    color: '',
+    img: '/assets/img/video/NC48.jpg',
+    category: 'Submission wrestling',
+    title: 'Competitions Spring 2017',
+    des: 'Armwrestling & submission/pin grappling. Girls: Grigorenko Oksana (Tais), Murtazalieva Kurmandi, Piven Alyona.',
     description: (
       <p>
         Women&apos;s strength competition at 16.03.2017. Armwrestling & submission/pin grappling. Girls: Grigorenko
@@ -34,12 +34,12 @@ export const video_data: Array<Video_data> = [
       </p>
     )
   },
-  {
+  47: {
     id: 47,
     youtubeID: 'fb5NUMSB2qg',
-    color: "",
-    img: "/assets/img/video/NC47.jpg",
-    category: "Submission wrestling",
+    color: '',
+    img: '/assets/img/video/NC47.jpg',
+    category: 'Submission wrestling',
     title: "Women's strength competition at Maslenitsa 2017",
     des: "Women`s strength competition at Maslenitsa 16.02.2017. Armwrestling & submission grappling.",
     description: (
@@ -54,22 +54,21 @@ export const video_data: Array<Video_data> = [
       </>
     )
   },
-  {
+  46: {
     id: 46,
     youtubeID: 'lDgKoh-9KG4',
-    color: "",
-    img: "/assets/img/video/NC46.jpg",
-    category: "Submission wrestling",
-    title: "Alena Kurmandi 30.03.2017 - 06.04.2017",
-    des: "",
+    color: '',
+    img: '/assets/img/video/NC46.jpg',
+    category: 'Submission wrestling',
+    title: 'Alena Kurmandi 30.03.2017 - 06.04.2017',
+    des: '',
     description: (
       <>
         <GalleryNext images={DIR_NC46}/>
       </>
     )
   }
-];
-export default video_data;
+};
 
 export type Video_data = {
   id: number
