@@ -12,7 +12,9 @@ export function useGallery(images: __WebpackModuleApi.RequireContext, imagesSize
   return { index, setIndex, open, setOpen, photos, slides };
 }
 
-type imagesSizeType = {
+
+
+export type imagesSizeType = {
   width: number
   height: number
 }

@@ -12,3 +12,8 @@ export type YearsType = '2010_2011' | '2012_2013' | '2015_2017' | '2013_2014' | 
 export type CardComponentType = CardType & {
   variant: VariantType
 }
+
+export type imagesSizeType = {
+  width: number
+  height: number
+}

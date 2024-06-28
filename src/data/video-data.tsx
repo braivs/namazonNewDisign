@@ -1,6 +1,7 @@
 import React from "react"
 import {DIR_NC47} from "@/common/ImageContexts"
 import {useGallery} from "../../hooks/use-gallery"
+import GalleryNext from "@/common/GalleryNext/GalleryNext"
 
 export const video_data: Array<Video_data> = [
   {
@@ -43,11 +44,16 @@ export const video_data: Array<Video_data> = [
     title: "Women's strength competition at Maslenitsa 2017",
     des: "Women`s strength competition at Maslenitsa 16.02.2017. Armwrestling & submission grappling.",
     description: (
-      <p>
-        Women&lsquo;s strength competition at Maslenitsa 16.02.2017. Armwrestling & submission grappling. Girls: Vardugina
-        Viktoria, Vasilyeva Elena, Grigorenko Oksana (Tais), Piven Alyona.
-        Grigorenko Oksana & Piven Alyona represented Namazon club. Vasilyeva Elena took part only in armwrestling.
-      </p>
+      <>
+        <p>
+          Women&lsquo;s strength competition at Maslenitsa 16.02.2017. Armwrestling & submission grappling. Girls:
+          Vardugina
+          Viktoria, Vasilyeva Elena, Grigorenko Oksana (Tais), Piven Alyona.
+          Grigorenko Oksana & Piven Alyona represented Namazon club. Vasilyeva Elena took part only in armwrestling.
+        </p>
+        <GalleryNext images={DIR_NC47}/>
+      </>
+
     )
   }
 ];

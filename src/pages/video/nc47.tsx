@@ -18,15 +18,6 @@ const Nc47 = () => {
   return (
     <VideoDetails>
       <VideoData videoData={videoData} youtubeID={youtubeID} />
-      <ButtonGallery
-        index={gallery1.index}
-        indexCallback={gallery1.setIndex}
-        isOpen={gallery1.open}
-        openCloseCallback={gallery1.setOpen}
-        photos={gallery1.photos}
-        slides={gallery1.slides}
-        buttonName={'Screenshots'}
-      />
     </VideoDetails>
   )
 }
