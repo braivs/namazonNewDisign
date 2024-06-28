@@ -1,6 +1,5 @@
 import React from "react"
-import {DIR_NC47} from "@/common/ImageContexts"
-import {useGallery} from "../../hooks/use-gallery"
+import {DIR_NC46, DIR_NC47} from "@/common/ImageContexts"
 import GalleryNext from "@/common/GalleryNext/GalleryNext"
 
 export const video_data: Array<Video_data> = [
@@ -53,7 +52,20 @@ export const video_data: Array<Video_data> = [
         </p>
         <GalleryNext images={DIR_NC47}/>
       </>
-
+    )
+  },
+  {
+    id: 46,
+    youtubeID: 'lDgKoh-9KG4',
+    color: "",
+    img: "/assets/img/video/NC46.jpg",
+    category: "Submission wrestling",
+    title: "Alena Kurmandi 30.03.2017 - 06.04.2017",
+    des: "",
+    description: (
+      <>
+        <GalleryNext images={DIR_NC46}/>
+      </>
     )
   }
 ];
