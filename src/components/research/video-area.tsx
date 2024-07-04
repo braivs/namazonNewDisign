@@ -4,7 +4,7 @@ import {video_data} from "@/data/video-data"
 
 const VideoArea = () => {
   // Convert object keys to an array of numbers
-  const videoIds = Object.keys(video_data).map(Number);
+  const videoIds = Object.keys(video_data).map(Number).reverse();
 
   return (
     <>
