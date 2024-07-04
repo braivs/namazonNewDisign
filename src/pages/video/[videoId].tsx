@@ -1,14 +1,14 @@
 import {useRouter} from 'next/router'
-import {video_data, Video_data} from "@/data/video-data"
+import {video_data, Video_data, video_data_blank} from "@/data/video-data"
 import VideoDetails from "@/components/video-details"
-import VideoData from "@/components/video-details/video-data"
+import VideoData from "@/components/video-details/video-data/video-data"
 import React from "react"
 
-function VideoComponent({ Video }) {
+function VideoComponent() {
   const router = useRouter();
   const { videoId } = router.query;
 
-  const videoData: Video_data | undefined = video_data[Number(videoId.substring(2))];
+  const videoData: Video_data = videoId ? video_data[Number((videoId as string).substring(2))] : video_data_blank
   const youtubeID = videoData?.youtubeID
 
   return (
@@ -23,13 +23,6 @@ export const getStaticPaths = async () => {
     params: { videoId: 'nc' + id }
   }));
 
-  const staticPaths = [
-    { params: { videoId: 'nc51' } },
-    { params: { videoId: 'nc48' } },
-    { params: { videoId: 'nc47' } },
-    { params: { videoId: 'nc46' } }
-  ]
-
   return {
     paths,
     fallback: false
@@ -37,7 +30,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: Params) {
   const { videoId } = params;
 
   const Video = {
@@ -50,5 +43,11 @@ export async function getStaticProps({ params }) {
     },
   };
 }
+
+type Params = {
+  params: {
+    videoId: string;
+  };
+};
 
 export default VideoComponent

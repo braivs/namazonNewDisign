@@ -36,8 +36,8 @@
 // export const DIR_TAIS_YULIA = require.context('/public/assets/img/videoGallery/33/tais-yulia', false)
 // export const DIR36 = require.context('/public/assets/img/videoGallery/36', false) // 36 Female submission grappling tournament between beginners. Preliminary fights.
 // export const DIR37 = require.context('/public/assets/img/videoGallery/37', false) // 37 Female submission grappling tournament between beginners. <u>Final fights
-// export const DIR41_KZ = require.context('/public/assets/img/videoGallery/41/kz', false)
-// export const DIR41_VZ = require.context('/public/assets/img/videoGallery/41/vz', false)
+export const DIR41_KZ = require.context('/public/assets/img/videoGallery/nc41/kz', false)
+export const DIR41_VZ = require.context('/public/assets/img/videoGallery/nc41/vz', false)
 export const DIR_NC42 = require.context('/public/assets/img/videoGallery/nc42', false) // Victoria Vardugina vs Christina Shvets
 export const DIR_NC46 = require.context('/public/assets/img/videoGallery/nc46', false) //NC46 Alena Kurmandi 30.03.2017 - 06.04.2017
 export const DIR_NC47 = require.context('/public/assets/img/videoGallery/nc47', false) //NC47 Women's strength competition at Maslenitsa 2017

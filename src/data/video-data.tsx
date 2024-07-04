@@ -1,5 +1,5 @@
 import React from "react"
-import {DIR_NC42, DIR_NC46, DIR_NC47} from "@/common/ImageContexts"
+import {DIR41_KZ, DIR41_VZ, DIR_NC42, DIR_NC46, DIR_NC47} from "@/common/ImageContexts"
 import GalleryNext, {GalleryNextFromArray} from "@/common/GalleryNext/GalleryNext"
 import Link from "next/link"
 import {Col, Row} from "react-bootstrap"
@@ -120,11 +120,12 @@ export const video_data: Record<number, Video_data> = {
     category: 'Submission wrestling',
     title: 'Submission grappling tournament. Part 2. October 2014',
     des: 'The second part of our full HD video featuring the submission grappling mini-tournament',
-    description: function() {
+    description: function () {
       return <>
-          <p><b>VIDEO {this.id}</b> is the second part of our full HD video featuring the submission grappling
+        <p><b>VIDEO {this.id}</b> is the second part of our full HD video featuring the submission grappling
           mini-tournament
-          that took place on October 13, 2014. It includes two fights between <b>Christina Shvets</b> (68.9 kg / 151.9 lb)
+          that took place on October 13, 2014. It includes two fights between <b>Christina Shvets</b> (68.9 kg / 151.9
+          lb)
           and <b>Victoria Vardugina</b> (65.3 kg / 144.0 lb). After defeating Zoya Dorofeeva (see <b>VIDEO 41</b>),
           they competed to determine the winner of this small wrestling event.
         </p>
@@ -150,8 +151,52 @@ export const video_data: Record<number, Video_data> = {
         <GalleryNext images={DIR_NC42}/>
       </>
     }
+  },
+  41: {
+    id: 41,
+    youtubeID: 'vE6uc_UXaWc',
+    color: '',
+    img: `/assets/img/video/NC41.jpg`,
+    category: 'Submission wrestling',
+    title: 'Submission grappling tournament. Part 1. October 2014',
+    des: 'The second part of our full HD video featuring the submission grappling mini-tournament',
+    description: function () {
+      return <>
+        <p>Our HD video featuring the submission grappling mini-tournament that was held on October 13, 2014, has been
+          divided into two parts: <b>VIDEO 41</b> and <b>VIDEO 42</b>. The first part includes four fights featuring <b>Zoya
+            Dorofeeva</b> (56 kg / 123.5 lb), who is a newcomer to our competitions.</p>
+        <p>Prior to this event, Zoya participated in Russian hand-to-hand fighting. Here, her opponents were two
+          competitors who previously faced off in the May 2014 Grappling tournament for beginners – <b>Christina
+            Shvets</b> (68.9 kg / 151.9 lb) and <b>Victoria Vardugina</b> (65.3 kg / 144.0 lb). The rules remained
+          the same – pins-and-submissions, requiring a wrestler to either force her opponent to submit or hold her
+          in a pin for a count of five to win an individual fight.
+          Zoya proved to be a brave and resilient fighter. Despite being outweighed by her opponents, she
+          fought tenaciously, avoiding submissions.</p>
+        <p>In the first fight between Zoya and Christina, neither the 4 minutes of regular time nor the 2 extra minutes
+          produced a winner. Only in their second encounter did Christina manage to secure a pinfall victory after a
+          hard-fought struggle.</p>
+        <h5>Christina Shvets vs Zoya Dorofeeva</h5>
+        <GalleryNext images={DIR41_KZ}/>
+        <p>Victoria proved to be an even more formidable opponent for Zoya, defeating her twice with chokeholds. Despite
+          this, Zoya had several opportunities to defeat Victoria in both their first and second fights. Unfortunately,
+          due to her lack of experience in such competitions, she was unable to capitalize on those chances.</p>
+        <h5>Victoria Vardugina vs Zoya Dorofeeva</h5>
+        <GalleryNext images={DIR41_VZ}/>
+      </>
+    }
   }
-};
+}
+
+export const video_data_blank = {
+  id: 0,
+  youtubeID: '',
+  color: '',
+  img: '',
+  category: '',
+  title: '',
+  des: '',
+  description: () => {return <></>}
+}
 
 export type Video_data = {
   id: number
