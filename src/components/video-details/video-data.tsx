@@ -3,6 +3,7 @@ import cn from "classnames"
 import {MyYouTube} from "@/common/common"
 import React from "react"
 import {Video_data} from "@/data/video-data"
+import s from './video-data.module.scss'
 
 export default function VideoData({videoData, youtubeID}: Props) {
   return (
@@ -18,12 +19,12 @@ export default function VideoData({videoData, youtubeID}: Props) {
           </Col>
         </Row>
         <section className="pt-10">
-          {videoData?.description}
+          {videoData?.description()}
         </section>
         <Row>
           <hr/>
           <p>
-            You can purchase <b>video {`NC${videoData?.id}`}</b> on <a href={`https://namazonclub.gumroad.com/l/nc${videoData?.id}`}>Gumroad</a>.
+            You can purchase <b>video {`NC${videoData?.id}`}</b> on <a className={s.violet} href={`https://namazonclub.gumroad.com/l/nc${videoData?.id}`}><b>Gumroad</b></a>.
           </p>
         </Row>
       </>

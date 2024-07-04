@@ -1,3 +1,5 @@
+import React from "react"
+
 export type CardType = {
   id: number | string
   title: string
@@ -16,4 +18,8 @@ export type CardComponentType = CardType & {
 export type imagesSizeType = {
   width: number
   height: number
+}
+
+export type WithChildren = {
+  children: React.ReactNode
 }
