@@ -1,5 +1,5 @@
 import React from "react"
-import {DIR41_KZ, DIR41_VZ, DIR_NC42, DIR_NC46, DIR_NC47} from "@/common/ImageContexts"
+import {DIR37, DIR41_KZ, DIR41_VZ, DIR_NC42, DIR_NC46, DIR_NC47} from "@/common/ImageContexts"
 import GalleryNext, {GalleryNextFromArray} from "@/common/GalleryNext/GalleryNext"
 import Link from "next/link"
 import {Col, Row} from "react-bootstrap"
@@ -130,7 +130,7 @@ export const video_data: Record<number, Video_data> = {
           they competed to determine the winner of this small wrestling event.
         </p>
         <p>This was their second encounter. The first was at a <Link
-          href="/video/36">tournament for beginners held on May 9th of that year</Link>, where Victoria emerged
+          href="/video/nc36">tournament for beginners held on May 9th of that year</Link>, where Victoria emerged
           victorious. Here they were again on the same mat, with Christina determined for a rematch!</p>
         <p>
           According to the rules, to win an individual fight, it was necessary to either submit the opponent or pin
@@ -184,6 +184,39 @@ export const video_data: Record<number, Video_data> = {
         <GalleryNext images={DIR41_VZ}/>
       </>
     }
+  },
+  37: {
+    id: 37,
+    youtubeID: 'oxAzT_GWSJA',
+    color: '',
+    img: `/assets/img/video/NC37.jpg`,
+    category: 'Submission wrestling',
+    title: 'Tournament between beginners. Part 2. Final fights. 2014',
+    des: 'This video is a continuation of the Video 36 that featured the preliminary fights.',
+    description: function () {
+      return <>
+        <p>Weight class: 145 to 160 lb. May, 2014</p>
+        <p>
+          This video is a continuation of the Video 36 that featured the preliminary fights (see its
+          description <Link href="/video/36">HERE</Link>). Now here you can see two final fights in
+          which the loser and the winner of the tournament
+          were determined.
+        </p>
+        <Row>
+        </Row>
+        <p>In one of them, Nina and Irina fought with each other for the IV place (for not becoming the outsider),
+          and in the other Daria and Victoria decided between themselves who was the best wrestler of the
+          competition. The fight Nina vs Irina went fast and ended pretty soon – one of the girls defeated the
+          other twice by applying submission holds.</p>
+        <p>The final fight was much longer and more strenuous. Suffice it to say that in the first round neither
+          wrestler was able to gain a victory within the 4 min of time limit.</p>
+        <GalleryNext images={DIR37}/>
+        <p>We recommend this video for those of you who like real female wrestling and young sexy-looking girls with
+          competitive spirit. You will find it especially entertaining if you are interested to see a fight in
+          which one of the two girls grappling on the mat continuously struggles to pin her opponent down and
+          finally succeeds after long hard attempts.</p>
+      </>
+    }
   }
 }
 
@@ -195,7 +228,9 @@ export const video_data_blank = {
   category: '',
   title: '',
   des: '',
-  description: () => {return <></>}
+  description: () => {
+    return <></>
+  }
 }
 
 export type Video_data = {
