@@ -12,16 +12,11 @@ import p1_OGrigorenko_vs_VSmorodina from '/public/assets/img/videoGallery/nc44/1
 import p2_OGrigorenko_vs_VSmorodina from '/public/assets/img/videoGallery/nc44/2_O.Grigorenko_vs_V.Smorodina.jpg'
 import {GalleryFromArray} from "@/common/GalleryFromArray"
 
-console.log(typeof VSmorodina_vs_VVardugina1)
-
-// @ts-ignore
-export const video_data: Record<number, Video_data> = {
+export const video_data_src: Record<number, Video_data_src> = {
   51: {
     id: 51,
     youtubeID: 'zvHDGMyqyXc',
-    color: '',
     img: '/assets/img/video/NC51.jpg',
-    category: 'Submission wrestling',
     title: 'Kara, Darya, Tais. 08.05.2012',
     des: 'This is a short video, but the price for the full version is not high. You can enjoy it)',
     description: () => (
@@ -34,9 +29,7 @@ export const video_data: Record<number, Video_data> = {
   48: {
     id: 48,
     youtubeID: 'fb5NUMSB2qg',
-    color: '',
     img: '/assets/img/video/NC48.jpg',
-    category: 'Submission wrestling',
     title: 'Competitions Spring 2017',
     des: 'Armwrestling & submission/pin grappling. Girls: Grigorenko Oksana (Tais), Murtazalieva Kurmandi, Piven Alyona.',
     description: () => (
@@ -50,9 +43,7 @@ export const video_data: Record<number, Video_data> = {
   47: {
     id: 47,
     youtubeID: 'fb5NUMSB2qg',
-    color: '',
     img: '/assets/img/video/NC47.jpg',
-    category: 'Submission wrestling',
     title: "Women's strength competition at Maslenitsa 2017",
     des: "Women`s strength competition at Maslenitsa 16.02.2017. Armwrestling & submission grappling.",
     description: () => (
@@ -70,9 +61,7 @@ export const video_data: Record<number, Video_data> = {
   46: {
     id: 46,
     youtubeID: 'lDgKoh-9KG4',
-    color: '',
     img: '/assets/img/video/NC46.jpg',
-    category: 'Submission wrestling',
     title: 'Alena Kurmandi 30.03.2017 - 06.04.2017',
     des: '',
     description: () => {
@@ -84,9 +73,7 @@ export const video_data: Record<number, Video_data> = {
   44: {
     id: 44,
     youtubeID: 'bc9RU5hP4k4',
-    color: '',
     img: '/assets/img/video/NC44.jpg',
-    category: 'Submission wrestling',
     title: 'The Female Power Competition for the Maslenitsa Festival, 2016. Wrestling',
     des: 'You can read the report on the competitions, the main part of which was these fights...',
     description: () => {
@@ -116,9 +103,7 @@ export const video_data: Record<number, Video_data> = {
   42: {
     id: 42,
     youtubeID: 'e8fADPtHm7w',
-    color: '',
     img: `/assets/img/video/NC42.jpg`,
-    category: 'Submission wrestling',
     title: 'Submission grappling tournament. Part 2. October 2014',
     des: 'The second part of our full HD video featuring the submission grappling mini-tournament',
     description: function () {
@@ -156,9 +141,7 @@ export const video_data: Record<number, Video_data> = {
   41: {
     id: 41,
     youtubeID: 'vE6uc_UXaWc',
-    color: '',
     img: `/assets/img/video/NC41.jpg`,
-    category: 'Submission wrestling',
     title: 'Submission grappling tournament. Part 1. October 2014',
     des: 'The second part of our full HD video featuring the submission grappling mini-tournament',
     description: function () {
@@ -189,9 +172,7 @@ export const video_data: Record<number, Video_data> = {
   37: {
     id: 37,
     youtubeID: 'oxAzT_GWSJA',
-    color: '',
     img: `/assets/img/video/NC37.jpg`,
-    category: 'Submission wrestling',
     title: 'Tournament between beginners. Part 2. Final fights. 2014',
     des: 'This video is a continuation of the Video 36 that featured the preliminary fights.',
     description: function () {
@@ -222,9 +203,7 @@ export const video_data: Record<number, Video_data> = {
   36: {
     id: 36,
     youtubeID: 'kkbQ7YEQ9nQ',
-    color: '',
     img: `/assets/img/video/NC36.jpg`,
-    category: 'Submission wrestling',
     title: 'Tournament between beginners. Part 1. Preliminary fights. 2014',
     des: 'In this competition, five fighters participated: Christina (67.4 kg / 148.6 lb), Daria (66.5 kg / 146.6lb), Irina (70.7 kg / 155.9 lb), Nina (66.1 kg / 145.7 lb), and Victoria (70.7 kg / 155.9 lb).',
     description: function () {
@@ -258,9 +237,7 @@ export const video_data: Record<number, Video_data> = {
   35: {
     id: 35,
     youtubeID: 'tYIIf2sPt4c',
-    color: '',
     img: `/assets/img/video/NC35.jpg`,
-    category: 'Submission wrestling',
     title: 'Lidiya Oslopovskih vs Tais. Pins matches. 2013',
     des: 'Lovely young lady, Lidiya Oslopovskih (53 kg / 117 lbs), is a newcomer to the Namazon wrestling competitions.',
     description: function () {
@@ -289,6 +266,17 @@ export const video_data: Record<number, Video_data> = {
   }
 }
 
+export const video_data: Record<number, Video_data> = Object.fromEntries(
+  Object.entries(video_data_src).map(([key, video]) => [
+    Number(key),
+    {
+      ...video,
+      color: '',
+      category: 'Submission wrestling',
+    }
+  ])
+);
+
 export const video_data_blank = {
   id: 0,
   youtubeID: '',
@@ -301,6 +289,16 @@ export const video_data_blank = {
     return <></>
   }
 }
+
+type Video_data_src = {
+  id: number
+  youtubeID: string
+  img: string
+  title: string
+  des: string,
+  description: () => React.ReactNode
+}
+
 
 export type Video_data = {
   id: number
