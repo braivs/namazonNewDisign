@@ -25,7 +25,7 @@ const VideoArea = () => {
                     <div className="research-item__content">
                       <span>{item.category} - NC{item.id}</span>
                       <h4 className="research-item__title mb-20">
-                        <Link href="/services-details">{item.title}</Link>
+                        <Link href={`/video/nc${item.id}`}>{item.title}</Link>
                       </h4>
                       <p>{item.des}</p>
                       <Link href={`/video/nc${item.id}`} className="research-item__btn">
