@@ -1,6 +1,6 @@
 import React from "react"
 import {DIR35, DIR36, DIR37, DIR41_KZ, DIR41_VZ, DIR_NC42, DIR_NC46, DIR_NC47} from "@/common/ImageContexts"
-import ButtonGallery, {GalleryNextFromArray} from "@/common/GalleryNext/ButtonGallery"
+import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
 import Link from "next/link"
 import {Col, Row} from "react-bootstrap"
 import cn from 'classnames'
@@ -10,6 +10,7 @@ import p1_OGrigorenko_vs_VVardugina from '/public/assets/img/videoGallery/nc44/1
 import p2_OGrigorenko_vs_VVardugina from '/public/assets/img/videoGallery/nc44/2_O.Grigorenko_vs_V.Vardugina.jpg'
 import p1_OGrigorenko_vs_VSmorodina from '/public/assets/img/videoGallery/nc44/1_O.Grigorenko_vs_V.Smorodina.jpg'
 import p2_OGrigorenko_vs_VSmorodina from '/public/assets/img/videoGallery/nc44/2_O.Grigorenko_vs_V.Smorodina.jpg'
+import {GalleryFromArray} from "@/common/GalleryFromArray"
 
 console.log(typeof VSmorodina_vs_VVardugina1)
 
@@ -98,17 +99,17 @@ export const video_data: Record<number, Video_data> = {
           <Col className={cn('d-flex', 'justify-content-center')}>Viktoria Smorodina vs Viktoria Vardugina</Col>
         </Row>
         {/*@ts-ignore todo: need to add Image ts type*/}
-        <GalleryNextFromArray images={[VSmorodina_vs_VVardugina1.src, VSmorodina_vs_VVardugina2.src]}/>
+        <GalleryFromArray images={[VSmorodina_vs_VVardugina1.src, VSmorodina_vs_VVardugina2.src]}/>
         <Row>
           <Col className={cn('d-flex', 'justify-content-center')}>Oksana Grigorenko vs Viktoria Vardugina</Col>
         </Row>
         {/*@ts-ignore*/}
-        <GalleryNextFromArray images={[p1_OGrigorenko_vs_VVardugina.src, p2_OGrigorenko_vs_VVardugina.src]}/>
+        <GalleryFromArray images={[p1_OGrigorenko_vs_VVardugina.src, p2_OGrigorenko_vs_VVardugina.src]}/>
         <Row>
           <Col className={cn('d-flex', 'justify-content-center')}>Oksana Grigorenko vs Viktoria Smorodina</Col>
         </Row>
         {/*@ts-ignore*/}
-        <GalleryNextFromArray images={[p1_OGrigorenko_vs_VSmorodina.src, p2_OGrigorenko_vs_VSmorodina.src]}/>
+        <GalleryFromArray images={[p1_OGrigorenko_vs_VSmorodina.src, p2_OGrigorenko_vs_VSmorodina.src]}/>
       </>
     }
   },
