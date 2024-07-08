@@ -1,5 +1,5 @@
 import React from "react"
-import {DIR37, DIR41_KZ, DIR41_VZ, DIR_NC42, DIR_NC46, DIR_NC47} from "@/common/ImageContexts"
+import {DIR35, DIR36, DIR37, DIR41_KZ, DIR41_VZ, DIR_NC42, DIR_NC46, DIR_NC47} from "@/common/ImageContexts"
 import GalleryNext, {GalleryNextFromArray} from "@/common/GalleryNext/GalleryNext"
 import Link from "next/link"
 import {Col, Row} from "react-bootstrap"
@@ -198,7 +198,7 @@ export const video_data: Record<number, Video_data> = {
         <p>Weight class: 145 to 160 lb. May, 2014</p>
         <p>
           This video is a continuation of the Video 36 that featured the preliminary fights (see its
-          description <Link href="/video/36">HERE</Link>). Now here you can see two final fights in
+          description <Link href="/video/nc36">HERE</Link>). Now here you can see two final fights in
           which the loser and the winner of the tournament
           were determined.
         </p>
@@ -215,6 +215,74 @@ export const video_data: Record<number, Video_data> = {
           competitive spirit. You will find it especially entertaining if you are interested to see a fight in
           which one of the two girls grappling on the mat continuously struggles to pin her opponent down and
           finally succeeds after long hard attempts.</p>
+      </>
+    }
+  },
+  36: {
+    id: 36,
+    youtubeID: 'kkbQ7YEQ9nQ',
+    color: '',
+    img: `/assets/img/video/NC36.jpg`,
+    category: 'Submission wrestling',
+    title: 'Tournament between beginners. Part 1. Preliminary fights. 2014',
+    des: 'In this competition, five fighters participated: Christina (67.4 kg / 148.6 lb), Daria (66.5 kg / 146.6lb), Irina (70.7 kg / 155.9 lb), Nina (66.1 kg / 145.7 lb), and Victoria (70.7 kg / 155.9 lb).',
+    description: function () {
+      return <>
+        <p>
+          In this competition, five fighters participated: Christina (67.4 kg / 148.6 lb), Daria (66.5 kg / 146.6
+          lb), Irina (70.7 kg / 155.9 lb), Nina (66.1 kg / 145.7 lb), and Victoria (70.7 kg / 155.9 lb). Rules:
+          fights with submissions or pins counted to 10.
+        </p>
+        <p>
+          All the girls except Victoria Vardugina, who has already wrestled once before at the Namazon Club, are
+          beginners in submission grappling and are participating here for the first time.<br/>
+          About half a year ago, in October 2013, Vika won a women&apos;s <Link href="/video/nc33">crossfit
+          wrestling</Link> competition in our club by forcing the uncompromising wrestler Lidiya Oslopovskih
+          to submit in the final fight. Vika is a physically strong young woman who not only learns how to wrestle
+          but also competes successfully in college arm wrestling tournaments.
+        </p>
+        <p>
+          Our competition today is notable for its typically FEMALE wrestling. The rules require the winner of a
+          match to win at least 2 rounds out of 3. Each round has a 4-minute time limit.<br/>
+          The video includes three matches, the first two consisting of two rounds each, and the last one
+          (Vika vs Christina) going three rounds.
+        </p>
+        <GalleryNext images={DIR36}/>
+        <p>We recommend you watch this video (Video 36) if you like to see ambitious, athletic girls with
+          beautiful bodies competing with each other in a hard-fought contest where everything is allowed:
+          choking, pinning, and submission holds.</p>
+      </>
+    }
+  },
+  35: {
+    id: 35,
+    youtubeID: 'tYIIf2sPt4c',
+    color: '',
+    img: `/assets/img/video/NC35.jpg`,
+    category: 'Submission wrestling',
+    title: 'Lidiya Oslopovskih vs Tais. Pins matches. 2013',
+    des: 'Lovely young lady, Lidiya Oslopovskih (53 kg / 117 lbs), is a newcomer to the Namazon wrestling competitions.',
+    description: function () {
+      return <>
+        <p>
+          Lovely young lady, <b>Lidiya Oslopovskih</b> (53 kg / 117 lbs), is a newcomer to the Namazon wrestling
+          competitions. She is a small but agile fighter, with a very well-built body. In this video, you can see
+          her three fights with the strongest and most experienced woman of the club, <b>Tais</b> (60 kg / 132 lb).
+        </p>
+        <p>
+          It’s somewhat interesting and exciting to watch how Lidiya struggles, especially on the ground.
+          The rules required the opponents to wrestle to submission only, regardless of whether one wrestler would pin
+          the
+          other to submission or use another move. This time Tais decided to use a little &quot;naughty&ldquo; tactic
+          for
+          success.
+        </p>
+        <p>
+          If you like to watch competitive mat wrestling between two strong and fit women and if you like to see
+          some long pin holds, as well as some hard attempts of the bottom lady to bridge out of these pins, then
+          this video is highly recommended for you.
+        </p>
+        <GalleryNext images={DIR35}/>
       </>
     }
   }
@@ -243,3 +311,6 @@ export type Video_data = {
   des: string,
   description: () => React.ReactNode
 }
+
+//todo: check links
+//todo: need to fix on Gumroad nc names
