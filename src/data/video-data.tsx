@@ -1,5 +1,7 @@
 import React from "react"
 import {
+  DIR26,
+  DIR27,
   DIR29,
   DIR35,
   DIR36,
@@ -9,7 +11,8 @@ import {
   DIR_LIDA_VIKA,
   DIR_NC42,
   DIR_NC46,
-  DIR_NC47, DIR_TAIS_YULIA
+  DIR_NC47,
+  DIR_TAIS_YULIA
 } from "@/common/ImageContexts"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
 import Link from "next/link"
@@ -322,6 +325,55 @@ export const video_data_src: Record<number, Video_data_src> = {
           submission match to Elena.</p>
         <p>If you’re curious to see how it all unfolded, watch this video.</p>
         <ButtonGallery images={DIR29}/>
+      </>
+    }
+  },
+  27: {
+    id: 27,
+    youtubeID: 'HaMtoel8Tdw',
+    img: `/assets/img/video/NC27.jpg`,
+    title: 'Female Beach Wrestling Part 2. June, 2011',
+    des: 'This is a continuation of the multi-round sand-wrestling contest between Tais (5"7" / 130 lb) and Elena Vasilyeva (5"6" / 135 lb).',
+    description: function () {
+      return <>
+        <p>
+          This is a continuation of the multi-round sand-wrestling contest between <b>Tais</b> (5&quot;7&quot; / 130 lb)
+          and <b>Elena
+          Vasilyeva</b> (5&quot;6&quot; / 135 lb). The first nine rounds of this exciting match were featured in our
+          Video 26
+          (scroll down to see the initial description). In Part 2, you can see eight more rounds fought with the same
+          rules as in Part 1.
+        </p>
+        <p>Although both women are very ambitious, they are not quite equal in experience and skill. One of them is
+          still
+          using nice wrestling combinations, applying effective choking and submission holds, while the other is just
+          struggling heavily, showing her fighting spirit and refusing to give up.</p>
+        <p>If you enjoy watching strong, skilled, and athletic women in real wrestling, then we recommend you purchase
+          this video.</p>
+        <ButtonGallery images={DIR27}/>
+      </>
+    }
+  },
+  26: {
+    id: 26,
+    youtubeID: 'iBBVt0JNN-Y',
+    img: `/assets/img/video/NC26.jpg`,
+    title: 'Female Beach Wrestling. Part 1. June, 2011',
+    des: 'This video features a sand-wrestling contest between two ambitious women, Tais (5"7" / 130 lb) and Elena Vasilyeva (5"6" / 134 lb).',
+    description: function () {
+      return <>
+        <p>
+          This video features a sand-wrestling contest between two ambitious women, <b>Tais</b> (5&quot;7&quot; / 130
+          lb)
+          and <b>Elena Vasilyeva</b> (5&quot;6&quot; / 134 lb). Tais, who has competed in various grappling and MMA
+          tournaments, has more experience than her younger opponent. But Elena is not a pushover either.
+        </p>
+        <p>
+          The two women fought nine rounds with submission grappling rules. It was an interesting and exciting
+          wrestling match with many different pins, chokes, and submission holds. Both wrestlers struggled
+          arduously for every single point. The weaker woman didn’t give up easily.
+        </p>
+        <ButtonGallery images={DIR26}/>
       </>
     }
   }
