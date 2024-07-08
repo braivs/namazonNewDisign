@@ -1,21 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {Photo} from "react-photo-album"
 import {Slide} from "yet-another-react-lightbox"
-import {ButtonGallery} from "./ButtonGallery/ButtonGallery"
-
-export const CustomButtonGallery: React.FC<CustomButtonGalleryType> = ({ gallery, buttonName }) => {
-  return (
-      <ButtonGallery
-          index={gallery.index}
-          indexCallback={gallery.setIndex}
-          isOpen={gallery.open}
-          openCloseCallback={gallery.setOpen}
-          photos={gallery.photos}
-          slides={gallery.slides}
-          buttonName={buttonName}
-      />
-  );
-};
 
 export const MyYouTube = (props: YoutubePropsType) => {
   const [width, setWidth] = useState(0); // Initial state doesn't depend on window

@@ -1,6 +1,6 @@
 import React from "react"
 import {DIR35, DIR36, DIR37, DIR41_KZ, DIR41_VZ, DIR_NC42, DIR_NC46, DIR_NC47} from "@/common/ImageContexts"
-import GalleryNext, {GalleryNextFromArray} from "@/common/GalleryNext/GalleryNext"
+import ButtonGallery, {GalleryNextFromArray} from "@/common/GalleryNext/ButtonGallery"
 import Link from "next/link"
 import {Col, Row} from "react-bootstrap"
 import cn from 'classnames'
@@ -62,7 +62,7 @@ export const video_data: Record<number, Video_data> = {
           Viktoria, Vasilyeva Elena, Grigorenko Oksana (Tais), Piven Alyona.
           Grigorenko Oksana & Piven Alyona represented Namazon club. Vasilyeva Elena took part only in armwrestling.
         </p>
-        <GalleryNext images={DIR_NC47}/>
+        <ButtonGallery images={DIR_NC47}/>
       </>
     )
   },
@@ -76,7 +76,7 @@ export const video_data: Record<number, Video_data> = {
     des: '',
     description: () => {
       return <>
-        <GalleryNext images={DIR_NC46}/>
+        <ButtonGallery images={DIR_NC46}/>
       </>
     }
   },
@@ -148,7 +148,7 @@ export const video_data: Record<number, Video_data> = {
           The remainder of the fight became an endurance test. As the struggle persisted, controlling the match became
           increasingly challenging for Christina, who appeared fatigued by the end, unlike Victoria.
         </p>
-        <GalleryNext images={DIR_NC42}/>
+        <ButtonGallery images={DIR_NC42}/>
       </>
     }
   },
@@ -176,12 +176,12 @@ export const video_data: Record<number, Video_data> = {
           produced a winner. Only in their second encounter did Christina manage to secure a pinfall victory after a
           hard-fought struggle.</p>
         <h5>Christina Shvets vs Zoya Dorofeeva</h5>
-        <GalleryNext images={DIR41_KZ}/>
+        <ButtonGallery images={DIR41_KZ}/>
         <p>Victoria proved to be an even more formidable opponent for Zoya, defeating her twice with chokeholds. Despite
           this, Zoya had several opportunities to defeat Victoria in both their first and second fights. Unfortunately,
           due to her lack of experience in such competitions, she was unable to capitalize on those chances.</p>
         <h5>Victoria Vardugina vs Zoya Dorofeeva</h5>
-        <GalleryNext images={DIR41_VZ}/>
+        <ButtonGallery images={DIR41_VZ}/>
       </>
     }
   },
@@ -210,7 +210,7 @@ export const video_data: Record<number, Video_data> = {
           other twice by applying submission holds.</p>
         <p>The final fight was much longer and more strenuous. Suffice it to say that in the first round neither
           wrestler was able to gain a victory within the 4 min of time limit.</p>
-        <GalleryNext images={DIR37}/>
+        <ButtonGallery images={DIR37}/>
         <p>We recommend this video for those of you who like real female wrestling and young sexy-looking girls with
           competitive spirit. You will find it especially entertaining if you are interested to see a fight in
           which one of the two girls grappling on the mat continuously struggles to pin her opponent down and
@@ -247,7 +247,7 @@ export const video_data: Record<number, Video_data> = {
           The video includes three matches, the first two consisting of two rounds each, and the last one
           (Vika vs Christina) going three rounds.
         </p>
-        <GalleryNext images={DIR36}/>
+        <ButtonGallery images={DIR36}/>
         <p>We recommend you watch this video (Video 36) if you like to see ambitious, athletic girls with
           beautiful bodies competing with each other in a hard-fought contest where everything is allowed:
           choking, pinning, and submission holds.</p>
@@ -282,7 +282,7 @@ export const video_data: Record<number, Video_data> = {
           some long pin holds, as well as some hard attempts of the bottom lady to bridge out of these pins, then
           this video is highly recommended for you.
         </p>
-        <GalleryNext images={DIR35}/>
+        <ButtonGallery images={DIR35}/>
       </>
     }
   }
