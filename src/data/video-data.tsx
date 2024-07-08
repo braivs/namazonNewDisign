@@ -1,5 +1,6 @@
 import React from "react"
 import {
+  DIR29,
   DIR35,
   DIR36,
   DIR37,
@@ -283,16 +284,44 @@ export const video_data_src: Record<number, Video_data_src> = {
     description: function () {
       return <>
         <p>
-          This video features two submission grappling matches held as the final part of a Crossfit tournament organized by the St. Petersburg Athletic Center in cooperation with the Namazon Club.<br/>
-          The matches were to determine winners in two weight categories: up to 70 kg / 155 lb between <b>Lidia Oslopovskih</b> (53 kg / 117 lb) and <b>Victoria Vardugina</b> (69 kg / 152 lb), and in the absolute category between <b>Yulia Borovik</b> (91 kg / 201 lb) and <b>Tais</b> (61 kg / 135 lb).
+          This video features two submission grappling matches held as the final part of a Crossfit tournament organized
+          by the St. Petersburg Athletic Center in cooperation with the Namazon Club.<br/>
+          The matches were to determine winners in two weight categories: up to 70 kg / 155 lb between <b>Lidia
+          Oslopovskih</b> (53 kg / 117 lb) and <b>Victoria Vardugina</b> (69 kg / 152 lb), and in the absolute category
+          between <b>Yulia Borovik</b> (91 kg / 201 lb) and <b>Tais</b> (61 kg / 135 lb).
         </p>
         <p>
-          Despite significant weight differences between the opponents in each pair, their struggle on the mat was strenuous, entertaining, and exciting. The girls fought hard and bravely to win this last decisive part of the tournament.
+          Despite significant weight differences between the opponents in each pair, their struggle on the mat was
+          strenuous, entertaining, and exciting. The girls fought hard and bravely to win this last decisive part of the
+          tournament.
         </p>
         <h5>Lidia Oslopovskih vs Victoria Vardugina</h5>
         <ButtonGallery images={DIR_LIDA_VIKA}/>
         <h5>Yulia Borovik vs Tais</h5>
         <ButtonGallery images={DIR_TAIS_YULIA}/>
+      </>
+    }
+  },
+  29: {
+    id: 29,
+    youtubeID: 'HaMtoel8Tdw',
+    img: `/assets/img/video/NC29.jpg`,
+    title: 'Elena Vasilyeva vs Tais. Submission Grappling. 2013',
+    des: 'Elena (5\'7" / 157 lb) is a strong and ambitious young woman. She had fought Tais (5\'7" / 130 lb) many times two years ago...',
+    description: function () {
+      return <>
+        <p>
+          <b>Elena</b> (5&quot;7&quot; / 157 lb) is a strong and ambitious young woman. She had
+          fought <b>Tais</b> (5&quot;7&quot; / 130 lb)
+          many times two years ago, but then she disappeared from the Club. Now she’s back, stronger, heavier, more
+          skillful, and confident than ever.
+        </p>
+        <p>Right from the start, it’s clear that Elena intends to give her experienced rival a real fight. Despite Tais
+          being very strong, she immediately finds herself in trouble against the aggressive Elena. After 15 intense
+          minutes of wrestling, she is forced to admit defeat. This marks the first time Tais has lost a competitive
+          submission match to Elena.</p>
+        <p>If you’re curious to see how it all unfolded, watch this video.</p>
+        <ButtonGallery images={DIR29}/>
       </>
     }
   }
@@ -307,7 +336,7 @@ export const video_data: Record<number, Video_data> = Object.fromEntries(
       category: 'Submission wrestling',
     }
   ])
-);
+)
 
 export const video_data_blank = {
   id: 0,

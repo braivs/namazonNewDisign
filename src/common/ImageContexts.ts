@@ -31,6 +31,8 @@
 // export const DIR_NEVSKAYA_ARENA_1 = require.context('/public/assets/img/videoGallery/20/mma-pervaya-nevskaya-arena-2012-1', false)
 // export const DIR_NEVSKAYA_ARENA_2 = require.context('/public/assets/img/videoGallery/21/mma-pervaya-nevskaya-arena-2012-2', false)
 
+export const DIR29 = require.context('/public/assets/img/videoGallery/nc29', false) // 36 Female submission grappling tournament between beginners. Preliminary fights.
+
 ///33:
 export const DIR_LIDA_VIKA = require.context('/public/assets/img/videoGallery/nc33/lida-vika', false)
 export const DIR_TAIS_YULIA = require.context('/public/assets/img/videoGallery/nc33/tais-yulia', false)
