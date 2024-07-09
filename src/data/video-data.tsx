@@ -1,5 +1,7 @@
 import React from "react"
 import {
+  DIR03_3,
+  DIR04,
   DIR06,
   DIR08_1, DIR08_2, DIR08_3,
   DIR12,
@@ -565,6 +567,53 @@ export const video_data_src: Record<number, Video_data_src> = {
         </p>
         <p>If you enjoy watching skillful wrestling between women who are evenly matched, you will love this film.</p>
         <ButtonGallery images={DIR06}/>
+      </>
+    }
+  },
+  4: {
+    id: 4,
+    youtubeID: 'QAgCAy7XJiQ',
+    img: `/assets/img/video/NC04.jpg`,
+    title: 'Submission Grappling. Christmas Cup  2011',
+    des: '',
+    description: function () {
+      return <>
+        <p>
+          <b>Tais</b> (5’7” / 128 lb) is a multiple winner of Submission Grappling competitions organized by our
+          club. <b>Maria
+          Rylyova</b> (5’8” / 126 lb) is the winner of the Namazon Club Championship in Submission Grappling in 2010 and
+          a
+          master of sports in armwrestling.<br/>
+          The competition started with an arm wrestling contest using both arms (lying on the floor), which ended in a
+          draw. They then continued their rivalry on the wrestling mat, engaging in several rounds of submission
+          grappling.
+        </p>
+        <p>If you enjoy watching skillful wrestling between women who are evenly matched, you will love this film.</p>
+        <ButtonGallery images={DIR04}/>
+      </>
+    }
+  },
+  3: {
+    id: 3,
+    youtubeID: 'QAgCAy7XJiQ',
+    img: `/assets/img/video/NC03.jpg`,
+    title: 'Beach Wrestling. Mixed Tournament.  2010',
+    des: '',
+    description: function () {
+      return <>
+        <p>
+          Female wrestlers from Namazon participated in the tournament: <b>Tais</b> (5’7” / 132 lb) and <b>Natalia
+          Mysik</b> (5’11” / 154 lb). Their male opponent was Alex (5’9” / 150 lb). Specifically, the three fights
+          between
+          Natalia and Tais from <b>VIDEO {this.id}</b> are featured in the <b>WRESTLING</b> section of the website,
+          showcasing <b>FEMALE WRESTLING</b> matches.
+        </p>
+        <p>These matches followed <b>SUBMISSION</b> only rules with no specified time limits. This time, Tais wrestled
+          against a woman who was not only heavier but also physically stronger. The struggle was intense! Both women
+          fought aggressively, vying for advantageous positions and attempting effective pins or submission holds.
+          Particularly dramatic were the first two matches, which took place mainly on wet sand, with momentum shifting
+          back and forth.</p>
+        <ButtonGallery images={DIR03_3}/>
       </>
     }
   },
