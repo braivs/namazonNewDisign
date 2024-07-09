@@ -30,6 +30,7 @@
 // 20:
 // export const DIR_NEVSKAYA_ARENA_1 = require.context('/public/assets/img/videoGallery/20/mma-pervaya-nevskaya-arena-2012-1', false)
 // export const DIR_NEVSKAYA_ARENA_2 = require.context('/public/assets/img/videoGallery/21/mma-pervaya-nevskaya-arena-2012-2', false)
+export const DIR23 = require.context('/public/assets/img/videoGallery/23', false)
 export const DIR24 = require.context('/public/assets/img/videoGallery/nc24', false)
 export const DIR26 = require.context('/public/assets/img/videoGallery/nc26', false)
 export const DIR27 = require.context('/public/assets/img/videoGallery/nc27', false)
