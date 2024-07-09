@@ -7,6 +7,7 @@
 // export const DIR03_3 = require.context('/public/assets/img/videoGallery/03/ww', false) // Natalia Mysik vs Tais
 
 // 08: Beach Tournament. Submission Grappling. June, 2011
+export const DIR06 = require.context('/public/assets/img/videoGallery/06', false) // Elena Vasilyeva vs Tais
 export const DIR08_1 = require.context('/public/assets/img/videoGallery/08/1', false) // Elena Vasilyeva vs Tais
 export const DIR08_2 = require.context('/public/assets/img/videoGallery/08/plyazhnyj-turnir-2011-2', false) // Irina (Vlasta) vs Tais
 export const DIR08_3 = require.context('/public/assets/img/videoGallery/08/plyazhnyj-turnir-2011-3', false) // Elena Vasilyeva vs Irina (Vlasta)
@@ -30,7 +31,6 @@ export const DIR08_3 = require.context('/public/assets/img/videoGallery/08/plyaz
 // 20:
 // export const DIR_NEVSKAYA_ARENA_1 = require.context('/public/assets/img/videoGallery/20/mma-pervaya-nevskaya-arena-2012-1', false)
 // export const DIR_NEVSKAYA_ARENA_2 = require.context('/public/assets/img/videoGallery/21/mma-pervaya-nevskaya-arena-2012-2', false)
-export const DIR08 = require.context('/public/assets/img/videoGallery/08', false)
 export const DIR12 = require.context('/public/assets/img/videoGallery/12', false)
 export const DIR16 = require.context('/public/assets/img/videoGallery/16', false)
 export const DIR19 = require.context('/public/assets/img/videoGallery/19', false)

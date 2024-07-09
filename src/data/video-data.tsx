@@ -1,5 +1,6 @@
 import React from "react"
 import {
+  DIR06,
   DIR08_1, DIR08_2, DIR08_3,
   DIR12,
   DIR16,
@@ -541,6 +542,29 @@ export const video_data_src: Record<number, Video_data_src> = {
         <ButtonGallery images={DIR08_2} buttonName={COMPETITIONS_BUTTON_TEXT}/>
         <h5>Elena Vasilyeva vs Irina (Vlasta)</h5>
         <ButtonGallery images={DIR08_3} buttonName={COMPETITIONS_BUTTON_TEXT}/>
+      </>
+    }
+  },
+  6: {
+    id: 6,
+    youtubeID: '_7gBrg1KOYw',
+    img: `/assets/img/video/NC06.jpg`,
+    title: 'Maria Rylyova  vs Tais. Armwrestling and Wrestling',
+    des: '',
+    description: function () {
+      return <>
+        <p>
+          <b>Tais</b> (5’7” / 128 lb) is a multiple winner of Submission Grappling competitions organized by our
+          club. <b>Maria
+          Rylyova</b> (5’8” / 126 lb) is the winner of the Namazon Club Championship in Submission Grappling in 2010 and
+          a
+          master of sports in armwrestling.<br/>
+          The competition started with an arm wrestling contest using both arms (lying on the floor), which ended in a
+          draw. They then continued their rivalry on the wrestling mat, engaging in several rounds of submission
+          grappling.
+        </p>
+        <p>If you enjoy watching skillful wrestling between women who are evenly matched, you will love this film.</p>
+        <ButtonGallery images={DIR06}/>
       </>
     }
   },
