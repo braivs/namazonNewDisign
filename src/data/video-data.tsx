@@ -1,5 +1,7 @@
 import React from "react"
 import {
+  DIR01,
+  DIR02,
   DIR03_3,
   DIR04,
   DIR06,
@@ -597,7 +599,7 @@ export const video_data_src: Record<number, Video_data_src> = {
     id: 3,
     youtubeID: 'QAgCAy7XJiQ',
     img: `/assets/img/video/NC03.jpg`,
-    title: 'Beach Wrestling. Mixed Tournament.  2010',
+    title: 'Beach Wrestling. Mixed Tournament. 2010',
     des: '',
     description: function () {
       return <>
@@ -614,6 +616,49 @@ export const video_data_src: Record<number, Video_data_src> = {
           Particularly dramatic were the first two matches, which took place mainly on wet sand, with momentum shifting
           back and forth.</p>
         <ButtonGallery images={DIR03_3}/>
+      </>
+    }
+  },
+  2: {
+    id: 2,
+    youtubeID: 'Y_ixTzxIj44',
+    img: `/assets/img/video/NC01.jpg`,
+    title: 'Submission Grappling. Part 1. June, 2010',
+    des: '',
+    description: function () {
+      return <>
+        <p>
+          This is the continuation of movie 1, featuring all the matches from the second round.<br/>
+          Here, you can witness another aggressive fight between two favorites: <b>Tais</b> (5'7" / 128 lb) and <b>Maria
+          Rylyova</b> (5'7" / 126 lb). Particularly dramatic were the bouts involving <b>Nadezhda Akhmerova</b> (5'6"
+          / 128 lb). In her match against Tais, Nadezhda was knocked down but managed to continue the fight.<br/>
+          Against Maria, Nadezhda put up a fierce struggle, with the advantage shifting back and forth between the two
+          competitors.
+        </p>
+        <p>If you want to witness these intense matches and find out the final results, watch the film!</p>
+        <ButtonGallery images={DIR02}/>
+      </>
+    }
+  },
+  1: {
+    id: 1,
+    youtubeID: 'G7RTYfRO4B4',
+    img: `/assets/img/video/NC01.jpg`,
+    title: 'Submission Grappling. Part 2. June, 2010',
+    des: '',
+    description: function () {
+      return <>
+        <p>
+          In this tournament participated three fighters: <b>Tais</b> (5'7" / 128 lb), <b>Maria Rylyova</b> (5'7"
+          / 126 lb) and <b>Nadezhda Akhmerova</b> (5'6" / 128 lb). Tais has already won such competitions several
+          times. Maria has lately improved her skill level significantly, and you could expect that she would have
+          a chance to become a winner. Nadezhda is specialized in Kickboxing and ММА. This was her first
+          Submission Grappling tournament.
+        </p>
+        <p>The tournament was held in two rounds. As it was expected, the main struggle in the first round was
+          between Tais and Maria. The two girls showed very tough and uncompromising wrestling. This video
+          features all the three matches of the first round.</p>
+        <ButtonGallery images={DIR01}/>
       </>
     }
   },
