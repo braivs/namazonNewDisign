@@ -1,0 +1,1 @@
+export const COMPETITIONS_BUTTON_TEXT = 'See photos'

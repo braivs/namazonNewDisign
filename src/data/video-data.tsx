@@ -1,5 +1,8 @@
 import React from "react"
 import {
+  DIR08_1, DIR08_2, DIR08_3,
+  DIR12,
+  DIR16,
   DIR19,
   DIR23,
   DIR24,
@@ -28,6 +31,7 @@ import p2_OGrigorenko_vs_VVardugina from '/public/assets/img/videoGallery/nc44/2
 import p1_OGrigorenko_vs_VSmorodina from '/public/assets/img/videoGallery/nc44/1_O.Grigorenko_vs_V.Smorodina.jpg'
 import p2_OGrigorenko_vs_VSmorodina from '/public/assets/img/videoGallery/nc44/2_O.Grigorenko_vs_V.Smorodina.jpg'
 import {GalleryFromArray} from "@/common/GalleryFromArray"
+import {COMPETITIONS_BUTTON_TEXT} from "@/common/constants"
 
 export const video_data_src: Record<number, Video_data_src> = {
   51: {
@@ -462,7 +466,84 @@ export const video_data_src: Record<number, Video_data_src> = {
         <ButtonGallery images={DIR19}/>
       </>
     }
-  }
+  },
+  16: {
+    id: 16,
+    youtubeID: '-uNa-IIOOQk',
+    img: `/assets/img/video/NC16.jpg`,
+    title: 'Elena Vasilyeva vs Tais. Submission Grappling. 2011',
+    des: '',
+    description: function () {
+      return <>
+        <p>
+          <b>Elena Vasilyeva (Gladiatriks)</b> (5'6" / 135 lb) specializes in submission grappling, MMA, judo, and arm
+          wrestling. <b>Tais</b> (5'7" / 130 lb) also specializes in submission grappling and MMA. To win this
+          competition, the girls needed not only physical strength and wrestling skill but also a lot of endurance.
+          The fight consisted of 9 rounds, each with no time limit, lasting until there was a clear winner. Between each
+          round, the fighters had only 1 minute to rest.
+        </p>
+        <p>Each round was fought hard and aggressively, with the girls giving all their strength to win the battle.</p>
+        <p>
+          Which of the girls was more exhausted? And who was the winner in the end? You can find out by purchasing our
+          film.
+        </p>
+        <ButtonGallery images={DIR16}/>
+      </>
+    }
+  },
+  12: {
+    id: 12,
+    youtubeID: 'tB47JzDQ-mc',
+    img: `/assets/img/video/NC12.jpg`,
+    title: 'Submission Grappling. Tournament.  April,  2010',
+    des: '',
+    description: function () {
+      return <>
+        <p>
+          This film documents the Submission Grappling tournament held in April 2010, featuring <b>Natalia
+          Mysik</b> (5'11" / 154 lb), <b>Maria Rylyova</b> (5'8" / 126 lb), and <b>Valentina Perfilyeva</b> (5'8" / 132
+          lb). The
+          wrestlers competed across different weight categories, essentially making it a club competition based on total
+          weight.
+          Natalia, being the heaviest wrestler, was a favorite in the tournament, while Maria was favored for her
+          exceptional skill. Maria and Valentina engaged in a closely contested match, showcasing their comparable
+          abilities. Natalia demonstrated her superiority over Valentina in their bouts.
+        </p>
+        <p>However, to find out how the fights between our favorites ended, who won, and how, you will need to watch our
+          film.</p>
+        <ButtonGallery images={DIR12}/>
+      </>
+    }
+  },
+  8: {
+    id: 8,
+    youtubeID: '_7gBrg1KOYw',
+    img: `/assets/img/video/NC08.jpg`,
+    title: 'Women\'s Beach Tournament. Submission Grappling.  2011',
+    des: '',
+    description: function () {
+      return <>
+        <p>
+          This film documents the Submission Grappling tournament held in April 2010, featuring <b>Natalia
+          Mysik</b> (5'11" / 154 lb), <b>Maria Rylyova</b> (5'8" / 126 lb), and <b>Valentina Perfilyeva</b> (5'8" / 132
+          lb). The
+          wrestlers competed across different weight categories, essentially making it a club competition based on total
+          weight.
+          Natalia, being the heaviest wrestler, was a favorite in the tournament, while Maria was favored for her
+          exceptional skill. Maria and Valentina engaged in a closely contested match, showcasing their comparable
+          abilities. Natalia demonstrated her superiority over Valentina in their bouts.
+        </p>
+        <p>If you enjoy female wrestling not only indoors, but also under the open sky, this film is perfect for
+          you.</p>
+        <h5>Elena Vasilyeva vs Tais</h5>
+        <ButtonGallery images={DIR08_1} buttonName={COMPETITIONS_BUTTON_TEXT}/>
+        <h5>Irina (Vlasta) vs Tais</h5>
+        <ButtonGallery images={DIR08_2} buttonName={COMPETITIONS_BUTTON_TEXT}/>
+        <h5>Elena Vasilyeva vs Irina (Vlasta)</h5>
+        <ButtonGallery images={DIR08_3} buttonName={COMPETITIONS_BUTTON_TEXT}/>
+      </>
+    }
+  },
 }
 
 export const video_data: Record<number, Video_data> = Object.fromEntries(
