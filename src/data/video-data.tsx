@@ -1,5 +1,6 @@
 import React from "react"
 import {
+  DIR24,
   DIR26,
   DIR27,
   DIR29,
@@ -374,6 +375,32 @@ export const video_data_src: Record<number, Video_data_src> = {
           arduously for every single point. The weaker woman didn’t give up easily.
         </p>
         <ButtonGallery images={DIR26}/>
+      </>
+    }
+  },
+  24: {
+    id: 24,
+    youtubeID: 'iBBVt0JNN-Y',
+    img: `/assets/img/video/NC24.jpg`,
+    title: 'Lyudmila vs Tais Submission Grappling. 2011',
+    des: '',
+    description: function () {
+      return <>
+        <p>
+          <b>Lyudmila</b> (5’11” / 154 lb) is a strong sportswoman engaged in Muay Thai, but she is a newcomer in our
+          Club’s competitions, while <b>Tais</b> (5’7” / 130 lb) is a repeat winner in the competitions, specializing in
+          Submission Grappling and MMA.
+        </p>
+        <Row>
+        </Row>
+        <p>As you can see, Lyudmila is much heavier and taller than Tais. In this match, the girls wrestled three
+          rounds.
+          Lyudmila managed to place Tais in a very difficult position at the beginning of the first round.</p>
+        <p>
+          Watch the video to see what followed and how it all ended. If you like real mat wrestling between some of the
+          fittest and most beautiful women, then this video is for you.
+        </p>
+        <ButtonGallery images={DIR24}/>
       </>
     }
   }
