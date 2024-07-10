@@ -10,7 +10,7 @@ const VideoArea = () => {
           <div className="row">
             {video_data.map((item) => {
               return (
-                <div key={item.id} className="col-lg-4 col-md-6">
+                <div key={item.id} className="col-lg-3 col-md-6">
                   <div
                     className={`research-item ${item.color} mb-50 wow fadeInUp`}
                     data-wow-delay=".6s"
@@ -20,7 +20,7 @@ const VideoArea = () => {
                     </div>
                     <div className="research-item__content">
                       <span>{item.category} - NC{item.id}</span>
-                      <h4 className="research-item__title mb-20">
+                      <h4 className="research-item__title mb-20" style={{ fontSize: '19px' }}>
                         <Link href={`/video/nc${item.id}`}>{item.title}</Link>
                       </h4>
                       <p>{item.des}</p>
