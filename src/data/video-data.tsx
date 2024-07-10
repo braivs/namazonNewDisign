@@ -45,7 +45,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 51,
     youtubeID: 'zvHDGMyqyXc',
-    img: '/assets/img/video/NC51.jpg',
     title: 'Kara, Darya, Tais. 08.05.2012',
     des: 'This is a short video, but the price for the full version is not high. You can enjoy it)',
     description: () => (
@@ -58,7 +57,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 48,
     youtubeID: 'fb5NUMSB2qg',
-    img: `/assets/img/video/NC48.jpg`,
     title: 'Competitions Spring 2017',
     des: 'Armwrestling & submission/pin grappling. Girls: Grigorenko Oksana (Tais), Murtazalieva Kurmandi, Piven Alyona.',
     description: () => (
@@ -72,7 +70,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 47,
     youtubeID: 'fb5NUMSB2qg',
-    img: '/assets/img/video/NC47.jpg',
     title: "Women's strength competition at Maslenitsa 2017",
     des: "Women`s strength competition at Maslenitsa 16.02.2017. Armwrestling & submission grappling.",
     description: () => (
@@ -90,7 +87,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 46,
     youtubeID: 'lDgKoh-9KG4',
-    img: '/assets/img/video/NC46.jpg',
     title: 'Alena Kurmandi 30.03.2017 - 06.04.2017',
     des: '',
     description: () => {
@@ -102,7 +98,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 44,
     youtubeID: 'bc9RU5hP4k4',
-    img: '/assets/img/video/NC44.jpg',
     title: 'The Female Power Competition for the Maslenitsa Festival, 2016. Wrestling',
     des: 'You can read the report on the competitions, the main part of which was these fights...',
     description: () => {
@@ -132,7 +127,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 42,
     youtubeID: 'e8fADPtHm7w',
-    img: `/assets/img/video/NC42.jpg`,
     title: 'Submission grappling tournament. Part 2. October 2014',
     des: 'The second part of our full HD video featuring the submission grappling mini-tournament',
     description: function () {
@@ -170,7 +164,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 41,
     youtubeID: 'vE6uc_UXaWc',
-    img: `/assets/img/video/NC41.jpg`,
     title: 'Submission grappling tournament. Part 1. October 2014',
     des: 'The second part of our full HD video featuring the submission grappling mini-tournament',
     description: function () {
@@ -201,7 +194,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 37,
     youtubeID: 'oxAzT_GWSJA',
-    img: `/assets/img/video/NC37.jpg`,
     title: 'Tournament between beginners. Part 2. Final fights. 2014',
     des: 'This video is a continuation of the Video 36 that featured the preliminary fights.',
     description: function () {
@@ -232,7 +224,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 36,
     youtubeID: 'kkbQ7YEQ9nQ',
-    img: `/assets/img/video/NC36.jpg`,
     title: 'Tournament between beginners. Part 1. Preliminary fights. 2014',
     des: 'In this competition, five fighters participated: Christina (67.4 kg / 148.6 lb), Daria (66.5 kg / 146.6lb), Irina (70.7 kg / 155.9 lb), Nina (66.1 kg / 145.7 lb), and Victoria (70.7 kg / 155.9 lb).',
     description: function () {
@@ -266,7 +257,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 35,
     youtubeID: 'tYIIf2sPt4c',
-    img: `/assets/img/video/NC35.jpg`,
     title: 'Lidiya Oslopovskih vs Tais. Pins matches. 2013',
     des: 'Lovely young lady, Lidiya Oslopovskih (53 kg / 117 lbs), is a newcomer to the Namazon wrestling competitions.',
     description: function () {
@@ -296,7 +286,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 33,
     youtubeID: 'UdxhMrIku4A',
-    img: `/assets/img/video/NC33.jpg`,
     title: 'Crossfit tournament\nSubmission Grappling. 2013',
     des: ' This video features two submission grappling matches held as the final part of a Crossfit tournament organized by the St. Petersburg Athletic Center in cooperation with the Namazon Club.',
     description: function () {
@@ -323,7 +312,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 29,
     youtubeID: 'HaMtoel8Tdw',
-    img: `/assets/img/video/NC29.jpg`,
     title: 'Elena Vasilyeva vs Tais. Submission Grappling. 2013',
     des: 'Elena (5\'7" / 157 lb) is a strong and ambitious young woman. She had fought Tais (5\'7" / 130 lb) many times two years ago...',
     description: function () {
@@ -346,7 +334,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 27,
     youtubeID: 'HaMtoel8Tdw',
-    img: `/assets/img/video/NC27.jpg`,
     title: 'Female Beach Wrestling Part 2. June, 2011',
     des: 'This is a continuation of the multi-round sand-wrestling contest between Tais (5"7" / 130 lb) and Elena Vasilyeva (5"6" / 135 lb).',
     description: function () {
@@ -372,7 +359,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 26,
     youtubeID: 'iBBVt0JNN-Y',
-    img: `/assets/img/video/NC26.jpg`,
     title: 'Female Beach Wrestling. Part 1. June, 2011',
     des: 'This video features a sand-wrestling contest between two ambitious women, Tais (5"7" / 130 lb) and Elena Vasilyeva (5"6" / 134 lb).',
     description: function () {
@@ -395,7 +381,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 24,
     youtubeID: 'iBBVt0JNN-Y',
-    img: `/assets/img/video/NC24.jpg`,
     title: 'Lyudmila vs Tais Submission Grappling. 2011',
     des: '',
     description: function () {
@@ -419,7 +404,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 23,
     youtubeID: 'fbESZrys6fc',
-    img: `/assets/img/video/NC23.jpg`,
     title: 'Irina (Vlasta) vs Tais. Submission Grappling. 2011',
     des: '',
     description: function () {
@@ -445,7 +429,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 19,
     youtubeID: 'lJwlQIrfGww',
-    img: `/assets/img/video/NC19.jpg`,
     title: 'Varvara Akulova vs Tais. Submission Grappling. 2012',
     des: '',
     description: function () {
@@ -478,7 +461,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 16,
     youtubeID: '-uNa-IIOOQk',
-    img: `/assets/img/video/NC16.jpg`,
     title: 'Elena Vasilyeva vs Tais. Submission Grappling. 2011',
     des: '',
     description: function () {
@@ -502,7 +484,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 12,
     youtubeID: 'tB47JzDQ-mc',
-    img: `/assets/img/video/NC12.jpg`,
     title: 'Submission Grappling. Tournament.  April,  2010',
     des: '',
     description: function () {
@@ -526,7 +507,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 8,
     youtubeID: '_7gBrg1KOYw',
-    img: `/assets/img/video/NC08.jpg`,
     title: 'Women\'s Beach Tournament. Submission Grappling.  2011',
     des: '',
     description: function () {
@@ -555,7 +535,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 6,
     youtubeID: '_7gBrg1KOYw',
-    img: `/assets/img/video/NC06.jpg`,
     title: 'Maria Rylyova  vs Tais. Armwrestling and Wrestling',
     des: '',
     description: function () {
@@ -578,7 +557,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 4,
     youtubeID: 'QAgCAy7XJiQ',
-    img: `/assets/img/video/NC04.jpg`,
     title: 'Submission Grappling. Christmas Cup  2011',
     des: '',
     description: function () {
@@ -601,7 +579,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 3,
     youtubeID: 'QAgCAy7XJiQ',
-    img: `/assets/img/video/NC03.jpg`,
     title: 'Beach Wrestling. Mixed Tournament. 2010',
     des: '',
     description: function () {
@@ -625,7 +602,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 2,
     youtubeID: 'Y_ixTzxIj44',
-    img: `/assets/img/video/NC02.jpg`,
     title: 'Submission Grappling. Part 1. June, 2010',
     des: '',
     description: function () {
@@ -646,7 +622,6 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 1,
     youtubeID: 'G7RTYfRO4B4',
-    img: `/assets/img/video/NC01.jpg`,
     title: 'Submission Grappling. Part 2. June, 2010',
     des: '',
     description: function () {
@@ -668,11 +643,15 @@ export const video_data_src: Array<Video_data_src> = [
 ]
 
 // Add color: '' & category: 'Submission wrestling', to each object in the array
-export const video_data: Array<Video_data> = video_data_src.map(video => ({
-  ...video,
-  color: '',
-  category: 'Submission wrestling',
-}));
+export const video_data: Array<Video_data> = video_data_src.map(video => {
+  const formattedId = video.id < 10 ? `0${video.id}` : video.id;
+  return {
+    ...video,
+    color: '',
+    category: 'Submission wrestling',
+    img: `/assets/img/video/NC${formattedId}.jpg`
+  };
+});
 
 export const video_data_blank: Video_data = {
   id: 0,
@@ -690,7 +669,6 @@ export const video_data_blank: Video_data = {
 type Video_data_src = {
   id: number
   youtubeID: string
-  img: string
   title: string
   des: string,
   description: () => React.ReactNode
