@@ -88,7 +88,6 @@ export const video_data_src: Array<Video_data_src> = [
     id: 46,
     youtubeID: 'lDgKoh-9KG4',
     title: 'Alena Kurmandi 30.03.2017 - 06.04.2017',
-    des: '',
     description: () => {
       return <>
         <ButtonGallery images={DIR_NC46}/>
@@ -382,7 +381,6 @@ export const video_data_src: Array<Video_data_src> = [
     id: 24,
     youtubeID: 'iBBVt0JNN-Y',
     title: 'Lyudmila vs Tais Submission Grappling. 2011',
-    des: '',
     description: function () {
       return <>
         <p>
@@ -405,7 +403,6 @@ export const video_data_src: Array<Video_data_src> = [
     id: 23,
     youtubeID: 'fbESZrys6fc',
     title: 'Irina (Vlasta) vs Tais. Submission Grappling. 2011',
-    des: '',
     description: function () {
       return <>
         <p>
@@ -430,7 +427,6 @@ export const video_data_src: Array<Video_data_src> = [
     id: 19,
     youtubeID: 'lJwlQIrfGww',
     title: 'Varvara Akulova vs Tais. Submission Grappling. 2012',
-    des: '',
     description: function () {
       return <>
         <p>
@@ -462,7 +458,6 @@ export const video_data_src: Array<Video_data_src> = [
     id: 16,
     youtubeID: '-uNa-IIOOQk',
     title: 'Elena Vasilyeva vs Tais. Submission Grappling. 2011',
-    des: '',
     description: function () {
       return <>
         <p>
@@ -485,7 +480,6 @@ export const video_data_src: Array<Video_data_src> = [
     id: 12,
     youtubeID: 'tB47JzDQ-mc',
     title: 'Submission Grappling. Tournament.  April,  2010',
-    des: '',
     description: function () {
       return <>
         <p>
@@ -508,7 +502,6 @@ export const video_data_src: Array<Video_data_src> = [
     id: 8,
     youtubeID: '_7gBrg1KOYw',
     title: 'Women\'s Beach Tournament. Submission Grappling.  2011',
-    des: '',
     description: function () {
       return <>
         <p>
@@ -536,7 +529,6 @@ export const video_data_src: Array<Video_data_src> = [
     id: 6,
     youtubeID: '_7gBrg1KOYw',
     title: 'Maria Rylyova  vs Tais. Armwrestling and Wrestling',
-    des: '',
     description: function () {
       return <>
         <p>
@@ -558,7 +550,6 @@ export const video_data_src: Array<Video_data_src> = [
     id: 4,
     youtubeID: 'QAgCAy7XJiQ',
     title: 'Submission Grappling. Christmas Cup  2011',
-    des: '',
     description: function () {
       return <>
         <p>
@@ -580,7 +571,6 @@ export const video_data_src: Array<Video_data_src> = [
     id: 3,
     youtubeID: 'QAgCAy7XJiQ',
     title: 'Beach Wrestling. Mixed Tournament. 2010',
-    des: '',
     description: function () {
       return <>
         <p>
@@ -603,7 +593,6 @@ export const video_data_src: Array<Video_data_src> = [
     id: 2,
     youtubeID: 'Y_ixTzxIj44',
     title: 'Submission Grappling. Part 1. June, 2010',
-    des: '',
     description: function () {
       return <>
         <p>
@@ -623,7 +612,6 @@ export const video_data_src: Array<Video_data_src> = [
     id: 1,
     youtubeID: 'G7RTYfRO4B4',
     title: 'Submission Grappling. Part 2. June, 2010',
-    des: '',
     description: function () {
       return <>
         <p>
@@ -649,7 +637,8 @@ export const video_data: Array<Video_data> = video_data_src.map(video => {
     ...video,
     color: '',
     category: 'Submission wrestling',
-    img: `/assets/img/video/NC${formattedId}.jpg`
+    img: `/assets/img/video/NC${formattedId}.jpg`,
+    des: video.des ?? ''
   };
 });
 
@@ -670,7 +659,7 @@ type Video_data_src = {
   id: number
   youtubeID: string
   title: string
-  des: string,
+  des?: string,
   description: () => React.ReactNode
 }
 
