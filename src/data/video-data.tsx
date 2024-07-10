@@ -625,7 +625,7 @@ export const video_data_src: Array<Video_data_src> = [
   {
     id: 2,
     youtubeID: 'Y_ixTzxIj44',
-    img: `/assets/img/video/NC01.jpg`,
+    img: `/assets/img/video/NC02.jpg`,
     title: 'Submission Grappling. Part 1. June, 2010',
     des: '',
     description: function () {

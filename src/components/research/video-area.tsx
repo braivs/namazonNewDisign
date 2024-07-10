@@ -3,16 +3,12 @@ import React from "react"
 import {video_data} from "@/data/video-data"
 
 const VideoArea = () => {
-  // Convert object keys to an array of numbers
-  const videoIds = Object.keys(video_data).map(Number).reverse();
-
   return (
     <>
       <section className="research-area pt-130 pb-130">
         <div className="container">
           <div className="row">
-            {videoIds.map((id) => {
-              const item = video_data[id];
+            {video_data.map((item) => {
               return (
                 <div key={item.id} className="col-lg-4 col-md-6">
                   <div
