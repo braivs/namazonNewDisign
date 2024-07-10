@@ -5,43 +5,43 @@ import VideoData from "@/components/video-details/video-data/video-data"
 import React from "react"
 
 function VideoComponent() {
-  const router = useRouter();
-  const { videoId } = router.query;
+  const router = useRouter()
+  const {videoId} = router.query
 
-  const videoData: Video_data = videoId ? video_data[Number((videoId as string).substring(2))] : video_data_blank
+  const videoData: Video_data | undefined = videoId ? video_data.find((item) => item.id === Number((videoId as string)?.substring(2))) : video_data_blank
   const youtubeID = videoData?.youtubeID
 
   return (
     <VideoDetails>
-      <VideoData videoData={videoData} youtubeID={youtubeID} />
+      <VideoData videoData={videoData} youtubeID={youtubeID}/>
     </VideoDetails>
   )
 }
 
 export const getStaticPaths = async () => {
-  const paths = Object.keys(video_data).map(id => ({
-    params: { videoId: 'nc' + id }
-  }));
+  const paths = video_data.map(video => ({
+    params: {videoId: 'nc' + video.id.toString()}
+  }))
 
   return {
     paths,
     fallback: false
     // If the page with the videoId is not found, returns 404 page
-  };
-};
+  }
+}
 
-export async function getStaticProps({ params }: Params) {
-  const { videoId } = params;
+export async function getStaticProps({params}: Params) {
+  const {videoId} = params
 
   const Video = {
     id: videoId,
-  };
+  }
 
   return {
     props: {
       Video,
     },
-  };
+  }
 }
 
 type Params = {

@@ -5,7 +5,9 @@ import {
   DIR03_3,
   DIR04,
   DIR06,
-  DIR08_1, DIR08_2, DIR08_3,
+  DIR08_1,
+  DIR08_2,
+  DIR08_3,
   DIR12,
   DIR16,
   DIR19,
@@ -25,6 +27,7 @@ import {
   DIR_NC47,
   DIR_TAIS_YULIA
 } from "@/common/ImageContexts"
+
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
 import Link from "next/link"
 import {Col, Row} from "react-bootstrap"
@@ -38,8 +41,8 @@ import p2_OGrigorenko_vs_VSmorodina from '/public/assets/img/videoGallery/nc44/2
 import {GalleryFromArray} from "@/common/GalleryFromArray"
 import {COMPETITIONS_BUTTON_TEXT} from "@/common/constants"
 
-export const video_data_src: Record<number, Video_data_src> = {
-  51: {
+export const video_data_src: Array<Video_data_src> = [
+  {
     id: 51,
     youtubeID: 'zvHDGMyqyXc',
     img: '/assets/img/video/NC51.jpg',
@@ -52,10 +55,10 @@ export const video_data_src: Record<number, Video_data_src> = {
       </p>
     )
   },
-  48: {
+  {
     id: 48,
     youtubeID: 'fb5NUMSB2qg',
-    img: '/assets/img/video/NC48.jpg',
+    img: `/assets/img/video/NC48.jpg`,
     title: 'Competitions Spring 2017',
     des: 'Armwrestling & submission/pin grappling. Girls: Grigorenko Oksana (Tais), Murtazalieva Kurmandi, Piven Alyona.',
     description: () => (
@@ -66,7 +69,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </p>
     )
   },
-  47: {
+  {
     id: 47,
     youtubeID: 'fb5NUMSB2qg',
     img: '/assets/img/video/NC47.jpg',
@@ -84,7 +87,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     )
   },
-  46: {
+  {
     id: 46,
     youtubeID: 'lDgKoh-9KG4',
     img: '/assets/img/video/NC46.jpg',
@@ -96,7 +99,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  44: {
+  {
     id: 44,
     youtubeID: 'bc9RU5hP4k4',
     img: '/assets/img/video/NC44.jpg',
@@ -126,7 +129,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  42: {
+  {
     id: 42,
     youtubeID: 'e8fADPtHm7w',
     img: `/assets/img/video/NC42.jpg`,
@@ -164,7 +167,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  41: {
+  {
     id: 41,
     youtubeID: 'vE6uc_UXaWc',
     img: `/assets/img/video/NC41.jpg`,
@@ -195,7 +198,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  37: {
+  {
     id: 37,
     youtubeID: 'oxAzT_GWSJA',
     img: `/assets/img/video/NC37.jpg`,
@@ -226,7 +229,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  36: {
+  {
     id: 36,
     youtubeID: 'kkbQ7YEQ9nQ',
     img: `/assets/img/video/NC36.jpg`,
@@ -260,7 +263,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  35: {
+  {
     id: 35,
     youtubeID: 'tYIIf2sPt4c',
     img: `/assets/img/video/NC35.jpg`,
@@ -290,7 +293,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  33: {
+  {
     id: 33,
     youtubeID: 'UdxhMrIku4A',
     img: `/assets/img/video/NC33.jpg`,
@@ -317,7 +320,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  29: {
+  {
     id: 29,
     youtubeID: 'HaMtoel8Tdw',
     img: `/assets/img/video/NC29.jpg`,
@@ -340,7 +343,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  27: {
+  {
     id: 27,
     youtubeID: 'HaMtoel8Tdw',
     img: `/assets/img/video/NC27.jpg`,
@@ -366,7 +369,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  26: {
+  {
     id: 26,
     youtubeID: 'iBBVt0JNN-Y',
     img: `/assets/img/video/NC26.jpg`,
@@ -389,7 +392,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  24: {
+  {
     id: 24,
     youtubeID: 'iBBVt0JNN-Y',
     img: `/assets/img/video/NC24.jpg`,
@@ -413,7 +416,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  23: {
+  {
     id: 23,
     youtubeID: 'fbESZrys6fc',
     img: `/assets/img/video/NC23.jpg`,
@@ -439,7 +442,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  19: {
+  {
     id: 19,
     youtubeID: 'lJwlQIrfGww',
     img: `/assets/img/video/NC19.jpg`,
@@ -472,7 +475,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  16: {
+  {
     id: 16,
     youtubeID: '-uNa-IIOOQk',
     img: `/assets/img/video/NC16.jpg`,
@@ -496,7 +499,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  12: {
+  {
     id: 12,
     youtubeID: 'tB47JzDQ-mc',
     img: `/assets/img/video/NC12.jpg`,
@@ -520,7 +523,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  8: {
+  {
     id: 8,
     youtubeID: '_7gBrg1KOYw',
     img: `/assets/img/video/NC08.jpg`,
@@ -549,7 +552,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  6: {
+  {
     id: 6,
     youtubeID: '_7gBrg1KOYw',
     img: `/assets/img/video/NC06.jpg`,
@@ -572,7 +575,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  4: {
+  {
     id: 4,
     youtubeID: 'QAgCAy7XJiQ',
     img: `/assets/img/video/NC04.jpg`,
@@ -595,7 +598,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  3: {
+  {
     id: 3,
     youtubeID: 'QAgCAy7XJiQ',
     img: `/assets/img/video/NC03.jpg`,
@@ -619,7 +622,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  2: {
+  {
     id: 2,
     youtubeID: 'Y_ixTzxIj44',
     img: `/assets/img/video/NC01.jpg`,
@@ -640,7 +643,7 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-  1: {
+  {
     id: 1,
     youtubeID: 'G7RTYfRO4B4',
     img: `/assets/img/video/NC01.jpg`,
@@ -662,20 +665,16 @@ export const video_data_src: Record<number, Video_data_src> = {
       </>
     }
   },
-}
+]
 
-export const video_data: Record<number, Video_data> = Object.fromEntries(
-  Object.entries(video_data_src).map(([key, video]) => [
-    Number(key),
-    {
-      ...video,
-      color: '',
-      category: 'Submission wrestling',
-    }
-  ])
-)
+// Add color: '' & category: 'Submission wrestling', to each object in the array
+export const video_data: Array<Video_data> = video_data_src.map(video => ({
+  ...video,
+  color: '',
+  category: 'Submission wrestling',
+}));
 
-export const video_data_blank = {
+export const video_data_blank: Video_data = {
   id: 0,
   youtubeID: '',
   color: '',
