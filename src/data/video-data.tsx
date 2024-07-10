@@ -7,7 +7,7 @@ import {
   DIR06,
   DIR08_1,
   DIR08_2,
-  DIR08_3,
+  DIR08_3, DIR09_1, DIR09_2, DIR09_3,
   DIR12,
   DIR16,
   DIR19,
@@ -24,7 +24,7 @@ import {
   DIR_LIDA_VIKA,
   DIR_NC42,
   DIR_NC46,
-  DIR_NC47,
+  DIR_NC47, DIR_NEVSKAYA_ARENA_2,
   DIR_TAIS_YULIA
 } from "@/common/ImageContexts"
 
@@ -630,17 +630,64 @@ export const video_data_src: Array<Video_data_src> = [
   },
 ]
 
+const video_data_src_mma: Array<Video_data_src> = [
+  {
+    id: 21,
+    youtubeID: 'WO77phk8NWk',
+    title: 'MMA. Darya Balina vs Olga. July, 2012',
+    description: () => (
+      <>
+        <p>This is the second MMA fight at the <b>"First Nevsky Arena Tournament"</b>. <b>Darya Balina</b> (5'4" /
+          124 lb) and <b>Olga</b> (5'7" / 139 lb) are young participants who don't yet have enough experience in
+          MMA fights, but that doesn't diminish the interest or entertainment value of their bout; their punches are
+          strong, and the struggle is tough.
+        </p>
+        <p>The fighters engage in three full rounds, with neither willing to concede defeat.</p>
+        <p>
+          If you prefer fights with minimal striking, this match may not fully satisfy you. However, if you appreciate
+          genuine, intense, and uncompromising MMA bouts, this fight will surely captivate you.
+        </p>
+        <ButtonGallery images={DIR_NEVSKAYA_ARENA_2} buttonName={COMPETITIONS_BUTTON_TEXT}/>
+      </>
+    )
+  },
+  {
+    id: 9,
+    youtubeID: '8NnbhTgPKXE',
+    title: 'MMA tournament “Christmas Cup 2012',
+    description: () => (
+      <>
+        <p>
+          Three fighters participated in this tournament: <b>Elena Vasilyeva</b> (St. Petersburg, 5’6” / 132 lb),
+          <b>Kara Teller</b>, a newcomer from Namazon Club (Moscow, 5’7” / 119 lb), and <b>Tais</b> (St. Petersburg,
+          5’7” / 130 lb). The tournament was conducted in a single round format, with each fighter having two matches.
+          Each match consisted of three 4-minute rounds with a 1-minute rest period between rounds.
+        </p>
+        <p>The fighters competed fiercely and uncompromisingly in all three matches.</p>
+        <p>If you enjoy competitive fights involving strikes with arms and legs, as well as wrestling with armlocks and
+          chokes, then you will definitely enjoy our film.</p>
+        <h5><u>First fight:</u> Elena Vasilyeva vs Kara Teller</h5>
+        <ButtonGallery images={DIR09_1} buttonName={COMPETITIONS_BUTTON_TEXT}/>
+        <h5><u>Second fight:</u> Kara Teller vs Tais</h5>
+        <ButtonGallery images={DIR09_2} buttonName={COMPETITIONS_BUTTON_TEXT}/>
+        <h5><u>Third fight:</u> Elena Vasilyeva vs Tais</h5>
+        <ButtonGallery images={DIR09_3} buttonName={COMPETITIONS_BUTTON_TEXT}/>
+      </>
+    )
+  },
+]
+
 // Add color: '' & category: 'Submission wrestling', to each object in the array
-export const video_data: Array<Video_data> = video_data_src.map(video => {
-  const formattedId = video.id < 10 ? `0${video.id}` : video.id;
+export const video_data: Array<Video_data> = video_data_src_mma.map(video => {
+  const formattedId = video.id < 10 ? `0${video.id}` : video.id
   return {
     ...video,
     color: '',
     category: 'Submission wrestling',
     img: `/assets/img/video/NC${formattedId}.jpg`,
     des: video.des ?? ''
-  };
-});
+  }
+})
 
 export const video_data_blank: Video_data = {
   id: 0,
