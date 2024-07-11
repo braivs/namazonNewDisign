@@ -28,8 +28,8 @@ export const DIR09_3 = require.context('/public/assets/img/videoGallery/09/mma-r
 // export const DIR17_2 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-2', false)
 // export const DIR17_3 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-3', false)
 // 18 MMA fights in the May holidays.
-// export const DIR_MMA_SPORT_HOLIDAY_1 = require.context('/public/assets/img/videoGallery/18/mma-sportivnyj-prazdnik-2012-1', false)
-// export const DIR_MMA_SPORT_HOLIDAY_2 = require.context('/public/assets/img/videoGallery/18/mma-sportivnyj-prazdnik-2012-2', false)
+export const DIR_MMA_SPORT_HOLIDAY_1 = require.context('/public/assets/img/videoGallery/18/mma-sportivnyj-prazdnik-2012-1', false)
+export const DIR_MMA_SPORT_HOLIDAY_2 = require.context('/public/assets/img/videoGallery/18/mma-sportivnyj-prazdnik-2012-2', false)
 // 20:
 export const DIR_NEVSKAYA_ARENA_1 = require.context('/public/assets/img/videoGallery/20/mma-pervaya-nevskaya-arena-2012-1', false)
 export const DIR_NEVSKAYA_ARENA_2 = require.context('/public/assets/img/videoGallery/21/mma-pervaya-nevskaya-arena-2012-2', false)

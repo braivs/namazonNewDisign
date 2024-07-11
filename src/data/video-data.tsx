@@ -21,7 +21,7 @@ import {
   DIR37,
   DIR41_KZ,
   DIR41_VZ,
-  DIR_LIDA_VIKA,
+  DIR_LIDA_VIKA, DIR_MMA_SPORT_HOLIDAY_1, DIR_MMA_SPORT_HOLIDAY_2,
   DIR_NC42,
   DIR_NC46,
   DIR_NC47, DIR_NEVSKAYA_ARENA_1, DIR_NEVSKAYA_ARENA_2,
@@ -667,6 +667,29 @@ const video_data_src_mma: Array<Video_data_src> = [
         <p>If you enjoy intense and uncompromising fights between athletic and charismatic women, this bout is sure to
           captivate you.</p>
         <ButtonGallery images={DIR_NEVSKAYA_ARENA_1} buttonName={COMPETITIONS_BUTTON_TEXT}/>
+      </>
+    )
+  },
+  {
+    id: 18,
+    youtubeID: 'fYEVVlzkUsA',
+    title: 'MMA. Kara Teller vs Darya. Balina and Tais.  May, 2012',
+    description: () => (
+      <>
+        <p>
+          The first match is between the experienced fighter <b>Kara Teller</b> (Moscow, 5’7” / 119 lb) and the
+          newcomer <b>Darya Balina</b> (St. Petersburg, 5’4” / 124 lb). Almost the entire fight is contested standing
+          up,
+          where Kara clearly dominates. Despite this, Darya proves to be very strong and holds her own for nearly two
+          rounds.
+        </p>
+        <p>The second fight (Kara Teller vs Tais), unlike the first, primarily takes place on the mat. Over two rounds,
+          Tais strives to secure victory with a chokehold or submission lock, occasionally enduring strikes from her
+          opponent. The final outcome is quite surprising.</p>
+        <h5><u>MMA:</u> Darya Balina vs Kara Teller</h5>
+        <ButtonGallery images={DIR_MMA_SPORT_HOLIDAY_1}/>
+        <h5><u>MMA:</u> Kara Teller vs Tais</h5>
+        <ButtonGallery images={DIR_MMA_SPORT_HOLIDAY_2}/>
       </>
     )
   },
