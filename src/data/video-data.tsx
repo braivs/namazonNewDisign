@@ -24,7 +24,7 @@ import {
   DIR_LIDA_VIKA,
   DIR_NC42,
   DIR_NC46,
-  DIR_NC47, DIR_NEVSKAYA_ARENA_2,
+  DIR_NC47, DIR_NEVSKAYA_ARENA_1, DIR_NEVSKAYA_ARENA_2,
   DIR_TAIS_YULIA
 } from "@/common/ImageContexts"
 
@@ -648,6 +648,25 @@ const video_data_src_mma: Array<Video_data_src> = [
           genuine, intense, and uncompromising MMA bouts, this fight will surely captivate you.
         </p>
         <ButtonGallery images={DIR_NEVSKAYA_ARENA_2} buttonName={COMPETITIONS_BUTTON_TEXT}/>
+      </>
+    )
+  },
+  {
+    id: 20,
+    youtubeID: 'qo9DmpAXT5w',
+    title: 'MMA. Kara Teller vs Darya. Balina and Tais.  May, 2012',
+    description: () => (
+      <>
+        <p><b>Yulia Fedutenko</b> (5'8" / 130 lb) - from the mixed martial arts Club "Tibron" in St. Petersburg. <b>Kara
+          Teller</b> (5'7" / 123 lb) - representing the Vityaz Club in Moscow. This bout took place at the "<b>First
+          Nevsky Arena Tournament</b>". Both fighters are technically skilled, showcasing a blend of hard punches,
+          kicks,
+          and close-quarter power struggles.</p>
+        <p>The match extends over three full rounds. Yulia demonstrates more confidence in stand-up fighting, while Kara
+          focuses on ground techniques to secure victory.</p>
+        <p>If you enjoy intense and uncompromising fights between athletic and charismatic women, this bout is sure to
+          captivate you.</p>
+        <ButtonGallery images={DIR_NEVSKAYA_ARENA_1} buttonName={COMPETITIONS_BUTTON_TEXT}/>
       </>
     )
   },
