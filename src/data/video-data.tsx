@@ -206,6 +206,11 @@ const video_data_src_mix: Array<Video_data_src> = [
     youtubeID: 'sddvDSjafEY',
     title: 'Beach Wrestling. Mixed Tournament. 2010'
   },
+  {
+    id: 5,
+    youtubeID: 'hGAZo2Ffrz4',
+    title: 'Villian  vs  Tais. Mixed Wrestling. 2011'
+  },
 ]
 
 // Add data to video_data_src

@@ -21,12 +21,14 @@ import {NC1Desc} from "@/data/data-description/NC1Desc"
 import {NC21Desc} from "@/data/data-description/NC21Desc"
 import {NC20Desc} from "@/data/data-description/NC20Desc"
 import {NC13Desc} from "@/data/data-description/NC13Desc"
+import {NC5Desc} from "@/data/data-description/NC5Desc"
 
 export const VIDEO_MAP: Record<number, FC> = {
     1: NC1Desc,
     2: NC2Desc,
     3: NC3Desc,
     4: NC4Desc,
+    5: NC5Desc,
     6: NC6Desc,
     8: NC8Desc,
     13: NC13Desc,
