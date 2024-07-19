@@ -9,10 +9,14 @@ const NavMenu = ({ num = false }) => {
   return (
     <>
       <ul>
-        {menu_data.map((menu, index) =>
-          menu.has_dropdown ? (
-            <li key={menu.id} className={`has-dropdown ${asPath === menu.link ? 'active' : ''}`}>
-              <Link className={`${asPath === menu.link ? 'active' : ''}`} href={menu.link}>
+        {menu_data.map((menu, index) => {
+          // Determine if the current path matches the menu link or any of its sub-menu links
+          const isActive = asPath === menu.link ||
+            (menu.sub_menus && menu.sub_menus.some(sub => asPath === sub.link));
+
+          return (
+            <li key={menu.id} className={`has-dropdown ${isActive ? 'active' : ''}`}>
+              <Link className={`${isActive ? 'active' : ''}`} href={menu.link}>
                 {num && index <= 9
                   ? `0${index + 1 + "."}`
                   : num && index + 1 + "."}
@@ -21,8 +25,8 @@ const NavMenu = ({ num = false }) => {
               {menu.has_dropdown && (
                 <ul className="sub-menu">
                   {menu.sub_menus?.map((sub_m, i) => (
-                    <li key={i}>
-                      <Link className={`${asPath === sub_m.link ? 'active' : ''}`} href={sub_m.link}>
+                    <li key={i} className={asPath === sub_m.link ? 'active' : ''}>
+                      <Link className={asPath === sub_m.link ? 'active' : ''} href={sub_m.link}>
                         {sub_m.title}
                       </Link>
                     </li>
@@ -30,17 +34,8 @@ const NavMenu = ({ num = false }) => {
                 </ul>
               )}
             </li>
-          ) : (
-            <li key={menu.id} className={asPath === menu.link ? 'active' : ''}>
-              <Link className={asPath === menu.link ? 'active' : ''} href={menu.link}>
-                {num && index <= 9
-                  ? `0${index + 1 + "."}`
-                  : num && index + 1 + "."}
-                {menu.title}
-              </Link>
-            </li>
-          )
-        )}
+          );
+        })}
       </ul>
     </>
   );
