@@ -1,7 +1,7 @@
 import Link from "next/link"
 import React from "react"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR_NC42} from "@/common/ImageContexts"
+import {DIR_NC42} from "@/common/constants/ImageContexts"
 
 export const NC42Desc = ({id}: Props)  => {
   return (

@@ -1,6 +1,6 @@
 import React from "react"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR06} from "@/common/ImageContexts"
+import {DIR06} from "@/common/constants/ImageContexts"
 
 export const NC6Desc = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR41_KZ, DIR41_VZ} from "@/common/ImageContexts"
+import {DIR41_KZ, DIR41_VZ} from "@/common/constants/ImageContexts"
 
-export const NC41Desc = ({id}: Props)  => {
+export const NC41Desc = ()  => {
   return (
     <>
       <p>Our HD video featuring the submission grappling mini-tournament that was held on October 13, 2014, has been
@@ -27,8 +27,4 @@ export const NC41Desc = ({id}: Props)  => {
       <ButtonGallery images={DIR41_VZ}/>
     </>
   )
-}
-
-type Props = {
-  id?: number
 }

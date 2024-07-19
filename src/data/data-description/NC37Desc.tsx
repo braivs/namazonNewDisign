@@ -2,9 +2,9 @@ import Link from "next/link"
 import {Row} from "react-bootstrap"
 import React from "react"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR37} from "@/common/ImageContexts"
+import {DIR37} from "@/common/constants/ImageContexts"
 
-export const NC37Desc = ({id}: Props)  => {
+export const NC37Desc = ()  => {
   return (
     <>
       <p>Weight class: 145 to 160 lb. May, 2014</p>

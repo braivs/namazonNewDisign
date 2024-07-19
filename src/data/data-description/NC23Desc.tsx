@@ -1,6 +1,6 @@
 import React from "react"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR23} from "@/common/ImageContexts"
+import {DIR23} from "@/common/constants/ImageContexts"
 import {Row} from "react-bootstrap"
 
 export const NC23Desc = () => {

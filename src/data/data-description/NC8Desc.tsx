@@ -1,6 +1,6 @@
 import React from "react"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR08_1, DIR08_2, DIR08_3} from "@/common/ImageContexts"
+import {DIR08_1, DIR08_2, DIR08_3} from "@/common/constants/ImageContexts"
 import {COMPETITIONS_BUTTON_TEXT} from "@/common/constants"
 
 export const NC8Desc = () => {

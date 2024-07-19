@@ -1,25 +1,15 @@
 import React from "react"
 import {
-  DIR01,
-  DIR02,
-  DIR03_3,
-  DIR04,
-  DIR06,
-  DIR08_1,
-  DIR08_2,
-  DIR08_3,
   DIR09_1,
   DIR09_2,
   DIR09_3,
-  DIR12,
-  DIR16,
   DIR_MMA_SPORT_HOLIDAY_1,
   DIR_MMA_SPORT_HOLIDAY_2,
   DIR_NC46,
   DIR_NC47,
   DIR_NEVSKAYA_ARENA_1,
   DIR_NEVSKAYA_ARENA_2
-} from "@/common/ImageContexts"
+} from "@/common/constants/ImageContexts"
 
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
 import {COMPETITIONS_BUTTON_TEXT} from "@/common/constants"

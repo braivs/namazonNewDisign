@@ -1,6 +1,6 @@
 import React from "react"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR27, DIR29, DIR_LIDA_VIKA, DIR_TAIS_YULIA} from "@/common/ImageContexts"
+import {DIR27} from "@/common/constants/ImageContexts"
 
 export const NC27Desc = () => {
   return (

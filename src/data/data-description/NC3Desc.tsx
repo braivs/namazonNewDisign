@@ -1,6 +1,6 @@
 import React from "react"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR03_3} from "@/common/ImageContexts"
+import {DIR03_3} from "@/common/constants/ImageContexts"
 
 export const NC3Desc = ({id}: Desk) => {
   return (
