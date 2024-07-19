@@ -1,18 +1,7 @@
 import React from "react"
-import {
-  DIR09_1,
-  DIR09_2,
-  DIR09_3,
-  DIR_MMA_SPORT_HOLIDAY_1,
-  DIR_MMA_SPORT_HOLIDAY_2,
-  DIR_NC46,
-  DIR_NC47,
-  DIR_NEVSKAYA_ARENA_1,
-  DIR_NEVSKAYA_ARENA_2
-} from "@/common/constants/ImageContexts"
+import {DIR_NC46, DIR_NC47} from "@/common/constants/ImageContexts"
 
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {COMPETITIONS_BUTTON_TEXT} from "@/common/constants"
 import DescriptionComponent from "@/components/DescriptionComponent"
 
 export const video_data_src: Array<Video_data_src> = [
@@ -190,92 +179,26 @@ const video_data_src_mma: Array<Video_data_src> = [
     id: 21,
     youtubeID: 'WO77phk8NWk',
     title: 'MMA. Darya Balina vs Olga. July, 2012',
-    description: () => (
-      <>
-        <p>This is the second MMA fight at the <b>"First Nevsky Arena Tournament"</b>. <b>Darya Balina</b> (5'4" /
-          124 lb) and <b>Olga</b> (5'7" / 139 lb) are young participants who don't yet have enough experience in
-          MMA fights, but that doesn't diminish the interest or entertainment value of their bout; their punches are
-          strong, and the struggle is tough.
-        </p>
-        <p>The fighters engage in three full rounds, with neither willing to concede defeat.</p>
-        <p>
-          If you prefer fights with minimal striking, this match may not fully satisfy you. However, if you appreciate
-          genuine, intense, and uncompromising MMA bouts, this fight will surely captivate you.
-        </p>
-        <ButtonGallery images={DIR_NEVSKAYA_ARENA_2} buttonName={COMPETITIONS_BUTTON_TEXT}/>
-      </>
-    )
   },
   {
     id: 20,
     youtubeID: 'qo9DmpAXT5w',
     title: 'MMA. Kara Teller vs Darya. Balina and Tais.  May, 2012',
-    description: () => (
-      <>
-        <p><b>Yulia Fedutenko</b> (5'8" / 130 lb) - from the mixed martial arts Club "Tibron" in St. Petersburg. <b>Kara
-          Teller</b> (5'7" / 123 lb) - representing the Vityaz Club in Moscow. This bout took place at the "<b>First
-          Nevsky Arena Tournament</b>". Both fighters are technically skilled, showcasing a blend of hard punches,
-          kicks,
-          and close-quarter power struggles.</p>
-        <p>The match extends over three full rounds. Yulia demonstrates more confidence in stand-up fighting, while Kara
-          focuses on ground techniques to secure victory.</p>
-        <p>If you enjoy intense and uncompromising fights between athletic and charismatic women, this bout is sure to
-          captivate you.</p>
-        <ButtonGallery images={DIR_NEVSKAYA_ARENA_1} buttonName={COMPETITIONS_BUTTON_TEXT}/>
-      </>
-    )
   },
   {
     id: 18,
     youtubeID: 'fYEVVlzkUsA',
     title: 'MMA. Kara Teller vs Darya. Balina and Tais.  May, 2012',
-    description: () => (
-      <>
-        <p>
-          The first match is between the experienced fighter <b>Kara Teller</b> (Moscow, 5’7” / 119 lb) and the
-          newcomer <b>Darya Balina</b> (St. Petersburg, 5’4” / 124 lb). Almost the entire fight is contested standing
-          up,
-          where Kara clearly dominates. Despite this, Darya proves to be very strong and holds her own for nearly two
-          rounds.
-        </p>
-        <p>The second fight (Kara Teller vs Tais), unlike the first, primarily takes place on the mat. Over two rounds,
-          Tais strives to secure victory with a chokehold or submission lock, occasionally enduring strikes from her
-          opponent. The final outcome is quite surprising.</p>
-        <h5><u>MMA:</u> Darya Balina vs Kara Teller</h5>
-        <ButtonGallery images={DIR_MMA_SPORT_HOLIDAY_1}/>
-        <h5><u>MMA:</u> Kara Teller vs Tais</h5>
-        <ButtonGallery images={DIR_MMA_SPORT_HOLIDAY_2}/>
-      </>
-    )
   },
   {
     id: 9,
     youtubeID: '8NnbhTgPKXE',
     title: 'MMA tournament “Christmas Cup 2012',
-    description: () => (
-      <>
-        <p>
-          Three fighters participated in this tournament: <b>Elena Vasilyeva</b> (St. Petersburg, 5’6” / 132 lb),
-          <b>Kara Teller</b>, a newcomer from Namazon Club (Moscow, 5’7” / 119 lb), and <b>Tais</b> (St. Petersburg,
-          5’7” / 130 lb). The tournament was conducted in a single round format, with each fighter having two matches.
-          Each match consisted of three 4-minute rounds with a 1-minute rest period between rounds.
-        </p>
-        <p>The fighters competed fiercely and uncompromisingly in all three matches.</p>
-        <p>If you enjoy competitive fights involving strikes with arms and legs, as well as wrestling with armlocks and
-          chokes, then you will definitely enjoy our film.</p>
-        <h5><u>First fight:</u> Elena Vasilyeva vs Kara Teller</h5>
-        <ButtonGallery images={DIR09_1} buttonName={COMPETITIONS_BUTTON_TEXT}/>
-        <h5><u>Second fight:</u> Kara Teller vs Tais</h5>
-        <ButtonGallery images={DIR09_2} buttonName={COMPETITIONS_BUTTON_TEXT}/>
-        <h5><u>Third fight:</u> Elena Vasilyeva vs Tais</h5>
-        <ButtonGallery images={DIR09_3} buttonName={COMPETITIONS_BUTTON_TEXT}/>
-      </>
-    )
   },
 ]
 
-// Add color: '' & category: 'Submission wrestling', to each object in the array
-export const video_data: Array<Video_data> = video_data_src.map(video => {
+// Add data to video_data_src
+export const video_data: Array<Video_data> = video_data_src_mma.map(video => {
   const formattedId = video.id < 10 ? `0${video.id}` : video.id
   return {
     ...video,
