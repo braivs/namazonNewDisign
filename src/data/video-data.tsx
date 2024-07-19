@@ -19,28 +19,23 @@ import {
   DIR26,
   DIR27,
   DIR29,
-  DIR35,
-  DIR36,
-  DIR37,
-  DIR_LIDA_VIKA,
   DIR_MMA_SPORT_HOLIDAY_1,
   DIR_MMA_SPORT_HOLIDAY_2,
   DIR_NC46,
   DIR_NC47,
   DIR_NEVSKAYA_ARENA_1,
-  DIR_NEVSKAYA_ARENA_2,
-  DIR_TAIS_YULIA
+  DIR_NEVSKAYA_ARENA_2
 } from "@/common/ImageContexts"
 
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import Link from "next/link"
 import {Row} from "react-bootstrap"
 import {COMPETITIONS_BUTTON_TEXT} from "@/common/constants"
-import {Nc44Desc} from "@/data/data-description/NC44Desc"
 import {NC42Desc} from "@/data/data-description/NC42Desc"
-import {NC41Desc} from "@/data/data-description/NC41Desc"
 import {NC37Desc} from "@/data/data-description/NC37Desc"
 import {NC36Desc} from "@/data/data-description/NC36Desc"
+import {NC35Desc} from "@/data/data-description/NC35Desc"
+import {NC33Desc} from "@/data/data-description/NC33Desc"
+import DescriptionComponent from "@/components/DescriptionComponent"
 
 export const video_data_src: Array<Video_data_src> = [
   {
@@ -100,90 +95,53 @@ export const video_data_src: Array<Video_data_src> = [
     youtubeID: 'bc9RU5hP4k4',
     title: 'The Female Power Competition for the Maslenitsa Festival, 2016. Wrestling',
     des: 'You can read the report on the competitions, the main part of which was these fights...',
-    description: () => <Nc44Desc />
+    description: function () {
+      return <DescriptionComponent id={this.id}/>
+    }
   },
   {
     id: 42,
     youtubeID: 'e8fADPtHm7w',
     title: 'Submission grappling tournament. Part 2. October 2014',
     des: 'The second part of our full HD video featuring the submission grappling mini-tournament',
-    description: function () { return <NC42Desc id={this.id}/> }
+    description: function () {
+      return <NC42Desc id={this.id}/>
+    }
   },
   {
     id: 41,
     youtubeID: 'vE6uc_UXaWc',
     title: 'Submission grappling tournament. Part 1. October 2014',
     des: 'The second part of our full HD video featuring the submission grappling mini-tournament',
-    description: () => <NC41Desc />
+    description: () => <DescriptionComponent id={41}/>
   },
   {
     id: 37,
     youtubeID: 'oxAzT_GWSJA',
     title: 'Tournament between beginners. Part 2. Final fights. 2014',
     des: 'This video is a continuation of the Video 36 that featured the preliminary fights.',
-    description: () => <NC37Desc />
+    description: () => <NC37Desc/>
   },
   {
     id: 36,
     youtubeID: 'kkbQ7YEQ9nQ',
     title: 'Tournament between beginners. Part 1. Preliminary fights. 2014',
     des: 'In this competition, five fighters participated: Christina (67.4 kg / 148.6 lb), Daria (66.5 kg / 146.6lb), Irina (70.7 kg / 155.9 lb), Nina (66.1 kg / 145.7 lb), and Victoria (70.7 kg / 155.9 lb).',
-    description: () => <NC36Desc />
+    description: () => <NC36Desc/>
   },
   {
     id: 35,
     youtubeID: 'tYIIf2sPt4c',
     title: 'Lidiya Oslopovskih vs Tais. Pins matches. 2013',
     des: 'Lovely young lady, Lidiya Oslopovskih (53 kg / 117 lbs), is a newcomer to the Namazon wrestling competitions.',
-    description: function () {
-      return <>
-        <p>
-          Lovely young lady, <b>Lidiya Oslopovskih</b> (53 kg / 117 lbs), is a newcomer to the Namazon wrestling
-          competitions. She is a small but agile fighter, with a very well-built body. In this video, you can see
-          her three fights with the strongest and most experienced woman of the club, <b>Tais</b> (60 kg / 132 lb).
-        </p>
-        <p>
-          It’s somewhat interesting and exciting to watch how Lidiya struggles, especially on the ground.
-          The rules required the opponents to wrestle to submission only, regardless of whether one wrestler would pin
-          the
-          other to submission or use another move. This time Tais decided to use a little &quot;naughty&ldquo; tactic
-          for
-          success.
-        </p>
-        <p>
-          If you like to watch competitive mat wrestling between two strong and fit women and if you like to see
-          some long pin holds, as well as some hard attempts of the bottom lady to bridge out of these pins, then
-          this video is highly recommended for you.
-        </p>
-        <ButtonGallery images={DIR35}/>
-      </>
-    }
+    description: () => <NC35Desc/>
   },
   {
     id: 33,
     youtubeID: 'UdxhMrIku4A',
     title: 'Crossfit tournament\nSubmission Grappling. 2013',
     des: ' This video features two submission grappling matches held as the final part of a Crossfit tournament organized by the St. Petersburg Athletic Center in cooperation with the Namazon Club.',
-    description: function () {
-      return <>
-        <p>
-          This video features two submission grappling matches held as the final part of a Crossfit tournament organized
-          by the St. Petersburg Athletic Center in cooperation with the Namazon Club.<br/>
-          The matches were to determine winners in two weight categories: up to 70 kg / 155 lb between <b>Lidia
-          Oslopovskih</b> (53 kg / 117 lb) and <b>Victoria Vardugina</b> (69 kg / 152 lb), and in the absolute category
-          between <b>Yulia Borovik</b> (91 kg / 201 lb) and <b>Tais</b> (61 kg / 135 lb).
-        </p>
-        <p>
-          Despite significant weight differences between the opponents in each pair, their struggle on the mat was
-          strenuous, entertaining, and exciting. The girls fought hard and bravely to win this last decisive part of the
-          tournament.
-        </p>
-        <h5>Lidia Oslopovskih vs Victoria Vardugina</h5>
-        <ButtonGallery images={DIR_LIDA_VIKA}/>
-        <h5>Yulia Borovik vs Tais</h5>
-        <ButtonGallery images={DIR_TAIS_YULIA}/>
-      </>
-    }
+    description: () => <NC33Desc/>
   },
   {
     id: 29,

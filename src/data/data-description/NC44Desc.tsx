@@ -14,7 +14,7 @@ import p2_OGrigorenko_vs_VSmorodina
   from "../../../public/assets/img/videoGallery/nc44/2_O.Grigorenko_vs_V.Smorodina.jpg"
 import React from "react"
 
-export const Nc44Desc = () => {
+export const NC44Desc = () => {
   return (
       <>
         <p>You can read the report on the competitions, the main part of which was these fights, <Link
