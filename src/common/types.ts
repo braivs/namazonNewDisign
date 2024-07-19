@@ -1,0 +1,3 @@
+type Desk = {
+  id: number
+}

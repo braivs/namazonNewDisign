@@ -9,7 +9,7 @@ export default function VideoDetails ({children}: WithChildren) {
   return (
     <>
       <HeaderTwo />
-      {/*<Banner />*/}
+      {/*<Banner />*/} {/*todo: uncommit later*/}
       <VideoDetailsArea>{children}</VideoDetailsArea>
       <FooterFour />
     </>

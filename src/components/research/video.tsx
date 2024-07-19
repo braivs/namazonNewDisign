@@ -8,7 +8,7 @@ const Video = () => {
   return (
     <>
       <HeaderTwo />
-      {/*<Banner />*/}
+      {/*<Banner />*/} {/*todo: uncommit later*/}
       <VideoArea />
       <FooterFour />
     </>

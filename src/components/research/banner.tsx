@@ -14,7 +14,7 @@ const Banner = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="tp-breadcrumb">
-                <h2 className="tp-breadcrumb__title">Research</h2>
+                <h2 className="tp-breadcrumb__title">Video</h2>
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-12">

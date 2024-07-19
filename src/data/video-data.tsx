@@ -13,12 +13,6 @@ import {
   DIR09_3,
   DIR12,
   DIR16,
-  DIR19,
-  DIR23,
-  DIR24,
-  DIR26,
-  DIR27,
-  DIR29,
   DIR_MMA_SPORT_HOLIDAY_1,
   DIR_MMA_SPORT_HOLIDAY_2,
   DIR_NC46,
@@ -28,13 +22,7 @@ import {
 } from "@/common/ImageContexts"
 
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {Row} from "react-bootstrap"
 import {COMPETITIONS_BUTTON_TEXT} from "@/common/constants"
-import {NC42Desc} from "@/data/data-description/NC42Desc"
-import {NC37Desc} from "@/data/data-description/NC37Desc"
-import {NC36Desc} from "@/data/data-description/NC36Desc"
-import {NC35Desc} from "@/data/data-description/NC35Desc"
-import {NC33Desc} from "@/data/data-description/NC33Desc"
 import DescriptionComponent from "@/components/DescriptionComponent"
 
 export const video_data_src: Array<Video_data_src> = [
@@ -95,373 +83,115 @@ export const video_data_src: Array<Video_data_src> = [
     youtubeID: 'bc9RU5hP4k4',
     title: 'The Female Power Competition for the Maslenitsa Festival, 2016. Wrestling',
     des: 'You can read the report on the competitions, the main part of which was these fights...',
-    description: function () {
-      return <DescriptionComponent id={this.id}/>
-    }
   },
   {
     id: 42,
     youtubeID: 'e8fADPtHm7w',
     title: 'Submission grappling tournament. Part 2. October 2014',
     des: 'The second part of our full HD video featuring the submission grappling mini-tournament',
-    description: function () {
-      return <NC42Desc id={this.id}/>
-    }
   },
   {
     id: 41,
     youtubeID: 'vE6uc_UXaWc',
     title: 'Submission grappling tournament. Part 1. October 2014',
     des: 'The second part of our full HD video featuring the submission grappling mini-tournament',
-    description: () => <DescriptionComponent id={41}/>
   },
   {
     id: 37,
     youtubeID: 'oxAzT_GWSJA',
     title: 'Tournament between beginners. Part 2. Final fights. 2014',
     des: 'This video is a continuation of the Video 36 that featured the preliminary fights.',
-    description: () => <NC37Desc/>
   },
   {
     id: 36,
     youtubeID: 'kkbQ7YEQ9nQ',
     title: 'Tournament between beginners. Part 1. Preliminary fights. 2014',
     des: 'In this competition, five fighters participated: Christina (67.4 kg / 148.6 lb), Daria (66.5 kg / 146.6lb), Irina (70.7 kg / 155.9 lb), Nina (66.1 kg / 145.7 lb), and Victoria (70.7 kg / 155.9 lb).',
-    description: () => <NC36Desc/>
   },
   {
     id: 35,
     youtubeID: 'tYIIf2sPt4c',
     title: 'Lidiya Oslopovskih vs Tais. Pins matches. 2013',
     des: 'Lovely young lady, Lidiya Oslopovskih (53 kg / 117 lbs), is a newcomer to the Namazon wrestling competitions.',
-    description: () => <NC35Desc/>
   },
   {
     id: 33,
     youtubeID: 'UdxhMrIku4A',
     title: 'Crossfit tournament\nSubmission Grappling. 2013',
     des: ' This video features two submission grappling matches held as the final part of a Crossfit tournament organized by the St. Petersburg Athletic Center in cooperation with the Namazon Club.',
-    description: () => <NC33Desc/>
   },
   {
     id: 29,
     youtubeID: 'HaMtoel8Tdw',
     title: 'Elena Vasilyeva vs Tais. Submission Grappling. 2013',
-    des: 'Elena (5\'7" / 157 lb) is a strong and ambitious young woman. She had fought Tais (5\'7" / 130 lb) many times two years ago...',
-    description: function () {
-      return <>
-        <p>
-          <b>Elena</b> (5&quot;7&quot; / 157 lb) is a strong and ambitious young woman. She had
-          fought <b>Tais</b> (5&quot;7&quot; / 130 lb)
-          many times two years ago, but then she disappeared from the Club. Now she’s back, stronger, heavier, more
-          skillful, and confident than ever.
-        </p>
-        <p>Right from the start, it’s clear that Elena intends to give her experienced rival a real fight. Despite Tais
-          being very strong, she immediately finds herself in trouble against the aggressive Elena. After 15 intense
-          minutes of wrestling, she is forced to admit defeat. This marks the first time Tais has lost a competitive
-          submission match to Elena.</p>
-        <p>If you’re curious to see how it all unfolded, watch this video.</p>
-        <ButtonGallery images={DIR29}/>
-      </>
-    }
+    des: 'Elena (5\'7" / 157 lb) is a strong and ambitious young woman. She had fought Tais (5\'7" / 130 lb) many times two years ago...'
   },
   {
     id: 27,
     youtubeID: 'HaMtoel8Tdw',
     title: 'Female Beach Wrestling Part 2. June, 2011',
-    des: 'This is a continuation of the multi-round sand-wrestling contest between Tais (5"7" / 130 lb) and Elena Vasilyeva (5"6" / 135 lb).',
-    description: function () {
-      return <>
-        <p>
-          This is a continuation of the multi-round sand-wrestling contest between <b>Tais</b> (5&quot;7&quot; / 130 lb)
-          and <b>Elena
-          Vasilyeva</b> (5&quot;6&quot; / 135 lb). The first nine rounds of this exciting match were featured in our
-          Video 26
-          (scroll down to see the initial description). In Part 2, you can see eight more rounds fought with the same
-          rules as in Part 1.
-        </p>
-        <p>Although both women are very ambitious, they are not quite equal in experience and skill. One of them is
-          still
-          using nice wrestling combinations, applying effective choking and submission holds, while the other is just
-          struggling heavily, showing her fighting spirit and refusing to give up.</p>
-        <p>If you enjoy watching strong, skilled, and athletic women in real wrestling, then we recommend you purchase
-          this video.</p>
-        <ButtonGallery images={DIR27}/>
-      </>
-    }
+    des: 'This is a continuation of the multi-round sand-wrestling contest between Tais (5"7" / 130 lb) and Elena Vasilyeva (5"6" / 135 lb).'
   },
   {
     id: 26,
     youtubeID: 'iBBVt0JNN-Y',
     title: 'Female Beach Wrestling. Part 1. June, 2011',
     des: 'This video features a sand-wrestling contest between two ambitious women, Tais (5"7" / 130 lb) and Elena Vasilyeva (5"6" / 134 lb).',
-    description: function () {
-      return <>
-        <p>
-          This video features a sand-wrestling contest between two ambitious women, <b>Tais</b> (5&quot;7&quot; / 130
-          lb)
-          and <b>Elena Vasilyeva</b> (5&quot;6&quot; / 134 lb). Tais, who has competed in various grappling and MMA
-          tournaments, has more experience than her younger opponent. But Elena is not a pushover either.
-        </p>
-        <p>
-          The two women fought nine rounds with submission grappling rules. It was an interesting and exciting
-          wrestling match with many different pins, chokes, and submission holds. Both wrestlers struggled
-          arduously for every single point. The weaker woman didn’t give up easily.
-        </p>
-        <ButtonGallery images={DIR26}/>
-      </>
-    }
   },
   {
     id: 24,
     youtubeID: 'iBBVt0JNN-Y',
-    title: 'Lyudmila vs Tais Submission Grappling. 2011',
-    description: function () {
-      return <>
-        <p>
-          <b>Irina</b> (5’9” / 154 lb) is a strong young athlete engaged in Muay Thai and pole dancing, but she is still
-          a
-          newcomer in her wrestling matches in the Namazon Club’s tournaments. <b>Tais</b> (5’7” / 130 lb) is a
-          well-known, strong, and skilled lady who specializes in Submission Grappling and MMA.
-        </p>
-        <p>In this competitive match, Irina, using her height and weight advantage, tried to force her experienced
-          opponent into a hard body-to-body fight. You will see what came out of it if you watch our video.</p>
-        <p>
-          If you like real female wrestling and want to see two trained women struggling hard against each other in a
-          competitive ground fight, then this video is just for you.
-        </p>
-        <ButtonGallery images={DIR24}/>
-      </>
-    }
+    title: 'Lyudmila vs Tais Submission Grappling. 2011'
   },
   {
     id: 23,
     youtubeID: 'fbESZrys6fc',
-    title: 'Irina (Vlasta) vs Tais. Submission Grappling. 2011',
-    description: function () {
-      return <>
-        <p>
-          <b>Lyudmila</b> (5’11” / 154 lb) is a strong sportswoman engaged in Muay Thai, but she is a newcomer in our
-          Club’s competitions, while <b>Tais</b> (5’7” / 130 lb) is a repeat winner in the competitions, specializing in
-          Submission Grappling and MMA.
-        </p>
-        <Row>
-        </Row>
-        <p>As you can see, Lyudmila is much heavier and taller than Tais. In this match, the girls wrestled three
-          rounds.
-          Lyudmila managed to place Tais in a very difficult position at the beginning of the first round.</p>
-        <p>
-          Watch the video to see what followed and how it all ended. If you like real mat wrestling between some of the
-          fittest and most beautiful women, then this video is for you.
-        </p>
-        <ButtonGallery images={DIR23}/>
-      </>
-    }
+    title: 'Irina (Vlasta) vs Tais. Submission Grappling. 2011'
   },
   {
     id: 19,
     youtubeID: 'lJwlQIrfGww',
-    title: 'Varvara Akulova vs Tais. Submission Grappling. 2012',
-    description: function () {
-      return <>
-        <p>
-          <b>Varvara Akulova</b> is a great athlete. As a child and teenager, she was several times recognized as the
-          strongest girl on the planet, which was twice confirmed by the Guinness Book of World Records. Varvara&apos;s
-          strength results at various periods of her life have been presented, for example, on the official website of
-          the <a href="http://www.spb-ac.ru/var.htm">St. Petersburg Athletic Center</a>. Look also <a
-          href="http://warnet.ws/news/16167">here</a>.
-        </p>
-        <p>
-          <a
-            href="http://fakty.ua/130242-menya-osuzhdali-mol-doch-vyrastet-mutantom-da-u-varvary-do-500-predlozhenij-braka-v-internete-ezhemesyachno">Today</a>,
-          Akulova is an active sportswoman, a master of sports in weightlifting and powerlifting. Her height/weight are
-          175 cm (5'9") / 75 kg (165 lb). <b>Tais</b> (5'7" / 130 lb) is the leader of the Namazon Club. She specializes
-          in wrestling and MMA.
-        </p>
-        <p>In this fight, Varvara has a significant advantage in weight (about 33 lb) and in strength, but Tais is more
-          experienced and technically skilled. The fight is fought in the grappling style. The intrigue is that nobody
-          knows in advance who will win in the end. The principal question is <b>WHICH will be better, the skill or pure
-            strength</b>.</p>
-        <p>It is really a hard fight! Clearly, the big, strong Varvara does not want to lose to her smaller opponent. In
-          turn, Tais would like nothing better than to beat the bigger and stronger athlete to demonstrate her skill and
-          competitiveness. Who will prevail?</p>
-        <ButtonGallery images={DIR19}/>
-      </>
-    }
+    title: 'Varvara Akulova vs Tais. Submission Grappling. 2012'
   },
   {
     id: 16,
     youtubeID: '-uNa-IIOOQk',
-    title: 'Elena Vasilyeva vs Tais. Submission Grappling. 2011',
-    description: function () {
-      return <>
-        <p>
-          <b>Elena Vasilyeva (Gladiatriks)</b> (5'6" / 135 lb) specializes in submission grappling, MMA, judo, and arm
-          wrestling. <b>Tais</b> (5'7" / 130 lb) also specializes in submission grappling and MMA. To win this
-          competition, the girls needed not only physical strength and wrestling skill but also a lot of endurance.
-          The fight consisted of 9 rounds, each with no time limit, lasting until there was a clear winner. Between each
-          round, the fighters had only 1 minute to rest.
-        </p>
-        <p>Each round was fought hard and aggressively, with the girls giving all their strength to win the battle.</p>
-        <p>
-          Which of the girls was more exhausted? And who was the winner in the end? You can find out by purchasing our
-          film.
-        </p>
-        <ButtonGallery images={DIR16}/>
-      </>
-    }
+    title: 'Elena Vasilyeva vs Tais. Submission Grappling. 2011'
   },
   {
     id: 12,
     youtubeID: 'tB47JzDQ-mc',
-    title: 'Submission Grappling. Tournament.  April,  2010',
-    description: function () {
-      return <>
-        <p>
-          This film documents the Submission Grappling tournament held in April 2010, featuring <b>Natalia
-          Mysik</b> (5'11" / 154 lb), <b>Maria Rylyova</b> (5'8" / 126 lb), and <b>Valentina Perfilyeva</b> (5'8" / 132
-          lb). The
-          wrestlers competed across different weight categories, essentially making it a club competition based on total
-          weight.
-          Natalia, being the heaviest wrestler, was a favorite in the tournament, while Maria was favored for her
-          exceptional skill. Maria and Valentina engaged in a closely contested match, showcasing their comparable
-          abilities. Natalia demonstrated her superiority over Valentina in their bouts.
-        </p>
-        <p>However, to find out how the fights between our favorites ended, who won, and how, you will need to watch our
-          film.</p>
-        <ButtonGallery images={DIR12}/>
-      </>
-    }
+    title: 'Submission Grappling. Tournament.  April,  2010'
   },
   {
     id: 8,
     youtubeID: '_7gBrg1KOYw',
-    title: 'Women\'s Beach Tournament. Submission Grappling.  2011',
-    description: function () {
-      return <>
-        <p>
-          This film documents the Submission Grappling tournament held in April 2010, featuring <b>Natalia
-          Mysik</b> (5'11" / 154 lb), <b>Maria Rylyova</b> (5'8" / 126 lb), and <b>Valentina Perfilyeva</b> (5'8" / 132
-          lb). The
-          wrestlers competed across different weight categories, essentially making it a club competition based on total
-          weight.
-          Natalia, being the heaviest wrestler, was a favorite in the tournament, while Maria was favored for her
-          exceptional skill. Maria and Valentina engaged in a closely contested match, showcasing their comparable
-          abilities. Natalia demonstrated her superiority over Valentina in their bouts.
-        </p>
-        <p>If you enjoy female wrestling not only indoors, but also under the open sky, this film is perfect for
-          you.</p>
-        <h5>Elena Vasilyeva vs Tais</h5>
-        <ButtonGallery images={DIR08_1} buttonName={COMPETITIONS_BUTTON_TEXT}/>
-        <h5>Irina (Vlasta) vs Tais</h5>
-        <ButtonGallery images={DIR08_2} buttonName={COMPETITIONS_BUTTON_TEXT}/>
-        <h5>Elena Vasilyeva vs Irina (Vlasta)</h5>
-        <ButtonGallery images={DIR08_3} buttonName={COMPETITIONS_BUTTON_TEXT}/>
-      </>
-    }
+    title: 'Women\'s Beach Tournament. Submission Grappling.  2011'
   },
   {
     id: 6,
     youtubeID: '_7gBrg1KOYw',
-    title: 'Maria Rylyova  vs Tais. Armwrestling and Wrestling',
-    description: function () {
-      return <>
-        <p>
-          <b>Tais</b> (5’7” / 128 lb) is a multiple winner of Submission Grappling competitions organized by our
-          club. <b>Maria
-          Rylyova</b> (5’8” / 126 lb) is the winner of the Namazon Club Championship in Submission Grappling in 2010 and
-          a
-          master of sports in armwrestling.<br/>
-          The competition started with an arm wrestling contest using both arms (lying on the floor), which ended in a
-          draw. They then continued their rivalry on the wrestling mat, engaging in several rounds of submission
-          grappling.
-        </p>
-        <p>If you enjoy watching skillful wrestling between women who are evenly matched, you will love this film.</p>
-        <ButtonGallery images={DIR06}/>
-      </>
-    }
+    title: 'Maria Rylyova  vs Tais. Armwrestling and Wrestling'
   },
   {
     id: 4,
     youtubeID: 'QAgCAy7XJiQ',
-    title: 'Submission Grappling. Christmas Cup  2011',
-    description: function () {
-      return <>
-        <p>
-          <b>Tais</b> (5’7” / 128 lb) is a multiple winner of Submission Grappling competitions organized by our
-          club. <b>Maria
-          Rylyova</b> (5’8” / 126 lb) is the winner of the Namazon Club Championship in Submission Grappling in 2010 and
-          a
-          master of sports in armwrestling.<br/>
-          The competition started with an arm wrestling contest using both arms (lying on the floor), which ended in a
-          draw. They then continued their rivalry on the wrestling mat, engaging in several rounds of submission
-          grappling.
-        </p>
-        <p>If you enjoy watching skillful wrestling between women who are evenly matched, you will love this film.</p>
-        <ButtonGallery images={DIR04}/>
-      </>
-    }
+    title: 'Submission Grappling. Christmas Cup  2011'
   },
   {
     id: 3,
     youtubeID: 'QAgCAy7XJiQ',
-    title: 'Beach Wrestling. Mixed Tournament. 2010',
-    description: function () {
-      return <>
-        <p>
-          Female wrestlers from Namazon participated in the tournament: <b>Tais</b> (5’7” / 132 lb) and <b>Natalia
-          Mysik</b> (5’11” / 154 lb). Their male opponent was Alex (5’9” / 150 lb). Specifically, the three fights
-          between
-          Natalia and Tais from <b>VIDEO {this.id}</b> are featured in the <b>WRESTLING</b> section of the website,
-          showcasing <b>FEMALE WRESTLING</b> matches.
-        </p>
-        <p>These matches followed <b>SUBMISSION</b> only rules with no specified time limits. This time, Tais wrestled
-          against a woman who was not only heavier but also physically stronger. The struggle was intense! Both women
-          fought aggressively, vying for advantageous positions and attempting effective pins or submission holds.
-          Particularly dramatic were the first two matches, which took place mainly on wet sand, with momentum shifting
-          back and forth.</p>
-        <ButtonGallery images={DIR03_3}/>
-      </>
-    }
+    title: 'Beach Wrestling. Mixed Tournament. 2010'
   },
   {
     id: 2,
     youtubeID: 'Y_ixTzxIj44',
-    title: 'Submission Grappling. Part 1. June, 2010',
-    description: function () {
-      return <>
-        <p>
-          This is the continuation of movie 1, featuring all the matches from the second round.<br/>
-          Here, you can witness another aggressive fight between two favorites: <b>Tais</b> (5'7" / 128 lb) and <b>Maria
-          Rylyova</b> (5'7" / 126 lb). Particularly dramatic were the bouts involving <b>Nadezhda Akhmerova</b> (5'6"
-          / 128 lb). In her match against Tais, Nadezhda was knocked down but managed to continue the fight.<br/>
-          Against Maria, Nadezhda put up a fierce struggle, with the advantage shifting back and forth between the two
-          competitors.
-        </p>
-        <p>If you want to witness these intense matches and find out the final results, watch the film!</p>
-        <ButtonGallery images={DIR02}/>
-      </>
-    }
+    title: 'Submission Grappling. Part 1. June, 2010'
   },
   {
     id: 1,
     youtubeID: 'G7RTYfRO4B4',
     title: 'Submission Grappling. Part 2. June, 2010',
-    description: function () {
-      return <>
-        <p>
-          In this tournament participated three fighters: <b>Tais</b> (5'7" / 128 lb), <b>Maria Rylyova</b> (5'7"
-          / 126 lb) and <b>Nadezhda Akhmerova</b> (5'6" / 128 lb). Tais has already won such competitions several
-          times. Maria has lately improved her skill level significantly, and you could expect that she would have
-          a chance to become a winner. Nadezhda is specialized in Kickboxing and ММА. This was her first
-          Submission Grappling tournament.
-        </p>
-        <p>The tournament was held in two rounds. As it was expected, the main struggle in the first round was
-          between Tais and Maria. The two girls showed very tough and uncompromising wrestling. This video
-          features all the three matches of the first round.</p>
-        <ButtonGallery images={DIR01}/>
-      </>
-    }
   },
 ]
 
@@ -562,7 +292,10 @@ export const video_data: Array<Video_data> = video_data_src.map(video => {
     color: '',
     category: 'Submission wrestling',
     img: `/assets/img/video/NC${formattedId}.jpg`,
-    des: video.des ?? ''
+    des: video.des ?? '',
+    description: video.description ?? function () {
+      return <DescriptionComponent id={video.id}/>
+    }
   }
 })
 
@@ -584,7 +317,7 @@ type Video_data_src = {
   youtubeID: string
   title: string
   des?: string,
-  description: () => React.ReactNode
+  description?: () => React.ReactNode
 }
 
 
