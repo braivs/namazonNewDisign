@@ -3,9 +3,9 @@
 //videos:
 export const DIR01 = require.context('/public/assets/img/videoGallery/01', false)
 export const DIR02 = require.context('/public/assets/img/videoGallery/02', false)
-// 03 + 03wm: Beach Wrestling. Mixed Tournament. Two girls vs one man
-// export const DIR03_1 = require.context('/public/assets/img/videoGallery/03mix/wm1', false) // Natalia Mysik  vs  Alex
-// export const DIR03_2 = require.context('/public/assets/img/videoGallery/03mix/wm2', false) // Alex  vs  Tais
+// 03 Beach Wrestling. Mixed Tournament. Two girls vs one man
+export const DIR03_1 = require.context('/public/assets/img/videoGallery/03mix/wm1', false) // Natalia Mysik  vs  Alex
+export const DIR03_2 = require.context('/public/assets/img/videoGallery/03mix/wm2', false) // Alex  vs  Tais
 export const DIR03_3 = require.context('/public/assets/img/videoGallery/03/ww', false) // Natalia Mysik vs Tais
 export const DIR04 = require.context('/public/assets/img/videoGallery/04', false) // Elena Vasilyeva vs Tais
 export const DIR06 = require.context('/public/assets/img/videoGallery/06', false)

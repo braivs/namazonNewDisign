@@ -158,11 +158,6 @@ export const video_data_src: Array<Video_data_src> = [
     title: 'Submission Grappling. Christmas Cup  2011'
   },
   {
-    id: 3,
-    youtubeID: 'QAgCAy7XJiQ',
-    title: 'Beach Wrestling. Mixed Tournament. 2010'
-  },
-  {
     id: 2,
     youtubeID: 'Y_ixTzxIj44',
     title: 'Submission Grappling. Part 1. June, 2010'
@@ -205,8 +200,16 @@ const video_data_src_boxing: Array<Video_data_src> = [
   },
 ]
 
+const video_data_src_mix: Array<Video_data_src> = [
+  {
+    id: 3,
+    youtubeID: 'sddvDSjafEY',
+    title: 'Beach Wrestling. Mixed Tournament. 2010'
+  },
+]
+
 // Add data to video_data_src
-export const video_data: Array<Video_data> = video_data_src_boxing.map(video => {
+export const video_data: Array<Video_data> = video_data_src_mix.map(video => {
   const formattedId = video.id < 10 ? `0${video.id}` : video.id
   return {
     ...video,
