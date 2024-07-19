@@ -33,6 +33,7 @@ export const DIR_MMA_SPORT_HOLIDAY_2 = require.context('/public/assets/img/video
 // 20:
 export const DIR_NEVSKAYA_ARENA_1 = require.context('/public/assets/img/videoGallery/20/mma-pervaya-nevskaya-arena-2012-1', false)
 export const DIR_NEVSKAYA_ARENA_2 = require.context('/public/assets/img/videoGallery/21/mma-pervaya-nevskaya-arena-2012-2', false)
+export const DIR13 = require.context('/public/assets/img/videoGallery/13', false)
 export const DIR12 = require.context('/public/assets/img/videoGallery/12', false)
 export const DIR16 = require.context('/public/assets/img/videoGallery/16', false)
 export const DIR19 = require.context('/public/assets/img/videoGallery/19', false)

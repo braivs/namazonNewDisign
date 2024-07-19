@@ -197,8 +197,16 @@ const video_data_src_mma: Array<Video_data_src> = [
   },
 ]
 
+const video_data_src_boxing: Array<Video_data_src> = [
+  {
+    id: 13,
+    youtubeID: '0-6S3nnMNYk',
+    title: 'Valentina Perfilyeva vs Nadezhda Akhmerova. Kickboxing. 2011',
+  },
+]
+
 // Add data to video_data_src
-export const video_data: Array<Video_data> = video_data_src_mma.map(video => {
+export const video_data: Array<Video_data> = video_data_src_boxing.map(video => {
   const formattedId = video.id < 10 ? `0${video.id}` : video.id
   return {
     ...video,
