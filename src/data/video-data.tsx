@@ -3,6 +3,7 @@ import {DIR_NC46, DIR_NC47} from "@/common/constants/ImageContexts"
 
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
 import DescriptionComponent from "@/components/DescriptionComponent"
+import {formatNumber} from "@/common/helpers"
 
 export const video_data_src: Array<Video_data_src> = [
   {
@@ -310,7 +311,7 @@ const video_data_src_mix: Array<Video_data_src> = [
 
 // Add data to video_data_src
 export const video_data: Array<Video_data> = video_data_src_mix.map(video => {
-  const formattedId = video.id < 10 ? `0${video.id}` : video.id
+  const formattedId = video.id < 10 ? `0${video.id}` : formatNumber(video.id)
   return {
     ...video,
     color: '',
