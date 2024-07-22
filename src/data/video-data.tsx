@@ -221,6 +221,91 @@ const video_data_src_mix: Array<Video_data_src> = [
     youtubeID: 'xbguaf9YTGo',
     title: 'Mixed Wrestling. Best Fights. Part 1. 2011'
   },
+  {
+    id: 11,
+    youtubeID: 'xbguaf9YTGo',
+    title: 'Alex  vs  Elena. Beach Wrestling. 2011',
+  },
+  {
+    id: 14,
+    youtubeID: 'xbguaf9YTGo',
+    title: 'Two men against one woman. Part 1. 2011',
+  },
+  {
+    id: 15,
+    title: 'Two men against one woman. Part 2. 2011',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 22,
+    title: 'Irina and Elena vs Villian. Mixed Wrestling. 2011',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 25,
+    title: 'Mixed Wrestling. Best Fights. Part 2. 2011',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 28,
+    title: 'Mixed Wrestling. Best Fights. Part 3. 2011',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 30,
+    title: 'Mixed Wrestling. Best Fights. Part 4. 2013',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 31.1,
+    title: 'Mixed Wrestling. Best Fights. Part 5.1. 2013',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 31.2,
+    title: 'Mixed Wrestling. Best Fights. Part 5.2. 2013',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 32,
+    title: 'Mixed Wrestling. Artem vs Tais. 2013',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 34,
+    title: 'Mixed Wrestling Artem vs Tais. 2013',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 38,
+    title: 'Mixed Wrestling Alexander vs Tais. 2014',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 39,
+    title: 'Mixed Wrestling Villian vs Tais. Part 1. 2014',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 40,
+    title: 'Mixed Wrestling Villian vs Tais. Part 2. 2014',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 45,
+    title: 'Braivs vs Alyona 11.10.2016',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 49,
+    title: 'Braivs vs Alyona collection 2016-2017',
+    youtubeID: 'xbguaf9YTGo',
+  },
+  {
+    id: 50,
+    title: 'Tais vs Braivs collection 2014-2017',
+    youtubeID: 'xbguaf9YTGo',
+  }
 ]
 
 // Add data to video_data_src
