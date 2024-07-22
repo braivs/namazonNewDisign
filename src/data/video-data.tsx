@@ -216,6 +216,11 @@ const video_data_src_mix: Array<Video_data_src> = [
     youtubeID: 'sKIu0T-a4wE',
     title: 'Alex  vs  Tais. Extreme fight. 2011'
   },
+  {
+    id: 10,
+    youtubeID: 'xbguaf9YTGo',
+    title: 'Mixed Wrestling. Best Fights. Part 1. 2011'
+  },
 ]
 
 // Add data to video_data_src
