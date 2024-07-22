@@ -211,6 +211,11 @@ const video_data_src_mix: Array<Video_data_src> = [
     youtubeID: 'hGAZo2Ffrz4',
     title: 'Villian  vs  Tais. Mixed Wrestling. 2011'
   },
+  {
+    id: 7,
+    youtubeID: 'sKIu0T-a4wE',
+    title: 'Alex  vs  Tais. Extreme fight. 2011'
+  },
 ]
 
 // Add data to video_data_src
