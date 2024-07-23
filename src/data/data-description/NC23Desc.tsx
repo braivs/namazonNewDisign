@@ -21,3 +21,4 @@ export const NC23Desc = () => {
     </>
   )
 }
+

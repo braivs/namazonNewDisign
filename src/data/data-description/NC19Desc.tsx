@@ -30,3 +30,5 @@ export const NC19Desc = () => {
     </>
   )
 }
+
+//todo: here style of the links need add
