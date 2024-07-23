@@ -1,6 +1,6 @@
 import React from "react"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR04} from "@/common/constants/ImageContexts"
+import {DIR05} from "@/common/constants/ImageContexts"
 
 export const NC5Desc = () => {
   return (
@@ -13,7 +13,7 @@ export const NC5Desc = () => {
         This is the first video of our NEW SERIES of mixed matches. We showcase only real mixed wrestling, no
         compromises. It's a battle of the sexes to victory!
       </p>
-      <ButtonGallery images={DIR04}/>
+      <ButtonGallery images={DIR05}/>
 
     </>
   )
