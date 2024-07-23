@@ -40,6 +40,7 @@ export const DIR13 = require.context('/public/assets/img/videoGallery/13', false
 export const DIR12 = require.context('/public/assets/img/videoGallery/12', false)
 export const DIR16 = require.context('/public/assets/img/videoGallery/16', false)
 export const DIR19 = require.context('/public/assets/img/videoGallery/19', false)
+export const DIR22 = require.context('/public/assets/img/videoGallery/22', false)
 export const DIR23 = require.context('/public/assets/img/videoGallery/23', false)
 export const DIR24 = require.context('/public/assets/img/videoGallery/nc24', false)
 export const DIR26 = require.context('/public/assets/img/videoGallery/nc26', false)
