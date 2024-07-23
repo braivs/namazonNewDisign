@@ -24,3 +24,4 @@ export const NC39Desc = ()  => {
 }
 
 // todo: check link
+// todo: add link style
