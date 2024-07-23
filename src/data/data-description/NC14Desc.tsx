@@ -6,7 +6,6 @@ export const NC14Desc = () => {
   return (
     <>
       <p>
-        Two men against one woman. Mixed wrestling. Part 1. 2011<br/>
         This video features a short improvised mixed wrestling tournament held on one of the beaches of St. Petersburg.
         The men were represented by <b>Alex</b> (5’9” / 154 lb) and <b>Villian</b> (5'8” / 177 lb). The female fighter
         was <b>Tais</b> (5’7” / 130 lb), the strongest girl of the Namazon Club. The competition was organized in two

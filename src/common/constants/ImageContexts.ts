@@ -25,6 +25,7 @@ export const DIR11 = require.context('/public/assets/img/videoGallery/11', false
 // + here competitions: Mixed beach tournament. Submission Grappling. July, 2011
 export const DIR14_1 = require.context('/public/assets/img/videoGallery/14/14_1', false) //Tais vs Alex
 export const DIR14_2 = require.context('/public/assets/img/videoGallery/14/14_2', false) //Tais vs Villian
+export const DIR15 = require.context('/public/assets/img/videoGallery/15', false)
 ///17 MMA and Submission Grappling. February, 2012:
 // export const DIR17_1 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-1', false)
 // export const DIR17_2 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-2', false)
