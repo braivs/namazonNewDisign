@@ -20,7 +20,7 @@ export const DIR09_2 = require.context('/public/assets/img/videoGallery/09/mma-r
 export const DIR09_3 = require.context('/public/assets/img/videoGallery/09/mma-rozhdestvenskij-kubok-2012-4', false)
 export const DIR10 = require.context('/public/assets/img/videoGallery/10', false)
 // 11: Alex vs Elena Vasilyeva (Gladiatriks), Mixed Beach Wrestling. July, 2011
-// export const DIR11 = require.context('/public/assets/img/videoGallery/11', false)
+export const DIR11 = require.context('/public/assets/img/videoGallery/11', false)
 //14: Two men against one woman. Mixed wrestling on a beach. Part 1. 2011
 // + here competitions: Mixed beach tournament. Submission Grappling. July, 2011
 // export const DIR14_1 = require.context('/public/assets/img/videoGallery/14/smeshannyj-plyazhnyj-turnir-2011-4', false) //Tais vs Alex
