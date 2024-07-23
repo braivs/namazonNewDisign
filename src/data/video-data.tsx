@@ -274,7 +274,7 @@ const video_data_src_mix: Array<Video_data_src> = [
   },
   {
     id: 34,
-    title: 'Mixed Wrestling Artem vs Tais. 2013',
+    title: 'Mixed Wrestling. Alexander and Villian against Tais. 2013',
     youtubeID: 'U0Eu-u52FQs',
   },
   {

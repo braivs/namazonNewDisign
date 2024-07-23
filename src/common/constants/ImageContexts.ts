@@ -60,6 +60,7 @@ export const DIR32 = require.context('/public/assets/img/videoGallery/32', false
 ///33:
 export const DIR_LIDA_VIKA = require.context('/public/assets/img/videoGallery/nc33/lida-vika', false)
 export const DIR_TAIS_YULIA = require.context('/public/assets/img/videoGallery/nc33/tais-yulia', false)
+export const DIR34 = require.context('/public/assets/img/videoGallery/34', false)
 export const DIR35 = require.context('/public/assets/img/videoGallery/nc35', false) // 36 Female submission grappling tournament between beginners. Preliminary fights.
 export const DIR36 = require.context('/public/assets/img/videoGallery/nc36', false) // 36 Female submission grappling tournament between beginners. Preliminary fights.
 export const DIR37 = require.context('/public/assets/img/videoGallery/nc37', false) // 37 Female submission grappling tournament between beginners. <u>Final fights
