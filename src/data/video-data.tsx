@@ -296,6 +296,11 @@ const video_data_src_mix: Array<Video_data_src> = [
     id: 45,
     title: 'Braivs vs Alyona 11.10.2016',
     youtubeID: 'Ew7fMthTt0Q',
+    description: () => (
+      <p>
+        Braivs and Alyona are evenly matched in strength. The full video contains 15 minutes of action.
+      </p>
+    )
   },
   {
     id: 49,
