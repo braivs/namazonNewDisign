@@ -47,7 +47,11 @@ export const DIR25_VILLIAN_ELENA = require.context('/public/assets/img/videoGall
 export const DIR25_VILLIAN_LYUDMILA = require.context('/public/assets/img/videoGallery/25/villian-lyudmila', false)
 // export const DIR24 = require.context('/public/assets/img/videoGallery/nc24', false)
 export const DIR26 = require.context('/public/assets/img/videoGallery/nc26', false)
+// export const DIR27 = require.context('/public/assets/img/videoGallery/nc27', false)
+// export const DIR27 = require.context('/public/assets/img/videoGallery/nc27', false)
 export const DIR27 = require.context('/public/assets/img/videoGallery/nc27', false)
+export const DIR28_TAIS_ALEXANDER = require.context('/public/assets/img/videoGallery/28/tais-alexander', false)
+export const DIR28_TAIS_VILLIAN = require.context('/public/assets/img/videoGallery/28/tais-villian', false)
 export const DIR29 = require.context('/public/assets/img/videoGallery/nc29', false)
 ///33:
 export const DIR_LIDA_VIKA = require.context('/public/assets/img/videoGallery/nc33/lida-vika', false)
