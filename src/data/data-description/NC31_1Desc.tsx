@@ -1,6 +1,6 @@
 import React from "react"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR30} from "@/common/constants/ImageContexts"
+import {DIR31_1} from "@/common/constants/ImageContexts"
 
 export const NC31_1Desc = () => {
   return (
@@ -16,7 +16,7 @@ export const NC31_1Desc = () => {
         This part of the video includes the first five fights of the day. If you enjoy real competitive mixed wrestling,
         this is highly recommended!
       </p>
-      <ButtonGallery images={DIR30}/>
+      <ButtonGallery images={DIR31_1}/>
     </>
   )
 }
