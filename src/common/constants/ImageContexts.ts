@@ -23,8 +23,8 @@ export const DIR10 = require.context('/public/assets/img/videoGallery/10', false
 export const DIR11 = require.context('/public/assets/img/videoGallery/11', false)
 //14: Two men against one woman. Mixed wrestling on a beach. Part 1. 2011
 // + here competitions: Mixed beach tournament. Submission Grappling. July, 2011
-// export const DIR14_1 = require.context('/public/assets/img/videoGallery/14/smeshannyj-plyazhnyj-turnir-2011-4', false) //Tais vs Alex
-// export const DIR14_2 = require.context('/public/assets/img/videoGallery/14/smeshannyj-plyazhnyj-turnir-2011-5', false) //Tais vs Villian
+export const DIR14_1 = require.context('/public/assets/img/videoGallery/14/14_1', false) //Tais vs Alex
+export const DIR14_2 = require.context('/public/assets/img/videoGallery/14/14_2', false) //Tais vs Villian
 ///17 MMA and Submission Grappling. February, 2012:
 // export const DIR17_1 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-1', false)
 // export const DIR17_2 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-2', false)
