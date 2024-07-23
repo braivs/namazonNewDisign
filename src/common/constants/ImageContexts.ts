@@ -54,6 +54,7 @@ export const DIR28_TAIS_ALEXANDER = require.context('/public/assets/img/videoGal
 export const DIR28_TAIS_VILLIAN = require.context('/public/assets/img/videoGallery/28/tais-villian', false)
 export const DIR29 = require.context('/public/assets/img/videoGallery/nc29', false)
 export const DIR30 = require.context('/public/assets/img/videoGallery/30', false)
+export const DIR31_1 = require.context('/public/assets/img/videoGallery/31_1', false)
 ///33:
 export const DIR_LIDA_VIKA = require.context('/public/assets/img/videoGallery/nc33/lida-vika', false)
 export const DIR_TAIS_YULIA = require.context('/public/assets/img/videoGallery/nc33/tais-yulia', false)

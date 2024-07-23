@@ -51,6 +51,13 @@ export function formatNumber(num: number): string {
     return strNum;
 }
 
+export function unformatNumberStr(strNum: string): string {
+    if (strNum.includes('_')) {
+        return strNum.replace('_', '.');
+    }
+    return strNum;
+}
+
 interface ImageModule {
     default: {
         src: string;

@@ -324,6 +324,8 @@ export const video_data: Array<Video_data> = video_data_src_mix.map(video => {
   }
 })
 
+console.log('video_data: ', video_data)
+
 export const video_data_blank: Video_data = {
   id: 0,
   youtubeID: '',

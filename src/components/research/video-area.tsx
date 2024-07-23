@@ -1,6 +1,7 @@
 import Link from "next/link"
 import React from "react"
 import {video_data} from "@/data/video-data"
+import {formatNumber} from "@/common/helpers"
 
 const VideoArea = () => {
   return (
@@ -21,10 +22,10 @@ const VideoArea = () => {
                     <div className="research-item__content">
                       <span>{item.category} - NC{item.id}</span>
                       <h4 className="research-item__title mb-20" style={{ fontSize: '19px' }}>
-                        <Link href={`/video/nc${item.id}`}>{item.title}</Link>
+                        <Link href={`/video/nc${formatNumber(item.id)}`}>{item.title}</Link>
                       </h4>
                       <p>{item.des}</p>
-                      <Link href={`/video/nc${item.id}`} className="research-item__btn">
+                      <Link href={`/video/nc${formatNumber(item.id)}`} className="research-item__btn">
                         Read More
                       </Link>
                     </div>
