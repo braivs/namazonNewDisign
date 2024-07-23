@@ -306,11 +306,24 @@ const video_data_src_mix: Array<Video_data_src> = [
     id: 49,
     title: 'Braivs vs Alyona collection 2016-2017',
     youtubeID: 'LETUteJJ724',
+    description: () => (
+      <p>
+        This is a collection of wrestling clips featuring Braivs and Alyona, compiled into a single film. Filmed over 5
+        days between late 2016 and early 2017. The full clip is 56 minutes long! Please note, it is more male-dominated.
+      </p>
+    )
   },
   {
     id: 50,
     title: 'Tais vs Braivs collection 2014-2017',
     youtubeID: 'W8TqBxzEMaI',
+    description: () => (
+      <p>
+        This is a collection of wrestling clips featuring Braivs and Tais, compiled into a single film. Filmed over 8
+        days between 2014 and 2017, Braivs put forth his best effort, but Tais proved to be stronger. The full clip is
+        23 minutes long.
+      </p>
+    )
   }
 ]
 
