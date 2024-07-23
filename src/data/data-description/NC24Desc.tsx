@@ -6,16 +6,15 @@ export const NC24Desc = () => {
   return (
     <>
       <p>
-        <b>Irina</b> (5’9” / 154 lb) is a strong young athlete engaged in Muay Thai and pole dancing, but she is still
-        a
-        newcomer in her wrestling matches in the Namazon Club’s tournaments. <b>Tais</b> (5’7” / 130 lb) is a
-        well-known, strong, and skilled lady who specializes in Submission Grappling and MMA.
+        <b>Lyudmila</b> (5’11” / 154 lb) is a strong sportswoman engaged in Muay Thai, but she is a newcomer in our
+        Club’s competitions, while <b>Tais</b> (5’7” / 130 lb) is a repeat winner in the competitions, specializing in
+        Submission Grappling and MMA.
       </p>
-      <p>In this competitive match, Irina, using her height and weight advantage, tried to force her experienced
-        opponent into a hard body-to-body fight. You will see what came out of it if you watch our video.</p>
+      <p>As you can see, Lyudmila is much heavier and taller than Tais. In this match, the girls wrestled three rounds.
+        Lyudmila managed to place Tais in a very difficult position at the beginning of the first round.</p>
       <p>
-        If you like real female wrestling and want to see two trained women struggling hard against each other in a
-        competitive ground fight, then this video is just for you.
+        Watch the video to see what followed and how it all ended. If you like real mat wrestling between some of the
+        fittest and most beautiful women, then this video is for you.
       </p>
       <ButtonGallery images={DIR24}/>
     </>

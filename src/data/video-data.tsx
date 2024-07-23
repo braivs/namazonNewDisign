@@ -328,7 +328,7 @@ const video_data_src_mix: Array<Video_data_src> = [
 ]
 
 // Add data to video_data_src
-export const video_data: Array<Video_data> = video_data_src_mix.map(video => {
+export const video_data: Array<Video_data> = video_data_src.map(video => {
   const formattedId = video.id < 10 ? `0${video.id}` : formatNumber(video.id)
   return {
     ...video,

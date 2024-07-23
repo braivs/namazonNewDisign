@@ -5,7 +5,7 @@ import {DIR41_KZ, DIR41_VZ} from "@/common/constants/ImageContexts"
 export const NC41Desc = ()  => {
   return (
     <>
-      <p>Our HD video featuring the submission grappling mini-tournament that was held on October 13, 2014, has been
+      <p>Our full HD video featuring the submission grappling mini-tournament that was held on October 13, 2014, has been
         divided into two parts: <b>VIDEO 41</b> and <b>VIDEO 42</b>. The first part includes four fights featuring <b>Zoya
           Dorofeeva</b> (56 kg / 123.5 lb), who is a newcomer to our competitions.</p>
       <p>Prior to this event, Zoya participated in Russian hand-to-hand fighting. Here, her opponents were two

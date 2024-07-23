@@ -3,10 +3,10 @@ import React from "react"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
 import {DIR_NC42} from "@/common/constants/ImageContexts"
 
-export const NC42Desc = ({id}: Props)  => {
+export const NC42Desc = ()  => {
   return (
     <>
-      <p><b>VIDEO {id}</b> is the second part of our full HD video featuring the submission grappling
+      <p><b>This video</b> is the second part of our full HD video featuring the submission grappling
         mini-tournament
         that took place on October 13, 2014. It includes two fights between <b>Christina Shvets</b> (68.9 kg / 151.9
         lb)
@@ -37,6 +37,4 @@ export const NC42Desc = ({id}: Props)  => {
   )
 }
 
-type Props = {
-   id?: number
-}
+//todo: looks like link is works, but because it is dynamic page, so ts error. Understand ho to fix.
