@@ -56,6 +56,7 @@ export const DIR29 = require.context('/public/assets/img/videoGallery/nc29', fal
 export const DIR30 = require.context('/public/assets/img/videoGallery/30', false)
 export const DIR31_1 = require.context('/public/assets/img/videoGallery/31_1', false)
 export const DIR31_2 = require.context('/public/assets/img/videoGallery/31_2', false)
+export const DIR32 = require.context('/public/assets/img/videoGallery/32', false)
 ///33:
 export const DIR_LIDA_VIKA = require.context('/public/assets/img/videoGallery/nc33/lida-vika', false)
 export const DIR_TAIS_YULIA = require.context('/public/assets/img/videoGallery/nc33/tais-yulia', false)
