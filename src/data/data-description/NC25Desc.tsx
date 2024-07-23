@@ -1,6 +1,6 @@
 import React from "react"
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR25_VILLIAN_ELENA, DIR25_VILLIAN_LYUDMILA} from "@/common/constants/ImageContexts"
+import {DIR25_VILLIAN_ELENA, DIR25_VILLIAN_LYUDMILA, DIR25_VILLIAN_TAIS} from "@/common/constants/ImageContexts"
 
 export const NC25Desc = () => {
   return (
@@ -21,6 +21,8 @@ export const NC25Desc = () => {
       <ButtonGallery images={DIR25_VILLIAN_ELENA}/>
       <h5>Villian vs Lyudmila</h5>
       <ButtonGallery images={DIR25_VILLIAN_LYUDMILA}/>
+      <h5>Villian vs Tais</h5>
+      <ButtonGallery images={DIR25_VILLIAN_TAIS}/>
     </>
   )
 }
