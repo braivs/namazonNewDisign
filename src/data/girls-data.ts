@@ -1,4 +1,4 @@
-const team_one_data = [
+const girls_data = [
   {
     id: 1,
     img: "/assets/img/team/tais2012-2013.png",
@@ -25,4 +25,4 @@ const team_one_data = [
     title: "2012",
   },
 ];
-export default team_one_data;
+export default girls_data;

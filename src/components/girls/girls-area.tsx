@@ -1,8 +1,8 @@
-import team_one_data from "@/data/team-one-data";
+import girls_data from "@/data/girls-data";
 import Link from "next/link";
 import React from "react";
 
-const TeamArea = () => {
+const GirlsArea = () => {
   return (
     <>
       <section className="team-area pt-125 pb-70">
@@ -18,7 +18,7 @@ const TeamArea = () => {
             </div>
           </div>
           <div className="row">
-            {team_one_data.map((item) => (
+            {girls_data.map((item) => (
               <div key={item.id} className="col-xl-3 col-lg-4 col-md-6">
                 <div
                   className="team-item mb-35 wow fadeInUp"
@@ -43,4 +43,4 @@ const TeamArea = () => {
   );
 };
 
-export default TeamArea;
+export default GirlsArea;

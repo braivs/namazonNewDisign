@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const BannerTeamOne = () => {
+const BannerGirls = () => {
   return (
     <>
       <section
@@ -31,4 +31,4 @@ const BannerTeamOne = () => {
   );
 };
 
-export default BannerTeamOne;
+export default BannerGirls;

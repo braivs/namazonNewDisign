@@ -1,17 +1,17 @@
 import FooterFour from "@/layout/footer/footer-4"
 import HeaderTwo from "@/layout/header/header-two"
 import React from "react"
-import TeamArea from "./team-area"
+import GirlsArea from "./girls-area"
 
-const TeamOne = () => {
+const Girls = () => {
   return (
     <>
       <HeaderTwo />
-      {/*<BannerTeamOne />*/} {/*todo: uncommit later*/}
-      <TeamArea />
+      {/*<BannerGirls />*/} {/*todo: uncommit later*/}
+      <GirlsArea />
       <FooterFour />
     </>
   );
 };
 
-export default TeamOne;
+export default Girls;
