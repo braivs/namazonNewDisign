@@ -163,7 +163,7 @@ const TeamDetailsArea = () => {
             <div className="col-lg-4 col-md-6">
               <div className="tp-team-dtls__content mt-50 mb-50">
                 <h4 className="tp-team-dtls__title mb-10">
-                  <Link href="/src/pages/team-1">Cameron Williamson</Link>
+                  <Link href="/src/pages/girls">Cameron Williamson</Link>
                 </h4>
                 <span className="mb-35">Genetic Specialist</span>
                 <p>

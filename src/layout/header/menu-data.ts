@@ -21,8 +21,6 @@ const menu_data = [
     active: "",
     sub_menus: [
       { link: "/about", title: "About" },
-      { link: "/team-1", title: "Team 01" },
-      { link: "/team-2", title: "Team 02" },
       { link: "/team-details", title: "Team Details" },
       { link: "/pricing-plan", title: "Pricing Plan" },
       { link: "/shop", title: "Shop" },
