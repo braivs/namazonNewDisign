@@ -6,16 +6,16 @@ export const NC4Desc = () => {
   return (
     <>
       <p>
-        <b>Tais</b> (5’7” / 128 lb) is a multiple winner of Submission Grappling competitions organized by our
-        club. <b>Maria
-        Rylyova</b> (5’8” / 126 lb) is the winner of the Namazon Club Championship in Submission Grappling in 2010 and
-        a
-        master of sports in armwrestling.<br/>
-        The competition started with an arm wrestling contest using both arms (lying on the floor), which ended in a
-        draw. They then continued their rivalry on the wrestling mat, engaging in several rounds of submission
-        grappling.
+        Participants in the tournament included: <b>Natalia Mysik</b> (5'11" / 154 lb), <b>Ksenia Voloshina</b> (5'3" /
+        141 lb), and <b>Valentina Perfilyeva</b> (5'8" / 139 lb). A notable feature of the competition was the
+        significant disparity in weight and height among the wrestlers.<br/>
+        Natalia, being much heavier and taller than her opponents, frequently used this advantage to secure pinning
+        holds, particularly School Girl Pins, which she would then easily convert into armlocks or chokes. One of these
+        chokes even resulted in a knockout for her opponent.<br/>
+        Additionally, outside of the tournament, there was a prize fight between Tais (5'7" / 132 lb) and Natalia Mysik.
       </p>
-      <p>If you enjoy watching skillful wrestling between women who are evenly matched, you will love this film.</p>
+      <p>If you enjoy watching long pinning holds, head scissors, and chokes in women’s fights, you will love this
+        film.</p>
       <ButtonGallery images={DIR04}/>
     </>
   )

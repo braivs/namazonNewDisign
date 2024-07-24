@@ -150,7 +150,7 @@ export const video_data_src: Array<Video_data_src> = [
   },
   {
     id: 6,
-    youtubeID: '_7gBrg1KOYw',
+    youtubeID: 'ARwmIhW7goQ',
     title: 'Maria Rylyova  vs Tais. Armwrestling and Wrestling'
   },
   {
@@ -328,7 +328,7 @@ const video_data_src_mix: Array<Video_data_src> = [
 ]
 
 // Add data to video_data_src
-export const video_data: Array<Video_data> = video_data_src.map(video => {
+export const video_data: Array<Video_data> = video_data_src_mix.map(video => {
   const formattedId = video.id < 10 ? `0${video.id}` : formatNumber(video.id)
   return {
     ...video,
@@ -379,3 +379,6 @@ export type Video_data = {
 
 //todo: check links
 //todo: need to fix on Gumroad nc names
+//todo: add zero add beginning of nc1-9 names
+//todo: understand what to do with nc03
+//todo: revert video_data_src_mix
