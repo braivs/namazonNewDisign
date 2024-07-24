@@ -14,13 +14,13 @@ const team_one_data = [
   },
   {
     id: 3,
-    img: "/assets/img/team/team-thumb-07.png",
+    img: "/assets/img/team/elena2012-2013.png",
     name: "Elena Vasilyeva",
     title: "2013",
   },
   {
     id: 4,
-    img: "/assets/img/team/team-thumb-08.png",
+    img: "/assets/img/team/darya-balina.png",
     name: "Darya Balina",
     title: "2012",
   },
