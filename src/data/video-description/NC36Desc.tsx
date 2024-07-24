@@ -32,7 +32,3 @@ export const NC36Desc = ()  => {
     </>
   )
 }
-
-type Props = {
-  id?: number
-}
