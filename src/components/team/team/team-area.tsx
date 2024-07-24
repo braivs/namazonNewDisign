@@ -11,9 +11,9 @@ const TeamArea = () => {
             <div className="col-lg-12">
               <div className="tp-section text-center">
                 <span className="tp-section__sub-title left-line right-line mb-25">
-                  OUr Team
+                  Participants of competitions
                 </span>
-                <h3 className="tp-section__title mb-70">Our Specialist</h3>
+                <h3 className="tp-section__title mb-70">2012 - 2013</h3>
               </div>
             </div>
           </div>
@@ -32,20 +32,6 @@ const TeamArea = () => {
                       <Link href="/src/pages/team-details">{item.name}</Link>
                     </h5>
                     <span>{item.title}</span>
-                    <div className="team-item__social-info">
-                      <a href="#">
-                        <i className="fa-brands fa-facebook-f"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa-brands fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa-brands fa-instagram"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa-light fa-basketball"></i>
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>

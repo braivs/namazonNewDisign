@@ -6,7 +6,7 @@ import React from "react";
 const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle="Team One" />
+      <SEO pageTitle="Girls" />
       <TeamOne />
     </Wrapper>
   );
