@@ -33,19 +33,21 @@ const girls_data_src: Girl_data_src[] = [
 export const girls_data: Array<GirlData> = girls_data_src.map(girl => {
   return {
     ...girl,
+    years: '2012 - 2013',
     description: function () {
       return <DescriptionComponent version={'girls'} id={girl.id}/>
     }
   }
 })
 
-type Girl_data_src = Omit<GirlData, "description">;
+type Girl_data_src = Omit<GirlData, "description" | 'years'>;
 
 export const girls_data_blank: GirlData = {
   id: '',
   img: '',
   name: '',
   title: '',
+  years: '',
   description: () => {
     return <></>
   }

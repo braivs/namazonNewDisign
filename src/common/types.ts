@@ -13,6 +13,7 @@ export type GirlData = {
   img: string
   name: string
   title: string
+  years: string
   description: () => React.ReactNode
 }
 

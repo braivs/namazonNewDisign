@@ -5,7 +5,7 @@ export default function GirlsData({GirlData}: Props) {
 
   return (
       <>
-        <h3>Participants of competitions</h3>
+        <h3>Participants of competitions {GirlData?.years}</h3>
         <h4>{GirlData?.name}</h4>
         <section className="pt-10">
           {GirlData?.description()}
