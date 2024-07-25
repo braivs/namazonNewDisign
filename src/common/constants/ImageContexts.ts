@@ -73,6 +73,8 @@ export const DIR_NC46 = require.context('/public/assets/img/videoGallery/nc46', 
 export const DIR_NC47 = require.context('/public/assets/img/videoGallery/nc47', false) //NC47 Women's strength competition at Maslenitsa 2017
 
 // girls
+export const DIR_TAIS_MAIN = require.context('/public/assets/img/girl/tais2013/main_gallery', false)
+export const DIR_TAIS_VS_KARA_SHORT = require.context('/public/assets/img/girl/tais2013/tais_vs_kara_short', false)
 // export const DirIrinaSubgr = require.context('src/img/girl/irina/subgr', false)
 // export const DirIrinaBeachgr = require.context('src/img/girl/irina/beachgr', false)
 // export const DirValentinaSubgr = require.context('src/img/girl/valentina_perfileva/subgr', false)
