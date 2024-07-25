@@ -2,7 +2,7 @@ import React from "react"
 import {DIR_NC46, DIR_NC47} from "@/common/constants/ImageContexts"
 
 import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import DescriptionComponent from "@/components/DescriptionComponent"
+import DescriptionComponent from "@/common/DescriptionComponent"
 import {formatNumber} from "@/common/helpers"
 
 export const video_data_src: Array<Video_data_src> = [

@@ -1,3 +1,5 @@
+import React from "react"
+
 type Desk = {
   id: number
 }
@@ -11,4 +13,6 @@ export type GirlData = {
   img: string
   name: string
   title: string
+  description: () => React.ReactNode
 }
+

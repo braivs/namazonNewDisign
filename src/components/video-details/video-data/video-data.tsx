@@ -20,7 +20,6 @@ export default function VideoData({videoData, youtubeID}: Props) {
             {
               youtubeID && <MyYouTube videoId={youtubeID}/>
             }
-
           </Col>
         </Row>
         <section className="pt-10">

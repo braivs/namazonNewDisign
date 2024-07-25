@@ -7,9 +7,9 @@ export default function GirlsData({GirlData}: Props) {
       <>
         <h3>Participants of competitions</h3>
         <h4>{GirlData?.name}</h4>
-        {/*<section className="pt-10">
-          {videoData?.description()}
-        </section>*/}
+        <section className="pt-10">
+          {GirlData?.description()}
+        </section>
       </>
   )
 }
