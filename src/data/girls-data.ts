@@ -1,9 +1,4 @@
-type GirlData = {
-  id: string
-  img: string
-  name: string
-  title: string
-}
+import {GirlData} from "@/common/types"
 
 const girls_data: GirlData[] = [
   {
@@ -31,5 +26,13 @@ const girls_data: GirlData[] = [
     title: "2012",
   },
 ];
+
+export const girls_data_blank: GirlData = {
+  id: '',
+  img: '',
+  name: '',
+  title: '',
+  }
+
 
 export default girls_data;

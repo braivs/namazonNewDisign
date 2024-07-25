@@ -1,32 +1,26 @@
 import {useRouter} from 'next/router'
-import {video_data, Video_data, video_data_blank} from "@/data/video-data"
-import VideoDetails from "@/components/video-details"
-import VideoData from "@/components/video-details/video-data/video-data"
+import ElementDetails from "@/common/element-details/element-details"
 import React from "react"
-import {formatNumber, unformatNumberStr} from "@/common/helpers"
+import girls_data, {girls_data_blank} from "@/data/girls-data"
+import {GirlData} from "@/common/types"
+import GirlsData from "@/components/girls/girls-data/girls-data"
 
 function VideoComponent() {
   const router = useRouter()
-  const {videoId} = router.query
+  const {girlId} = router.query
 
-  console.log('videoId: ', videoId)
-
-  const unformattedVideoId = videoId ? unformatNumberStr(videoId as string) : undefined;
-
-  const videoData: Video_data | undefined = unformattedVideoId ? video_data.find((item) => item.id === Number(unformattedVideoId?.substring(2))) : video_data_blank
-  const youtubeID = videoData?.youtubeID
-
+  const girlData: GirlData | undefined = girlId ? girls_data.find((item) => item.id === girlId) : girls_data_blank
 
   return (
-    <VideoDetails>
-      <VideoData videoData={videoData} youtubeID={youtubeID}/>
-    </VideoDetails>
+    <ElementDetails>
+      <GirlsData GirlData={girlData}/>
+    </ElementDetails>
   )
 }
 
 export const getStaticPaths = async () => {
-  const paths = video_data.map(video => ({
-    params: {videoId: 'nc' + formatNumber(video.id).toString()}
+  const paths = girls_data.map(girl => ({
+    params: {girlId: girl.id}
   }))
 
   return {
@@ -37,10 +31,10 @@ export const getStaticPaths = async () => {
 }
 
 export async function getStaticProps({params}: Params) {
-  const {videoId} = params
+  const {girlId} = params
   
   const Video = {
-    id: videoId,
+    id: girlId,
   }
 
   return {
@@ -52,7 +46,7 @@ export async function getStaticProps({params}: Params) {
 
 type Params = {
   params: {
-    videoId: string;
+    girlId: string;
   };
 };
 

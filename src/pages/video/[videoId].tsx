@@ -1,6 +1,6 @@
 import {useRouter} from 'next/router'
 import {video_data, Video_data, video_data_blank} from "@/data/video-data"
-import VideoDetails from "@/components/video-details"
+import ElementDetails from "@/common/element-details/element-details"
 import VideoData from "@/components/video-details/video-data/video-data"
 import React from "react"
 import {formatNumber, unformatNumberStr} from "@/common/helpers"
@@ -9,8 +9,6 @@ function VideoComponent() {
   const router = useRouter()
   const {videoId} = router.query
 
-  console.log('videoId: ', videoId)
-
   const unformattedVideoId = videoId ? unformatNumberStr(videoId as string) : undefined;
 
   const videoData: Video_data | undefined = unformattedVideoId ? video_data.find((item) => item.id === Number(unformattedVideoId?.substring(2))) : video_data_blank
@@ -18,9 +16,9 @@ function VideoComponent() {
 
 
   return (
-    <VideoDetails>
+    <ElementDetails>
       <VideoData videoData={videoData} youtubeID={youtubeID}/>
-    </VideoDetails>
+    </ElementDetails>
   )
 }
 

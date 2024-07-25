@@ -29,7 +29,7 @@ const GirlsArea = () => {
                   </div>
                   <div className="team-item__content">
                     <h5 className="team-item__title mb-15">
-                      <Link href="/src/pages/team-details">{item.name}</Link>
+                      <Link href={`/girls/${item.id}`}>{item.name}</Link>
                     </h5>
                     <span>{item.title}</span>
                   </div>
