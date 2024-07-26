@@ -5,6 +5,7 @@ import React from "react"
 import {Video_data} from "@/data/video-data"
 import s from './video-data.module.scss'
 import {formatNumber} from "@/common/helpers"
+import sC from '@/common/styles.module.scss'
 
 export default function VideoData({videoData, youtubeID}: Props) {
   console.log('videoData: ', videoData)
@@ -12,7 +13,7 @@ export default function VideoData({videoData, youtubeID}: Props) {
   if (videoData) videoDataIdFormatted = formatNumber(videoData.id)
 
   return (
-      <>
+      <div className={sC.compArticlesVideoGirl}>
         <h3>{`NC${videoDataIdFormatted}`}</h3>
         <h4>{videoData?.title}</h4>
         <Row>
@@ -31,7 +32,7 @@ export default function VideoData({videoData, youtubeID}: Props) {
             You can purchase <b>video {`NC${videoDataIdFormatted}`}</b> on <a className={s.violet} href={`https://namazonclub.gumroad.com/l/nc${videoDataIdFormatted}`}><b>Gumroad</b></a>.
           </p>
         </Row>
-      </>
+      </div>
   )
 }
 
