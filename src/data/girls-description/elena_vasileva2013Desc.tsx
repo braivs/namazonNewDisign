@@ -76,4 +76,3 @@ export const ElenaVasileva2013Desc = () => {
 }
 
 //todo: check links
-//todo: add links style

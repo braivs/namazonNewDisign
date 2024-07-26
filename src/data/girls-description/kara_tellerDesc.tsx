@@ -100,4 +100,3 @@ export const kara_tellerDesc = () => {
 }
 
 //todo: check links
-//todo: add links style

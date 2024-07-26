@@ -43,5 +43,4 @@ export const DaryaBalinaDesc = () => {
   )
 }
 
-//todo: add links style
 //todo: check links
