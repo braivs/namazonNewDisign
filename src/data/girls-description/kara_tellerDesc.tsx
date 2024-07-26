@@ -25,7 +25,7 @@ export const kara_tellerDesc = () => {
       <Col className={cn('d-flex', 'justify-content-center')}>
         <Image className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
       </Col>
-      <ButtonGallery images={DIR_KARA_TELLER} buttonName={buttonText}/> {/*todo: here I see wrong proportions, need to fix*/}
+      <ButtonGallery images={DIR_KARA_TELLER} imagesSize={{width: 330, height: 220}} buttonName={buttonText}/>
       <p>
         <b>Kara Teller</b> (the Vityaz Club, Moscow) is a very tender, feminine girl in daily life and a tough, brave,
         stubborn fighter on a wrestling mat and in a ring. She specializes in karate, sambo, MMA, and hand-to-hand

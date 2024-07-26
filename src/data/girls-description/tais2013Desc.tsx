@@ -16,7 +16,7 @@ export const tais2013Desc = () => {
     <>
       <Image src={imgMain} alt={'imgMain'} className={sC.MainImg}/>
       <ButtonGallery images={DIR_TAIS_MAIN}
-                     buttonName={buttonText}/> {/*todo: here I see wrong proportions, need to fix*/}
+                     buttonName={buttonText} imagesSize={{width: 330, height: 220}}/>
       <p>
         <b>Tais</b> (5’7” / 130 lb) is a skilled and strong woman specializing in various combative sports. She
         competes successfully in Submission Grappling and MMA competitions. Tais has a beautiful, flexible body and
