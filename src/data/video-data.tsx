@@ -328,7 +328,7 @@ const video_data_src_mix: Array<Video_data_src> = [
 ]
 
 // Add data to video_data_src
-export const video_data: Array<Video_data> = video_data_src_mix.map(video => {
+export const video_data: Array<Video_data> = video_data_src_mma.map(video => {
   const formattedId = video.id < 10 ? `0${video.id}` : formatNumber(video.id)
   return {
     ...video,
@@ -377,6 +377,7 @@ export type Video_data = {
   description: () => React.ReactNode
 }
 
+//todo: mma nc17 missed
 //todo: check links
 //todo: need to fix on Gumroad nc names
 //todo: add zero add beginning of nc1-9 names

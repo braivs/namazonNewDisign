@@ -6,15 +6,15 @@ import imgMain3 from 'public/assets/img/girl/tais2013/tais_vs_kara_short/01.jpg'
 import imgMain4 from 'public/assets/img/girl/tais2013/tais-varvara.jpg'
 import imgMain5 from 'public/assets/img/girl/tais2013/2013-sg-elena-vasilyeva-tais.jpg'
 import Image from "next/image"
-import s from './tais2013Desc.module.scss'
 import Link from "next/link"
+import sC from '@/common/styles.module.scss'
 
 export const tais2013Desc = () => {
   const buttonText = 'Other photos'
   
   return (
     <>
-      <Image src={imgMain} alt={'imgMain'} className={s.MainImg}/>
+      <Image src={imgMain} alt={'imgMain'} className={sC.MainImg}/>
       <ButtonGallery images={DIR_TAIS_MAIN}
                      buttonName={buttonText}/> {/*todo: here I see wrong proportions, need to fix*/}
       <p>
@@ -27,7 +27,7 @@ export const tais2013Desc = () => {
       </p>
       <h4><u>Tais in MMA fights</u></h4>
       <h4>Tais vs Elena Vasilyeva. Christmas Cup 2012</h4>
-      <Image src={imgMain2} alt={'imgMain2'} className={s.MainImg}/>
+      <Image src={imgMain2} alt={'imgMain2'} className={sC.MainImg}/>
       <p>
         The fight was scheduled for 3 four-minute rounds with a one-minute rest period between each round. Tais
         defeated <Link href="/girl/2012_2013/elena-vasileva2013">Lena</Link> (5'6" / 132 lb) already in
@@ -37,7 +37,7 @@ export const tais2013Desc = () => {
       <p>After mounting her opponent, Tais could have delivered punches to Kara’s head from the top position, but
         instead chose to make her submit with an arm lock.</p>
       <h4>Tais vs Kara Teller. 2012</h4>
-      <Image className={s.MainImg} src={imgMain3} alt="imgMain"/>
+      <Image className={sC.MainImg} src={imgMain3} alt="imgMain"/>
       <p>
         In 2012, Tais fought three times against <Link href="/girl/2012_2013/kara-teller">Kara
         Teller</Link>
@@ -60,7 +60,7 @@ export const tais2013Desc = () => {
       <p>In 2012, Tais overpowered <b>Varvara Akulova</b> (5'9" / 165 lb), who was twice recognized by the Guinness
         Book of Records as the world's strongest girl during her early years, and is now a master of sports in
         weightlifting and powerlifting.</p>
-      <Image className={s.MainImg} src={imgMain4} alt="imgMain4"/>
+      <Image className={sC.MainImg} src={imgMain4} alt="imgMain4"/>
       <p><b>Tais</b> vs <b>Varvara Akulova</b></p>
       <p>In June 2013, Tais faced her old rival <Link
         href="/girl/2012_2013/elena-vasileva2013">Elena Vasilyeva</Link> (5'7" / 157 lb), who had been
@@ -70,7 +70,7 @@ export const tais2013Desc = () => {
         struggle, Lena finally defeated her more experienced opponent. This marked Tais's first loss against Elena in
         wrestling.
       </p>
-      <Image className={s.MainImg} src={imgMain5} alt="imgMain5"/>
+      <Image className={sC.MainImg} src={imgMain5} alt="imgMain5"/>
       <p><b>Tais</b> vs <b>Elena Vasilyeva</b></p>
       <h4><u>Results for 2012 MMA Tournaments</u></h4>
       <p>Win-loss-draw record – 3:1:0 (as of May 8, 2012)</p>
