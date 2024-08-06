@@ -31,9 +31,9 @@ const girls_data_src_2012_2013: Girl_data_src[] = [
 
 const girls_data_src_2010_2011: Girl_data_src[] = [
   {
-    id: 'mariya-ryljova',
+    id: 'mariya_ryljova',
     img: "/assets/img/team/maria.png",
-    name: "MARIA RYLYOVA",
+    name: "Maria Rylyova",
     title: "5\'8\'\' / 130 lb",
   },
   {

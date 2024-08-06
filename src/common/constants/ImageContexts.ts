@@ -78,6 +78,7 @@ export const DIR_TAIS_VS_KARA_SHORT = require.context('/public/assets/img/girl/t
 export const DIR_KARA_TELLER = require.context('/public/assets/img/girl/kara-teller', false)
 export const DIR_KARA_SVETLANY_1 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-1', false)
 export const DIR_KARA_SVETLANY_3 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-3', false)
+export const DIR_MARIYA_RYLJOVA = require.context('/public/assets/img/girl/mariya-ryljova', false)
 
 // export const DirIrinaSubgr = require.context('src/img/girl/irina/subgr', false)
 // export const DirIrinaBeachgr = require.context('src/img/girl/irina/beachgr', false)
