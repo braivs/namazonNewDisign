@@ -1,8 +1,6 @@
 import Counter from "@/common/counter";
 import React from "react";
 import About from "./about";
-import Appointment from "./appointment";
-import Choose from "./choose";
 import Gallery from "./gallery";
 import HeroBanner from "./hero-banner";
 import NewsLetter from "./news-letter";
@@ -19,8 +17,6 @@ const HomeTwo = () => {
       <Service />
       <Gallery />
       <Counter cls="pt-80 pb-100" />
-      <Choose />
-      <Appointment />
       <Team />
       <Testimonial bg_img={true} />
       <Blog />
