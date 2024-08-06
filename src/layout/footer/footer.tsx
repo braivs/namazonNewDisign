@@ -2,7 +2,26 @@ import SocialLinks from "@/common/social-links";
 import Link from "next/link";
 import React from "react";
 
-const footer_content = {
+interface LinkItem {
+  name: string;
+  link?: string;
+}
+
+interface FooterInfo {
+  id: number;
+  title: string;
+  cls: string;
+  links: LinkItem[];
+}
+
+interface FooterContent {
+  footer_info: FooterInfo[];
+  contact_info: any[]; // todo: Adjust this type based on the actual structure
+  copy_right_text: React.ReactNode;
+}
+
+
+const footer_content: FooterContent = {
   footer_info: [
     {
       id: 1,
@@ -94,13 +113,13 @@ const Footer = () => {
                         <Link href={`${link?.link ? link.link : "/"}`}>{link.name}</Link>
                       </li> )
                       }
-                    
+
                     </ul>
                   </div>
                 </div>
               </div>)
               }
-              {/* <div className="col-xl-3 col-lg-4 col-md-6">
+               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div
                   className="footer-widget footer-col-2 mb-50 wow fadeInUp"
                   data-wow-delay=".4s"
@@ -154,7 +173,7 @@ const Footer = () => {
                     </ul>
                   </div>
                 </div>
-              </div> */}
+              </div>
               <div className="col-xl-3 col-lg-6 col-md-6">
                 <div
                   className="footer-widget footer-col-4 mb-50 wow fadeInUp"
