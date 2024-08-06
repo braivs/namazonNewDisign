@@ -1,7 +1,14 @@
 import React from "react";
 import Lightbox from "react-18-image-lightbox";
 
-const ImagePopup = ({ images, setIsOpen, photoIndex, setPhotoIndex }) => {
+interface ImagePopupProps {
+  images: string[];
+  setIsOpen: (isOpen: boolean) => void;
+  photoIndex: number;
+  setPhotoIndex: (index: number) => void;
+}
+
+const ImagePopup: React.FC<ImagePopupProps> = ({ images, setIsOpen, photoIndex, setPhotoIndex }) => {
   return (
     <React.Fragment>
       <Lightbox
