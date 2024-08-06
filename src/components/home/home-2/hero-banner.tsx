@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import {Navigation, SwiperOptions} from "swiper"
 
 const hero_slider = [
   {
@@ -43,7 +43,7 @@ const hero_slider = [
 ];
 
 // slider setting
-const setting = {
+const setting: SwiperOptions = {
   // Optional parameters
   slidesPerView: 1,
   effect: "fade",
