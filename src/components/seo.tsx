@@ -1,6 +1,10 @@
 import Head from "next/head";
 
-const SEO = ({ pageTitle }) => (
+interface SEO {
+  pageTitle?: string;
+}
+
+const SEO: React.FC<SEO> = ({ pageTitle }) => (
   <>
     <Head>
       <title>

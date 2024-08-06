@@ -281,7 +281,7 @@ const ProductDetailsArea = () => {
                         <input
                           className="tp-cart-input"
                           type="text"
-                          placeholder={productCount}
+                          placeholder={productCount.toString()}
                         />
                         <span className="cart-plus">
                           <i
@@ -629,7 +629,6 @@ const ProductDetailsArea = () => {
               ))}
             </Swiper>
           </div>
-          aaa
         </div>
       </section>
     </>
