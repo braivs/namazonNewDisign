@@ -1,10 +1,14 @@
 import MobileMenus from '@/layout/header/mobile-menus';
 import ImagePopup from '@/modals/ImagePopup';
 import Link from 'next/link';
-import React, { useState } from "react";
+import React, { useState, FC } from 'react';
 
+// Define types for images
+interface ImageItem {
+  img: string;
+}
 
-const images = [
+const images: ImageItem[] = [
   {
     img: "/assets/img/blog/blog-in-01.jpg",
   },
@@ -16,29 +20,29 @@ const images = [
   }
 ];
 
+// Define types for Sidebar props
+interface SidebarProps {
+  isActive: boolean;
+  setIsActive: (active: boolean) => void;
+}
 
-const Sidebar = ({ isActive, setIsActive }) => {
-
- 
+const Sidebar: FC<SidebarProps> = ({ isActive, setIsActive }) => {
   // photoIndex
-  const [photoIndex, setPhotoIndex] = useState(null);
+  const [photoIndex, setPhotoIndex] = useState<number | null>(null);
   // image open state
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   // handleImagePopup
-  const handleImagePopup = (i) => {
+  const handleImagePopup = (i: number) => {
     setPhotoIndex(i);
     setIsOpen(true);
   };
-  //  images
+  // images
   const img = images.map((item) => item.img);
 
- 
   return (
     <>
       <div
-        className={`tpsideinfo tp-side-info-area ${
-          isActive ? "tp-sidebar-opened" : ""
-        }`}
+        className={`tpsideinfo tp-side-info-area ${isActive ? "tp-sidebar-opened" : ""}`}
       >
         <button
           onClick={() => setIsActive(false)}
@@ -59,9 +63,8 @@ const Sidebar = ({ isActive, setIsActive }) => {
         </div>
 
         <div className="tpsideinfo__content mb-60">
-          <p className=" d-none d-xl-block">
-            Our mission is to ensure the generation of accurate and precise
-            findings.
+          <p className="d-none d-xl-block">
+            Our mission is to ensure the generation of accurate and precise findings.
           </p>
           <span>Contact Us</span>
           <a href="#">
@@ -86,12 +89,11 @@ const Sidebar = ({ isActive, setIsActive }) => {
           </div>
         </div>
         <div className="tpsideinfo__gallery mb-35 d-none d-xl-block">
-          <span>Cheack Instagram Post</span>
+          <span>Check Instagram Post</span>
           <div className="tpsideinfo__gallery-item">
             {images.map((item, i) => (
               <a
                 key={i}
-               
                 style={{ cursor: "pointer" }}
                 onClick={() => handleImagePopup(i)}
                 className="popup-image"
@@ -123,7 +125,7 @@ const Sidebar = ({ isActive, setIsActive }) => {
       ></div>
 
       {/* image light box start */}
-      {isOpen && (
+      {isOpen && photoIndex !== null && (
         <ImagePopup
           images={img}
           setIsOpen={setIsOpen}
