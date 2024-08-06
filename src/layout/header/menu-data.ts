@@ -22,7 +22,6 @@ const menu_data = [
     sub_menus: [
       { link: "/about", title: "About" },
       { link: "/team-details", title: "Team Details" },
-      { link: "/pricing-plan", title: "Pricing Plan" },
       { link: "/shop", title: "Shop" },
       { link: "/product-details", title: "Product Details" },
       { link: "/cart", title: "cart" },
