@@ -78,11 +78,11 @@ const Gallery = () => {
   }, []);
 
   // photoIndex
-  const [photoIndex, setPhotoIndex] = useState(null);
+  const [photoIndex, setPhotoIndex] = useState<number | null>(null);
   // image open state
   const [isOpen, setIsOpen] = useState(false);
   // handleImagePopup
-  const handleImagePopup = (i) => {
+  const handleImagePopup = (i: number) => {
     setPhotoIndex(i);
     setIsOpen(true);
   };
