@@ -157,7 +157,7 @@ const Gallery = () => {
       </section>
 
       {/* image light box start */}
-      {isOpen && (
+      {isOpen && photoIndex !== null && (
         <ImagePopup
           images={images}
           setIsOpen={setIsOpen}
