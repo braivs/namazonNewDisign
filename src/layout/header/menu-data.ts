@@ -26,7 +26,6 @@ const menu_data = [
       { link: "/shop", title: "Shop" },
       { link: "/product-details", title: "Product Details" },
       { link: "/cart", title: "cart" },
-      { link: "/checkout", title: "Checkout" },
       { link: "/project-details", title: "Project Details" },
       { link: "/faq", title: "Faq's" },
     ],

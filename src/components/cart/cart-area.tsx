@@ -73,7 +73,7 @@ const CartArea = () => {
                               className="cart-input"
                               type="text"
                               // value="1"
-                              placeholder={product}
+                              placeholder={product.toString()}
                             />
                             <span onClick={plus} className="cart-plus">
                               +

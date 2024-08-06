@@ -196,9 +196,6 @@ const HeaderTwo = () => {
                             <li>
                               <div className="tpcarticon__checkout-link">
                                 <Link href="/src/pages/cart">Shopping Cart</Link>
-                                <Link className="sec-red-btn" href="/src/pages/checkout">
-                                  Checkout
-                                </Link>
                               </div>
                             </li>
                           </ul>
