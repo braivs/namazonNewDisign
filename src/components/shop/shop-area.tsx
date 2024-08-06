@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 const ShopArea = () => {
-  const selectHandler = (e) => {};
+  const selectHandler = () => {};
   return (
     <>
       <div className="shop-area pt-120 pb-130">
@@ -30,6 +30,8 @@ const ShopArea = () => {
                   ]}
                   defaultCurrent={0}
                   onChange={selectHandler}
+                  name={''}
+                  placeholder={''}
                 />
                
               </div>
