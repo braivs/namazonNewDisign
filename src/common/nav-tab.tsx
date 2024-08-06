@@ -119,7 +119,7 @@ const NavTab = () => {
                 role="tab"
                 aria-controls="home-tab-pane"
                 aria-selected="true"
-                tabIndex="-1"
+                tabIndex={-1}
               >
                 Our Process
               </button>
@@ -134,7 +134,7 @@ const NavTab = () => {
                 role="tab"
                 aria-controls="profile-tab-pane"
                 aria-selected="false"
-                tabIndex="-1"
+                tabIndex={-1}
               >
                 OUr Mission
               </button>
@@ -149,7 +149,7 @@ const NavTab = () => {
                 role="tab"
                 aria-controls="contact-tab-pane"
                 aria-selected="false"
-                tabIndex="-1"
+                tabIndex={-1}
               >
                 OUr Value
               </button>
