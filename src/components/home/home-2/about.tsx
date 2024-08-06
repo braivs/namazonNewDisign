@@ -78,7 +78,6 @@ const About = () => {
                     <button
                       onClick={() => setIsVideoOpen(true)}
                       className="popup-video"
-                      href={popup_video}
                     >
                       <i className="fa-solid fa-play"></i>
                     </button>
