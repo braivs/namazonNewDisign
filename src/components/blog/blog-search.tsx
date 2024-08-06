@@ -1,7 +1,7 @@
 import React from "react";
 
 const BlogSearch = () => {
-  const handelSubmit = (e) => {
+  const handelSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   };
   return (

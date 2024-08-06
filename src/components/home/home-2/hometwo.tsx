@@ -1,4 +1,3 @@
-import Brands from "@/common/brands";
 import Counter from "@/common/counter";
 import React from "react";
 import About from "./about";
@@ -22,7 +21,6 @@ const HomeTwo = () => {
       <Counter cls="pt-80 pb-100" />
       <Choose />
       <Appointment />
-      <Brands border_style={true} />
       <Team />
       <Testimonial bg_img={true} />
       <Blog />

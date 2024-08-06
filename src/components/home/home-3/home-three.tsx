@@ -1,4 +1,3 @@
-import Brands from "@/common/brands";
 import Counter from "@/common/counter";
 import Testimonial from "@/common/testimonial";
 import React from "react";
@@ -21,7 +20,6 @@ const Home_Three = () => {
         <VideoArea />
         <Testimonial bg_img={false} />
         <Blog />
-        <Brands style_2={true} />
       </div>
     </>
   );
