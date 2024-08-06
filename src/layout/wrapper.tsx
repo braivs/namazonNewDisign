@@ -1,8 +1,9 @@
 import ScrollToTop from "hooks/scroll-to-top";
-import React,{useEffect} from "react";
+import React, {FC, useEffect} from "react"
 import { animationCreate } from "utils/utils";
+import {WithChildren} from "@/common/types"
 
-const Wrapper = ({ children }) => {
+const Wrapper: FC<WithChildren> = ({ children }) => {
   useEffect(() => {
     setTimeout(() => {
       animationCreate()

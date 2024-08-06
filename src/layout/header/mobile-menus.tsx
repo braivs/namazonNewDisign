@@ -4,9 +4,9 @@ import React, { useState } from "react";
 import menu_data from "./menu-data";
 
 const MobileMenus = () => {
-  const [navTitle, setNavTitle] = useState("");
+  const [navTitle, setNavTitle] = useState<string>("");
   //openMobileMenu
-  const openMobileMenu = (menu) => {
+  const openMobileMenu = (menu: string) => {
     if (navTitle === menu) {
       setNavTitle("");
     } else {
@@ -28,7 +28,7 @@ const MobileMenus = () => {
                       display: navTitle === menu.title ? "block" : "none",
                     }}
                   >
-                    {menu.sub_menus.map((sub, i) => (
+                    {menu.sub_menus?.map((sub, i) => (
                       <li key={i}>
                         <Link href={sub.link}>{sub.title}</Link>
                       </li>

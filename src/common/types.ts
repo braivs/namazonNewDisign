@@ -1,4 +1,4 @@
-import React from "react"
+import React, {ReactNode} from "react"
 
 type Desk = {
   id: number
@@ -15,5 +15,9 @@ export type GirlData = {
   title: string
   years: string
   description: () => React.ReactNode
+}
+
+export type WithChildren = {
+  children: ReactNode
 }
 

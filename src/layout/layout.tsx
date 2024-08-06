@@ -1,8 +1,9 @@
-import React from "react";
+import React, {FC} from "react"
 import Footer from "./footer/footer";
 import Header from "./header/header";
+import {WithChildren} from "@/common/types"
 
-const Layout = ({ children }) => {
+const Layout: FC<WithChildren> = ({ children }) => {
   return (
     <div>
       <Header />
