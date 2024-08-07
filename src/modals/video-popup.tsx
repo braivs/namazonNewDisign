@@ -1,7 +1,13 @@
 import React from "react";
 import ModalVideo from "react-modal-video";
 
-const VideoPopup = ({
+interface VideoPopupProps {
+  isVideoOpen: boolean;
+  setIsVideoOpen: (isOpen: boolean) => void;
+  videoId?: string;
+}
+
+const VideoPopup: React.FC<VideoPopupProps> = ({
   isVideoOpen,
   setIsVideoOpen,
   videoId = "d8w5SICzzxc",
@@ -10,7 +16,6 @@ const VideoPopup = ({
     <>
       <ModalVideo
         channel="youtube"
-        autoplay
         isOpen={isVideoOpen}
         videoId={videoId}
         onClose={() => setIsVideoOpen(false)}
