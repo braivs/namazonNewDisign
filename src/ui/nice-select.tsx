@@ -7,7 +7,7 @@ interface Option {
   text: string;
 }
 
-interface NiceSelectProps {
+interface NiceSelect {
   options: Option[];
   defaultCurrent: number;
   placeholder: string;
@@ -16,7 +16,7 @@ interface NiceSelectProps {
   name: string;
 }
 
-const NiceSelect: FC<NiceSelectProps> = ({
+const NiceSelect: FC<NiceSelect> = ({
                                            options,
                                            defaultCurrent,
                                            placeholder,

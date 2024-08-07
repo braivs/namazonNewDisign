@@ -1,5 +1,4 @@
 import Counter from "@/common/counter";
-import Testimonial from "@/common/testimonial";
 import React from "react";
 import About from "./about";
 import Blog from "./blog";
@@ -18,7 +17,6 @@ const Home_Three = () => {
         <Counter  cls="tp-common-area pt-130" />
         <NavTab />
         <VideoArea />
-        <Testimonial bg_img={false} />
         <Blog />
       </div>
     </>

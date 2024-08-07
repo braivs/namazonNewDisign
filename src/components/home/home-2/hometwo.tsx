@@ -6,7 +6,6 @@ import HeroBanner from "./hero-banner";
 import NewsLetter from "./news-letter";
 import Service from "./service";
 import Team from "./team";
-import Testimonial from "../../../common/testimonial";
 import Blog from "./blog";
 
 const HomeTwo = () => {                               
@@ -18,7 +17,6 @@ const HomeTwo = () => {
       <Gallery />
       <Counter cls="pt-80 pb-100" />
       <Team />
-      <Testimonial bg_img={true} />
       <Blog />
       <NewsLetter />
     </>
