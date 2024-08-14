@@ -1,7 +1,7 @@
 const team_home_two = [
   {
     id: 1,
-    img: "/assets/img/team/team-thumb-05.png",
+    img: "/assets/img/team/kara-teller.png",
     name: "Cameron Williamson",
     title: "Genetic Specialist",
     social_links: [
@@ -35,7 +35,7 @@ const team_home_two = [
   },
   {
     id: 2,
-    img: "/assets/img/team/team-thumb-06.png",
+    img: "/assets/img/team/kara-teller.png",
     name: "Savannah Nguyen",
     title: "Microbiology Expart",
     social_links: [
@@ -69,7 +69,7 @@ const team_home_two = [
   },
   {
     id: 3,
-    img: "/assets/img/team/team-thumb-07.png",
+    img: "/assets/img/team/kara-teller.png",
     name: "Darlene Robertson",
     title: "Genetic Specialist",
     social_links: [
@@ -103,7 +103,7 @@ const team_home_two = [
   },
   {
     id: 4,
-    img: "/assets/img/team/team-thumb-08.png",
+    img: "/assets/img/team/kara-teller.png",
     name: "Marvin McKinney",
     title: "MEDICAL DOCTOR",
     social_links: [
