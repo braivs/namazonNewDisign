@@ -31,7 +31,7 @@ const menu_data = [
     mega_menu: false,
     has_dropdown: false,
     title: "Shop",
-    link: "/shop",
+    link: "https://www.patreon.com/namazon/shop",
     active: "",
   },
   {
