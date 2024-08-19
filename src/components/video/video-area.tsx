@@ -34,7 +34,7 @@ const VideoArea = () => {
               );
             })}
           </div>
-          <div className="row">
+          {/*<div className="row">
             <div className="col-12">
               <div className="basic-pagination text-center mt-30">
                 <nav>
@@ -65,7 +65,7 @@ const VideoArea = () => {
                 </nav>
               </div>
             </div>
-          </div>
+          </div>*/}
         </div>
       </section>
     </>
