@@ -1,3 +1,18 @@
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+
+export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace('/video');
+  }, [router]);
+
+  return null;
+}
+
+/*
+OLD CONTENT, BEFORE MVP:
 import React from "react";
 import Layout from "@/layout/layout";
 import HomeOne from "@/components/home/home/home";
@@ -16,3 +31,6 @@ const index = () => {
 };
 
 export default index;
+*/
+
+//todo: when return to this project: need to return home page
