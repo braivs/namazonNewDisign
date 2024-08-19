@@ -99,15 +99,6 @@ const HeaderTwo = () => {
                     <a href="https://www.youtube.com/@namazonclub"> @namazonclub </a>
                   </div>
                 </div>
-                <div className="col-lg-8">
-                  <div className="header-time">
-                    <span>
-                      <i className="fa-light fa-clock-ten"></i> Monday - Friday
-                      09:00 am - 05:00 Pm
-                    </span>
-                    <span>Monday - Friday 09:00 am - 05:00 Pm</span>
-                  </div>
-                </div>
               </div>
             </div>
             <div className="header-menu-bottom">
