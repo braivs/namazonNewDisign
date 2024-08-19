@@ -95,8 +95,8 @@ const HeaderTwo = () => {
                       <circle cx="2" cy="7" r="2" fill="#0E63FF" />
                       <circle cx="2" cy="12" r="2" fill="#0E63FF" />
                     </svg>
-                    <span>Help Desk :</span>
-                    <a href="tel:+9159008855"> +91 590 088 55 </a>
+                    <span>YouTube :</span>
+                    <a href="https://www.youtube.com/@namazonclub"> @namazonclub </a>
                   </div>
                 </div>
                 <div className="col-lg-8">
