@@ -8,7 +8,7 @@ const ContactUs = () => {
   return (
     <>
       <HeaderTwo />
-      <Banner />
+      {/*<Banner />*/}
       <ContactForm />
       <FooterFour />
     </>
@@ -16,3 +16,5 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+
+//todo: MVP, commented Banner. But looks not good, maybe will find power to do it.
