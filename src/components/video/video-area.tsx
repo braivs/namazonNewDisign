@@ -9,7 +9,7 @@ const VideoArea = () => {
       <section className="research-area pt-130 pb-130">
         <div className="container">
           <div className="row">
-            {video_data.map((item) => {
+            {video_data.reverse().map((item) => {
               return (
                 <div key={item.id} className="col-lg-3 col-md-6">
                   <div
