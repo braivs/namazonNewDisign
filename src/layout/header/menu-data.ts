@@ -7,10 +7,10 @@ const menu_data = [
     link: "/video",
     active: "active",
     sub_menus: [
-      { link: "/video/wrestling", title: "Wrestling" },
-      { link: "/video/mma", title: "MMA" },
-      { link: "/video/mixed", title: "Mixed wrestling" },
-      { link: "/video/all", title: "All categories" },
+      { link: "", title: "Wrestling", handler: () => console.log("Wrestling function") },
+      { link: "", title: "MMA", handler: () => console.log("MMA function") },
+      { link: "", title: "Mixed wrestling", handler: () => console.log("Mixed wrestling function") },
+      { link: "", title: "All categories", handler: () => console.log("All categories function") },
     ],
   },
   {
