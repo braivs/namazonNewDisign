@@ -1,6 +1,7 @@
 import React from "react"
 import DescriptionComponent from "@/common/DescriptionComponent"
 import {formatNumber} from "@/common/helpers"
+import {Category} from "@/common/types"
 
 const video_data_src_all: Array<Video_data_src_all> = [
   {
@@ -321,14 +322,16 @@ const video_data_src_all: Array<Video_data_src_all> = [
 ];
 
 
-
+const colorPicker = () => {
+  
+}
 
 // Add data to video_data_src
 export const video_data: Array<Video_data> = video_data_src_all.reverse().map(video => {
   const formattedId = video.id < 10 ? `0${video.id}` : formatNumber(video.id)
   return {
     ...video,
-    color: '',
+    color: 'pink-icon',
     img: `/assets/img/video/NC${formattedId}.jpg`,
     des: video.des ?? '',
     description: video.description ?? function () {
@@ -368,8 +371,6 @@ type Video_data_src_all = {
   description?: () => React.ReactNode
 }
 
-type Category = 'SUBMISSION WRESTLING' | 'MMA' | 'BOXING' | 'MIXED WRESTLING'
-
 // todo: this is very duplicate type with Video_data_src_all. Need to combine.
 export type Video_data = {
   id: number
@@ -387,4 +388,3 @@ export type Video_data = {
 //todo: need to fix on Gumroad nc names
 //todo: add zero add beginning of nc1-9 names
 //todo: understand what to do with nc03
-//todo: revert video_data_src_mix

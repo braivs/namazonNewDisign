@@ -1,7 +1,7 @@
 import FooterFour from "@/layout/footer/footer-4"
 import HeaderTwo from "@/layout/header/header-two"
 import React from "react"
-import VideoArea from "./video-area"
+import VideoArea from "./video-area/video-area"
 
 const Video = () => {
   return (

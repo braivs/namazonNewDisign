@@ -2,6 +2,24 @@ import Link from "next/link"
 import React from "react"
 import {video_data} from "@/data/video-data"
 import {formatNumber} from "@/common/helpers"
+import s from './video-area.module.scss'
+import cn from "classnames"
+import {Category} from "@/common/types"
+
+const stylePicker = (category: Category) => {
+  switch(category) {
+    case "SUBMISSION WRESTLING":
+      return s.blue
+    case 'MIXED WRESTLING':
+      return s.green
+    case 'MMA':
+      return s.red
+    case "BOXING":
+      return s.violet
+    default:
+    return ''
+  }
+}
 
 const VideoArea = () => {
   return (
@@ -19,8 +37,8 @@ const VideoArea = () => {
                     <div className="research-item__thum fix mb-20">
                       <img src={item.img} alt="research-thumb" />
                     </div>
-                    <div className="research-item__content">
-                      <span>{item.category} - NC{item.id}</span>
+                    <div className={`research-item__content `}>
+                      <div className={cn(s.previousStyle, stylePicker(item.category))}>{item.category} - NC{item.id}</div>
                       <h4 className="research-item__title mb-20" style={{ fontSize: '19px' }}>
                         <Link href={`/video/nc${formatNumber(item.id)}`}>{item.title}</Link>
                       </h4>
