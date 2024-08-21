@@ -21,7 +21,9 @@
   }
 }
 .tp-breadcrumb {
-  &__title {
+  display: flex;
+  text-wrap: nowrap;
+  &__title, &__element {
     color: var(--tp-common-white);
     font-weight: 400;
     font-size: 25px;
@@ -37,6 +39,11 @@
     @media #{$xs} {
       font-size: 19px;
     }
+  }
+  &__element {
+     cursor: pointer;
+     margin-left: 10px;
+     font-family: var(--tp-ff-heading), serif;
   }
   &__link {
     justify-content: flex-end;

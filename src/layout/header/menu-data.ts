@@ -2,16 +2,10 @@ const menu_data = [
   {
     id: 1,
     mega_menu: false,
-    has_dropdown: true,
+    has_dropdown: false,
     title: "Video",
     link: "/video",
     active: "active",
-    sub_menus: [
-      { link: "", title: "Wrestling", handler: () => console.log("Wrestling function") },
-      { link: "", title: "MMA", handler: () => console.log("MMA function") },
-      { link: "", title: "Mixed wrestling", handler: () => console.log("Mixed wrestling function") },
-      { link: "", title: "All categories", handler: () => console.log("All categories function") },
-    ],
   },
   {
     id: 2,
