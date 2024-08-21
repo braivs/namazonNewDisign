@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const Banner = () => {
@@ -14,14 +13,12 @@ const Banner = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="tp-breadcrumb">
-                <h2 className="tp-breadcrumb__title">Video</h2>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 col-12">
-              <div className="tp-breadcrumb__link d-flex">
-                <span>
-                  Bioxlab : <Link href="/src/pages/video"> Project</Link>
-                </span>
+                <h2 className="tp-breadcrumb__title">Video : </h2>
+                <div>Wrestling</div>
+                <div>ALL</div>
+                <div>MMA</div>
+                <div>Mixed wresting</div>
+
               </div>
             </div>
           </div>
