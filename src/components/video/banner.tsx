@@ -5,13 +5,10 @@ import {videoActions} from "@/data/video-data/video-data.slice"
 const Banner = () => {
   const dispatch = useAppDispatch()
 
-  const onAll = () => {
-    alert('all')
-  }
-
-  const onWrestling = () => {
-    dispatch(videoActions.filterVideos('SUBMISSION WRESTLING'))
-  }
+  const onAll = () => dispatch(videoActions.allVideos())
+  const onWrestling = () => dispatch(videoActions.filterVideos('SUBMISSION WRESTLING'))
+  const onMMA = () => dispatch(videoActions.filterVideos('MMA'))
+  const onMixedWrestling = () => dispatch(videoActions.filterVideos('MIXED WRESTLING'))
 
   return (
     <>
@@ -28,8 +25,8 @@ const Banner = () => {
                 <h2 className="tp-breadcrumb__title">Video : </h2>
                 <div className="tp-breadcrumb__element" onClick={onAll}>ALL</div>
                 <div className="tp-breadcrumb__element" onClick={onWrestling}>Wrestling</div>
-                <div className="tp-breadcrumb__element">MMA</div>
-                <div className="tp-breadcrumb__element">Mixed wresting</div>
+                <div className="tp-breadcrumb__element" onClick={onMMA}>MMA</div>
+                <div className="tp-breadcrumb__element" onClick={onMixedWrestling}>Mixed wresting</div>
               </div>
             </div>
           </div>

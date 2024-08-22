@@ -3,7 +3,8 @@ import {createSlice, PayloadAction} from "@reduxjs/toolkit"
 import {Category} from "@/common/types"
 
 const initialState: VideoState = {
-  videos: video_data
+  videos: video_data,
+  filtered_videos: video_data
 }
 
 const videosSlice = createSlice ({
@@ -11,11 +12,14 @@ const videosSlice = createSlice ({
   name: 'videos',
   reducers: {
     filterVideos(state, action: PayloadAction<Category>) {
-      state.videos = state.videos.filter(value => value.category === action.payload)
+      state.filtered_videos = state.videos.filter(value => value.category === action.payload)
+    },
+    allVideos(state) {
+      state.filtered_videos = state.videos
     }
   },
   selectors: {
-    videosSelector: state => state.videos
+    videosSelector: state => state.filtered_videos
   }
 })
 
@@ -25,4 +29,5 @@ export const { videosSelector } = videosSlice.selectors
 
 type VideoState = {
   videos: Array<Video_data>
+  filtered_videos: Array<Video_data>
 }
