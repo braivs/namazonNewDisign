@@ -1,5 +1,6 @@
 import {video_data, Video_data} from "@/data/video-data/video-data"
-import {createSlice} from "@reduxjs/toolkit"
+import {createSlice, PayloadAction} from "@reduxjs/toolkit"
+import {Category} from "@/common/types"
 
 const initialState: VideoState = {
   videos: video_data
@@ -9,8 +10,8 @@ const videosSlice = createSlice ({
   initialState,
   name: 'videos',
   reducers: {
-    filterVideos(state) {
-      alert('filterVideos')
+    filterVideos(state, action: PayloadAction<Category>) {
+      state.videos = state.videos.filter(value => value.category === action.payload)
     }
   },
   selectors: {

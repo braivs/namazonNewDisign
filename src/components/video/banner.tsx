@@ -6,12 +6,11 @@ const Banner = () => {
   const dispatch = useAppDispatch()
 
   const onAll = () => {
-    // alert('all')
-    dispatch(videoActions.filterVideos())
+    alert('all')
   }
 
   const onWrestling = () => {
-    alert('wrestling')
+    dispatch(videoActions.filterVideos('SUBMISSION WRESTLING'))
   }
 
   return (
