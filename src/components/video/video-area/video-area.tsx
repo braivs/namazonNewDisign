@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React from "react"
-import {video_data} from "@/data/video-data"
+import {video_data} from "@/data/video-data/video-data"
 import {formatNumber} from "@/common/helpers"
 import s from './video-area.module.scss'
 import cn from "classnames"
