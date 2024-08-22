@@ -5,6 +5,8 @@ import {formatNumber} from "@/common/helpers"
 import s from './video-area.module.scss'
 import cn from "classnames"
 import {Category} from "@/common/types"
+import {useAppSelector} from "@/app/store/store"
+import {videosSelector} from "@/data/video-data/video-data.slice"
 
 const stylePicker = (category: Category) => {
   switch(category) {
@@ -22,12 +24,14 @@ const stylePicker = (category: Category) => {
 }
 
 const VideoArea = () => {
+  const videos = useAppSelector(videosSelector )
+
   return (
     <>
       <section className="research-area pt-130 pb-130">
         <div className="container">
           <div className="row">
-            {video_data.map((item) => {
+            {videos.map((item) => {
               return (
                 <div key={item.id} className="col-lg-3 col-md-6">
                   <div

@@ -12,11 +12,15 @@ const videosSlice = createSlice ({
     filterVideos(state) {
       alert('filterVideos')
     }
+  },
+  selectors: {
+    videosSelector: state => state.videos
   }
 })
 
 export const videoActions = videosSlice.actions
 export const videoReducer = videosSlice.reducer
+export const { videosSelector } = videosSlice.selectors
 
 type VideoState = {
   videos: Array<Video_data>
