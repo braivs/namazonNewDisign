@@ -1,5 +1,5 @@
 import {useRouter} from 'next/router'
-import {video_data, Video_data, video_data_blank} from "@/data/video-data"
+import {video_data, Video_data, video_data_blank} from "@/data/video-data/video-data"
 import ElementDetails from "@/common/element-details/element-details"
 import VideoData from "@/components/video-details/video-data/video-data"
 import React from "react"

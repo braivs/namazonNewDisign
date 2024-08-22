@@ -2,7 +2,7 @@ import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {MyYouTube} from "@/common/common"
 import React from "react"
-import {Video_data} from "@/data/video-data"
+import {Video_data} from "@/data/video-data/video-data"
 import s from './video-data.module.scss'
 import {formatNumber} from "@/common/helpers"
 import sC from '@/common/styles.module.scss'

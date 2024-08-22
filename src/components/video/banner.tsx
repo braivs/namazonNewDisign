@@ -1,9 +1,13 @@
 import React from "react";
+import {useAppDispatch} from "@/shared/hooks/useAppDispatch"
+import {videoActions} from "@/data/video-data/video-data.slice"
 
 const Banner = () => {
+  const dispatch = useAppDispatch()
 
   const onAll = () => {
-    alert('all')
+    // alert('all')
+    dispatch(videoActions.filterVideos())
   }
 
   const onWrestling = () => {
