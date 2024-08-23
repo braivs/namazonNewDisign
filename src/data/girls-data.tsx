@@ -87,7 +87,18 @@ const girls_data_src_2010_2011: Girl_data_src[] = [
 ];
 
 // Add description to girls_data_src
-export const girls_data: Array<GirlData> = girls_data_src_2010_2011.map(girl => {
+export const girls_data_2012_2013: Array<GirlData> = girls_data_src_2012_2013.map(girl => {
+  return {
+    ...girl,
+    years: '2010 - 2011',
+    description: function () {
+      return <DescriptionComponent version={'girls'} id={girl.id}/>
+    }
+  }
+})
+
+// Add description to girls_data_src
+export const girls_data_2010_2011: Array<GirlData> = girls_data_src_2010_2011.map(girl => {
   return {
     ...girl,
     years: '2010 - 2011',
@@ -111,4 +122,4 @@ export const girls_data_blank: GirlData = {
   }
 
 
-export default girls_data;
+export default girls_data_2010_2011;
