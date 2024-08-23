@@ -1,12 +1,10 @@
-import girls_data_2010_2011, {girls_data_2012_2013} from "@/data/girls-data"
+import girls_data_2010_2011, {girls_data_2012_2013} from "@/data/girls_data/girls-data"
 import Link from "next/link";
 import React from "react";
 import cn from "classnames"
 import s from './girls-area.module.scss'
 
 const GirlsArea = () => {
-
-
   return (
     <>
       <section className="team-area pt-125 pb-70">

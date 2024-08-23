@@ -1,7 +1,7 @@
 import {useRouter} from 'next/router'
 import ElementDetails from "@/common/element-details/element-details"
 import React from "react"
-import girls_data_2010_2011, {girls_data_blank} from "@/data/girls-data"
+import girls_data_2010_2011, {girls_data_blank} from "@/data/girls_data/girls-data"
 import {GirlData} from "@/common/types"
 import GirlsData from "@/components/girls/girls-data/girls-data"
 

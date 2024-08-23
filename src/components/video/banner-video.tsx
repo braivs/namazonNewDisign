@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {useAppDispatch} from "@/shared/hooks/useAppDispatch"
 import {selected_categorySelector, videoActions} from "@/data/video-data/video-data.slice"
 import cn from "classnames"
