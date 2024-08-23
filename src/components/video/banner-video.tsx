@@ -2,7 +2,7 @@ import React from "react"
 import {useAppDispatch} from "@/shared/hooks/useAppDispatch"
 import {selected_categorySelector, videoActions} from "@/data/video-data/video-data.slice"
 import cn from "classnames"
-import s from './banner-video.module.scss'
+import sC from '@/common/styles.module.scss'
 import {useAppSelector} from "@/app/store/store"
 
 const BannerVideo = () => {
@@ -28,10 +28,10 @@ const BannerVideo = () => {
             <div className="col-lg-6 col-md-6 col-12">
               <div className="tp-breadcrumb">
                 <h2 className="tp-breadcrumb__title">Video : </h2>
-                <div className={cn( selected_category === 'ALL' && s.selectedCategory, "tp-breadcrumb__element")} onClick={onAll}>ALL</div>
-                <div className={cn(selected_category === 'SUBMISSION WRESTLING' && s.selectedCategory, "tp-breadcrumb__element")} onClick={onWrestling}>Wrestling</div>
-                <div className={cn(selected_category === 'MMA' && s.selectedCategory, "tp-breadcrumb__element")} onClick={onMMA}>MMA</div>
-                <div className={cn(selected_category === 'MIXED WRESTLING' && s.selectedCategory, "tp-breadcrumb__element")} onClick={onMixedWrestling}>Mixed wresting</div>
+                <div className={cn( selected_category === 'ALL' && sC.selectedCategory, "tp-breadcrumb__element")} onClick={onAll}>ALL</div>
+                <div className={cn(selected_category === 'SUBMISSION WRESTLING' && sC.selectedCategory, "tp-breadcrumb__element")} onClick={onWrestling}>Wrestling</div>
+                <div className={cn(selected_category === 'MMA' && sC.selectedCategory, "tp-breadcrumb__element")} onClick={onMMA}>MMA</div>
+                <div className={cn(selected_category === 'MIXED WRESTLING' && sC.selectedCategory, "tp-breadcrumb__element")} onClick={onMixedWrestling}>Mixed wresting</div>
               </div>
             </div>
           </div>
