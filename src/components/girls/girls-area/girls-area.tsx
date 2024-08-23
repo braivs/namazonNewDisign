@@ -1,10 +1,14 @@
 import girls_data_2010_2011, {girls_data_2012_2013} from "@/data/girls_data/girls-data"
-import Link from "next/link";
-import React from "react";
+import Link from "next/link"
+import React from "react"
 import cn from "classnames"
 import s from './girls-area.module.scss'
+import {useAppSelector} from "@/app/store/store"
+import {GirlsSelected_categorySelector} from "@/data/girls_data/girls-data.slice"
 
 const GirlsArea = () => {
+  const selected_category = useAppSelector(GirlsSelected_categorySelector)
+
   return (
     <>
       <section className="team-area pt-125 pb-70">
@@ -16,8 +20,8 @@ const GirlsArea = () => {
                   Participants of competitions
                 </span>
                 <div className="tp-section text-center">
-                  <h3 className={cn("tp-section__title mb-70", s.title)}>2012 - 2013</h3>
-                  <div className="row">
+                  {(selected_category === 'ALL' || selected_category === '2012 - 2013') && <div className="row">
+                      <h3 className={cn("tp-section__title mb-70", s.title)}>2012 - 2013</h3>
                     {girls_data_2012_2013.map((item) => (
                       <div key={item.id} className="col-xl-3 col-lg-4 col-md-6">
                         <div
@@ -36,9 +40,9 @@ const GirlsArea = () => {
                         </div>
                       </div>
                     ))}
-                  </div>
-                  <div className="row">
-                    <h3 className={cn("tp-section__title mb-70", s.title)}>2010 - 2011</h3>
+                  </div>}
+                  {(selected_category === 'ALL' || selected_category === '2010 - 2011') && <div className="row">
+                      <h3 className={cn("tp-section__title mb-70", s.title)}>2010 - 2011</h3>
                     {girls_data_2010_2011.map((item) => (
                       <div key={item.id} className="col-xl-3 col-lg-4 col-md-6">
                         <div
@@ -57,7 +61,7 @@ const GirlsArea = () => {
                         </div>
                       </div>
                     ))}
-                  </div>
+                  </div>}
                 </div>
               </div>
             </div>
@@ -67,7 +71,7 @@ const GirlsArea = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default GirlsArea;
+export default GirlsArea
