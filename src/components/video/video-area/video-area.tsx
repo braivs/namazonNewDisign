@@ -1,6 +1,5 @@
 import Link from "next/link"
 import React from "react"
-import {video_data} from "@/data/video-data/video-data"
 import {formatNumber} from "@/common/helpers"
 import s from './video-area.module.scss'
 import cn from "classnames"
@@ -56,38 +55,6 @@ const VideoArea = () => {
               );
             })}
           </div>
-          {/*<div className="row">
-            <div className="col-12">
-              <div className="basic-pagination text-center mt-30">
-                <nav>
-                  <ul>
-                    <li>
-                      <Link href="/src/pages/video">
-                        <i className="fa-light fa-arrow-left-long"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/src/pages/video">1</Link>
-                    </li>
-                    <li>
-                      <span className="current">2</span>
-                    </li>
-                    <li>
-                      <Link href="/src/pages/video">3</Link>
-                    </li>
-                    <li>
-                      <Link href="/src/pages/video">...</Link>
-                    </li>
-                    <li>
-                      <Link href="/src/pages/video">
-                        <i className="fa-light fa-arrow-right-long"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>*/}
         </div>
       </section>
     </>

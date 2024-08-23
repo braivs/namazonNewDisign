@@ -18,3 +18,5 @@ export default function App({ Component, pageProps }: AppProps) {
     <Component {...pageProps} />
   </Provider>
 }
+
+//todo: fix blinking while video & girls 'is loading'

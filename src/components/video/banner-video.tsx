@@ -1,6 +1,9 @@
 import React from "react";
 import {useAppDispatch} from "@/shared/hooks/useAppDispatch"
-import {videoActions} from "@/data/video-data/video-data.slice"
+import {selected_categorySelector, videoActions} from "@/data/video-data/video-data.slice"
+import cn from "classnames"
+import s from './banner-video.module.scss'
+import {useAppSelector} from "@/app/store/store"
 
 const BannerVideo = () => {
   const dispatch = useAppDispatch()
@@ -9,6 +12,8 @@ const BannerVideo = () => {
   const onWrestling = () => dispatch(videoActions.filterVideos('SUBMISSION WRESTLING'))
   const onMMA = () => dispatch(videoActions.filterVideos('MMA'))
   const onMixedWrestling = () => dispatch(videoActions.filterVideos('MIXED WRESTLING'))
+
+  const selected_category = useAppSelector(selected_categorySelector )
 
   return (
     <>
@@ -23,10 +28,10 @@ const BannerVideo = () => {
             <div className="col-lg-6 col-md-6 col-12">
               <div className="tp-breadcrumb">
                 <h2 className="tp-breadcrumb__title">Video : </h2>
-                <div className="tp-breadcrumb__element" onClick={onAll}>ALL</div>
-                <div className="tp-breadcrumb__element" onClick={onWrestling}>Wrestling</div>
-                <div className="tp-breadcrumb__element" onClick={onMMA}>MMA</div>
-                <div className="tp-breadcrumb__element" onClick={onMixedWrestling}>Mixed wresting</div>
+                <div className={cn( selected_category === 'ALL' && s.selectedCategory, "tp-breadcrumb__element")} onClick={onAll}>ALL</div>
+                <div className={cn(selected_category === 'SUBMISSION WRESTLING' && s.selectedCategory, "tp-breadcrumb__element")} onClick={onWrestling}>Wrestling</div>
+                <div className={cn(selected_category === 'MMA' && s.selectedCategory, "tp-breadcrumb__element")} onClick={onMMA}>MMA</div>
+                <div className={cn(selected_category === 'MIXED WRESTLING' && s.selectedCategory, "tp-breadcrumb__element")} onClick={onMixedWrestling}>Mixed wresting</div>
               </div>
             </div>
           </div>

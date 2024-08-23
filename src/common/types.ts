@@ -21,4 +21,4 @@ export type WithChildren = {
   children: ReactNode
 }
 
-export type Category = 'SUBMISSION WRESTLING' | 'MMA' | 'BOXING' | 'MIXED WRESTLING'
+export type Category = 'ALL' | 'SUBMISSION WRESTLING' | 'MMA' | 'BOXING' | 'MIXED WRESTLING'
