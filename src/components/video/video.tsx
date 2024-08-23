@@ -2,13 +2,13 @@ import FooterFour from "@/layout/footer/footer-4"
 import HeaderTwo from "@/layout/header/header-two"
 import React from "react"
 import VideoArea from "./video-area/video-area"
-import Banner from "@/components/video/banner"
+import BannerVideo from "@/components/video/banner-video"
 
 const Video = () => {
   return (
     <>
       <HeaderTwo />
-      <Banner />
+      <BannerVideo />
       <VideoArea />
       <FooterFour />
     </>

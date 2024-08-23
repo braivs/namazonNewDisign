@@ -10,15 +10,10 @@ const menu_data = [
   {
     id: 2,
     mega_menu: false,
-    has_dropdown: true,
+    has_dropdown: false,
     title: "Girls",
     link: "/girls",
     active: "",
-    sub_menus: [
-      { link: "/girls/2010-2011", title: "2010 - 2011" },
-      { link: "/girls/2012-2013", title: "2012 - 2013" },
-      { link: "/girls/all", title: "All girls" },
-    ],
   },
   {
     id: 3,

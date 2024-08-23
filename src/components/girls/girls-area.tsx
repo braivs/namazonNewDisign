@@ -1,8 +1,12 @@
 import girls_data from "@/data/girls-data";
 import Link from "next/link";
 import React from "react";
+import cn from "classnames"
+import s from './girls-area.module.scss'
 
 const GirlsArea = () => {
+
+
   return (
     <>
       <section className="team-area pt-125 pb-70">
@@ -10,7 +14,7 @@ const GirlsArea = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="tp-section text-center">
-                <span className="tp-section__sub-title left-line right-line mb-25">
+                <span className={cn("tp-section__sub-title left-line right-line mb-25", s.subTitle)}>
                   Participants of competitions
                 </span>
                 <h3 className="tp-section__title mb-70">2012 - 2013</h3>

@@ -1,14 +1,13 @@
-import FooterFour from "@/layout/footer/footer-4";
-import HeaderTwo from "@/layout/header/header-two";
-import React from "react";
-import Banner from "./banner";
-import ContactForm from "./contact-form";
+import FooterFour from "@/layout/footer/footer-4"
+import HeaderTwo from "@/layout/header/header-two"
+import React from "react"
+import ContactForm from "./contact-form"
 
 const ContactUs = () => {
   return (
     <>
       <HeaderTwo />
-      {/*<Banner />*/}
+      {/*<BannerVideo />*/}
       <ContactForm />
       <FooterFour />
     </>
@@ -17,4 +16,4 @@ const ContactUs = () => {
 
 export default ContactUs;
 
-//todo: MVP, commented Banner. But looks not good, maybe will find power to do it.
+//todo: MVP, commented BannerVideo. But looks not good, maybe will find power to do it.

@@ -2,7 +2,7 @@ import React from "react";
 import {useAppDispatch} from "@/shared/hooks/useAppDispatch"
 import {videoActions} from "@/data/video-data/video-data.slice"
 
-const Banner = () => {
+const BannerVideo = () => {
   const dispatch = useAppDispatch()
 
   const onAll = () => dispatch(videoActions.allVideos())
@@ -36,4 +36,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default BannerVideo;

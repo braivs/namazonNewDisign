@@ -8,7 +8,7 @@ export default function ElementDetails ({children}: WithChildren) {
   return (
     <>
       <HeaderTwo />
-      {/*<Banner />*/} {/*todo: uncommit later*/}
+      {/*<BannerVideo />*/} {/*todo: uncommit later*/}
       <ElementDetailsArea>{children}</ElementDetailsArea>
       <FooterFour />
     </>
