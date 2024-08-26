@@ -26,17 +26,12 @@ const ContactForm = () => {
       <section className="contact-area pt-130 pb-115">
         <div className="container">
           <div className="row">
-            <div
-              className="col-lg-4 col-md-5 col-12 wow fadeInLeft"
-              data-wow-delay=".4s"
-            >
-              <div
-                className="tpcontact mr-60 mb-60 wow fadeInUp"
-                data-wow-delay=".2s"
-              >
+            {/* Column for address */}
+            <div className="col-lg-4 col-md-4 col-sm-12 wow fadeInLeft" data-wow-delay=".4s">
+              <div className="tpcontact mr-60 mb-60 wow fadeInUp" data-wow-delay=".2s">
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/contact-01.svg" alt="" />
+                    <img src="/assets/img/icon/contact-01.svg" alt="Address Icon" />
                   </div>
                   <div className="tpcontact__address">
                     <h4 className="tpcontact__title mb-15">Address line</h4>
@@ -46,13 +41,14 @@ const ContactForm = () => {
                   </div>
                 </div>
               </div>
-              <div
-                className="tpcontact mr-60 mb-60 wow fadeInUp"
-                data-wow-delay=".4s"
-              >
+            </div>
+
+            {/* Column for phone number */}
+            <div className="col-lg-4 col-md-4 col-sm-12 wow fadeInLeft" data-wow-delay=".4s">
+              <div className="tpcontact mr-60 mb-60 wow fadeInUp" data-wow-delay=".4s">
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/contact-02.svg" alt="" />
+                    <img src="/assets/img/icon/contact-02.svg" alt="Phone Icon" />
                   </div>
                   <div className="tpcontact__address">
                     <h4 className="tpcontact__title mb-15">Phone Number</h4>
@@ -65,13 +61,14 @@ const ContactForm = () => {
                   </div>
                 </div>
               </div>
-              <div
-                className="tpcontact mr-60 mb-60 wow fadeInUp"
-                data-wow-delay=".6s"
-              >
+            </div>
+
+            {/* Column for opening hours */}
+            <div className="col-lg-4 col-md-4 col-sm-12 wow fadeInLeft" data-wow-delay=".4s">
+              <div className="tpcontact mr-60 mb-60 wow fadeInUp" data-wow-delay=".6s">
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/contact-03.svg" alt="" />
+                    <img src="/assets/img/icon/contact-03.svg" alt="Opening Hours Icon" />
                   </div>
                   <div className="tpcontact__address">
                     <h4 className="tpcontact__title mb-15">Opening Hours</h4>
