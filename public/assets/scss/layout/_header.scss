@@ -107,14 +107,6 @@
   flex: 0 0 auto;
   border-bottom: 1px solid var(--tp-border-primary);
 }
-.header-logo-box {
-  flex: 0 0 auto;
-  width: 345px;
-  text-align: center;
-  & img {
-    width: 220px;
-  }
-}
 .header-menu-box {
   width: 100%;
   border-left: 1px solid var(--tp-border-primary);

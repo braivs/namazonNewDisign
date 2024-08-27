@@ -4,6 +4,7 @@ import Link from "next/link"
 import React, {useState} from "react"
 import NavMenu from "./nav-menu"
 import youtube from '../../../public/assets/img/icon/youtube_small_color.png'
+import s from './header-two.module.scss'
 
 const HeaderTwo = () => {
   const {sticky} = useSticky()
@@ -69,8 +70,13 @@ const HeaderTwo = () => {
           id="header-sticky"
         >
           <div className="header-logo-box">
+            {/*todo: maybe del  header-logo-box*/}
             <Link href="/">
-              <img src="/assets/img/logo/logo.png" alt="logo"/>
+              <div className={s.logoContainer}>
+                <img src="/assets/img/logo/namazon.jpg" alt="logo" className={s.logo}/>
+                <div className={s.text}>Namazon club</div>
+              </div>
+
             </Link>
           </div>
           <div className="header-menu-box">

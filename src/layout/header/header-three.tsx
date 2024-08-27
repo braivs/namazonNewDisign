@@ -3,6 +3,7 @@ import useSticky from "../../../hooks/use-sticky";
 import Link from "next/link";
 import React, { useState } from "react";
 import NavMenu from "./nav-menu";
+import s from './header-three.module.scss'
 
 const HeaderThree = () => {
   const { sticky } = useSticky();
