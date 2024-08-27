@@ -23,7 +23,7 @@ const ContactForm = () => {
               <div className="tpcontact mr-60 mb-60 wow fadeInUp" data-wow-delay=".2s">
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/contact-01.svg" alt="Address Icon" />
+                    <img src="/assets/img/icon/mail.png" alt="Address Icon" />
                   </div>
                   <div className="tpcontact__address">
                     <h4 className="tpcontact__title mb-15">Email</h4>
@@ -40,7 +40,7 @@ const ContactForm = () => {
               <div className="tpcontact mr-60 mb-60 wow fadeInUp" data-wow-delay=".4s">
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/contact-02.svg" alt="Phone Icon" />
+                    <img src="/assets/img/icon/telegram.png" alt="Phone Icon" />
                   </div>
                   <div className="tpcontact__address">
                     <h4 className="tpcontact__title mb-15">Telegram</h4>
@@ -57,7 +57,7 @@ const ContactForm = () => {
               <div className="tpcontact mr-60 mb-60 wow fadeInUp" data-wow-delay=".6s">
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/contact-03.svg" alt="Opening Hours Icon" />
+                    <img src="/assets/img/icon/facebook.png" alt="Opening Hours Icon" />
                   </div>
                   <div className="tpcontact__address">
                     <h4 className="tpcontact__title mb-15">Facebook</h4>
