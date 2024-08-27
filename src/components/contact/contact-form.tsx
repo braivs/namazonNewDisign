@@ -9,9 +9,11 @@ const contact_info = {
   telegram_link: 'https://t.me/namazonclub',
   facebook: "namazonclub",
   facebook_link: 'https://www.facebook.com/groups/namazonclub',
+  vk: 'namazon',
+  vk_link: 'https://vk.com/namazon',
 };
 
-const { email, telegram,  telegram_link, facebook, facebook_link } = contact_info;
+const { email, telegram,  telegram_link, facebook, facebook_link, vk, vk_link } = contact_info;
 const ContactForm = () => {
   return (
     <>
@@ -63,6 +65,23 @@ const ContactForm = () => {
                     <h4 className="tpcontact__title mb-15">Facebook</h4>
                     <span>
                       <a href={facebook_link}>{facebook}</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Column for Facebook */}
+            <div className="col-lg-4 col-md-4 col-sm-12 wow fadeInLeft" data-wow-delay=".4s">
+              <div className="tpcontact mr-60 mb-60 wow fadeInUp" data-wow-delay=".6s">
+                <div className="tpcontact__item text-center">
+                  <div className="tpcontact__icon mb-20">
+                    <img src="/assets/img/icon/vk.jpg" alt="Opening Hours Icon" />
+                  </div>
+                  <div className="tpcontact__address">
+                    <h4 className="tpcontact__title mb-15">VK</h4>
+                    <span>
+                      <a href={vk_link}>{vk}</a>
                     </span>
                   </div>
                 </div>
