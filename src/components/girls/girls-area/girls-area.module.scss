@@ -7,5 +7,19 @@
 }
 
 .filter {
-    filter: opacity(0.5);
+    filter: opacity(0.6);
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-family: 'Days One', sans-serif;
 }

@@ -50,7 +50,17 @@ const GirlsArea = () => {
                           data-wow-delay=".8s"
                         >
                           <div className="team-item__thumb mb-40">
-                            <img src={item.img} alt="team-thumb" className={item.isInProgress ? s.filter : ''}/>
+                            {
+                              !item.isInProgress
+                                ? <img src={item.img} alt="team-thumb"/>
+                                : <div className={s.imageContainer}>
+                                    <img src={item.img} className={s.filter}/>
+                                    <div className={s.textOverlay}>In progress</div>
+                                  </div>
+
+
+                            }
+
                           </div>
                           <div className="team-item__content">
                             <h5 className="team-item__title mb-15">
