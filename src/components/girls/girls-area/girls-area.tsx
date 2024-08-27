@@ -2,9 +2,9 @@ import girls_data_2010_2011, {girls_data_2012_2013} from "@/data/girls_data/girl
 import Link from "next/link"
 import React from "react"
 import cn from "classnames"
-import s from './girls-area.module.scss'
 import {useAppSelector} from "@/app/store/store"
 import {GirlsSelected_categorySelector} from "@/data/girls_data/girls-data.slice"
+import s from './girls-area.module.scss'
 
 const GirlsArea = () => {
   const selected_category = useAppSelector(GirlsSelected_categorySelector)
@@ -50,11 +50,15 @@ const GirlsArea = () => {
                           data-wow-delay=".8s"
                         >
                           <div className="team-item__thumb mb-40">
-                            <img src={item.img} alt="team-thumb"/>
+                            <img src={item.img} alt="team-thumb" className={item.isInProgress ? s.filter : ''}/>
                           </div>
                           <div className="team-item__content">
                             <h5 className="team-item__title mb-15">
-                              <Link href={`/girls/${item.id}`}>{item.name}</Link>
+                              {
+                                !item.isInProgress
+                                  ? <Link href={`/girls/${item.id}`}>{item.name}</Link>
+                                  : <div>{item.name}</div>
+                              }
                             </h5>
                             <span>{item.title}</span>
                           </div>

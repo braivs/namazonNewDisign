@@ -41,48 +41,57 @@ const girls_data_src_2010_2011: Girl_data_src[] = [
     img: "/assets/img/team/tais2010-2011.png",
     name: "TAIS",
     title: "5\'7\'\' / 130 lb",
+    isInProgress: true,
   },
   {
     id: 'irina',
     img: "/assets/img/team/irina.png",
     name: "IRINA",
     title: "5\'9\'\' / 154 lb",
+    isInProgress: true,
+
   },
   {
     id: 'valentina-perfileva',
     img: "/assets/img/team/valentina.png",
     name: "VALENTINA PERFILYEVA",
     title: "5\'8\'\' / 132 lb",
+    isInProgress: true,
   },
   {
     id: 'irina-vlasta',
     img: "/assets/img/team/vlasta.png",
     name: "IRINA (VLASTA)",
     title: "5\'9\'\' / 154 lb",
+    isInProgress: true,
   },
   {
     id: 'nadezhda-akhmerova',
     img: "/assets/img/team/nadezhda.png",
     name: "ELENA VASILYEVA",
     title: "5\'6\'\' / 132 lb",
+    isInProgress: true,
   },
   {
     id: 'elena-vasileva',
     img: "/assets/img/team/elena2010-2011.png",
     name: "NADEZHDA AKHMEROVA",
     title: "5\'6\'\' / 135 lb",
+    isInProgress: true,
   },
   {
     id: 'natalia-mysik',
     img: "/assets/img/team/natalia.png",
     name: "NATALIA MYSIK",
     title: "5\'11\'\' / 154 lb",
+    isInProgress: true,
   },
   {
     id: 'kseniya-voloshina',
     img: "/assets/img/team/ksenia.png",
     name: "KSENIA VOLOSHINA",
     title: "5\'3\'\' / 141 lb",
+    isInProgress: true,
   },
 ];
 

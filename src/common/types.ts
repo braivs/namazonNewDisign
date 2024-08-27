@@ -1,13 +1,5 @@
 import React, {ReactNode} from "react"
 
-type Desk = {
-  id: number
-}
-
-type NC = {
-  id: number
-}
-
 export type GirlData = {
   id: string
   img: string
@@ -15,6 +7,7 @@ export type GirlData = {
   title: string
   years: string
   description: () => React.ReactNode
+  isInProgress?: boolean
 }
 
 export type WithChildren = {
