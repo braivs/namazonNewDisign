@@ -1,7 +1,7 @@
 import {useRouter} from 'next/router'
 import ElementDetails from "@/common/element-details/element-details"
 import React from "react"
-import girls_data_2010_2011, {girls_data_blank} from "@/data/girls_data/girls-data"
+import {girls_data_all, girls_data_blank} from "@/data/girls_data/girls-data"
 import {GirlData} from "@/common/types"
 import GirlsData from "@/components/girls/girls-data/girls-data"
 
@@ -9,8 +9,7 @@ function VideoComponent() {
   const router = useRouter()
   const {girlId} = router.query
 
-  const girlData: GirlData | undefined = girlId ? girls_data_2010_2011.find((item) => item.id === girlId) : girls_data_blank
-  //todo: need to add 2 array, depend ot selected array
+  const girlData: GirlData | undefined = girlId ? girls_data_all.find((item) => item.id === girlId) : girls_data_blank
 
   return (
     <ElementDetails>
@@ -20,7 +19,7 @@ function VideoComponent() {
 }
 
 export const getStaticPaths = async () => {
-  const paths = girls_data_2010_2011.map(girl => ({
+  const paths = girls_data_all.map(girl => ({
     params: {girlId: girl.id}
   }))
 

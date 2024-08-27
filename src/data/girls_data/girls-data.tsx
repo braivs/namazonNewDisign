@@ -90,7 +90,7 @@ const girls_data_src_2010_2011: Girl_data_src[] = [
 export const girls_data_2012_2013: Array<GirlData> = girls_data_src_2012_2013.map(girl => {
   return {
     ...girl,
-    years: '2010 - 2011',
+    years: '2012 - 2013',
     description: function () {
       return <DescriptionComponent version={'girls'} id={girl.id}/>
     }
@@ -107,6 +107,8 @@ export const girls_data_2010_2011: Array<GirlData> = girls_data_src_2010_2011.ma
     }
   }
 })
+
+export const girls_data_all: Array<GirlData> = girls_data_2010_2011.concat(girls_data_2012_2013)
 
 type Girl_data_src = Omit<GirlData, "description" | 'years'>;
 
