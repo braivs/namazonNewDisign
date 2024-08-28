@@ -74,7 +74,7 @@ const HeaderTwo = () => {
             <Link href="/">
               <div className={s.logoContainer}>
                 <img src="/assets/img/logo/namazon.jpg" alt="logo" className={s.logo}/>
-                <div className={s.text}>Namazon club</div>
+                <div className={s.text}>NAMAZON CLUB</div>
               </div>
 
             </Link>
