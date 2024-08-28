@@ -1,4 +1,4 @@
-import FooterFour from "@/layout/footer/footer-4";
+import FooterFour from "@/layout/footer/footer-4/footer-4";
 import HeaderTwo from "@/layout/header/header-two";
 import Link from "next/link";
 import React from "react";

@@ -6,7 +6,7 @@ import Banner from "./banner";
 import Specialists from "@/common/specialists";
 import NavTab from "@/common/nav-tab";
 import Team from "@/common/team";
-import FooterFour from "@/layout/footer/footer-4";
+import FooterFour from "@/layout/footer/footer-4/footer-4";
 
 const About = () => {
   return (
