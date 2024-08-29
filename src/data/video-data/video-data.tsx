@@ -293,14 +293,14 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 41,
-    youtubeID: 'YJpP-Sz86pE',
+    youtubeID: 'vE6uc_UXaWc',
     title: 'Mixed Wrestling Elena vs Tais. 2014',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc41-submission-grappling-tournament-1-295210'
   },
   {
     id: 42,
-    youtubeID: 'DpP_UjZONME',
+    youtubeID: 'e8fADPtHm7w',
     title: 'Mixed Wrestling. Tournament. 2014',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc42-submission-grappling-tournament-2-295188'
@@ -310,10 +310,10 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: 'K6S9UO8XGB8',
     title: 'Lidiya Oslopovskih vs Tais. Final of the Cup. 2014',
     category: 'SUBMISSION WRESTLING',
-  },*/ //todo: this unallocated 
+  },*/ //todo v2: this unallocated
   {
     id: 44,
-    youtubeID: 'kmYVbFlT4XY',
+    youtubeID: 'bc9RU5hP4k4',
     title: 'Training Submission Wrestling. November, 2016',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc44-maslenitsa-festival-2016-pins-and-290002'
@@ -332,21 +332,21 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 46,
-    youtubeID: '4yGZIXxUwus',
+    youtubeID: 'lDgKoh-9KG4',
     title: 'Mixed Wrestling. Training. 2017',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc46-alena-kurmandi-30-03-2017-06-04-294096'
   },
   {
     id: 47,
-    youtubeID: 'fMXXIKtAm3g',
+    youtubeID: 'fb5NUMSB2qg',
     title: 'Women’s Submission Wrestling. Tournament. 2017',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc47-competitions-at-maslenitsa-16-02-294121'
   },
   {
     id: 48,
-    youtubeID: 'HdvAzNGhLMY',
+    youtubeID: 'K_z4YsnNWbs',
     title: 'Training Submission Wrestling. August, 2017',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc48-competitions-spring-2017-294141'
@@ -435,3 +435,5 @@ export type Video_data = {
 
 // todo: v2 after release: remake pictures size for video
 // todo: v2: integrate shop into app
+// todo: v2: add new NC clips
+// todo: v2: pud age restricted videos on hosting directly

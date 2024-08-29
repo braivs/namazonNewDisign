@@ -20,4 +20,6 @@ export default function App({ Component, pageProps }: AppProps) {
 }
 
 //todo: fix blinking while video & girls 'is loading'
-//upgrade modal menu
+//todo: upgrade modal menu
+
+//todo v2: fix typescript errors on dynamic imports, but links is correct

@@ -7,7 +7,7 @@ export const NC40Desc = ()  => {
   return (
     <>
       <p>
-        <b>This video</b> is the continuation of <Link href="/video/39">VIDEO 39</Link>. Here you
+        <b>This video</b> is the continuation of <Link href="/video/nc39">VIDEO 39</Link>. Here you
         can see six more wrestling fights between <b>Villian</b> (180 lb) and <b>Tais</b> (136 lb), which took place in
         2014. The two competitors knew each other very well, having wrestled each other many times over the years,
         resulting in always aggressive and competitive fights.
