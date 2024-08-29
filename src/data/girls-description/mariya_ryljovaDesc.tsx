@@ -28,8 +28,8 @@ export const MariyaRyljovaDesc = () => {
           <th>Maria Rylyova vs. Natalia Mysik</th>
         </tr>
         <tr>
-          <td><Link href="/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</Link></td>
-          <td><Link href="/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</Link></td>
+          <td><Link href="/video/nc12">VIDEO 12. Submission grappling. Tournament. April, 2010</Link></td>
+          <td><Link href="/video/nc12">VIDEO 12. Submission grappling. Tournament. April, 2010</Link></td>
         </tr>
         </tbody>
       </Table>
@@ -40,19 +40,19 @@ export const MariyaRyljovaDesc = () => {
           <th>Maria Rylyova vs. Nadezhda Akhmerova</th>
         </tr>
         <tr>
-          <td><Link href="/video/1">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</Link>
+          <td><Link href="/video/nc1">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</Link>
           </td>
-          <td><Link href="/video/1">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</Link>
-          </td>
-        </tr>
-        <tr>
-          <td><Link href="/video/2">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</Link>
-          </td>
-          <td><Link href="/video/2">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</Link>
+          <td><Link href="/video/nc1">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</Link>
           </td>
         </tr>
         <tr>
-          <td><Link href="/video/6">VIDEO 6. Maria Rylyova vs. Tais. March, 2011</Link></td>
+          <td><Link href="/video/nc2">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</Link>
+          </td>
+          <td><Link href="/video/nc2">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</Link>
+          </td>
+        </tr>
+        <tr>
+          <td><Link href="/video/nc6">VIDEO 6. Maria Rylyova vs. Tais. March, 2011</Link></td>
         </tr>
         </tbody>
       </Table>
@@ -60,4 +60,4 @@ export const MariyaRyljovaDesc = () => {
   )
 }
 
-// todo: check links
+//todo: after I fix nc01 and nc02 and etc links, add them here

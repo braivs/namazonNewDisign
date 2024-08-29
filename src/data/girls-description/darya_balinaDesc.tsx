@@ -19,7 +19,7 @@ export const DaryaBalinaDesc = () => {
       </p>
       <p>
         The first MMA fight that Darya Balina had at the Namazon Club was against our guest from Moscow, <Link
-        href="/girl/2012_2013/kara-teller">Kara Teller</Link> (5’7” / 123 lb). It went two rounds with the more
+        href="/girls/kara_teller">Kara Teller</Link> (5’7” / 123 lb). It went two rounds with the more
         experienced Kara prevailing, winning by a choke in the middle of the second round.
       </p>
       <ButtonGallery images={DIR_MMA_SPORT_HOLIDAY_1} buttonName={buttonText}/>
@@ -36,7 +36,7 @@ export const DaryaBalinaDesc = () => {
       <p>Win-loss-draw record – 0:1:1 (as of July 1, 2012)</p>
       <hr/>
       <p>
-        In our store on <a href="https://gumroad.com/namazonclub">Gumroad</a>, you can purchase full videos of Darya’s
+        In our store on <a href="https://www.patreon.com/namazon/shop">Patreon</a>, you can purchase full videos of Darya’s
         MMA fights held at the Namazon Club (Videos 18 and 21).
       </p>
     </>

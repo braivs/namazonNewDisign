@@ -38,7 +38,7 @@ export const kara_tellerDesc = () => {
       <p>
         This was an intense fight with numerous punches, kicks, throws, and ground wrestling. The match had three
         four-minute rounds with four-minute breaks between each round. <Link
-        href="/girl/2012_2013/elena-vasileva2013">Elena</Link> (St. Petersburg, 5'6" / 132 lb) dominated the
+        href="/girls/elena_vasileva2013">Elena</Link> (St. Petersburg, 5'6" / 132 lb) dominated the
         first two rounds, giving Kara a very hard time.
       </p>
       <ButtonGallery images={DIR09_1} buttonName={buttonText}/>
@@ -62,7 +62,7 @@ export const kara_tellerDesc = () => {
       <h4>Kara vs Darya Balina. 2012</h4>
       <Image className={sC.MainImg} src={imgMain4} alt="imgMain"/>
       <p>
-        Kara was the favorite to win this fight against <Link href="/girl/2012_2013/darya-balina">Darya
+        Kara was the favorite to win this fight against <Link href="/girls/darya_balina">Darya
         Balina</Link> (the female self-defense Club "Panther", St. Petersburg, 5'4" / 124 lb). While Darya had good
         kickboxing skills, she was less confident in wrestling due to her combat training focus on self-defense. The
         fight format was three four-minute rounds with one-minute rest periods between them.
@@ -92,7 +92,7 @@ export const kara_tellerDesc = () => {
       <p>Win-loss-draw record: 4:3:0 (as of July 1, 2012)</p>
       <hr/>
       <p>
-        In our store on <a href="https://gumroad.com/namazonclub">Gumroad</a>, you can purchase full videos of Kara’s
+        In our store on <a href="https://www.patreon.com/namazon/shop">Patreon</a>, you can purchase full videos of Kara’s
         MMA fights held at the Namazon Club (Videos 9, 17, 18, and 20).
       </p>
     </>

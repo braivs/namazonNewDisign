@@ -429,7 +429,6 @@ export type Video_data = {
   patreonId: string
 }
 
-//todo: check links
 //todo: add zero add beginning of nc1-9 names
 //todo: understand what to do with nc03
 

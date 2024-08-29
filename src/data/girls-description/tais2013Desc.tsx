@@ -30,7 +30,7 @@ export const tais2013Desc = () => {
       <Image src={imgMain2} alt={'imgMain2'} className={sC.MainImg}/>
       <p>
         The fight was scheduled for 3 four-minute rounds with a one-minute rest period between each round. Tais
-        defeated <Link href="/girl/2012_2013/elena-vasileva2013">Lena</Link> (5'6" / 132 lb) already in
+        defeated <Link href="/girls/elena_vasileva2013">Lena</Link> (5'6" / 132 lb) already in
         the first round.
       </p>
       <ButtonGallery images={DIR09_3} buttonName={buttonText}/>
@@ -39,7 +39,7 @@ export const tais2013Desc = () => {
       <h4>Tais vs Kara Teller. 2012</h4>
       <Image className={sC.MainImg} src={imgMain3} alt="imgMain"/>
       <p>
-        In 2012, Tais fought three times against <Link href="/girl/2012_2013/kara-teller">Kara
+        In 2012, Tais fought three times against <Link href="/girls/kara_teller">Kara
         Teller</Link>
         (5'7" / 119 lb), winning two matches by fall. In the third fight, she was disqualified for arguing with the
         referee, and Kara was declared the winner.<br/>
@@ -63,7 +63,7 @@ export const tais2013Desc = () => {
       <Image className={sC.MainImg} src={imgMain4} alt="imgMain4"/>
       <p><b>Tais</b> vs <b>Varvara Akulova</b></p>
       <p>In June 2013, Tais faced her old rival <Link
-        href="/girl/2012_2013/elena-vasileva2013">Elena Vasilyeva</Link> (5'7" / 157 lb), who had been
+        href="/girls/elena_vasileva2013">Elena Vasilyeva</Link> (5'7" / 157 lb), who had been
         away from the Namazon Club for nearly two years, during which she gained weight, strength, and improved
         wrestling abilities.<br/>
         It was a hard-fought and fairly even match, with submissions coming from both sides. After over 20 minutes of
@@ -76,12 +76,10 @@ export const tais2013Desc = () => {
       <p>Win-loss-draw record – 3:1:0 (as of May 8, 2012)</p>
       <hr/>
       <p>
-        In our store on <a href="https://gumroad.com/namazonclub">Gumroad</a>, you can purchase full videos of Tais’s
+        In our store on <a href="https://www.patreon.com/namazon/shop">Patreon</a>, you can purchase full videos of Tais’s
         fights from 2012-2013 – MMA fights (Videos 9, 17, and 18), submission grappling fights (Videos 19, 29, 33, and
         35), and mixed wrestling fights (Videos 28, 30, 31-1, 31-2, 32, and 34).
       </p>
     </>
   )
 }
-
-//todo: check links

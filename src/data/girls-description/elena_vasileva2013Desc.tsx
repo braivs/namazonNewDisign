@@ -20,7 +20,7 @@ export const ElenaVasileva2013Desc = () => {
       <p>
         The most memorable of all Elena’s fights is likely her MMA fight held as part of the
         Christmas Cup Tournament 2012, where she fought against our guest from Moscow,
-        <Link href="/girl/2012_2013/kara-teller"> Kara Teller</Link> (5'7" / 119 lb).<br/>
+        <Link href="/girls/kara_teller"> Kara Teller</Link> (5'7" / 119 lb).<br/>
         If not counting multiple sparring MMA matches, her fight with Kara in that tournament was Elena’s debut
         in MMA competitions.<br/>
         The fight consisted of 3 rounds, each lasting 4 minutes with 1 minute of rest between each round. Elena
@@ -29,7 +29,7 @@ export const ElenaVasileva2013Desc = () => {
         fought as though her life depended on it. Struggling in the bottom position and taking punches to
         her head, she refused to give up, showing incredible will to win.
       </p>
-      <ButtonGallery images={DIR09_1} buttonName={'See photos'} />
+      <ButtonGallery images={DIR09_1} buttonName={'See photos'}/>
       <p>
         Minutes into the third round, Elena started to grow tired. Her movements slowed down a bit, and
         her attacks lost their strength. She began to make mistakes, and eventually one of those mistakes was
@@ -68,8 +68,8 @@ export const ElenaVasileva2013Desc = () => {
       <hr/>
       <p>
         The video of Elena's MMA fight (Video 9), as well as the video of her submission grappling fight
-        (Video 29) 2012-2013, are available for purchase in our online store on <a
-        href="https://gumroad.com/namazonclub">Gumroad</a>.
+        (Video 29) 2012-2013, are available for purchase in our online store on In our store on <a
+        href="https://www.patreon.com/namazon/shop">Patreon</a>.
       </p>
     </>
   )

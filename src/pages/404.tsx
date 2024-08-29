@@ -20,3 +20,5 @@ const Error = () => {
 };
 
 export default Error;
+
+//todo: fix 404 not working
