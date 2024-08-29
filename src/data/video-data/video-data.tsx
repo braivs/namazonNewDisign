@@ -399,7 +399,8 @@ export const video_data_blank: Video_data = {
   des: '',
   description: () => {
     return <></>
-  }
+  },
+  patreonId: ''
 }
 
 type Video_data_src = {
@@ -431,10 +432,10 @@ export type Video_data = {
   title: string
   des: string,
   description: () => React.ReactNode
+  patreonId: string
 }
 
 //todo: mma nc17 missed
 //todo: check links
-//todo: need to fix on Gumroad nc names !working on this
 //todo: add zero add beginning of nc1-9 names
 //todo: understand what to do with nc03
