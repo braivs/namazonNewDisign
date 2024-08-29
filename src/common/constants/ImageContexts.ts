@@ -28,9 +28,9 @@ export const DIR14_1 = require.context('/public/assets/img/videoGallery/14/14_1'
 export const DIR14_2 = require.context('/public/assets/img/videoGallery/14/14_2', false) //Tais vs Villian
 export const DIR15 = require.context('/public/assets/img/videoGallery/15', false)
 ///17 MMA and Submission Grappling. February, 2012:
-// export const DIR17_1 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-1', false)
-// export const DIR17_2 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-2', false)
-// export const DIR17_3 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-3', false)
+export const DIR17_1 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-1', false)
+export const DIR17_2 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-2', false)
+export const DIR17_3 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-3', false)
 // 18 MMA fights in the May holidays.
 export const DIR_MMA_SPORT_HOLIDAY_1 = require.context('/public/assets/img/videoGallery/18/mma-sportivnyj-prazdnik-2012-1', false)
 export const DIR_MMA_SPORT_HOLIDAY_2 = require.context('/public/assets/img/videoGallery/18/mma-sportivnyj-prazdnik-2012-2', false)

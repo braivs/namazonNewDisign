@@ -117,6 +117,13 @@ const video_data_src_all: Array<Video_data_src_all> = [
     patreonId: 'nc16-elena-vasilyeva-vs-tais-submission-296712'
   },
   {
+    id: 17,
+    youtubeID: '93iT7iBJVik',
+    title: 'MMA and Submission Grappling. February, 2012',
+    category: 'SUBMISSION WRESTLING',
+    patreonId: 'nc17-mma-and-submission-grappling-2012-296635'
+  },
+  {
     id: 18,
     youtubeID: 'fYEVVlzkUsA',
     title: 'MMA. Kara Teller vs Darya. Balina and Tais. May, 2012',
@@ -370,11 +377,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   }
 ];
 
-
-const colorPicker = () => {
-  
-}
-
 // Add data to video_data_src
 export const video_data: Array<Video_data> = video_data_src_all.reverse().map(video => {
   const formattedId = video.id < 10 ? `0${video.id}` : formatNumber(video.id)
@@ -403,15 +405,7 @@ export const video_data_blank: Video_data = {
   patreonId: ''
 }
 
-type Video_data_src = {
-  id: number
-  youtubeID: string
-  title: string
-  des?: string,
-  description?: () => React.ReactNode
-}
-
-// todo: this is very duplicate type with Video_data_src. Need to combine or del one. 
+// todo: this is very duplicate type with Video_data_src. Need to combine or del one.
 type Video_data_src_all = {
   category: Category
   id: number
@@ -435,7 +429,9 @@ export type Video_data = {
   patreonId: string
 }
 
-//todo: mma nc17 missed
 //todo: check links
 //todo: add zero add beginning of nc1-9 names
 //todo: understand what to do with nc03
+
+// todo: v2 after release: remake pictures size for video
+// todo: v2: integrate shop into app
