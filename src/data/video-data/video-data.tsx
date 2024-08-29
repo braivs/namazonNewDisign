@@ -405,10 +405,9 @@ export const video_data_blank: Video_data = {
   patreonId: ''
 }
 
-// todo: this is very duplicate type with Video_data_src. Need to combine or del one.
 type Video_data_src_all = {
-  category: Category
   id: number
+  category: Category
   youtubeID: string
   title: string
   des?: string,
@@ -416,17 +415,10 @@ type Video_data_src_all = {
   patreonId: string
 }
 
-// todo: this is very duplicate type with Video_data_src_all. Need to combine.
-export type Video_data = {
-  id: number
-  youtubeID: string
+export type Video_data = Video_data_src_all & {
+  des: string,
   color: string
   img: string
-  category: Category
-  title: string
-  des: string,
-  description: () => React.ReactNode
-  patreonId: string
 }
 
 //todo: understand what to do with nc03
