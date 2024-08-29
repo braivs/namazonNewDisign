@@ -8,7 +8,6 @@ import {formatNumber} from "@/common/helpers"
 import sC from '@/common/styles.module.scss'
 
 export default function VideoData({videoData, youtubeID}: Props) {
-  console.log('videoData: ', videoData)
   let videoDataIdFormatted = ''
   if (videoData) videoDataIdFormatted = formatNumber(videoData.id)
 

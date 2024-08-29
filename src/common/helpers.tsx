@@ -48,6 +48,9 @@ export function formatNumber(num: number): string {
     if (strNum.includes('.')) {
         return strNum.replace('.', '_');
     }
+    if (num < 10) {
+        return `0${num}`;
+    }
     return strNum;
 }
 
