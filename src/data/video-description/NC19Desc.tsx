@@ -31,6 +31,4 @@ export const NC19Desc = () => {
   )
 }
 
-//todo: here style of the links need add
-
 //todo: v2: http://warnet.ws/news/16167 is not working

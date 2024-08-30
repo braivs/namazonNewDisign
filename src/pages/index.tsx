@@ -33,4 +33,4 @@ const index = () => {
 export default index;
 */
 
-//todo: when return to this project: need to return home page
+//todo v2: need to return home page

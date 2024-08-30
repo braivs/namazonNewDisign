@@ -22,5 +22,3 @@ export const NC40Desc = ()  => {
     </>
   )
 }
-
-// todo: check link

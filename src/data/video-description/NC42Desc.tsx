@@ -37,4 +37,4 @@ export const NC42Desc = ()  => {
   )
 }
 
-//todo: looks like link is works, but because it is dynamic page, so ts error. Understand ho to fix.
+//todo: v2: looks like link is works, but because it is dynamic page, so ts error. Understand ho to fix.

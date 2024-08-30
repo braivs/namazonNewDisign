@@ -98,5 +98,3 @@ export const kara_tellerDesc = () => {
     </>
   )
 }
-
-//todo: check links
