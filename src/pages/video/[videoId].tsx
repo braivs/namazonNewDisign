@@ -13,11 +13,12 @@ function VideoComponent() {
 
   const videoData: Video_data | undefined = unformattedVideoId ? video_data.find((item) => item.id === Number(unformattedVideoId?.substring(2))) : video_data_blank
   const youtubeID = videoData?.youtubeID
+  const youtubeID2 = videoData?.youtubeID2
 
 
   return (
     <ElementDetails>
-      <VideoData videoData={videoData} youtubeID={youtubeID}/>
+      <VideoData videoData={videoData} youtubeID={youtubeID} youtubeID2={youtubeID2}/>
     </ElementDetails>
   )
 }

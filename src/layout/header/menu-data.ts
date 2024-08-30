@@ -74,4 +74,4 @@ const menu_data = [
 ];
 export default menu_data;
 
-// todo: when I return to this project: add new tabs
+// todo v2: add new tabs

@@ -97,7 +97,8 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 14,
-    youtubeID: 'mXLIzt6ZBFk', /*todo: add second youtube id here*/
+    youtubeID: 'mXLIzt6ZBFk',
+    youtubeID2: 'dQjBmmyLnC0',
     title: 'Two men against one woman. Part 1. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc14-1-two-men-against-one-woman-mixed-1-298161'
@@ -409,6 +410,7 @@ type Video_data_src_all = {
   id: number
   category: Category
   youtubeID: string
+  youtubeID2?: string
   title: string
   des?: string,
   description?: () => React.ReactNode
@@ -419,6 +421,7 @@ export type Video_data = Video_data_src_all & {
   des: string,
   color: string
   img: string
+  description: () => React.ReactNode
 }
 
 //todo: understand what to do with nc03
