@@ -94,8 +94,7 @@ const Specialists = () => {
             {choose.map((item) => (
               <div key={item.id} className="col-xl-3 col-md-6">
                 <div
-                  className="tp-choose__item ml-75 mb-100 wow fadeInUp"
-                  data-wow-delay=".8s"
+                  className="tp-choose__item ml-75 mb-100"
                 >
                   <div className={`tp-choose__icon ${item.color} mb-40`}>
                     <i className={item.icon}></i>

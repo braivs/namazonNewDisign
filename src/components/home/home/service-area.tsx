@@ -112,7 +112,7 @@ const ServiceArea = () => {
               </div>
             </div>
           </div>
-          <div className="services-slider  wow fadeInUp" data-wow-delay=".3s">
+          <div className="services-slider">
             <div>
               <Swiper
                 {...setting}

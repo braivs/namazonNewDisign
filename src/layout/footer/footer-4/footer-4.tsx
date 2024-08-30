@@ -10,7 +10,7 @@ const FooterFour = ({ style_2 = false }) => {
         <Container>
           <Row className={s.row}>
             <Col xl={4} lg={4} md={6}>
-              <div className="tp-footer-widget footer-2-col-1 mb-40 wow fadeInUp" data-wow-delay=".2s">
+              <div className="tp-footer-widget footer-2-col-1 mb-40">
                 <div className="tp-footer-widget__content mb-95">
                   <i>FEEL FREE TO CONTACT US</i>
                   <h4 className="tp-footer-widget__contact mb-20">
@@ -20,7 +20,7 @@ const FooterFour = ({ style_2 = false }) => {
               </div>
             </Col>
             <Col xl={3} lg={3} md={6}>
-              <div className="tp-footer-widget footer-2-col-2 mb-40 wow fadeInUp" data-wow-delay=".4s">
+              <div className="tp-footer-widget footer-2-col-2 mb-40">
                 <span className="tp-footer-widget__title mb-15">Useful links</span>
                 <div className="tp-footer-widget__links mb-35">
                   <ul>
@@ -41,7 +41,7 @@ const FooterFour = ({ style_2 = false }) => {
               </div>
             </Col>
             <Col xl={3} lg={3} md={6}>
-              <div className="tp-footer-widget footer-2-col-4 mb-40 wow fadeInUp" data-wow-delay=".8s">
+              <div className="tp-footer-widget footer-2-col-4 mb-40">
                 <span className="tp-footer-widget__title mb-15">Contact Info</span>
                 <div className="tp-footer-widget__social fw-social">
                   <a href="https://t.me/namazonclub">

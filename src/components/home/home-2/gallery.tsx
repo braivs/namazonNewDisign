@@ -67,7 +67,7 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-        <div className="gallery-item-bg wow fadeInUp" data-wow-delay=".3s">
+        <div className="gallery-item-bg">
           <div className="container">
             <div className="row">
               {gallery_content_data.map((item) => (

@@ -34,8 +34,7 @@ const VideoArea = () => {
               return (
                 <div key={item.id} className="col-lg-3 col-md-6">
                   <div
-                    className={`research-item ${item.color} mb-50 wow fadeInUp`}
-                    data-wow-delay=".6s"
+                    className={`research-item ${item.color} mb-50p`}
                   >
                     <div className="research-item__thum fix mb-20">
                       <img src={item.img} alt="research-thumb" />

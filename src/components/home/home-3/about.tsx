@@ -10,8 +10,7 @@ const About = () => {
           <div className="row">
             <div className="col-xl-6 col-lg-6 col-12">
               <div
-                className="tp-about__content mb-50 wow fadeInLeft"
-                data-wow-delay=".3s"
+                className="tp-about__content mb-50"
               >
                 <div className="tp-section">
                   <span className="tp-section__sub-title left-line mb-25">
@@ -59,8 +58,7 @@ const About = () => {
             </div>
             <div className="col-xl-6 col-lg-6 col-12">
               <div
-                className="tp-about-thumb tp-3-thumb mb-60 wow fadeInRight"
-                data-wow-delay=".3s"
+                className="tp-about-thumb tp-3-thumb mb-60"
               >
                 <div className="tp-ab-img">
                   <div className="tp-ab-main-img p-relative">

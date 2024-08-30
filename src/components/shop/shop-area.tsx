@@ -41,8 +41,7 @@ const ShopArea = () => {
             {shop_data.map((item) => (
               <div key={item.id} className="col-xl-3 col-lg-4 col-md-4">
                 <div
-                  className="tpshopitem mb-50 wow fadeInUp"
-                  data-wow-delay=".6s"
+                  className="tpshopitem mb-50"
                 >
                   <div className="tpshopitem__thumb p-relative fix p-relative mb-35">
                     <Link href="/src/pages/product-details">

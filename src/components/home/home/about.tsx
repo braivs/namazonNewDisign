@@ -60,8 +60,7 @@ const About = () => {
           <div className="row">
             <div className="col-xl-6 col-lg-12">
               <div
-                className="about__thumb mb-60 wow fadeInLeft"
-                data-wow-delay=".4s"
+                className="about__thumb mb-60"
               >
                 <div className="about__img">
                   <img src={left_img} alt="about-bg-img" />
@@ -76,8 +75,7 @@ const About = () => {
             </div>
             <div className="col-xl-6 col-lg-12">
               <div
-                className="tp-about__content pt-125 ml-60 mb-50 wow fadeInRight"
-                data-wow-delay=".4s"
+                className="tp-about__content pt-125 ml-60 mb-50"
               >
                 <div className="tp-section">
                   <span className="tp-section__sub-title left-line mb-25">

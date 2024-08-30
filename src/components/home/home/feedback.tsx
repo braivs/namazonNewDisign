@@ -50,7 +50,7 @@ const Feedback = () => {
         data-background="assets/img/shape/shape-bg-02.png"
       >
         <div className="container">
-          <div className="row wow fadeInUp" data-wow-delay=".3s">
+          <div className="row">
             <div className="col-lg-12">
               <div className="tp-section text-center">
                 <span className="tp-section__sub-title sub-title-white left-line-white right-line-white mb-25">

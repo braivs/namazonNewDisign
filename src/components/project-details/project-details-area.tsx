@@ -12,8 +12,7 @@ const ProjectDetailsArea = () => {
             <div className="row mb-40">
               <div className="col-lg-6 col-md-6">
                 <div
-                  className="tpoverview mb-60 wow fadeInLeft"
-                  data-wow-delay=".2s"
+                  className="tpoverview mb-60"
                 >
                   <h5 className="tpproject-title mb-50">Project Overview</h5>
                   <p>
@@ -43,8 +42,7 @@ const ProjectDetailsArea = () => {
               </div>
               <div className="col-lg-6 col-md-6">
                 <div
-                  className="tpviewtext mb-60 wow fadeInRight"
-                  data-wow-delay=".2s"
+                  className="tpviewtext mb-60"
                 >
                   <p className="tpviewtext__para">
                     When faced with a supply chain disruption, proactive and
@@ -67,8 +65,7 @@ const ProjectDetailsArea = () => {
             <div className="row">
               <div className="col-lg-12 col-md-12">
                 <div
-                  className="tpprothumb mb-120 wow fadeInUp"
-                  data-wow-delay=".2s"
+                  className="tpprothumb mb-120"
                 >
                   <img
                     src="/assets/img/gallery/project-01.jpg"
@@ -80,8 +77,7 @@ const ProjectDetailsArea = () => {
             <div className="row">
               <div className="col-lg-6 col-md-6">
                 <div
-                  className="tpprosolution mb-40 wow fadeInUp"
-                  data-wow-delay=".2s"
+                  className="tpprosolution mb-40"
                 >
                   <h5 className="tpproject-title mb-50">
                     Challenge & Solution
@@ -90,8 +86,7 @@ const ProjectDetailsArea = () => {
               </div>
               <div className="col-lg-6 col-md-6">
                 <div
-                  className="tpprosolution pb-40 wow fadeInUp"
-                  data-wow-delay=".2s"
+                  className="tpprosolution pb-40"
                 >
                   <p>
                     Being a top us private facility for any kind of scientific
@@ -122,8 +117,7 @@ const ProjectDetailsArea = () => {
             <div className="row">
               <div className="col-md-12">
                 <div
-                  className="tpprovideo p-relative mb-115 wow fadeInUp"
-                  data-wow-delay=".2s"
+                  className="tpprovideo p-relative mb-115"
                 >
                   <img
                     src="/assets/img/gallery/project-02.jpg"
@@ -141,16 +135,14 @@ const ProjectDetailsArea = () => {
             <div className="row">
               <div className="col-lg-6 col-md-6">
                 <div
-                  className="tpprosolution mb-40 wow fadeInUp"
-                  data-wow-delay=".2s"
+                  className="tpprosolution mb-40"
                 >
                   <h5 className="tpproject-title mb-40">Our Process</h5>
                 </div>
               </div>
               <div className="col-lg-6 col-md-6">
                 <div
-                  className="tpprosolution pb-30 wow fadeInUp"
-                  data-wow-delay=".2s"
+                  className="tpprosolution pb-30"
                 >
                   <p>
                     Being a top us private facility for any kind of scientific

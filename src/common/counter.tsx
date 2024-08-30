@@ -38,8 +38,7 @@ const Counter = ({ cls = "pt-40 pb-100"  }) => {
             {counter_text.map((item) => (
               <div key={item.id} className="col-xl-3 col-md-6">
                 <div
-                  className="counter__item blue-border mb-30 wow fadeInUp"
-                  data-wow-delay=".2s"
+                  className="counter__item blue-border mb-30"
                 >
                   <div className={`counter__icon ${item.color} mb-15`}>
                     <i></i>

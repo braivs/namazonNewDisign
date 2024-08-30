@@ -71,8 +71,7 @@ const Blog = () => {
             {...setting}
             loop={isLoop}
             modules={[Navigation]}
-            className="swiper-container tp-blog-active wow fadeInUp"
-            data-wow-delay=".3s"
+            className="swiper-container tp-blog-active"
           >
             {blog_data.map((item) => (
               <SwiperSlide key={item.id}>

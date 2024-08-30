@@ -31,9 +31,7 @@ const CartArea = () => {
   return (
     <>
       <section
-        className="cart-area pt-130 pb-120 wow fadeInUp"
-        data-wow-duration=".8s"
-        data-wow-delay=".2s"
+        className="cart-area pt-130 pb-120"
       >
         <div className="container">
           <div className="row">

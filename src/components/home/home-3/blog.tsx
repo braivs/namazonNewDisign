@@ -68,8 +68,7 @@ const Blog = () => {
             {blog_content.map((item) => (
               <div key={item.id} className="col-xxl-4 col-lg-6 col-md-6">
                 <div
-                  className={`blogthumb mb-30 ${item.color} wow fadeInUp`}
-                  data-wow-delay=".7s"
+                  className={`blogthumb mb-30 ${item.color}`}
                   style={{ backgroundImage: `url(${item.bg_img})` }}
                 >
                   <div className="blogitem">

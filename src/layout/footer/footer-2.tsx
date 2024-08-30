@@ -11,8 +11,7 @@ const FooterTwo = () => {
               <div className="row">
                 <div className="col-lg-4 col-md-6">
                   <div
-                    className="tp-footer-widget footer-2-col-1 mb-40 wow fadeInUp"
-                    data-wow-delay=".2s"
+                    className="tp-footer-widget footer-2-col-1 mb-40"
                   >
                     <div className="tp-footer-widget__content mb-95">
                       <i>FEEL FREE TO CONTACT US</i>
@@ -35,8 +34,7 @@ const FooterTwo = () => {
                 </div>
                 <div className="col-lg-3 col-md-6">
                   <div
-                    className="tp-footer-widget footer-2-col-2 mb-40 wow fadeInUp"
-                    data-wow-delay=".4s"
+                    className="tp-footer-widget footer-2-col-2 mb-40"
                   >
                     <span className="tp-footer-widget__title mb-15">
                       Useful links
@@ -79,8 +77,7 @@ const FooterTwo = () => {
                 </div>
                 <div className="col-lg-2 col-md-6">
                   <div
-                    className="tp-footer-widget footer-2-col-3 mb-40 wow fadeInUp"
-                    data-wow-delay=".6s"
+                    className="tp-footer-widget footer-2-col-3 mb-40"
                   >
                     <span className="tp-footer-widget__title mb-15">
                       Customer Service
@@ -126,8 +123,7 @@ const FooterTwo = () => {
                 </div>
                 <div className="col-lg-3 col-md-6">
                   <div
-                    className="tp-footer-widget footer-2-col-4 mb-40 wow fadeInUp"
-                    data-wow-delay=".8s"
+                    className="tp-footer-widget footer-2-col-4 mb-40"
                   >
                     <span className="tp-footer-widget__title mb-15">
                       Contact Info

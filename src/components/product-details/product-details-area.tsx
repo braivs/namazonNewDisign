@@ -213,8 +213,7 @@ const ProductDetailsArea = () => {
             <div className="row">
               <div className="col-lg-6 col-md-6">
                 <div
-                  className="productthumb mb-40 wow fadeInRighLeft"
-                  data-wow-delay=".4s"
+                  className="productthumb mb-40"
                 >
                   <img
                     src="/assets/img/shop/product-01.jpg"
@@ -224,8 +223,7 @@ const ProductDetailsArea = () => {
               </div>
               <div className="col-lg-6 col-md-6">
                 <div
-                  className="product mb-40 ml-20 wow fadeInRighRight"
-                  data-wow-delay=".4s"
+                  className="product mb-40 ml-20"
                 >
                   <div className="product__details-content mb-40">
                     <h5 className="product-dtitle mb-20">Medical Hand Glabs</h5>

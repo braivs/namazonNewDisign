@@ -109,8 +109,7 @@ const Gallery = () => {
         </div>
         <div className="container-fluid">
           <div
-            className="tp-gallery ml-15 mr-15 wow fadeInUp"
-            data-wow-delay=".4s"
+            className="tp-gallery ml-15 mr-15"
           >
             <div className="swiper-container gall-active">
               <Swiper {...setting} loop={isLoop} modules={[Navigation]}>

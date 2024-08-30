@@ -11,8 +11,7 @@ const FooterThree = () => {
               <div className="row">
                 <div className="col-lg-7 col-md-6">
                   <div
-                    className="footernewsletter mb-40 wow fadeInUp"
-                    data-wow-delay=".2s"
+                    className="footernewsletter mb-40"
                   >
                     <h4 className="footernewsletter__title">
                       Subscribe Newslatter
@@ -25,7 +24,6 @@ const FooterThree = () => {
                 <div className="col-lg-5 col-md-6">
                   <div
                     className="footernewsletter__form p-relative fadeInUp"
-                    data-wow-delay=".4s"
                   >
                     <form action="#">
                       <input type="text" placeholder="Enter Mail" />
@@ -39,8 +37,7 @@ const FooterThree = () => {
               <div className="row pb-40 pt-50">
                 <div className="col-lg-4 col-md-6">
                   <div
-                    className="footercontact mb-40 wow fadeInUp"
-                    data-wow-delay=".2s"
+                    className="footercontact mb-40"
                   >
                     <div className="footercontact__icon">
                       <i className="flaticon-placeholder"></i>
@@ -56,8 +53,7 @@ const FooterThree = () => {
                 </div>
                 <div className="col-lg-4 col-md-6">
                   <div
-                    className="footercontact mb-40 wow fadeInUp"
-                    data-wow-delay=".4s"
+                    className="footercontact mb-40"
                   >
                     <div className="footercontact__icon fw-pink-icon">
                       <i className="flaticon-mail"></i>
@@ -72,8 +68,7 @@ const FooterThree = () => {
                 </div>
                 <div className="col-lg-4 col-md-6">
                   <div
-                    className="footercontact mb-40 wow fadeInUp"
-                    data-wow-delay=".6s"
+                    className="footercontact mb-40"
                   >
                     <div className="footercontact__icon fw-green-icon">
                       <i className="flaticon-24-hours"></i>

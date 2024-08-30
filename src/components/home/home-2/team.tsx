@@ -62,8 +62,7 @@ const Team = () => {
               {...setting}
               modules={[Navigation]}
               loop={isLoop}
-              className="swiper-container tp-team-active wow fadeInUp"
-              data-wow-delay=".3s"
+              className="swiper-container tp-team-active"
             >
               {team_home_two.map((item) => (
                 <SwiperSlide key={item.id}>

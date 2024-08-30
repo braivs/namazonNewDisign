@@ -21,8 +21,8 @@ const ContactForm = () => {
         <div className="container">
           <div className="row">
             {/* Column for email */}
-            <div className="col-lg-4 col-md-4 col-sm-12 wow fadeInLeft" data-wow-delay=".4s">
-              <div className="tpcontact mr-60 mb-60 wow fadeInUp" data-wow-delay=".2s">
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="tpcontact mr-60 mb-60">
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
                     <img src="/assets/img/icon/mail.png" alt="Address Icon" />
@@ -38,8 +38,8 @@ const ContactForm = () => {
             </div>
 
             {/* Column for telegram */}
-            <div className="col-lg-4 col-md-4 col-sm-12 wow fadeInLeft" data-wow-delay=".4s">
-              <div className="tpcontact mr-60 mb-60 wow fadeInUp" data-wow-delay=".4s">
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="tpcontact mr-60 mb-60">
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
                     <img src="/assets/img/icon/telegram.png" alt="Phone Icon" />
@@ -55,8 +55,8 @@ const ContactForm = () => {
             </div>
 
             {/* Column for Facebook */}
-            <div className="col-lg-4 col-md-4 col-sm-12 wow fadeInLeft" data-wow-delay=".4s">
-              <div className="tpcontact mr-60 mb-60 wow fadeInUp" data-wow-delay=".6s">
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="tpcontact mr-60 mb-60">
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
                     <img src="/assets/img/icon/facebook.png" alt="Opening Hours Icon" />
@@ -72,8 +72,8 @@ const ContactForm = () => {
             </div>
 
             {/* Column for Facebook */}
-            <div className="col-lg-4 col-md-4 col-sm-12 wow fadeInLeft" data-wow-delay=".4s">
-              <div className="tpcontact mr-60 mb-60 wow fadeInUp" data-wow-delay=".6s">
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="tpcontact mr-60 mb-60">
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
                     <img src="/assets/img/icon/vk.jpg" alt="Opening Hours Icon" />

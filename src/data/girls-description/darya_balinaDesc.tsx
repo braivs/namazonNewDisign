@@ -42,5 +42,3 @@ export const DaryaBalinaDesc = () => {
     </>
   )
 }
-
-//todo: check links

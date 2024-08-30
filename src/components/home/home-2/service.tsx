@@ -31,8 +31,7 @@ const Service = () => {
             {service_data.map((item) => (
               <div key={item.id} className="col-xl-3 col-lg-4 col-md-6">
                 <div
-                  className={`services-item tp-services-item mb-50 ml-${item.ml} wow fadeInUp`}
-                  data-wow-delay=".2s"
+                  className={`services-item tp-services-item mb-50 ml-${item.ml}`}
                 >
                   <div
                     className={`services-item__icon ${item.color_icon} mb-30`}

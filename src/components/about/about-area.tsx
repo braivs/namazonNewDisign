@@ -10,8 +10,7 @@ const AboutArea = () => {
           <div className="row">
             <div className="col-xl-6 col-lg-4 col-12">
               <div
-                className="tp-about-thumb mb-60 wow fadeInLeft"
-                data-wow-delay=".3s"
+                className="tp-about-thumb mb-60"
               >
                 <div className="tp-ab-img d-flex">
                   <div className="tp-ab-main-img p-relative">
@@ -47,8 +46,7 @@ const AboutArea = () => {
             </div>
             <div className="col-xl-6 col-lg-8 col-12">
               <div
-                className="about-content about-align mb-60 wow fadeInRight"
-                data-wow-delay=".3s"
+                className="about-content about-align mb-60"
               >
                 <div className="tp-section">
                   <h3 className="tp-section__title ab-title mb-25">

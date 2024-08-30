@@ -80,8 +80,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div
-                  className="footer-widget footer-col-1 mb-50 wow fadeInUp"
-                  data-wow-delay=".2s"
+                  className="footer-widget footer-col-1 mb-50"
                 >
                   <h4 className="footer-widget__title mb-30">
                     <a href="index">
@@ -101,8 +100,7 @@ const Footer = () => {
               {
                 footer_info.map(item =>  <div key={item.id} className="col-xl-3 col-lg-4 col-md-6">
                 <div
-                  className={`footer-widget ${item.cls} mb-50 wow fadeInUp`}
-                  data-wow-delay=".4s"
+                  className={`footer-widget ${item.cls} mb-50`}
                 >
                   <h4 className="footer-widget__title mb-20">{item.title}</h4>
                   <div className="footer-widget__links">
@@ -121,8 +119,7 @@ const Footer = () => {
               }
                <div className="col-xl-3 col-lg-4 col-md-6">
                 <div
-                  className="footer-widget footer-col-2 mb-50 wow fadeInUp"
-                  data-wow-delay=".4s"
+                  className="footer-widget footer-col-2 mb-50"
                 >
                   <h4 className="footer-widget__title mb-20">Useful links</h4>
                   <div className="footer-widget__links">
@@ -151,8 +148,7 @@ const Footer = () => {
               </div>
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div
-                  className="footer-widget footer-col-3 mb-50 wow fadeInUp"
-                  data-wow-delay=".6s"
+                  className="footer-widget footer-col-3 mb-50"
                 >
                   <h4 className="footer-widget__title mb-20">Contact info</h4>
                   <div className="footer-widget__info">
@@ -176,8 +172,7 @@ const Footer = () => {
               </div>
               <div className="col-xl-3 col-lg-6 col-md-6">
                 <div
-                  className="footer-widget footer-col-4 mb-50 wow fadeInUp"
-                  data-wow-delay=".8s"
+                  className="footer-widget footer-col-4 mb-50"
                 >
                   <h4 className="footer-widget__title mb-20">
                     Subscribe Newslatter

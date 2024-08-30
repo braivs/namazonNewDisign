@@ -37,8 +37,7 @@ const Service = () => {
                 className="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-12"
               >
                 <div
-                  className={`services-thumb-box ${item.color} mb-30 wow fadeInUp`}
-                  data-wow-delay=".6s"
+                  className={`services-thumb-box ${item.color} mb-30`}
                 >
                   <div className="services-thumb-box__thumb fix">
                     <img src={item.img} alt="services-thumb" />

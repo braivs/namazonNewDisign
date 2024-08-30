@@ -25,8 +25,7 @@ const GirlsArea = () => {
                     {girls_data_2012_2013.map((item) => (
                       <div key={item.id} className="col-xl-3 col-lg-4 col-md-6">
                         <div
-                          className="team-item mb-35 wow fadeInUp"
-                          data-wow-delay=".8s"
+                          className="team-item mb-35"
                         >
                           <div className="team-item__thumb mb-40">
                             <img src={item.img} alt="team-thumb"/>
@@ -46,15 +45,14 @@ const GirlsArea = () => {
                     {girls_data_2010_2011.map((item) => (
                       <div key={item.id} className="col-xl-3 col-lg-4 col-md-6">
                         <div
-                          className="team-item mb-35 wow fadeInUp"
-                          data-wow-delay=".8s"
+                          className="team-item mb-35"
                         >
                           <div className="team-item__thumb mb-40">
                             {
                               !item.isInProgress
                                 ? <img src={item.img} alt="team-thumb"/>
                                 : <div className={s.imageContainer}>
-                                    <img src={item.img} className={s.filter}/>
+                                    <img src={item.img} className={s.filter} alt={item.name}/>
                                     <div className={s.textOverlay}>In progress</div>
                                   </div>
 

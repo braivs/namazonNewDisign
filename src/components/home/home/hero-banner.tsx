@@ -76,8 +76,7 @@ const HeroBanner = () => {
                   {hero_box.map((item) => (
                     <div key={item.id} className="col-xl-4 col-lg-4 col-md-6">
                       <div
-                        className={`banner__item d-flex ${item.border} align-items-center mb-30 wow fadeInUp`}
-                        data-wow-delay=".2s"
+                        className={`banner__item d-flex ${item.border} align-items-center mb-30`}
                       >
                         <div className={`banner__item-icon ${item.color}`}>
                           <i className={item.icon}></i>

@@ -19,7 +19,6 @@ export default function App({ Component, pageProps }: AppProps) {
   </Provider>
 }
 
-//todo: fix blinking while video & girls 'is loading'
 //todo: upgrade modal menu
 //todo: setup pagination
 

@@ -73,7 +73,7 @@ const Blog = () => {
   return (
     <>
       <section className="blog-area pt-125 pb-120">
-        <div className="container  wow fadeInUp" data-wow-delay=".3s">
+        <div className="container">
           <div className="row align-items-center">
             <div className="col-md-8 col-12">
               <div className="tp-section">

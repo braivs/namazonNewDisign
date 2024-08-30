@@ -70,8 +70,7 @@ const Team = () => {
             </div>
           </div>
           <div
-            className="swiper-container team-active wow fadeInUp"
-            data-wow-delay=".3s"
+            className="swiper-container team-active"
           >
             <Swiper {...setting} loop={isLoop} modules={[Navigation]}>
               {team_data.map((item) => (
