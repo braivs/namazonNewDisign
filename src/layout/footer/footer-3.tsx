@@ -24,7 +24,7 @@ const FooterThree = () => {
                 </div>
                 <div className="col-lg-5 col-md-6">
                   <div
-                    className="footernewsletter__form p-relative wow fadeInUp"
+                    className="footernewsletter__form p-relative fadeInUp"
                     data-wow-delay=".4s"
                   >
                     <form action="#">
