@@ -21,6 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
 //todo: upgrade modal menu
 //todo: setup pagination
+//todo: when girl or video element is selected, should be video or girls category active
 
 //todo v2: fix typescript errors on dynamic imports, but links is correct
 //todo v2: install and setup new 'wowjs' analog

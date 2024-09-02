@@ -1,7 +1,6 @@
-import Link from "next/link";
-import React from "react";
+import React from "react"
 
-const Banner = () => {
+const BannerContact = () => {
   return (
     <>
       <section
@@ -17,13 +16,7 @@ const Banner = () => {
                 <h2 className="tp-breadcrumb__title">Contact us</h2>
               </div>
             </div>
-            <div className="col-lg-6 col-md-5 col-12">
-              <div className="tp-breadcrumb__link d-flex align-items-center">
-                <span>
-                  Bioxlab : <Link href="/blog-details"> Blog Details</Link>
-                </span>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -31,4 +24,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default BannerContact;
