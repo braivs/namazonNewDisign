@@ -17,7 +17,7 @@ function VideoComponent() {
 
 
   return (
-    <ElementDetails>
+    <ElementDetails variant={'video'}>
       <VideoData videoData={videoData} youtubeID={youtubeID} youtubeID2={youtubeID2}/>
     </ElementDetails>
   )

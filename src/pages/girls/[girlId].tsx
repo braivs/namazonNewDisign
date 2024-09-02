@@ -12,7 +12,7 @@ function VideoComponent() {
   const girlData: GirlData | undefined = girlId ? girls_data_all.find((item) => item.id === girlId) : girls_data_blank
 
   return (
-    <ElementDetails>
+    <ElementDetails variant={'girl'}>
       <GirlsData GirlData={girlData}/>
     </ElementDetails>
   )

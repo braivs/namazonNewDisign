@@ -3,18 +3,22 @@ import HeaderTwo from "@/layout/header/header-two"
 import React from "react"
 import ElementDetailsArea from "./element-details-area"
 import {WithChildren} from "@/shared/assets/types/types"
-import BannerVideo from "@/components/video/banner-video"
-import {BannerElement} from "@/common/element-details/banner-element"
-import sC from '@/common/styles.module.scss'
+import {BannerVideoElement} from "@/components/video/banner-video-element"
+import {BannerGirlElement} from "@/components/girls/banner-girl-element"
 
-export default function ElementDetails ({children}: WithChildren) {
+export default function ElementDetails ({children, variant}: Props) {
   return (
     <>
       <HeaderTwo />
-      <BannerElement />
+      {variant === 'video' && <BannerVideoElement />}
+      {variant === 'girl' && <BannerGirlElement />}
       <ElementDetailsArea>{children}</ElementDetailsArea>
       <FooterFour />
     </>
   );
 };
+
+type Props = WithChildren & {
+  variant: 'video' | 'girl'
+}
 
