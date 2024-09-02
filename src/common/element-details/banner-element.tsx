@@ -1,11 +1,11 @@
 import React from "react"
-import {useAppDispatch} from "@/shared/hooks/useAppDispatch"
 import cn from "classnames"
 import sC from '@/common/styles.module.scss'
 import Link from "next/link"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faArrowLeft} from "@fortawesome/free-solid-svg-icons"
 
 export const BannerElement = () => {
-  const dispatch = useAppDispatch()
 
   return (
     <>
@@ -20,7 +20,7 @@ export const BannerElement = () => {
             <div className="col-lg-6 col-md-6 col-12">
               <div className="tp-breadcrumb">
                 <Link className={"tp-breadcrumb__element"} href={'/video'}>
-                  <span className="fa fa-arrow-left"/><span className={sC.return}>All videos</span>
+                  <FontAwesomeIcon icon={faArrowLeft} /><span className={sC.return}>All videos</span>
                 </Link>
                 <h2 className={cn(sC.selectedCategory, "tp-breadcrumb__title")}>Video details</h2>
               </div>
