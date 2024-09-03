@@ -26,12 +26,25 @@ const BannerVideo = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6 col-12">
-              <div className="tp-breadcrumb">
-                <h2 className="tp-breadcrumb__title">Video : </h2>
-                <div className={cn( selected_category === 'ALL' && sC.selectedCategory, "tp-breadcrumb__element")} onClick={onAll}>ALL</div>
-                <div className={cn(selected_category === 'SUBMISSION WRESTLING' && sC.selectedCategory, "tp-breadcrumb__element")} onClick={onWrestling}>Wrestling</div>
-                <div className={cn(selected_category === 'MMA' && sC.selectedCategory, "tp-breadcrumb__element")} onClick={onMMA}>MMA</div>
-                <div className={cn(selected_category === 'MIXED WRESTLING' && sC.selectedCategory, "tp-breadcrumb__element")} onClick={onMixedWrestling}>Mixed wresting</div>
+              <div className={sC.tpBreadcrumb}>
+                <h2 className={sC.title}>Video : </h2>
+                <div className={sC.group}>
+                  <div className={cn(sC.element, selected_category === 'ALL' && sC.selectedCategory)}
+                       onClick={onAll}>ALL
+                  </div>
+                  <div
+                    className={cn(sC.element, selected_category === 'SUBMISSION WRESTLING' && sC.selectedCategory)}
+                    onClick={onWrestling}>Wrestling
+                  </div>
+                  <div className={cn(sC.element, selected_category === 'MMA' && sC.selectedCategory)}
+                       onClick={onMMA}>MMA
+                  </div>
+                  <div
+                    className={cn(sC.element, selected_category === 'MIXED WRESTLING' && sC.selectedCategory)}
+                    onClick={onMixedWrestling}>Mixed wresting
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
