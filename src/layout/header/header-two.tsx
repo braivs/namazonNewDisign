@@ -5,6 +5,7 @@ import React, {useState} from "react"
 import NavMenu from "./nav-menu"
 import youtube from '../../../public/assets/img/icon/youtube_small_color.png'
 import s from './header-two.module.scss'
+import cn from "classnames"
 
 const HeaderTwo = () => {
   const {sticky} = useSticky()
@@ -70,7 +71,7 @@ const HeaderTwo = () => {
           id="header-sticky"
         >
           <div className="header-logo-box">
-            {/*todo: maybe del  header-logo-box*/}
+            {/*todo: maybe del style header-logo-box*/}
             <Link href="/">
               <div className={s.logoContainer}>
                 <img src="/assets/img/logo/namazon.jpg" alt="logo" className={s.logo}/>
@@ -83,7 +84,7 @@ const HeaderTwo = () => {
             <div className="header-menu-top">
               <div className="row align-items-center">
                 <div className="col-lg-4">
-                  <div className="header-top-mob">
+                  <div className={cn("header-top-mob", s.headerTopMob)}>
                     <img src={youtube.src} alt="youtube"/>
                     <span>YouTube :</span>
                     <a href="https://www.youtube.com/@namazonclub"> @namazonclub </a>
