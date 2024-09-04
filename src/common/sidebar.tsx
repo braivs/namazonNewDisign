@@ -3,6 +3,7 @@ import ImagePopup from '@/modals/ImagePopup'
 import React, {FC, useState} from 'react'
 
 import {Logo} from "@/components/logo/Logo"
+import {SocialIcons} from "@/components/social-icons/SocialIcons"
 
 // Define types for images
 interface ImageItem {
@@ -52,9 +53,6 @@ const Sidebar: FC<SidebarProps> = ({ isActive, setIsActive }) => {
           <i className="fal fa-times"></i>
         </button>
         <div className="tpsideinfo__logo mb-40">
-          {/*<Link href="/">
-            <img src="/assets/img/logo/white-logo.png" alt="logo" />
-          </Link>*/}
           <Logo isSidebarVer={true}/>
         </div>
 
@@ -69,56 +67,11 @@ const Sidebar: FC<SidebarProps> = ({ isActive, setIsActive }) => {
             Club of single combats for women.
           </p>
           <span>Contact Us</span>
-          <a href="#">
-            <i className="fa-solid fa-star"></i>Ta-134/A, Gulshan Badda Link
-          </a>
-          <a href="tel:61383766284">
-            <i className="fa-solid fa-star"></i>61 383 766 284
-          </a>
-          <a href="mailto:noreply@envato.com">
-            <i className="fa-solid fa-star"></i>noreply@envato.com
+          <a href="mailto:namazonclub@gmail.com">
+            <i className="fa-solid fa-star"></i>namazonclub@gmail.com
           </a>
         </div>
-        <div className="tpsideinfo__content-inputarea mb-60 d-none d-xl-block">
-          <span>Get Update</span>
-          <div className="tpsideinfo__content-inputarea-input">
-            <form action="#">
-              <input type="email" placeholder="Enter Mail" />
-              <button className="tpsideinfo__content-inputarea-input-btn">
-                <i className="fa-solid fa-paper-plane"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-        <div className="tpsideinfo__gallery mb-35 d-none d-xl-block">
-          <span>Check Instagram Post</span>
-          <div className="tpsideinfo__gallery-item">
-            {images.map((item, i) => (
-              <a
-                key={i}
-                style={{ cursor: "pointer" }}
-                onClick={() => handleImagePopup(i)}
-                className="popup-image"
-              >
-                <img src={item.img} alt="" />
-              </a>
-            ))}
-          </div>
-        </div>
-        <div className="tpsideinfo__socialicon">
-          <a href="#">
-            <i className="fa-brands fa-youtube"></i>
-          </a>
-          <a href="#">
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i className="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="#">
-            <i className="fa-brands fa-skype"></i>
-          </a>
-        </div>
+        <SocialIcons />
       </div>
 
       <div

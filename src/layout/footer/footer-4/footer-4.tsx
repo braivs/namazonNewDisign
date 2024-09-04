@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import s from './footer-4.module.scss'
+import {SocialIcons} from "@/components/social-icons/SocialIcons"
 
 const FooterFour = ({ style_2 = false }) => {
   return (
@@ -43,20 +44,7 @@ const FooterFour = ({ style_2 = false }) => {
             <Col xl={3} lg={3} md={6}>
               <div className="tp-footer-widget footer-2-col-4 mb-40">
                 <span className="tp-footer-widget__title mb-15">Contact Info</span>
-                <div className="tp-footer-widget__social fw-social">
-                  <a href="https://t.me/namazonclub">
-                    <i className="fa-brands fa-telegram"></i>
-                  </a>
-                  <a href="https://www.youtube.com/@namazonclub">
-                    <i className="fa-brands fa-youtube"></i>
-                  </a>
-                  <a href="https://www.facebook.com/groups/namazonclub">
-                    <i className="fa-brands fa-facebook-f"></i>
-                  </a>
-                  <a href="https://vk.com/namazon">
-                    <i className="fa-brands fa-vk"></i>
-                  </a>
-                </div>
+                <SocialIcons />
               </div>
             </Col>
           </Row>
