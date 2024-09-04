@@ -5,7 +5,16 @@ import React, {useState} from "react"
 import NavMenu from "./nav-menu"
 import youtube from '../../../public/assets/img/icon/youtube_small_color.png'
 import s from './header-two.module.scss'
-import cn from "classnames"
+
+const Youtube = () => {
+  return (
+    <div className={'header-top-mob'}>
+      <img src={youtube.src} alt="youtube"/>
+      <span>YouTube :</span>
+      <a href="https://www.youtube.com/@namazonclub"> @namazonclub </a>
+    </div>
+  )
+}
 
 const HeaderTwo = () => {
   const {sticky} = useSticky()
@@ -31,27 +40,7 @@ const HeaderTwo = () => {
             <div className="col-md-8 col-2">
               <div className="tp-mobile-bar d-flex align-items-center justify-content-end">
                 <div className="tp-bt-btn-banner d-none d-md-block d-xl-none mr-30">
-                  <a className="tp-bt-btn" href="tel:123456">
-                    <svg
-                      width="14"
-                      height="19"
-                      viewBox="0 0 14 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="2" cy="2" r="2" fill="#0E63FF"/>
-                      <circle cx="7" cy="2" r="2" fill="#0E63FF"/>
-                      <circle cx="12" cy="2" r="2" fill="#0E63FF"/>
-                      <circle cx="12" cy="7" r="2" fill="#0E63FF"/>
-                      <circle cx="12" cy="12" r="2" fill="#0E63FF"/>
-                      <circle cx="7" cy="7" r="2" fill="#0E63FF"/>
-                      <circle cx="7" cy="12" r="2" fill="#0E63FF"/>
-                      <circle cx="7" cy="17" r="2" fill="#0E63FF"/>
-                      <circle cx="2" cy="7" r="2" fill="#0E63FF"/>
-                      <circle cx="2" cy="12" r="2" fill="#0E63FF"/>
-                    </svg>
-                    <span>Help Desk :</span>+91 590 088 55
-                  </a>
+                  <Youtube/>
                 </div>
                 <button
                   onClick={() => setIsActive(true)}
@@ -84,10 +73,8 @@ const HeaderTwo = () => {
             <div className="header-menu-top">
               <div className="row align-items-center">
                 <div className="col-lg-4">
-                  <div className={cn("header-top-mob", s.headerTopMob)}>
-                    <img src={youtube.src} alt="youtube"/>
-                    <span>YouTube :</span>
-                    <a href="https://www.youtube.com/@namazonclub"> @namazonclub </a>
+                  <div className={s.headerTopMob}>
+                    <Youtube/>
                   </div>
                 </div>
               </div>
