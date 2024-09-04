@@ -5,6 +5,7 @@ import React, {useState} from "react"
 import NavMenu from "./nav-menu"
 import youtube from '../../../public/assets/img/icon/youtube_small_color.png'
 import s from './header-two.module.scss'
+import cn from "classnames"
 
 const Youtube = () => {
   return (
@@ -16,12 +17,12 @@ const Youtube = () => {
   )
 }
 
-const Logo = () => {
+export const Logo = ({ isSidebarVer = false }: { isSidebarVer?: boolean }) => {
   return (
     <Link href="/">
       <div className={s.logoContainer}>
         <img src="/assets/img/logo/namazon.jpg" alt="logo" className={s.logo}/>
-        <div className={s.text}>NAMAZON CLUB</div>
+        <div className={cn(s.text, isSidebarVer && s.isSidebarVer)}>NAMAZON CLUB</div>
       </div>
     </Link>
   )

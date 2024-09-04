@@ -6,11 +6,14 @@
     font-family: 'Days One', sans-serif;
     width: 345px;
 
-    div {
+    .text {
         font-size: 1.7rem;
         margin-left: 10px;
     }
 
+    .isSidebarVer {
+        color: white;
+    }
 }
 
 .headerTopMob {
@@ -21,9 +24,8 @@
     .logoContainer {
         justify-content: flex-start;
 
-        div {
+        .text {
             font-size: 1.2rem;
         }
     };
-
 }

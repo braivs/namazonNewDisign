@@ -621,9 +621,9 @@
   &__logo {
     & a {
       & img {
-        width: 180px;
+        //width: 180px;
         @media #{$xs} {
-          width: 160px;
+          //width: 160px;
         }
       }
     }

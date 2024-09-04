@@ -1,7 +1,7 @@
-import MobileMenus from '@/layout/header/mobile-menus';
-import ImagePopup from '@/modals/ImagePopup';
-import Link from 'next/link';
-import React, { useState, FC } from 'react';
+import MobileMenus from '@/layout/header/mobile-menus'
+import ImagePopup from '@/modals/ImagePopup'
+import React, {FC, useState} from 'react'
+import {Logo} from "@/layout/header/header-two"
 
 // Define types for images
 interface ImageItem {
@@ -51,9 +51,10 @@ const Sidebar: FC<SidebarProps> = ({ isActive, setIsActive }) => {
           <i className="fal fa-times"></i>
         </button>
         <div className="tpsideinfo__logo mb-40">
-          <Link href="/">
+          {/*<Link href="/">
             <img src="/assets/img/logo/white-logo.png" alt="logo" />
-          </Link>
+          </Link>*/}
+          <Logo isSidebarVer={true}/>
         </div>
 
         <div className="mobile-menu mean-container d-block d-lg-none">
@@ -64,7 +65,7 @@ const Sidebar: FC<SidebarProps> = ({ isActive, setIsActive }) => {
 
         <div className="tpsideinfo__content mb-60">
           <p className="d-none d-xl-block">
-            Our mission is to ensure the generation of accurate and precise findings.
+            Club of single combats for women.
           </p>
           <span>Contact Us</span>
           <a href="#">
