@@ -16,6 +16,17 @@ const Youtube = () => {
   )
 }
 
+const Logo = () => {
+  return (
+    <Link href="/">
+      <div className={s.logoContainer}>
+        <img src="/assets/img/logo/namazon.jpg" alt="logo" className={s.logo}/>
+        <div className={s.text}>NAMAZON CLUB</div>
+      </div>
+    </Link>
+  )
+}
+
 const HeaderTwo = () => {
   const {sticky} = useSticky()
   const [isActive, setIsActive] = useState(false)
@@ -31,11 +42,7 @@ const HeaderTwo = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-4 col-10">
-              <div className="tp-mob-logo">
-                <Link href="/">
-                  <img src="/assets/img/logo/logo.png" alt="logo"/>
-                </Link>
-              </div>
+              <Logo/>
             </div>
             <div className="col-md-8 col-2">
               <div className="tp-mobile-bar d-flex align-items-center justify-content-end">
@@ -59,16 +66,7 @@ const HeaderTwo = () => {
           className={`header-custom ${sticky ? "header-sticky" : ""}`}
           id="header-sticky"
         >
-          <div className="header-logo-box">
-            {/*todo: maybe del style header-logo-box*/}
-            <Link href="/">
-              <div className={s.logoContainer}>
-                <img src="/assets/img/logo/namazon.jpg" alt="logo" className={s.logo}/>
-                <div className={s.text}>NAMAZON CLUB</div>
-              </div>
-
-            </Link>
-          </div>
+          <Logo/>
           <div className="header-menu-box">
             <div className="header-menu-top">
               <div className="row align-items-center">

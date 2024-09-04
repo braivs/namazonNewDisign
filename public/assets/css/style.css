@@ -90,7 +90,7 @@
 	typography css start 
 ---------------------------------*/
 body {
-  font-family: var(--tp-ff-body);
+  font-family: var(--tp-ff-body) sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: var(--tp-text-body);
@@ -1169,11 +1169,6 @@ input[type=color] {
   border-bottom: 1px solid var(--tp-border-primary);
 }
 
-.header-logo-box {
-  flex: 0 0 auto;
-  width: 345px;
-  text-align: center;
-}
 .header-logo-box img {
   width: 220px;
 }
@@ -1693,15 +1688,6 @@ input[type=color] {
   .tp-common-area {
     padding-left: 20px;
     padding-right: 20px;
-  }
-}
-
-.tp-mob-logo img {
-  width: 220px;
-}
-@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
-  .tp-mob-logo img {
-    width: 180px;
   }
 }
 
