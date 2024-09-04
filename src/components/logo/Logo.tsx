@@ -8,7 +8,11 @@ export const Logo = ({isSidebarVer = false}: { isSidebarVer?: boolean }) => {
     <Link href="/">
       <div className={cn(s.logoContainer, isSidebarVer && s.isSidebarVer)}>
         <img src="/assets/img/logo/namazon.jpg" alt="logo" className={s.logo}/>
-        <div className={s.text}>NAMAZON CLUB</div>
+        {
+          !isSidebarVer
+            ? <div className={s.text}>NAMAZON CLUB</div>
+            : <div className={s.text}>NAMAZON<br/> CLUB</div>
+        }
       </div>
     </Link>
   )
