@@ -1,7 +1,8 @@
 import MobileMenus from '@/layout/header/mobile-menus'
 import ImagePopup from '@/modals/ImagePopup'
 import React, {FC, useState} from 'react'
-import {Logo} from "@/layout/header/header-two"
+
+import {Logo} from "@/components/logo/Logo"
 
 // Define types for images
 interface ImageItem {
