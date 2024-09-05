@@ -32,7 +32,7 @@ const Sidebar: FC<SidebarProps> = ({ isActive, setIsActive }) => {
           <Logo isSidebarVer={true}/>
         </div>
 
-        <div className="mobile-menu mean-container d-block d-lg-none">
+        <div className="mobile-menu mean-container d-block">
           <div className="mean-bar">
             <MobileMenus />
           </div>
