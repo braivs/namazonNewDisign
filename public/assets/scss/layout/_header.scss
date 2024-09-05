@@ -629,8 +629,8 @@
     }
   }
   &__content {
-    @media #{$lg,$md,$xs} {
       padding-top: 35px;
+    @media #{$lg,$md,$xs} {
       margin-bottom: 40px;
     }
     & p {
