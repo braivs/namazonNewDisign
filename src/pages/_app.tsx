@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
 //todo: setup pagination
 //todo: when girl or video element is selected, should be video or girls category active
 //todo: remove plus symbol from menu
-//todo: make modal menu same high for girls/videos & contact us. Remove no need styles from _breadcrumb.scss (check)
+//todo: make menu same high for girls/videos & contact us. Remove no need styles from _breadcrumb.scss (check)
 //todo: change main app icon
 
 //todo v2: fix typescript errors on dynamic imports, but links is correct

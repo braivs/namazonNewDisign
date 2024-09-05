@@ -69,6 +69,4 @@ const FooterFour = ({ style_2 = false }) => {
   );
 };
 
-//todo: fix adaptive
-
 export default FooterFour;

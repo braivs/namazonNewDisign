@@ -264,8 +264,22 @@
   }
   &__contact {
     font-size: 36px;
-    @media #{$lg} {
+
+    @media #{$xl} {
       font-size: 30px;
+    }
+
+    @media #{$lg} {
+      font-size: 28px;
+    }
+
+    @media #{$md} {
+      font-size: 24px;
+    }
+
+    @media #{$xs, $sm} {
+      font-size: 19px !important;
+      /*todo: need to understand how to to without !important*/
     }
   }
   &__sub-sec {
