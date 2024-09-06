@@ -1,0 +1,79 @@
+@use "../utils" as *;
+
+.breadcrumb {
+  &__area {
+    padding: 50px 0;
+  }
+  &__overlay {
+    position: relative;
+    z-index: 1;
+    margin-top: -2px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgb(23, 17, 81, 0.7);
+      z-index: -1;
+    }
+  }
+}
+.tp-breadcrumb {
+  display: flex;
+  text-wrap: nowrap;
+  &__title, &__element {
+    color: var(--tp-common-white);
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 0;
+    @media #{$lg} {
+      font-size: 23px;
+    }
+    @media #{$md} {
+      font-size: 20px;
+    }
+    @media #{$xs} {
+      font-size: 19px;
+    }
+  }
+  &__element {
+     cursor: pointer;
+     margin-left: 10px;
+     font-family: var(--tp-ff-heading), serif;
+  }
+  &__link {
+    justify-content: flex-end;
+    @media #{$xs} {
+      justify-content: start;
+    }
+    & span {
+      color: var(--tp-common-white);
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 1.8px;
+      @media #{$lg} {
+        font-size: 16px;
+      }
+      & a {
+        text-decoration: underline;
+        margin-left: 5px;
+        &:hover {
+          color: var(--tp-icon-green);
+        }
+      }
+      @media #{$md,$xs} {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.serv-md {
+  @media #{$md} {
+    justify-content: start;
+  }
+}

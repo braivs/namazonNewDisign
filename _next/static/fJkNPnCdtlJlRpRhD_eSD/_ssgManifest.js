@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fgirls\u002F[girlId]","\u002Fvideo\u002F[videoId]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
