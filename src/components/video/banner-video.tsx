@@ -41,7 +41,7 @@ const BannerVideo = () => {
                   </div>
                   <div
                     className={cn(sC.element, selected_category === 'MIXED WRESTLING' && sC.selectedCategory)}
-                    onClick={onMixedWrestling}>Mixed wresting
+                    onClick={onMixedWrestling}>Mixed wrestling
                   </div>
                 </div>
 

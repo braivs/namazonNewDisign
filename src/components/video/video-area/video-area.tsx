@@ -61,3 +61,6 @@ const VideoArea = () => {
 };
 
 export default VideoArea;
+
+//todo: add gap between rows
+
