@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: false,
   output: 'export',
-  basePath: '/namazonNewDisign',
-  assetPrefix: '/namazonNewDisign/',
+  // basePath: '/namazonNewDisign',
+  // assetPrefix: '/namazonNewDisign/',
   images: {
     unoptimized: true,
   },
