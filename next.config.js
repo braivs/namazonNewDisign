@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
-  output: 'export',
-  // basePath: '/namazonNewDisign',
-  // assetPrefix: '/namazonNewDisign/',
+  // output: 'export',
   images: {
     unoptimized: true,
   },

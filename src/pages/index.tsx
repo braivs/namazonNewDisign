@@ -1,5 +1,8 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { config } from '@fortawesome/fontawesome-svg-core'; // fix for fontawesome big size issue on first start
+config.autoAddCss = false;
+import "@fortawesome/fontawesome-svg-core/styles.css"
 
 export default function Home() {
   const router = useRouter();
