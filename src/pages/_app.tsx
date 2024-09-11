@@ -3,6 +3,9 @@ import "../../node_modules/yet-another-react-lightbox/dist/styles.css";
 import {FC} from "react"
 import {Provider} from "react-redux"
 import {store} from "@/app/store/store"
+import { config } from '@fortawesome/fontawesome-svg-core'; // fix for fontawesome big size issue on first start
+import "@fortawesome/fontawesome-svg-core/styles.css"
+config.autoAddCss = false;
 
 type AppProps = {
   Component: FC
