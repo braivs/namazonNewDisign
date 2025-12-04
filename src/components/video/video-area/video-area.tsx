@@ -32,14 +32,14 @@ const VideoArea = () => {
           <div className="row">
             {videos.map((item) => {
               return (
-                <div key={item.id} className="col-lg-3 col-md-6">
+                <div key={item.id} className={cn("col-lg-3 col-md-6", s.videoCol)}>
                   <div
                     className={`research-item ${item.color} mb-50p`}
                   >
                     <div className="research-item__thum fix mb-20">
                       <img src={item.img} alt="research-thumb" />
                     </div>
-                    <div className={`research-item__content `}>
+                    <div className={cn(`research-item__content `, s.researchItemContent)}>
                       <div className={cn(s.previousStyle, stylePicker(item.category))}>{item.category} - NC{item.id}</div>
                       <h4 className="research-item__title mb-20" style={{ fontSize: '19px' }}>
                         <Link href={`/video/nc${formatNumber(item.id)}`}>{item.title}</Link>
