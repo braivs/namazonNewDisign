@@ -78,7 +78,6 @@ const girls_data_src_2010_2011: Girl_data_src[] = [
     img: "/assets/img/team/natalia.png",
     name: "NATALIA MYSIK",
     title: "5\'11\'\' / 154 lb",
-    isInProgress: true,
   },
   {
     id: 'kseniya-voloshina',

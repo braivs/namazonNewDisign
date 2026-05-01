@@ -10,6 +10,7 @@ import {valentinaPerfilevaDesc} from "@/data/girls-description/valentinaPerfilev
 import {irinaVlastaDesc} from "@/data/girls-description/irinaVlastaDesc"
 import {nadezhdaAkhmerovaDesc} from "@/data/girls-description/nadezhdaAkhmerovaDesc"
 import {elenaVasilevaDesc} from "@/data/girls-description/elenaVasilevaDesc"
+import {nataliaMysikDesc} from "@/data/girls-description/nataliaMysikDesc"
 
 export const GIRLS_MAP: Record<string, FC> = {
     'tais2011': tais2011Desc,
@@ -18,6 +19,7 @@ export const GIRLS_MAP: Record<string, FC> = {
     'irina-vlasta': irinaVlastaDesc,
     'nadezhda-akhmerova': nadezhdaAkhmerovaDesc,
     'elena-vasileva': elenaVasilevaDesc,
+    'natalia-mysik': nataliaMysikDesc,
     'tais2013': tais2013Desc,
     'kara_teller': kara_tellerDesc,
     'elena_vasileva2013': ElenaVasileva2013Desc,

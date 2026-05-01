@@ -94,8 +94,8 @@ export const DIR_NADEZHDA_AKHMEROVA_SUBGR = require.context('/public/assets/img/
 export const DIR_NADEZHDA_AKHMEROVA_KICK = require.context('/public/assets/img/girl/nadezhda_akhmerova/kick', false)
 export const DIR_ELENA_VASILEVA_MMA = require.context('/public/assets/img/girl/elena-vasileva/mma', false)
 export const DIR_ELENA_VASILEVA_SUBGR = require.context('/public/assets/img/girl/elena-vasileva/subgr', false)
+export const DIR_NATALIA_MYSIK_SUBGR = require.context('/public/assets/img/girl/natalia-mysik/subgr', false)
 
-// export const DirNataliaMysikSubgr = require.context('src/img/girl/natalia-mysik/subgr', false)
 // export const DirKseniyaVoloshinaSubgr = require.context('src/img/girl/kseniya-voloshina/subgr', false)
 
 //competitions
