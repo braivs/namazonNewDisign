@@ -79,6 +79,11 @@ export const DIR_KARA_TELLER = require.context('/public/assets/img/girl/kara-tel
 export const DIR_KARA_SVETLANY_1 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-1', false)
 export const DIR_KARA_SVETLANY_3 = require.context('/public/assets/img/videoGallery/17/mma-kara-svetlany-2012-3', false)
 export const DIR_MARIYA_RYLJOVA = require.context('/public/assets/img/girl/mariya-ryljova', false)
+// Tais, 2010–2011 (ported from namazonclub_react)
+export const DIR_TAIS2011_MAIN = require.context('/public/assets/img/girl/tais2011/main', false)
+export const DIR_TAIS2011_SUBGR = require.context('/public/assets/img/girl/tais2011/subgr', false)
+export const DIR_TAIS2011_MMA = require.context('/public/assets/img/girl/tais2011/mma', false)
+export const DIR_TAIS2011_KARATE = require.context('/public/assets/img/girl/tais2011/karate', false)
 
 // export const DirIrinaSubgr = require.context('src/img/girl/irina/subgr', false)
 // export const DirIrinaBeachgr = require.context('src/img/girl/irina/beachgr', false)
