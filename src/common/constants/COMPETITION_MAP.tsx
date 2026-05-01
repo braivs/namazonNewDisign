@@ -1,0 +1,29 @@
+import type {FC} from 'react'
+
+/** Replace entries with real articles when ported from the old site. */
+const CompetitionArticlePlaceholder: FC = () => (
+  <p className="text-muted">Full competition article is not published on the new site yet.</p>
+)
+
+const competitionIds = [
+  'maslenitsa-2016',
+  'tournament-2013',
+  'tournament-2014',
+  'grappling-2014',
+  'christmas-2012',
+  'mma-2012',
+  'sportHoliday-2012',
+  'varvara-tais-2012',
+  'nevskaya-arena-2012',
+  'christmas-2011',
+  'beach-2011',
+  'beach-mix-2011',
+  'IzidaVsTais2008',
+  'IzidaVsIrina2008',
+  'IrinaVsTais2009',
+  'beach-mix-2010',
+] as const
+
+export const COMPETITION_MAP: Record<string, FC> = Object.fromEntries(
+  competitionIds.map((id) => [id, CompetitionArticlePlaceholder]),
+) as Record<string, FC>

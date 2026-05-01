@@ -5,6 +5,7 @@ import ElementDetailsArea from "./element-details-area"
 import {WithChildren} from "@/shared/assets/types/types"
 import {BannerVideoElement} from "@/components/video/banner-video-element"
 import {BannerGirlElement} from "@/components/girls/banner-girl-element"
+import {BannerCompetitionElement} from "@/components/competitions/banner-competition-element"
 
 export default function ElementDetails ({children, variant}: Props) {
   return (
@@ -12,6 +13,7 @@ export default function ElementDetails ({children, variant}: Props) {
       <HeaderTwo />
       {variant === 'video' && <BannerVideoElement />}
       {variant === 'girl' && <BannerGirlElement />}
+      {variant === 'competition' && <BannerCompetitionElement />}
       <ElementDetailsArea>{children}</ElementDetailsArea>
       <FooterFour />
     </>
@@ -19,6 +21,6 @@ export default function ElementDetails ({children, variant}: Props) {
 };
 
 type Props = WithChildren & {
-  variant: 'video' | 'girl'
+  variant: 'video' | 'girl' | 'competition'
 }
 

@@ -1,77 +1,59 @@
-const menu_data = [
+export type SubMenu = {
+  link: string
+  title: string
+}
+
+export type MenuItem = {
+  id: number
+  mega_menu: boolean
+  has_dropdown: boolean
+  title: string
+  link: string
+  active: string
+  sub_menus?: SubMenu[]
+}
+
+const menu_data: MenuItem[] = [
   {
     id: 1,
     mega_menu: false,
     has_dropdown: false,
-    title: "Video",
-    link: "/video",
-    active: "active",
+    title: 'Video',
+    link: '/video',
+    active: 'active',
   },
   {
     id: 2,
     mega_menu: false,
     has_dropdown: false,
-    title: "Girls",
-    link: "/girls",
-    active: "",
+    title: 'Girls',
+    link: '/girls',
+    active: '',
+  },
+  {
+    id: 6,
+    mega_menu: false,
+    has_dropdown: false,
+    title: 'Competitions',
+    link: '/competitions',
+    active: '',
   },
   {
     id: 3,
     mega_menu: false,
     has_dropdown: false,
-    title: "Shop",
-    link: "https://www.patreon.com/namazon/shop",
-    active: "",
+    title: 'Shop',
+    link: 'https://www.patreon.com/namazon/shop',
+    active: '',
   },
   {
     id: 4,
     mega_menu: false,
     has_dropdown: false,
-    title: "Contact",
-    link: "/contact",
-    active: "",
+    title: 'Contact',
+    link: '/contact',
+    active: '',
   },
-  /*{
-    id: 5,
-    mega_menu: false,
-    has_dropdown: true,
-    title: "Other",
-    link: "/other",
-    active: "",
-    sub_menus: [
-      { link: "/home-2", title: "Home Style 2" },
-      { link: "/home-3", title: "Home Style 3" },
-      { link: "/blog", title: "Blog" },
-      { link: "/blog-details", title: "Blog Details" },
-      { link: "/about", title: "About" },
-      { link: "/team-details", title: "Team Details" },
-      { link: "/shop", title: "Shop" },
-      { link: "/product-details", title: "Product Details" },
-      { link: "/cart", title: "cart" },
-      { link: "/project-details", title: "Project Details" },
-      { link: "/faq", title: "Faq's" },
-    ],
-  },*/
-  /*{
-    id: 6,
-    mega_menu: false,
-    has_dropdown: false,
-    title: "Competitions",
-    link: "/competitions",
-    active: "",
-  },*/
-  /*{
-    id: 7,
-    mega_menu: false,
-    has_dropdown: false,
-    title: "Home",
-    link: "/",
-    active: "",
-    sub_menus: [
-      { link: "/", title: "Home Style 1" },
-    ],
-  },*/
-];
-export default menu_data;
+]
 
-// todo v2: add new tabs
+export default menu_data

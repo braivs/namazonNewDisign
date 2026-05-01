@@ -1,0 +1,20 @@
+/* Overrides global .research-item__thum img { width: 100% } for competitions only */
+:global(.research-item__thum).competitionThumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+
+  img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+}
+
+.thumbLink {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+}
