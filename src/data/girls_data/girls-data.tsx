@@ -72,7 +72,6 @@ const girls_data_src_2010_2011: Girl_data_src[] = [
     img: "/assets/img/team/elena2010-2011.png",
     name: "ELENA VASILYEVA",
     title: "5\'6\'\' / 135 lb",
-    isInProgress: true,
   },
   {
     id: 'natalia-mysik',
