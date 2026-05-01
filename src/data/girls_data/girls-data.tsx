@@ -60,7 +60,6 @@ const girls_data_src_2010_2011: Girl_data_src[] = [
     img: "/assets/img/team/vlasta.png",
     name: "IRINA (VLASTA)",
     title: "5\'9\'\' / 154 lb",
-    isInProgress: true,
   },
   {
     id: 'nadezhda-akhmerova',

@@ -7,11 +7,13 @@ import {MariyaRyljovaDesc} from "@/data/girls-description/mariya_ryljovaDesc"
 import {tais2011Desc} from "@/data/girls-description/tais2011Desc"
 import {irinaDesc} from "@/data/girls-description/irinaDesc"
 import {valentinaPerfilevaDesc} from "@/data/girls-description/valentinaPerfilevaDesc"
+import {irinaVlastaDesc} from "@/data/girls-description/irinaVlastaDesc"
 
 export const GIRLS_MAP: Record<string, FC> = {
     'tais2011': tais2011Desc,
     'irina': irinaDesc,
     'valentina-perfileva': valentinaPerfilevaDesc,
+    'irina-vlasta': irinaVlastaDesc,
     'tais2013': tais2013Desc,
     'kara_teller': kara_tellerDesc,
     'elena_vasileva2013': ElenaVasileva2013Desc,
