@@ -41,7 +41,6 @@ const girls_data_src_2010_2011: Girl_data_src[] = [
     img: "/assets/img/team/tais2010-2011.png",
     name: "TAIS",
     title: "5\'7\'\' / 130 lb",
-    isInProgress: true,
   },
   {
     id: 'irina',

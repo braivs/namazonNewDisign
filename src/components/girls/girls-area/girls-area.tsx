@@ -55,10 +55,7 @@ const GirlsArea = () => {
                                     <img src={item.img} className={s.filter} alt={item.name}/>
                                     <div className={s.textOverlay}>In progress</div>
                                   </div>
-
-
                             }
-
                           </div>
                           <div className="team-item__content">
                             <h5 className="team-item__title mb-15">
