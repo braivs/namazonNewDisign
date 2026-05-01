@@ -10,11 +10,13 @@ export default function CompetitionContent({data}: Props) {
 
   return (
     <>
-      <h3>{data.period}</h3>
-      <h4 style={{whiteSpace: 'pre-line'}}>{data.title}</h4>
-      <div className="text-center mb-40">
-        <img src={data.imgRef} alt="" className="img-fluid" style={{maxWidth: 400}} />
-      </div>
+      <h3>Competitions: {data.period}</h3>
+      <h4>{data.title.replace(/\n/g, ' ')}</h4>
+      <img
+        src={data.heroImgRef ?? data.imgRef}
+        alt=""
+        className={cn('img-fluid w-100', sC.videosMainImg)}
+      />
       <section className={cn('pt-10', sC.compArticlesVideoGirl)}>{data.description()}</section>
     </>
   )

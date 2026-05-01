@@ -16,7 +16,7 @@ export default function CompetitionCard({card}: Props) {
     ...card,
     variant: 'competition',
   })
-  const inProgress = card.isInProgress !== false
+  const inProgress = card.isInProgress === true
 
   const thumb = inProgress ? (
     <div className={inProgressS.imageContainer}>

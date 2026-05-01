@@ -9,11 +9,13 @@ export type CompetitionsVariant = 'all' | '2015-2017' | '2013-2014' | '2012' | '
 export type Competition_data = CardType & {
   period: Exclude<CompetitionsVariant, 'all'>
   description: () => React.ReactNode
-  /** When true, list cards show overlay and no links (like girls). Default true until articles are ready. */
+  /** When true, list cards show overlay and no links (like girls). Omit or false = published with links. */
   isInProgress?: boolean
+  /** Full-width hero on detail page; list cards still use `imgRef` (thumb). */
+  heroImgRef?: string
 }
 
-type Competition_src = CardType & {isInProgress?: boolean}
+type Competition_src = CardType & {isInProgress?: boolean; heroImgRef?: string}
 
 function yearsToPeriod(years: string): Competition_data['period'] {
   const m: Record<string, Competition_data['period']> = {
@@ -31,123 +33,139 @@ function enrich(card: Competition_src): Competition_data {
   return {
     ...card,
     period: yearsToPeriod(years),
-    isInProgress: card.isInProgress ?? true,
+    isInProgress: card.isInProgress ?? false,
     description() {
       return <DescriptionComponent version="competition" id={card.id} />
     },
   }
 }
 
-const competitions_data_src_2015_2017: Array<CardType> = [
+const competitions_data_src_2015_2017: Competition_src[] = [
   {
     id: 'maslenitsa-2016',
-    title: 'Female power competitions for\nthe Maslenitsa week, 2015-2017',
+    title: 'Female power competitions for the Maslenitsa week, 2016',
     imgRef: thumb('maslenitsa-2016.jpg'),
+    heroImgRef: '/assets/img/competitions/2016/Shrove_Tuesday/armwrestling/1.jpg',
     years: '2015_2017',
   },
 ]
 
-const competitions_data_src_2013_2014: Array<CardType> = [
+const competitions_data_src_2013_2014: Competition_src[] = [
   {
     id: 'tournament-2013',
-    title: "Women's Power Event\n Tournament. October 2013",
+    title: "Women's Power Event Tournament. October 2013",
     imgRef: thumb('tournament-2013.jpg'),
     years: '2013_2014',
+    isInProgress: true,
   },
   {
     id: 'tournament-2014',
-    title: 'Wrestling tournament for\nbeginners. May, 2014',
+    title: 'Wrestling tournament for beginners. May, 2014',
     imgRef: thumb('tournament-2014.jpg'),
     years: '2013_2014',
+    isInProgress: true,
   },
   {
     id: 'grappling-2014',
-    title: 'Tournament for the prize of the\nNamazon Club. October, 2014',
+    title: 'Tournament for the prize of the Namazon Club. October, 2014',
     imgRef: thumb('grappling-2014.jpg'),
     years: '2013_2014',
+    isInProgress: true,
   },
 ]
 
-const competitions_data_src_2012_raw: Array<Omit<CardType, 'years'>> = [
+const competitions_data_src_2012_raw: Array<Omit<Competition_src, 'years'>> = [
   {
     id: 'christmas-2012',
-    title: 'Christmas Cup 2012\nMMA fights',
+    title: 'Christmas Cup 2012 MMA fights',
     imgRef: thumb('Elena_Vasilyeva_vs_Kara_Teller.jpg'),
+    isInProgress: true,
   },
   {
     id: 'mma-2012',
-    title: 'ММА. Kara Teller vs\nSvetlana Solovyova. 2012',
+    title: 'ММА. Kara Teller vs Svetlana Solovyova. 2012',
     imgRef: thumb('Kara_Teller_vs_Svetlana_Solovyova.jpg'),
+    isInProgress: true,
   },
   {
     id: 'sportHoliday-2012',
-    title: 'MMA fights in the May\nholidays. 2012',
+    title: 'MMA fights in the May holidays. 2012',
     imgRef: thumb('KaraTellervsDariaBalina.jpg'),
+    isInProgress: true,
   },
   {
     id: 'varvara-tais-2012',
-    title: 'Varvara Akulova vs Tais.\nSubmission grappling. 2012',
+    title: 'Varvara Akulova vs Tais. Submission grappling. 2012',
     imgRef: thumb('VarvaravsTais.jpg'),
+    isInProgress: true,
   },
   {
     id: 'nevskaya-arena-2012',
-    title: 'The first Nevsky Arena. MMA\n tournament. 2012',
+    title: 'The first Nevsky Arena. MMA  tournament. 2012',
     imgRef: thumb('video-20.jpg'),
+    isInProgress: true,
   },
 ]
 
-const competitions_data_src_2012: Array<CardType> = competitions_data_src_2012_raw.map((c) => ({
+const competitions_data_src_2012: Competition_src[] = competitions_data_src_2012_raw.map((c) => ({
   ...c,
   years: '2012',
 }))
 
-const competitions_data_src_2011_raw: Array<Omit<CardType, 'years'>> = [
+const competitions_data_src_2011_raw: Array<Omit<Competition_src, 'years'>> = [
   {
     id: 'christmas-2011',
     title: 'Christmas Cup 2011 Submission Grappling',
     imgRef: thumb('video-4.jpg'),
+    isInProgress: true,
   },
   {
     id: 'beach-2011',
-    title: 'Beach tournament\nSubmission Grappling. 2011',
+    title: 'Beach tournament Submission Grappling. 2011',
     imgRef: thumb('video-8.jpg'),
+    isInProgress: true,
   },
   {
     id: 'beach-mix-2011',
-    title: 'Mixed beach tournament\nSubmission Grappling. 2011',
+    title: 'Mixed beach tournament Submission Grappling. 2011',
     imgRef: thumb('2011-alex-elena.jpg'),
+    isInProgress: true,
   },
 ]
 
-const competitions_data_src_2011: Array<CardType> = competitions_data_src_2011_raw.map((c) => ({
+const competitions_data_src_2011: Competition_src[] = competitions_data_src_2011_raw.map((c) => ({
   ...c,
   years: '2011',
 }))
 
-const competitions_data_src_archive_raw: Array<Omit<CardType, 'years'>> = [
+const competitions_data_src_archive_raw: Array<Omit<Competition_src, 'years'>> = [
   {
     id: 'IzidaVsTais2008',
-    title: 'Izida vs Tais\nWrestling. 2008',
+    title: 'Izida vs Tais Wrestling. 2008',
     imgRef: thumb('2008-izida-tais.jpg'),
+    isInProgress: true,
   },
   {
     id: 'IzidaVsIrina2008',
-    title: 'Izida vs Irina\nWrestling. 2008',
+    title: 'Izida vs Irina Wrestling. 2008',
     imgRef: thumb('2008-izida-irina.jpg'),
+    isInProgress: true,
   },
   {
     id: 'IrinaVsTais2009',
-    title: 'Irina vs Tais\nBeach wrestling. 2009',
+    title: 'Irina vs Tais Beach wrestling. 2009',
     imgRef: thumb('2009-irina-tais.jpg'),
+    isInProgress: true,
   },
   {
     id: 'beach-mix-2010',
-    title: 'Mixed beach\ntournament. 2010',
+    title: 'Mixed beach tournament. 2010',
     imgRef: thumb('2010-natalia-alex.jpg'),
+    isInProgress: true,
   },
 ]
 
-const competitions_data_src_archive: Array<CardType> = competitions_data_src_archive_raw.map((c) => ({
+const competitions_data_src_archive: Competition_src[] = competitions_data_src_archive_raw.map((c) => ({
   ...c,
   years: 'Archive',
 }))

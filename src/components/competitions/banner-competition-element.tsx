@@ -21,7 +21,7 @@ export const BannerCompetitionElement = () => {
                 <FontAwesomeIcon icon={faArrowLeft} />
                 <span className={sC.return}>All competitions</span>
               </Link>
-              <h2 className={cn(sC.selectedCategory, 'tp-breadcrumb__title')}>Competition</h2>
+              <h2 className={cn(sC.selectedCategory, 'tp-breadcrumb__title')}>Competition details</h2>
             </div>
           </div>
         </div>

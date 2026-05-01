@@ -1,4 +1,5 @@
 import type {FC} from 'react'
+import {Maslenitsa2016Desc} from '@/data/competitions-description/maslenitsa2016Desc'
 
 /** Replace entries with real articles when ported from the old site. */
 const CompetitionArticlePlaceholder: FC = () => (
@@ -24,6 +25,11 @@ const competitionIds = [
   'beach-mix-2010',
 ] as const
 
-export const COMPETITION_MAP: Record<string, FC> = Object.fromEntries(
+const competitionMapBase: Record<string, FC> = Object.fromEntries(
   competitionIds.map((id) => [id, CompetitionArticlePlaceholder]),
 ) as Record<string, FC>
+
+export const COMPETITION_MAP: Record<string, FC> = {
+  ...competitionMapBase,
+  'maslenitsa-2016': Maslenitsa2016Desc,
+}
