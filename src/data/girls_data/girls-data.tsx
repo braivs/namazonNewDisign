@@ -84,7 +84,6 @@ const girls_data_src_2010_2011: Girl_data_src[] = [
     img: "/assets/img/team/ksenia.png",
     name: "KSENIA VOLOSHINA",
     title: "5\'3\'\' / 141 lb",
-    isInProgress: true,
   },
 ];
 
