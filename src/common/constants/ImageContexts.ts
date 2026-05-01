@@ -90,9 +90,9 @@ export const DIR_VALENTINA_SUBGR = require.context('/public/assets/img/girl/vale
 export const DIR_VALENTINA_KICK = require.context('/public/assets/img/girl/valentina_perfileva/kick', false)
 export const DIR_VLASTA_BEACHGR = require.context('/public/assets/img/girl/irina_vlasta/beachgr', false)
 export const DIR_VLASTA_SUBGR = require.context('/public/assets/img/girl/irina_vlasta/subgr', false)
+export const DIR_NADEZHDA_AKHMEROVA_SUBGR = require.context('/public/assets/img/girl/nadezhda_akhmerova/subgr', false)
+export const DIR_NADEZHDA_AKHMEROVA_KICK = require.context('/public/assets/img/girl/nadezhda_akhmerova/kick', false)
 
-// export const DirNadezhdaAkhmerovaSubgr = require.context('src/img/girl/nadezhda_akhmerova/subgr', false)
-// export const DirNadezhdaAkhmerovaKick = require.context('src/img/girl/nadezhda_akhmerova/kick', false)
 // export const DirElenaVasilevaMma = require.context('src/img/girl/elena-vasileva/mma', false)
 // export const DirElenaVasilevaSubgr = require.context('src/img/girl/elena-vasileva/subgr', false)
 // export const DirNataliaMysikSubgr = require.context('src/img/girl/natalia-mysik/subgr', false)

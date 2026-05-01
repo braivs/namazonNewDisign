@@ -64,14 +64,13 @@ const girls_data_src_2010_2011: Girl_data_src[] = [
   {
     id: 'nadezhda-akhmerova',
     img: "/assets/img/team/nadezhda.png",
-    name: "ELENA VASILYEVA",
+    name: "NADEZHDA AKHMEROVA",
     title: "5\'6\'\' / 132 lb",
-    isInProgress: true,
   },
   {
     id: 'elena-vasileva',
     img: "/assets/img/team/elena2010-2011.png",
-    name: "NADEZHDA AKHMEROVA",
+    name: "ELENA VASILYEVA",
     title: "5\'6\'\' / 135 lb",
     isInProgress: true,
   },
