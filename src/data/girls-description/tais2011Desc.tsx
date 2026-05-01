@@ -14,7 +14,6 @@ import Link from 'next/link'
 export const tais2011Desc = () => {
   return (
     <>
-      <h4>Tais</h4>
       <Image className={sC.MainImg} src={imgMain} alt="Tais" />
       <p>
         <b>Tais</b> (5&apos;7&quot; / 130 lb) is a many-time winner of the submission grappling championships at the

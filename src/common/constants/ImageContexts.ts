@@ -84,9 +84,9 @@ export const DIR_TAIS2011_MAIN = require.context('/public/assets/img/girl/tais20
 export const DIR_TAIS2011_SUBGR = require.context('/public/assets/img/girl/tais2011/subgr', false)
 export const DIR_TAIS2011_MMA = require.context('/public/assets/img/girl/tais2011/mma', false)
 export const DIR_TAIS2011_KARATE = require.context('/public/assets/img/girl/tais2011/karate', false)
+export const DIR_IRINA_SUBGR = require.context('/public/assets/img/girl/irina/subgr', false)
+export const DIR_IRINA_BEACHGR = require.context('/public/assets/img/girl/irina/beachgr', false)
 
-// export const DirIrinaSubgr = require.context('src/img/girl/irina/subgr', false)
-// export const DirIrinaBeachgr = require.context('src/img/girl/irina/beachgr', false)
 // export const DirValentinaSubgr = require.context('src/img/girl/valentina_perfileva/subgr', false)
 // export const DirValentinaKick = require.context('src/img/girl/valentina_perfileva/kick', false)
 // export const DirVlastaBeachgr = require.context('src/img/girl/irina_vlasta/beachgr', false)
