@@ -54,7 +54,6 @@ const girls_data_src_2010_2011: Girl_data_src[] = [
     img: "/assets/img/team/valentina.png",
     name: "VALENTINA PERFILYEVA",
     title: "5\'8\'\' / 132 lb",
-    isInProgress: true,
   },
   {
     id: 'irina-vlasta',
