@@ -7,6 +7,14 @@ import s from './video-data.module.scss'
 import {formatNumber} from "@/common/helpers"
 import sC from '@/common/styles.module.scss'
 
+function patreonUrlForVideo(patreonId: string, isPost?: boolean): string {
+  if (!patreonId) return ''
+  if (isPost) {
+    return `https://www.patreon.com/posts/${patreonId}`
+  }
+  return `https://www.patreon.com/namazon/shop/${patreonId}`
+}
+
 export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
   let videoDataIdFormatted = ''
   if (videoData) videoDataIdFormatted = formatNumber(videoData.id)
@@ -39,7 +47,7 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
         <hr/>
         <p>
           You can purchase <b>video {`NC${videoDataIdFormatted}`}</b> on <a className={s.violet}
-                                                                            href={`https://www.patreon.com/namazon/shop/${videoData?.patreonId}`}><b>Patreon</b></a>.
+                                                                            href={videoData ? patreonUrlForVideo(videoData.patreonId, videoData.isPost) : '#'}><b>Patreon</b></a>.
         </p>
       </Row>
     </div>

@@ -3,6 +3,8 @@ import DescriptionComponent from "@/common/DescriptionComponent"
 import {formatNumber} from "@/common/helpers"
 import {Category} from "@/common/types"
 
+
+
 const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 1,
@@ -375,8 +377,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
       </p>
     ),
     patreonId: 'nc50-braivs-vs-tais-collection-2014-2017-290070'
-  },
-  {
+  }, {
     id: 59,
     youtubeID: 'e72ZJ7JQt10',
     title: 'Alex vs JudoGirlAmrita',
@@ -384,11 +385,13 @@ const video_data_src_all: Array<Video_data_src_all> = [
     description: () => (
       <p>
         We're back with this new mixed wrestling — Alex vs Amrita. This video begins as judo improvisation and goes into wrestling after. <br/>
-        Technical video quality is average (720p with slight pixelation).
+        Technical video quality is average (720p with slight pixelation). Duration 15 mins.
       </p>
     ),
-    patreonId: 'nc59-fm-alex-vs-157241046'
+    patreonId: 'nc59-fm-alex-vs-157250136',
+    isPost: true
   }
+
 ];
 
 // Add data to video_data_src
@@ -428,6 +431,8 @@ type Video_data_src_all = {
   des?: string,
   description?: () => React.ReactNode
   patreonId: string
+  /** If true, Patreon link is `patreon.com/posts/{patreonId}` instead of shop. */
+  isPost?: boolean
 }
 
 export type Video_data = Video_data_src_all & {
