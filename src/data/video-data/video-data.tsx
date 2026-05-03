@@ -390,6 +390,20 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc59-fm-alex-vs-157250136',
     isPost: true
+  },
+  {
+    id: 60,
+    youtubeID: 'zRC8TWQKzi0',
+    title: 'Siya vs Skuff - round 1',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+        Duration 30 mins.
+      </p>
+    ),
+    patreonId: 'nc59-fm-alex-vs-157250136',
+    isPost: true,
+    isClickable: true
   }
 
 ];
@@ -433,6 +447,8 @@ type Video_data_src_all = {
   patreonId: string
   /** If true, Patreon link is `patreon.com/posts/{patreonId}` instead of shop. */
   isPost?: boolean
+  /** If true, video page shows poster `img` linking to YouTube instead of an embed. */
+  isClickable?: boolean
 }
 
 export type Video_data = Video_data_src_all & {

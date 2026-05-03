@@ -26,7 +26,23 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
       <Row>
         <Col className={cn('d-flex', 'justify-content-center')}>
           {
-            youtubeID && <MyYouTube videoId={youtubeID}/>
+            youtubeID && videoData?.isClickable && videoData.img && (
+              <a
+                className={s.youtubeCoverLink}
+                href={`https://www.youtube.com/watch?v=${youtubeID}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="click to see the video on YouTube"
+              >
+                <img className={s.youtubeCoverImg} src={videoData.img} alt="" />
+                <span className={s.youtubeCoverOverlay} aria-hidden>
+                  <span className={s.youtubeCoverText}>click to see the video</span>
+                </span>
+              </a>
+            )
+          }
+          {
+            youtubeID && !videoData?.isClickable && <MyYouTube videoId={youtubeID}/>
           }
         </Col>
       </Row>
