@@ -375,6 +375,19 @@ const video_data_src_all: Array<Video_data_src_all> = [
       </p>
     ),
     patreonId: 'nc50-braivs-vs-tais-collection-2014-2017-290070'
+  },
+  {
+    id: 59,
+    youtubeID: 'e72ZJ7JQt10',
+    title: 'Alex vs JudoGirlAmrita',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+        We're back with this new mixed wrestling — Alex vs Amrita. This video begins as judo improvisation and goes into wrestling after. <br/>
+        Technical video quality is average (720p with slight pixelation).
+      </p>
+    ),
+    patreonId: 'nc59-fm-alex-vs-157241046'
   }
 ];
 
