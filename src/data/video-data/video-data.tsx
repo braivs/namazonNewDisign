@@ -401,11 +401,10 @@ const video_data_src_all: Array<Video_data_src_all> = [
         Duration 30 mins.
       </p>
     ),
-    patreonId: 'nc59-fm-alex-vs-157250136',
+    patreonId: 'nc60-fm-siya-vs-157276901',
     isPost: true,
     isClickable: true
   }
-
 ];
 
 // Add data to video_data_src
