@@ -385,7 +385,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     description: () => (
       <p>
         We're back with this new mixed wrestling — Alex vs Amrita. This video begins as judo improvisation and goes into wrestling after. <br/>
-        Technical video quality is average (720p with slight pixelation). Duration 15 mins.
+        Video quality is 720p. Duration 15 mins.
       </p>
     ),
     patreonId: 'nc59-fm-alex-vs-157250136',
