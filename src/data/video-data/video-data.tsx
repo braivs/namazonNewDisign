@@ -417,7 +417,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc60-fm-siya-vs-157276901',
     isPost: true,
-    isClickable: true
+    directVideoUrl: 'https://files.catbox.moe/umbng1.mp4'
   }
 ];
 
@@ -462,6 +462,8 @@ type Video_data_src_all = {
   isPost?: boolean
   /** If true, video page shows poster `img` linking to YouTube instead of an embed. */
   isClickable?: boolean
+  /** If set, page embeds this file URL in a native video element instead of YouTube. */
+  directVideoUrl?: string
 }
 
 export type Video_data = Video_data_src_all & {

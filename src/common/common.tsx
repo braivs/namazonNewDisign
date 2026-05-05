@@ -2,17 +2,13 @@ import React, {useEffect, useState} from 'react'
 import {Photo} from "react-photo-album"
 import {Slide} from "yet-another-react-lightbox"
 
-export const MyYouTube = (props: YoutubePropsType) => {
-  const [width, setWidth] = useState(0); // Initial state doesn't depend on window
+function useVideoFrameDimensions() {
   const [frameWidth, setFrameWidth] = useState(640);
   const [frameHeight, setFrameHeight] = useState(360);
 
   useEffect(() => {
-    // This will only run on the client side
     const updateWindowDimensions = () => {
       const newWidth = window.innerWidth;
-      setWidth(newWidth);
-
       if (newWidth < 768) {
         setFrameWidth(340);
         setFrameHeight(190);
@@ -25,11 +21,16 @@ export const MyYouTube = (props: YoutubePropsType) => {
       }
     };
 
-    updateWindowDimensions(); // Initial call to set dimensions based on current width
+    updateWindowDimensions();
     window.addEventListener("resize", updateWindowDimensions);
-
     return () => window.removeEventListener("resize", updateWindowDimensions);
   }, []);
+
+  return {frameWidth, frameHeight};
+}
+
+export const MyYouTube = (props: YoutubePropsType) => {
+  const {frameWidth, frameHeight} = useVideoFrameDimensions();
 
   return (
     <iframe
@@ -38,6 +39,21 @@ export const MyYouTube = (props: YoutubePropsType) => {
       src={`https://www.youtube-nocookie.com/embed/${props.videoId}`}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
+    />
+  );
+};
+
+export const MyDirectVideo = (props: {src: string}) => {
+  const {frameWidth, frameHeight} = useVideoFrameDimensions();
+
+  return (
+    <video
+      width={frameWidth}
+      height={frameHeight}
+      controls
+      playsInline
+      preload="metadata"
+      src={props.src}
     />
   );
 };

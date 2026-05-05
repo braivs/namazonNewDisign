@@ -1,6 +1,6 @@
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
-import {MyYouTube} from "@/common/common"
+import {MyDirectVideo, MyYouTube} from "@/common/common"
 import React from "react"
 import {Video_data} from "@/data/video-data/video-data"
 import s from './video-data.module.scss'
@@ -19,14 +19,20 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
   let videoDataIdFormatted = ''
   if (videoData) videoDataIdFormatted = formatNumber(videoData.id)
 
+  const directUrl = videoData?.directVideoUrl
+
   return (
     <div className={sC.compArticlesVideoGirl}>
       <h3>{`NC${videoDataIdFormatted}`}</h3>
       <h4>{videoData?.title}</h4>
       <Row>
         <Col className={cn('d-flex', 'justify-content-center')}>
+          {directUrl && <MyDirectVideo src={directUrl}/>}
           {
-            youtubeID && videoData?.isClickable && videoData.img && (
+            !directUrl &&
+            youtubeID &&
+            videoData?.isClickable &&
+            videoData.img && (
               <a
                 className={s.youtubeCoverLink}
                 href={`https://www.youtube.com/watch?v=${youtubeID}`}
@@ -42,11 +48,12 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
             )
           }
           {
-            youtubeID && !videoData?.isClickable && <MyYouTube videoId={youtubeID}/>
+            !directUrl && youtubeID && !videoData?.isClickable && <MyYouTube videoId={youtubeID}/>
           }
         </Col>
       </Row>
       {
+        !directUrl &&
         youtubeID2 &&
           <Row className={s.youtube2}>
               <Col className={cn('d-flex', 'justify-content-center')}> <MyYouTube videoId={youtubeID2}/> </Col>
