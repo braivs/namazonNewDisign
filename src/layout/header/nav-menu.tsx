@@ -24,7 +24,7 @@ const NavMenu = ({num = false}) => {
         const isActive = selfActive
 
         return (
-          <li key={menu.id} className={`has-dropdown ${isActive ? 'active' : ''}`}>
+          <li key={menu.id} className={`${menu.has_dropdown ? 'has-dropdown' : ''} ${isActive ? 'active' : ''}`}>
             <Link className={isActive ? 'active' : ''} href={menu.link}>
               {num && index <= 9 ? `0${index + 1}.` : num ? `${index + 1}.` : null}
               {menu.title}
