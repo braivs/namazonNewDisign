@@ -385,7 +385,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     description: () => (
       <p>
         We're back with this new mixed wrestling — Alex vs Amrita. This video begins as judo improvisation and goes into wrestling after. <br/>
-        Video quality is 720p. Duration 15 mins.
+        Full video duration 15 mins.
       </p>
     ),
     patreonId: 'nc59-fm-alex-vs-157250136',
@@ -398,7 +398,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     description: () => (
       <p>
-        Duration 30 mins.
+        Full video duration 30 mins.
       </p>
     ),
     patreonId: 'nc60-fm-siya-vs-157276901',
@@ -407,15 +407,15 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 61,
-    youtubeID: 'hWQFeeB_VYw',
+    youtubeID: '',
     title: 'Siya vs Skuf - round 2',
     category: 'MIXED WRESTLING',
     description: () => (
       <p>
-        Duration 19 mins.
+        Full video duration 19 mins.
       </p>
     ),
-    patreonId: 'nc60-fm-siya-vs-157276901',
+    patreonId: 'nc61-fm-siya-vs-157346614',
     isPost: true,
     directVideoUrl: 'https://files.catbox.moe/umbng1.mp4'
   }
