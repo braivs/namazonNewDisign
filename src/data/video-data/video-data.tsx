@@ -418,6 +418,20 @@ const video_data_src_all: Array<Video_data_src_all> = [
     patreonId: 'nc61-fm-siya-vs-157346614',
     isPost: true,
     directVideoUrl: 'https://files.catbox.moe/umbng1.mp4'
+  },
+  {
+    id: 62,
+    youtubeID: '',
+    title: 'Siya vs Tryapka',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+        Full video duration 21 mins.
+      </p>
+    ),
+    patreonId: 'nc62-siya-vs-157533888',
+    isPost: true,
+    directVideoUrl: 'https://files.catbox.moe/b050nq.mp4'
   }
 ];
 
