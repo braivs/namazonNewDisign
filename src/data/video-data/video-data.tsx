@@ -432,6 +432,20 @@ const video_data_src_all: Array<Video_data_src_all> = [
     patreonId: 'nc62-siya-vs-157533888',
     isPost: true,
     directVideoUrl: 'https://files.catbox.moe/b050nq.mp4'
+  },
+  {
+    id: 63,
+    youtubeID: '',
+    title: 'Siya vs Skuf - fight 2',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+        Full video duration 20 mins.
+      </p>
+    ),
+    patreonId: 'nc63-siya-vs-2-157655160',
+    isPost: true,
+    directVideoUrl: 'https://files.catbox.moe/h2s50g.mp4'
   }
 ];
 
