@@ -445,7 +445,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc63-siya-vs-2-157655160',
     isPost: true,
-    directVideoUrl: 'https://files.catbox.moe/h2s50g.mp4'
+    directVideoUrl: 'https://files.catbox.moe/l1dtmv.mp4'
   }
 ];
 
