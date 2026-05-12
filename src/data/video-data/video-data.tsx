@@ -446,6 +446,46 @@ const video_data_src_all: Array<Video_data_src_all> = [
     patreonId: 'nc63-siya-vs-2-157655160',
     isPost: true,
     directVideoUrl: 'https://files.catbox.moe/l1dtmv.mp4'
+  },
+  {
+    id: 64,
+    youtubeID: '',
+    title: 'Siya in socks',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+        Full video duration 29 mins.
+      </p>
+    ),
+    patreonId: 'nc64-siya-in-157720494',
+    isPost: true,
+    directVideoUrl: 'http://files.catbox.moe/iaqmqh.mp4'
+  },
+  {
+    id: 65,
+    youtubeID: 'rGm3vDbbkp4',
+    title: 'Aizet vs Alex',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+        Full video duration 14 mins.
+      </p>
+    ),
+    patreonId: 'nc65-aizet-vs-157731669',
+    isPost: true,
+  },
+  {
+    id: 66,
+    youtubeID: 'RIMTtVZDtFA',
+    title: 'Aizet in kimono vs Alex',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+        Full video duration 13 mins.
+      </p>
+    ),
+    patreonId: 'nc66-aizet-in-vs-157950269',
+    isPost: true,
   }
 ];
 
