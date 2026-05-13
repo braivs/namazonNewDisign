@@ -417,7 +417,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc61-fm-siya-vs-157346614',
     isPost: true,
-    zeroStorageURL: 'https://zerostorage.net/embed/bdb6ef35-d4cf-4c11-af91-5a149ab46384'
+    directVideoUrl: 'https://files.catbox.moe/umbng1.mp4'
   },
   {
     id: 62,
@@ -431,7 +431,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc62-siya-vs-157533888',
     isPost: true,
-    zeroStorageURL: 'https://zerostorage.net/embed/bd02bb4e-ab54-4424-8acb-718ddd507b4e'
+    directVideoUrl: 'https://files.catbox.moe/b050nq.mp4'
   },
   {
     id: 63,
@@ -445,7 +445,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc63-siya-vs-2-157655160',
     isPost: true,
-    zeroStorageURL: 'https://zerostorage.net/embed/a70bbf68-00bb-481e-a1f8-5a97d8255b5f'
+    directVideoUrl: 'https://files.catbox.moe/l1dtmv.mp4'
   },
   {
     id: 64,
@@ -459,15 +459,14 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc64-siya-in-157720494',
     isPost: true,
-    // directVideoUrl: 'http://files.catbox.moe/iaqmqh.mp4'
-    zeroStorageURL: 'https://zerostorage.net/embed/73ca49af-00c1-4517-9d82-c6b147ccd487'
+    directVideoUrl: 'https://files.catbox.moe/iaqmqh.mp4'
   },
   {
     id: 65,
     youtubeID: '',
     title: 'Aizet vs Alex',
     category: 'MIXED WRESTLING',
-    // directVideoUrl: 'https://files.catbox.moe/pew83m.mp4',
+    directVideoUrl: 'https://files.catbox.moe/pew83m.mp4',
     description: () => (
       <p>
         Full video duration 14 mins.
@@ -475,7 +474,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc65-aizet-vs-157731669',
     isPost: true,
-    zeroStorageURL: 'https://zerostorage.net/embed/26a518fd-4150-4379-bc05-352cf7ebdec9'
   },
   {
     id: 66,
@@ -502,7 +500,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc67-aizet-vs-157954076',
     isPost: true,
-    zeroStorageURL: 'https://zerostorage.net/embed/b78f9bcb-c2b9-4c0b-b07d-1a16dbc28b61',
+    directVideoUrl: 'https://files.catbox.moe/ri4qtu.mp4'
   },
   {
     id: 68,
@@ -565,8 +563,6 @@ type Video_data_src_all = {
   directVideoUrl?: string
   /** If set (non-empty), poster links to this URL with “click to see the video” overlay (e.g. Facebook). */
   facebookPreview?: string
-  /** If set (non-empty), full Zero Storage embed URL (`https://zerostorage.net/embed/...`). */
-  zeroStorageURL?: string
 }
 
 export type Video_data = Video_data_src_all & {

@@ -1,6 +1,6 @@
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
-import {MyDirectVideo, MyYouTube, MyZeroStorageEmbed} from "@/common/common"
+import {MyDirectVideo, MyYouTube} from "@/common/common"
 import React from "react"
 import {Video_data} from "@/data/video-data/video-data"
 import s from './video-data.module.scss'
@@ -15,16 +15,11 @@ function patreonUrlForVideo(patreonId: string, isPost?: boolean): string {
   return `https://www.patreon.com/namazon/shop/${patreonId}`
 }
 
-function zeroStorageIframeTitle(ncFormatted: string, videoTitle: string): string {
-  return `NC${ncFormatted}_${videoTitle.replace(/\s+/g, '_')}_preview`
-}
-
 export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
   let videoDataIdFormatted = ''
   if (videoData) videoDataIdFormatted = formatNumber(videoData.id)
 
   const directUrl = videoData?.directVideoUrl
-  const zeroStorageURL = videoData?.zeroStorageURL?.trim()
   const facebookPreview = videoData?.facebookPreview?.trim()
 
   return (
@@ -32,17 +27,23 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
       <h3>{`NC${videoDataIdFormatted}`}</h3>
       <h4>{videoData?.title}</h4>
       <Row>
-        <Col className={cn('d-flex', 'justify-content-center')}>
-          {directUrl && <MyDirectVideo src={directUrl}/>}
-          {!directUrl && zeroStorageURL && videoData && (
-            <MyZeroStorageEmbed
-              src={zeroStorageURL}
-              title={zeroStorageIframeTitle(videoDataIdFormatted, videoData.title)}
-            />
+        <Col
+          className={cn(
+            'd-flex',
+            'justify-content-center',
+            directUrl && 'flex-column align-items-center',
+          )}
+        >
+          {directUrl && (
+            <>
+              <MyDirectVideo src={directUrl} />
+              <p className="text-muted mt-2 mb-0 text-center px-2 small">
+                If the preview isn&apos;t available, try again in a few minutes.
+              </p>
+            </>
           )}
           {
             !directUrl &&
-            !zeroStorageURL &&
             facebookPreview &&
             (videoData && videoData.img) && (
               <a
@@ -61,7 +62,6 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
           }
           {
             !directUrl &&
-            !zeroStorageURL &&
             !facebookPreview &&
             youtubeID &&
             videoData?.isClickable &&
@@ -81,13 +81,12 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
             )
           }
           {
-            !directUrl && !zeroStorageURL && !facebookPreview && youtubeID && !videoData?.isClickable && <MyYouTube videoId={youtubeID}/>
+            !directUrl && !facebookPreview && youtubeID && !videoData?.isClickable && <MyYouTube videoId={youtubeID}/>
           }
         </Col>
       </Row>
       {
         !directUrl &&
-        !zeroStorageURL &&
         !facebookPreview &&
         youtubeID2 &&
           <Row className={s.youtube2}>
