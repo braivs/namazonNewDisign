@@ -1,6 +1,6 @@
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
-import {MyDirectVideo, MyYouTube} from "@/common/common"
+import {MyDirectVideo, MyYouTube, MyZeroStorageEmbed} from "@/common/common"
 import React from "react"
 import {Video_data} from "@/data/video-data/video-data"
 import s from './video-data.module.scss'
@@ -15,11 +15,17 @@ function patreonUrlForVideo(patreonId: string, isPost?: boolean): string {
   return `https://www.patreon.com/namazon/shop/${patreonId}`
 }
 
+function zeroStorageIframeTitle(ncFormatted: string, videoTitle: string): string {
+  return `NC${ncFormatted}_${videoTitle.replace(/\s+/g, '_')}_preview`
+}
+
 export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
   let videoDataIdFormatted = ''
   if (videoData) videoDataIdFormatted = formatNumber(videoData.id)
 
   const directUrl = videoData?.directVideoUrl
+  const zeroStorageURL = videoData?.zeroStorageURL?.trim()
+  const facebookPreview = videoData?.facebookPreview?.trim()
 
   return (
     <div className={sC.compArticlesVideoGirl}>
@@ -28,8 +34,35 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
       <Row>
         <Col className={cn('d-flex', 'justify-content-center')}>
           {directUrl && <MyDirectVideo src={directUrl}/>}
+          {!directUrl && zeroStorageURL && videoData && (
+            <MyZeroStorageEmbed
+              src={zeroStorageURL}
+              title={zeroStorageIframeTitle(videoDataIdFormatted, videoData.title)}
+            />
+          )}
           {
             !directUrl &&
+            !zeroStorageURL &&
+            facebookPreview &&
+            (videoData && videoData.img) && (
+              <a
+                className={s.youtubeCoverLink}
+                href={facebookPreview}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="click to see the video"
+              >
+                <img className={s.youtubeCoverImg} src={videoData.img} alt="" />
+                <span className={s.youtubeCoverOverlay} aria-hidden>
+                  <span className={s.youtubeCoverText}>click to see the video</span>
+                </span>
+              </a>
+            )
+          }
+          {
+            !directUrl &&
+            !zeroStorageURL &&
+            !facebookPreview &&
             youtubeID &&
             videoData?.isClickable &&
             videoData.img && (
@@ -48,12 +81,14 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
             )
           }
           {
-            !directUrl && youtubeID && !videoData?.isClickable && <MyYouTube videoId={youtubeID}/>
+            !directUrl && !zeroStorageURL && !facebookPreview && youtubeID && !videoData?.isClickable && <MyYouTube videoId={youtubeID}/>
           }
         </Col>
       </Row>
       {
         !directUrl &&
+        !zeroStorageURL &&
+        !facebookPreview &&
         youtubeID2 &&
           <Row className={s.youtube2}>
               <Col className={cn('d-flex', 'justify-content-center')}> <MyYouTube videoId={youtubeID2}/> </Col>
