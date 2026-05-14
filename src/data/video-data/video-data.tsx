@@ -417,7 +417,10 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc61-fm-siya-vs-157346614',
     isPost: true,
-    directVideoUrl: 'https://files.catbox.moe/umbng1.mp4'
+    directVideoUrl: [
+      'https://www.udrop.com/file/Ow4f/NC61_FM_Siya_vs_Skuf_round2_preview.mp4',
+      'https://files.catbox.moe/umbng1.mp4'
+    ]
   },
   {
     id: 62,
@@ -431,7 +434,10 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc62-siya-vs-157533888',
     isPost: true,
-    directVideoUrl: 'https://files.catbox.moe/b050nq.mp4'
+    directVideoUrl: [
+      'https://www.udrop.com/file/Ow4g/NC62_Siya_vs_Tryapka_preview_v2.mp4',
+      'https://files.catbox.moe/b050nq.mp4'
+    ]
   },
   {
     id: 63,
@@ -445,7 +451,10 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc63-siya-vs-2-157655160',
     isPost: true,
-    directVideoUrl: 'https://files.catbox.moe/l1dtmv.mp4'
+    directVideoUrl: [
+      'https://www.udrop.com/file/Ow4h/NC63_Siya_vs_Skuf_fight_2_preview.mp4',
+      'https://files.catbox.moe/l1dtmv.mp4'
+    ]
   },
   {
     id: 64,
@@ -459,14 +468,20 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc64-siya-in-157720494',
     isPost: true,
-    directVideoUrl: 'https://files.catbox.moe/iaqmqh.mp4'
+    directVideoUrl: [
+      'https://www.udrop.com/file/Ow4i/NC64_Siya_in_socks_preview2.mp4',
+      'https://files.catbox.moe/iaqmqh.mp4'
+    ]
   },
   {
     id: 65,
     youtubeID: '',
     title: 'Aizet vs Alex',
     category: 'MIXED WRESTLING',
-    directVideoUrl: 'https://files.catbox.moe/pew83m.mp4',
+    directVideoUrl: [
+      'https://www.udrop.com/file/Ow4j/NC65_Aizet_vs_Alex_preview.mp4',
+      'https://files.catbox.moe/pew83m.mp4'
+    ],
     description: () => (
       <p>
         Full video duration 14 mins.
@@ -500,7 +515,10 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ),
     patreonId: 'nc67-aizet-vs-157954076',
     isPost: true,
-    directVideoUrl: 'https://files.catbox.moe/ri4qtu.mp4'
+    directVideoUrl: [
+      'https://www.udrop.com/file/Ow4k/NC67_Aizet_vs_Alex_wrestling___shibari_preview.mp4',
+      'https://files.catbox.moe/ri4qtu.mp4'
+    ]
   },
   {
     id: 68,
@@ -559,8 +577,8 @@ type Video_data_src_all = {
   isPost?: boolean
   /** If true, video page shows poster `img` linking to YouTube instead of an embed. */
   isClickable?: boolean
-  /** If set, page embeds this file URL in a native video element instead of YouTube. */
-  directVideoUrl?: string
+  /** One or more direct MP4 URLs; if several, the video page shows tabs (primary / alternative player). */
+  directVideoUrl?: string | string[]
   /** If set (non-empty), poster links to this URL with “click to see the video” overlay (e.g. Facebook). */
   facebookPreview?: string
 }
