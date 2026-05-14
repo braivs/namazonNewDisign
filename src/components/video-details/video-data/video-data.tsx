@@ -35,10 +35,11 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
     setDirectPlayerTab(0)
   }, [videoData?.id])
 
-  const activeDirectSrc = directUrls[Math.min(directPlayerTab, Math.max(directUrls.length - 1, 0))]
   const hasDirect = directUrls.length > 0
 
   const facebookPreview = videoData?.facebookPreview?.trim()
+
+  const previewUnavailableText = ''
 
   return (
     <div className={sC.compArticlesVideoGirl}>
@@ -74,9 +75,17 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
                   ))}
                 </Nav>
               )}
-              {activeDirectSrc && <MyDirectVideo key={activeDirectSrc} src={activeDirectSrc} />}
+              {directUrls.map((url, i) => (
+                <div key={`${i}-${url}`} hidden={directPlayerTab !== i}>
+                  <MyDirectVideo src={url} isActive={directPlayerTab === i} />
+                </div>
+              ))}
               <p className="text-muted mt-2 mb-0 text-center px-2 small">
-                If the preview isn&apos;t available, try alternative player or email us.
+                {directUrls.length >= 2 ?
+                  'If the preview isn`t available, please try alternative player or email us.'
+                  : 'If the preview isn`t available please email us.'
+                }
+
               </p>
             </>
           )}

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import {Photo} from "react-photo-album"
 import {Slide} from "yet-another-react-lightbox"
 
@@ -43,11 +43,20 @@ export const MyYouTube = (props: YoutubePropsType) => {
   );
 };
 
-export const MyDirectVideo = (props: {src: string}) => {
+export const MyDirectVideo = (props: {src: string; isActive?: boolean}) => {
   const {frameWidth, frameHeight} = useVideoFrameDimensions();
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const isActive = props.isActive ?? true;
+
+  useEffect(() => {
+    if (!isActive) {
+      videoRef.current?.pause();
+    }
+  }, [isActive]);
 
   return (
     <video
+      ref={videoRef}
       width={frameWidth}
       height={frameHeight}
       controls
