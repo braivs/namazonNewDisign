@@ -533,6 +533,19 @@ const video_data_src_all: Array<Video_data_src_all> = [
     patreonId: 'nc68-angelina-vs-157976798',
     isPost: true,
     facebookPreview: 'https://www.facebook.com/share/v/1CswLNz6JV/',
+  },
+  {
+    id: 70,
+    youtubeID: '',
+    title: 'Angelina vs Alex',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+      </p>
+    ),
+    patreonId: '',
+    isPost: true,
+    mvtubeId: 'inMebeYw1MuozTy',
   }
 ];
 
@@ -579,6 +592,8 @@ type Video_data_src_all = {
   isClickable?: boolean
   /** One or more direct MP4 URLs; if several, the video page shows tabs (primary / alternative player). */
   directVideoUrl?: string | string[]
+  /** MixedWrestling.Video embed id to render via iframe when set. */
+  mvtubeId?: string
   /** If set (non-empty), poster links to this URL with “click to see the video” overlay (e.g. Facebook). */
   facebookPreview?: string
 }

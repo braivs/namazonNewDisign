@@ -43,9 +43,29 @@ export const MyYouTube = (props: YoutubePropsType) => {
   );
 };
 
+export const MyMvTube = (props: MvTubePropsType) => {
+  const {frameWidth} = useVideoFrameDimensions();
+  // MixedWrestling embed is 700x400 (7:4), not 16:9.
+  const frameHeight = Math.round((frameWidth * 4) / 7);
+
+  return (
+    <iframe
+      width={frameWidth}
+      height={frameHeight}
+      src={`https://mixedwrestling.video/embed/${props.videoId}`}
+      frameBorder="0"
+      // Prevent iframe-internal scrollbars during playback controls/layout changes.
+      scrolling="no"
+      style={{display: 'block', border: 0}}
+      allowFullScreen
+    />
+  );
+};
+
 export const MyDirectVideo = (props: {src: string; isActive?: boolean}) => {
   const {frameWidth, frameHeight} = useVideoFrameDimensions();
   const videoRef = useRef<HTMLVideoElement>(null);
+  // Hidden tab players must stop audio immediately.
   const isActive = props.isActive ?? true;
 
   useEffect(() => {
@@ -77,6 +97,10 @@ type GalleryType = {
 };
 
 type YoutubePropsType = {
+  videoId: string
+}
+
+type MvTubePropsType = {
   videoId: string
 }
 

@@ -1,6 +1,6 @@
 import {Col, Nav, Row} from "react-bootstrap"
 import cn from "classnames"
-import {MyDirectVideo, MyYouTube} from "@/common/common"
+import {MyDirectVideo, MyMvTube, MyYouTube} from "@/common/common"
 import React, {useEffect, useMemo, useState} from "react"
 import {Video_data} from "@/data/video-data/video-data"
 import s from './video-data.module.scss'
@@ -22,6 +22,7 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
   const directUrls = useMemo(() => {
     const raw = videoData?.directVideoUrl
     if (raw == null) return []
+    // Support both a single url and an array of fallbacks.
     if (Array.isArray(raw)) {
       return raw.filter((u): u is string => typeof u === "string" && u.trim() !== "")
     }
@@ -32,12 +33,16 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
   const [directPlayerTab, setDirectPlayerTab] = useState(0)
 
   useEffect(() => {
+    // Reset to primary player when user opens another video page.
     setDirectPlayerTab(0)
   }, [videoData?.id])
 
   const hasDirect = directUrls.length > 0
 
   const facebookPreview = videoData?.facebookPreview?.trim()
+  // If set, we render MixedWrestling iframe before legacy YouTube/Facebook fallbacks.
+  const mvtubeId = videoData?.mvtubeId?.trim()
+  const hasMvTube = Boolean(mvtubeId)
 
   const previewUnavailableText = ''
 
@@ -53,6 +58,7 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
             hasDirect && 'flex-column align-items-center',
           )}
         >
+          {/* Priority 1: direct mp4 sources (single or tabbed fallback players). */}
           {hasDirect && (
             <>
               {directUrls.length >= 2 && (
@@ -76,6 +82,7 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
                 </Nav>
               )}
               {directUrls.map((url, i) => (
+                // Keep players mounted to avoid fetch-abort runtime errors on fast tab switching.
                 <div key={`${i}-${url}`} hidden={directPlayerTab !== i}>
                   <MyDirectVideo src={url} isActive={directPlayerTab === i} />
                 </div>
@@ -90,7 +97,9 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
             </>
           )}
           {
+            // Priority 3: external preview page (e.g. Facebook) when direct/mvtube are absent.
             !hasDirect &&
+            !hasMvTube &&
             facebookPreview &&
             (videoData && videoData.img) && (
               <a
@@ -108,7 +117,9 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
             )
           }
           {
+            // Priority 4: clickable YouTube poster (opens YouTube page, no inline iframe).
             !hasDirect &&
+            !hasMvTube &&
             !facebookPreview &&
             youtubeID &&
             videoData?.isClickable &&
@@ -128,12 +139,19 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
             )
           }
           {
-            !hasDirect && !facebookPreview && youtubeID && !videoData?.isClickable && <MyYouTube videoId={youtubeID}/>
+            // Priority 2: MixedWrestling inline embed (used when there is no direct mp4).
+            !hasDirect && hasMvTube && mvtubeId && <MyMvTube videoId={mvtubeId}/>
+          }
+          {
+            // Priority 5: default inline YouTube player fallback.
+            !hasDirect && !hasMvTube && !facebookPreview && youtubeID && !videoData?.isClickable && <MyYouTube videoId={youtubeID}/>
           }
         </Col>
       </Row>
       {
+        // Secondary YouTube block is shown only for legacy dual-YouTube entries.
         !hasDirect &&
+        !hasMvTube &&
         !facebookPreview &&
         youtubeID2 &&
           <Row className={s.youtube2}>
