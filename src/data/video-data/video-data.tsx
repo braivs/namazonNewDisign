@@ -535,17 +535,56 @@ const video_data_src_all: Array<Video_data_src_all> = [
     facebookPreview: 'https://www.facebook.com/share/v/1CswLNz6JV/',
   },
   {
-    id: 70,
+    id: 69,
     youtubeID: '',
-    title: 'Angelina vs Alex',
+    title: 'Simona vs Alex fight 1',
     category: 'MIXED WRESTLING',
     description: () => (
       <p>
       </p>
     ),
-    patreonId: '',
+    patreonId: 'nc69-simona-vs-1-159381795',
+    isPost: true,
+    mvtubeId: 'hf4N7tVyhllOilh',
+  },
+  {
+    id: 70,
+    youtubeID: '',
+    title: 'Simona vs Alex fight 2',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+      </p>
+    ),
+    patreonId: 'nc70-simona-vs-2-159379562',
     isPost: true,
     mvtubeId: 'inMebeYw1MuozTy',
+  },
+  {
+    id: 71,
+    youtubeID: '',
+    title: 'Simona vs Alex fight 3',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+      </p>
+    ),
+    patreonId: 'nc71-simona-vs-159383997',
+    isPost: true,
+    mvtubeId: '7wqmxpwcpwFygwE',
+  },
+  {
+    id: 72,
+    youtubeID: 'CxURntYDiJAxxMP',
+    title: 'Simona vs Alex',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+      </p>
+    ),
+    patreonId: 'nc72-nastya-vs-159387030',
+    isPost: true,
+    mvtubeId: 'CxURntYDiJAxxMP',
   }
 ];
 
