@@ -38,6 +38,9 @@ const FooterFour = ({style_2 = false}) => {
                       <Link href="/contact">Contact</Link>
                     </li>
                     <li>
+                      <Link href="/join-us">Join Us</Link>
+                    </li>
+                    <li>
                       <Link href="https://www.malevsfemale.org/">Mixed Wrestling Forum</Link>
                     </li>
                   </ul>

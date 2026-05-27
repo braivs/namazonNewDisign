@@ -1,0 +1,17 @@
+.membershipText {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.membershipLink {
+  color: #171151;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: #007bff;
+  }
+}

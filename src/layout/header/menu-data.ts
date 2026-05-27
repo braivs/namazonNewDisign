@@ -54,6 +54,14 @@ const menu_data: MenuItem[] = [
     link: '/contact',
     active: '',
   },
+  {
+    id: 5,
+    mega_menu: false,
+    has_dropdown: false,
+    title: 'Join Us',
+    link: '/join-us',
+    active: '',
+  },
 ]
 
 export default menu_data
