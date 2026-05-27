@@ -10,7 +10,7 @@ const JoinUsContent = () => {
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10 col-12 text-center">
             <p className={s.membershipText}>
-              Access to all Namazon Club videos before NC68{" "}
+              Access to all Namazon Club videos from the beginning up to NC68{" "}
               <em>except Siya&apos;s exclusive series</em>.
             </p>
             <p className="mb-0">
