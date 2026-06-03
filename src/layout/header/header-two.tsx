@@ -3,15 +3,29 @@ import useSticky from "../../../hooks/use-sticky"
 import React, {useState} from "react"
 import NavMenu from "./nav-menu"
 import youtube from '../../../public/assets/img/icon/youtube_small_color.png'
+import telegram from '../../../public/assets/img/icon/telegram_color.png'
+import x from '../../../public/assets/img/icon/X_logo.png'
 import s from './header-two.module.scss'
 import {Logo} from "@/components/logo/Logo"
 
 const Youtube = () => {
   return (
-    <div className={'header-top-mob'}>
-      <img src={youtube.src} alt="youtube"/>
-      <span>YouTube :</span>
-      <a href="https://www.youtube.com/@namazonclub"> @namazonclub </a>
+    <div className={`header-top-mob ${s.socialLinks}`}>
+      <div className={s.socialLinkGroup}>
+        <img className={s.socialIcon} src={youtube.src} alt="youtube"/>
+        <span>YouTube:</span>
+        <a href="https://www.youtube.com/@namazonclub"> @namazonclub </a>
+      </div>
+      <div className={s.socialLinkGroup}>
+        <img className={s.socialIconSquare} src={telegram.src} alt="telegram"/>
+        <span>TG: </span>
+        <a href="https://t.me/namazonclub_channel">@namazonclub_channel </a>
+      </div>
+      <div className={s.socialLinkGroup}>
+        <img className={s.socialIconSquare} src={x.src} alt="x"/>
+        <span>X.COM: </span>
+        <a href="https://x.com/NamazonClub">namazonclub </a>
+      </div>
     </div>
   )
 }
@@ -59,7 +73,7 @@ const HeaderTwo = () => {
           <div className="header-menu-box">
             <div className="header-menu-top">
               <div className="row align-items-center">
-                <div className="col-lg-4">
+                <div className="col-lg-12">
                   <div className={s.headerTopMob}>
                     <Youtube/>
                   </div>

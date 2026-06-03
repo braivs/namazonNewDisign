@@ -1,3 +1,34 @@
 .headerTopMob {
     text-wrap: nowrap;
 }
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    //margin-left: 0;
+}
+
+@media (max-width: 1199px) {
+    .socialLinks {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 0;
+    }
+}
+
+.socialLinkGroup {
+    //display: flex;
+    //align-items: center;
+}
+
+.socialIcon {
+    width: 27px;
+    height: 19px;
+}
+
+.socialIconSquare {
+    width: 19px;
+    height: 19px;
+}
