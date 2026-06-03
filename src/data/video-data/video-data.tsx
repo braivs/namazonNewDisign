@@ -585,6 +585,19 @@ const video_data_src_all: Array<Video_data_src_all> = [
     patreonId: 'nc72-nastya-vs-159387030',
     isPost: true,
     mvtubeId: 'CxURntYDiJAxxMP',
+  },
+  {
+    id: 73,
+    youtubeID: 'CxURntYDiJAxxMP',
+    title: 'Candy vs Alex',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+      </p>
+    ),
+    patreonId: 'nc73-candy-vs-160023333',
+    isPost: true,
+    mvtubeId: 'k4AGMnMhkdF7sLe',
   }
 ];
 
