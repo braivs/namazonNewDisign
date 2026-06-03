@@ -7,7 +7,7 @@ import styles from './contactForm.module.scss'
 const contact_info = {
   email: 'namazonclub@gmail.com',
   telegram: "@namazonclub",
-  telegramChannel: "@namazonclub",
+  telegramChannel: "@namazonclub_channel",
   telegram_link: 'https://t.me/namazonclub',
   telegramChannel_link: 'https://t.me/namazonclub_channel',
   facebook: "namazonclub",
