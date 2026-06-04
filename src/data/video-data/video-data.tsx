@@ -663,3 +663,5 @@ export type Video_data = Video_data_src_all & {
 // todo: v2: integrate shop into app
 // todo: v2: add new NC clips
 // todo: v2: pud age restricted videos on hosting directly
+
+// add preview for NC69
