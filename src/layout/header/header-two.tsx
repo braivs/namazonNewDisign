@@ -5,27 +5,29 @@ import NavMenu from "./nav-menu"
 import youtube from '../../../public/assets/img/icon/youtube_small_color.png'
 import telegram from '../../../public/assets/img/icon/telegram_color.png'
 import x from '../../../public/assets/img/icon/X_logo.png'
+import reddit from '../../../public/assets/img/icon/reddit-icon.png'
 import s from './header-two.module.scss'
 import {Logo} from "@/components/logo/Logo"
 
 const Youtube = () => {
   return (
     <div className={`header-top-mob ${s.socialLinks}`}>
-      <div className={s.socialLinkGroup}>
-        <img className={s.socialIcon} src={youtube.src} alt="youtube"/>
-        <span>YouTube:</span>
-        <a href="https://www.youtube.com/@namazonclub"> @namazonclub </a>
-      </div>
-      <div className={s.socialLinkGroup}>
-        <img className={s.socialIconSquare} src={telegram.src} alt="telegram"/>
-        <span>TG: </span>
-        <a href="https://t.me/namazonclub_channel">@namazonclub_channel </a>
-      </div>
-      <div className={s.socialLinkGroup}>
+      <a className={s.socialLinkGroup} href="https://x.com/NamazonClub">
         <img className={s.socialIconSquare} src={x.src} alt="x"/>
-        <span>X.COM: </span>
-        <a href="https://x.com/NamazonClub">namazonclub </a>
-      </div>
+        <span>X.com</span>
+      </a>
+      <a className={s.socialLinkGroup} href="https://t.me/namazonclub_channel">
+        <img className={s.socialIconSquare} src={telegram.src} alt="telegram"/>
+        <span>Telegram</span>
+      </a>
+      <a className={s.socialLinkGroup} href="https://www.reddit.com/r/NamazonClub">
+        <img className={s.socialIconSquare} src={reddit.src} alt="reddit"/>
+        <span>Reddit</span>
+      </a>
+      <a className={s.socialLinkGroup} href="https://www.youtube.com/@namazonclub">
+        <img className={s.socialIcon} src={youtube.src} alt="youtube"/>
+        <span>YouTube</span>
+      </a>
     </div>
   )
 }

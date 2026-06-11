@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    //margin-left: 0;
+    text-transform: none;
 }
 
 @media (max-width: 1199px) {
@@ -19,8 +19,16 @@
 }
 
 .socialLinkGroup {
-    //display: flex;
-    //align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.socialLinks .socialLinkGroup {
+    color: var(--tp-text-2);
+
+    &:hover {
+        color: var(--tp-icon-green);
+    }
 }
 
 .socialIcon {
