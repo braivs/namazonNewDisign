@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import styles from './contactForm.module.scss'
 
@@ -14,6 +13,8 @@ const contact_info = {
   facebook_link: 'https://www.facebook.com/groups/namazonclub',
   x: 'namazonclub',
   x_link: 'https://x.com/namazonclub',
+  reddit: 'NamazonClub',
+  reddit_link: 'https://www.reddit.com/r/NamazonClub',
   vk: 'namazon',
   vk_link: 'https://vk.com/namazon',
 };
@@ -28,116 +29,104 @@ const {
   facebook_link,
   x,
   x_link,
+  reddit,
+  reddit_link,
   vk,
   vk_link,
 } = contact_info;
+
+type ContactCardProps = {
+  title: string
+  href: string
+  value: string
+  iconSrc: string
+  iconAlt: string
+  iconClassName?: string
+}
+
+const ContactCard = ({title, href, value, iconSrc, iconAlt, iconClassName}: ContactCardProps) => {
+  return (
+    <div className="col-lg-4 col-md-4 col-sm-12">
+      <div className="tpcontact mr-60 mb-60">
+        <div className="tpcontact__item text-center">
+          <div className="tpcontact__icon mb-20">
+            <img src={iconSrc} alt={iconAlt} className={iconClassName}/>
+          </div>
+          <div className="tpcontact__address">
+            <h4 className="tpcontact__title mb-15">{title}</h4>
+            <span>
+              <a href={href}>{value}</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const contactCards: ContactCardProps[] = [
+  {
+    title: 'Email',
+    href: `mailto:${email}`,
+    value: email,
+    iconSrc: '/assets/img/icon/mail.png',
+    iconAlt: 'Email Icon',
+  },
+  {
+    title: 'Telegram',
+    href: telegram_link,
+    value: telegram,
+    iconSrc: '/assets/img/icon/telegram.png',
+    iconAlt: 'Telegram Icon',
+  },
+  {
+    title: 'Telegram channel',
+    href: telegramChannel_link,
+    value: telegramChannel,
+    iconSrc: '/assets/img/icon/telegram.png',
+    iconAlt: 'Telegram Icon',
+  },
+  {
+    title: 'Facebook',
+    href: facebook_link,
+    value: facebook,
+    iconSrc: '/assets/img/icon/facebook.png',
+    iconAlt: 'Facebook Icon',
+  },
+  {
+    title: 'VK',
+    href: vk_link,
+    value: vk,
+    iconSrc: '/assets/img/icon/vk.jpg',
+    iconAlt: 'VK Icon',
+  },
+  {
+    title: 'X',
+    href: x_link,
+    value: x,
+    iconSrc: '/assets/img/icon/X_logo.png',
+    iconAlt: 'X Icon',
+    iconClassName: styles.x,
+  },
+  {
+    title: 'Reddit',
+    href: reddit_link,
+    value: reddit,
+    iconSrc: '/assets/img/icon/reddit_black_logo_icon.png',
+    iconAlt: 'Reddit Icon',
+    iconClassName: styles.x,
+  },
+]
+
 const ContactForm = () => {
   return (
     <>
       <section className="contact-area pt-130 pb-115">
         <div className="container">
           <div className="row">
-            {/* Column for email */}
-            <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="tpcontact mr-60 mb-60">
-                <div className="tpcontact__item text-center">
-                  <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/mail.png" alt="Address Icon" />
-                  </div>
-                  <div className="tpcontact__address">
-                    <h4 className="tpcontact__title mb-15">Email</h4>
-                    <span>
-                      <Link href={`mailto:${email}`}>{email}</Link>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Column for telegram */}
-            <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="tpcontact mr-60 mb-60">
-                <div className="tpcontact__item text-center">
-                  <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/telegram.png" alt="Phone Icon" />
-                  </div>
-                  <div className="tpcontact__address">
-                    <h4 className="tpcontact__title mb-15">Telegram</h4>
-                    <span>
-                      <a href={telegram_link}>{telegram}</a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Column for telegram channel */}
-            <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="tpcontact mr-60 mb-60">
-                <div className="tpcontact__item text-center">
-                  <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/telegram.png" alt="Phone Icon" />
-                  </div>
-                  <div className="tpcontact__address">
-                    <h4 className="tpcontact__title mb-15">Telegram channel</h4>
-                    <span>
-                      <a href={telegramChannel_link}>{telegramChannel}</a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Column for Facebook */}
-            <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="tpcontact mr-60 mb-60">
-                <div className="tpcontact__item text-center">
-                  <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/facebook.png" alt="Opening Hours Icon" />
-                  </div>
-                  <div className="tpcontact__address">
-                    <h4 className="tpcontact__title mb-15">Facebook</h4>
-                    <span>
-                      <a href={facebook_link}>{facebook}</a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Column for VK */}
-            <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="tpcontact mr-60 mb-60">
-                <div className="tpcontact__item text-center">
-                  <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/vk.jpg" alt="Opening Hours Icon" />
-                  </div>
-                  <div className="tpcontact__address">
-                    <h4 className="tpcontact__title mb-15">VK</h4>
-                    <span>
-                      <a href={vk_link}>{vk}</a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Column for X */}
-            <div className="col-lg-4 col-md-4 col-sm-12">
-              <div className="tpcontact mr-60 mb-60">
-                <div className="tpcontact__item text-center">
-                  <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/X_logo.png" alt="X Icon" className={styles.x}/>
-                  </div>
-                  <div className="tpcontact__address">
-                    <h4 className="tpcontact__title mb-15">X</h4>
-                    <span>
-                      <a href={x_link}>{x}</a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {contactCards.map((card) => (
+              <ContactCard key={card.title} {...card}/>
+            ))}
           </div>
         </div>
       </section>
