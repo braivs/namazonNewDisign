@@ -18,6 +18,9 @@ export const SocialIcons = () => {
       <a href="https://x.com/namazonclub">
         <i className="fa-brands fa-x"></i>
       </a>
+      <a href="https://www.reddit.com/r/NamazonClub">
+        <i className="fa-brands fa-reddit"></i>
+      </a>
     </div>
   )
 }
