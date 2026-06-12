@@ -1,10 +1,11 @@
 import {articlesRu} from './articles-ru'
+import {videoRu} from './video-ru'
 
 export const ru = {
   menu: {
     home: 'Главная',
     video: 'Видео',
-    girls: 'Девушки',
+    girls: 'Участницы',
     competitions: 'Соревнования',
     shop: 'Магазин',
     contact: 'Написать нам',
@@ -89,6 +90,7 @@ export const ru = {
     },
   },
   articles: articlesRu,
+  video: videoRu,
   competitions: {
     titles: {
       'maslenitsa-2016': 'Женские силовые единоборства на Масленицу 2016',

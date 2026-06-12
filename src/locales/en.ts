@@ -1,4 +1,5 @@
 import {articlesEn} from './articles-en'
+import {videoEn} from './video-en'
 
 export const en = {
   menu: {
@@ -89,6 +90,7 @@ export const en = {
     },
   },
   articles: articlesEn,
+  video: videoEn,
   competitions: {
     titles: {
       'maslenitsa-2016': 'Female Power Competitions for the Maslenitsa Festival, 2016',
