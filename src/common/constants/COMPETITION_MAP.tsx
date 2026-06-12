@@ -10,6 +10,7 @@ import {VarvaraTais2012Desc} from '@/data/competitions-description/varvaraTais20
 import {NevskayaArena2012Desc} from '@/data/competitions-description/nevskayaArena2012Desc'
 import {Christmas2011Desc} from '@/data/competitions-description/christmas2011Desc'
 import {Beach2011Desc} from '@/data/competitions-description/beach2011Desc'
+import {BeachMix2011Desc} from '@/data/competitions-description/beachMix2011Desc'
 
 /** Replace entries with real articles when ported from the old site. */
 const CompetitionArticlePlaceholder: FC = () => (
@@ -52,4 +53,5 @@ export const COMPETITION_MAP: Record<string, FC> = {
   'nevskaya-arena-2012': NevskayaArena2012Desc,
   'christmas-2011': Christmas2011Desc,
   'beach-2011': Beach2011Desc,
+  'beach-mix-2011': BeachMix2011Desc,
 }

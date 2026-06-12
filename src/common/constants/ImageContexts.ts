@@ -140,9 +140,19 @@ export const DIR_CHRISTMAS_2011_2 = require.context(
   /\/(?:3[9-]|4[0-2])\.jpg$/,
 )
 //Mixed beach tournament. Submission Grappling. July, 2011
-// export const DIR_BEACH_MIX_2011 = require.context('src/img/competitions/2011/beach-mix-2011/smeshannyj-plyazhnyj-turnir-2011-1', false) // Villian vs Alex
-// export const DIR_BEACH_MIX_2011_2 = require.context('src/img/competitions/2011/beach-mix-2011/smeshannyj-plyazhnyj-turnir-2011-2', false) // Villian vs Elena Vasilyeva
-// export const DIR_BEACH_MIX_2011_3 = require.context('src/img/competitions/2011/beach-mix-2011/smeshannyj-plyazhnyj-turnir-2011-3', false) // Tais vs Elena Vasilyeva
+// Mixed beach tournament. Submission Grappling. July, 2011
+export const DIR_BEACH_MIX_2011 = require.context(
+  '/public/assets/img/competitions/2011/beach-mix-2011/smeshannyj-plyazhnyj-turnir-2011-1',
+  false,
+) // Villian vs Alex
+export const DIR_BEACH_MIX_2011_2 = require.context(
+  '/public/assets/img/competitions/2011/beach-mix-2011/smeshannyj-plyazhnyj-turnir-2011-2',
+  false,
+) // Villian vs Elena Vasilyeva
+export const DIR_BEACH_MIX_2011_3 = require.context(
+  '/public/assets/img/competitions/2011/beach-mix-2011/smeshannyj-plyazhnyj-turnir-2011-3',
+  false,
+) // Tais vs Elena Vasilyeva
 
 
 

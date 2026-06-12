@@ -131,7 +131,7 @@ const competitions_data_src_2011_raw: Array<Omit<Competition_src, 'years'>> = [
     id: 'beach-mix-2011',
     title: 'Mixed beach tournament Submission Grappling. 2011',
     imgRef: thumb('2011-alex-elena.jpg'),
-    isInProgress: true,
+    heroImgRef: '/assets/img/videoGallery/11/10.jpg',
   },
 ]
 
