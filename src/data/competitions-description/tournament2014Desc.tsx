@@ -7,12 +7,16 @@ import {
   DIR37_TOURNAMENT2014_2,
 } from '@/common/constants/ImageContexts'
 import sC from '@/common/styles.module.scss'
+import {findCompetitionData} from '@/data/competitions/competitions-data'
 import cn from 'classnames'
 import Link from 'next/link'
 import React from 'react'
 
 const LINK_SHOP_MAIN = 'https://www.patreon.com/namazon/shop'
 const PODIUM_IMG = '/assets/img/competitions/2013_2014/tournament_2014/DSC03831.jpg'
+const tournament2014Data = findCompetitionData('2013_2014', 'tournament-2014')
+const tournament2014HeroSrc =
+  tournament2014Data?.heroImgRef ?? tournament2014Data?.imgRef ?? ''
 
 export const Tournament2014Desc: React.FC = () => {
   return (
@@ -25,6 +29,13 @@ export const Tournament2014Desc: React.FC = () => {
         Our tournament was conducted under submission grappling rules enhanced by an additional rule allowing the girls
         to defeat an opponent by pinning and holding her down on her back until a count of 10.
       </p>
+      {tournament2014HeroSrc && (
+        <img
+          src={tournament2014HeroSrc}
+          alt=""
+          className={cn('img-fluid w-100', sC.videosMainImg)}
+        />
+      )}
       <p>
         Five girls participated in the tournament (lightweight class): <b>Christina Shvets</b> (67.4 kg / 148.5
         lb), <b>Daria Uvarova</b> (66.5 kg / 146.6 lb), <b>Irina Dzhanaeva</b> (70.7 kg / 155.9 lb), <b>Nina

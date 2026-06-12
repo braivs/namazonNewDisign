@@ -70,8 +70,8 @@ const competitions_data_src_2013_2014: Competition_src[] = [
     id: 'grappling-2014',
     title: 'Tournament for the prize of the Namazon Club. October, 2014',
     imgRef: thumb('grappling-2014.jpg'),
+    heroImgRef: '/assets/img/videoGallery/nc41/kz/06.jpg',
     years: '2013_2014',
-    isInProgress: true,
   },
 ]
 

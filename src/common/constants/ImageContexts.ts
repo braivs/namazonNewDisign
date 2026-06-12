@@ -117,9 +117,11 @@ export const DIR36_TOURNAMENT2014_2 = require.context('/public/assets/img/videoG
 export const DIR36_TOURNAMENT2014_3 = require.context('/public/assets/img/videoGallery/36', false, /\/(?:1[7-9]|2[0-8])\.jpg$/) // Christina Shvets and Victoria Vardugina
 export const DIR37_TOURNAMENT2014_1 = require.context('/public/assets/img/videoGallery/37', false, /\/0[1-4]\.jpg$/) // Nina Trofimova and Irina Dzhanaeva
 export const DIR37_TOURNAMENT2014_2 = require.context('/public/assets/img/videoGallery/37', false, /\/(?:0[5-9]|1\d|2[0-3])\.jpg$/) // Daria Uvarova and Victoria Vardugina
-//Submission Grappling tournament for the prize of the Namazon Club. October, 2014
-// export const DIR_GRAPPLING2014_AWARDS = require.context('src/img/competitions/2013_2014/grappling_2014/awardPhotos', false)
-//Submission Grappling tournament for the prize of the Namazon Club. October, 2014
+// Submission Grappling tournament for the prize of the Namazon Club. October, 2014
+export const DIR_GRAPPLING2014_AWARDS = require.context(
+  '/public/assets/img/competitions/2013_2014/grappling_2014/awardPhotos',
+  false,
+)
 // export const DIR_CHRISTMAS2012_1 = require.context('/public/assets/img/videoGallery/09/mma-rozhdestvenskij-kubok-2012-1', false, /\/(?:0[1-9]|1[0-2])\.jpg$/) // Elena Vasilyeva vs Kara Teller, round 1 & 2
 // export const DIR_CHRISTMAS2012_2 = require.context('/public/assets/img/videoGallery/09/mma-rozhdestvenskij-kubok-2012-1', false, /\/1[3-7]\.jpg$/) // Elena Vasilyeva vs Kara Teller, round 3
 //MMA fights in the May holidays:
