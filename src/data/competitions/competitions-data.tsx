@@ -160,7 +160,6 @@ const competitions_data_src_archive_raw: Array<Omit<Competition_src, 'years'>> =
     id: 'beach-mix-2010',
     title: 'Mixed beach tournament. 2010',
     imgRef: thumb('2010-natalia-alex.jpg'),
-    isInProgress: true,
   },
 ]
 

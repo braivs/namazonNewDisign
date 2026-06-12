@@ -18,7 +18,8 @@ export default function CompetitionContent({data}: Props) {
         data.id !== 'grappling-2014' &&
         data.id !== 'IzidaVsTais2008' &&
         data.id !== 'IzidaVsIrina2008' &&
-        data.id !== 'IrinaVsTais2009' && (
+        data.id !== 'IrinaVsTais2009' &&
+        data.id !== 'beach-mix-2010' && (
           <div className="d-flex justify-content-center">
             <img
               src={data.heroImgRef ?? data.imgRef}
