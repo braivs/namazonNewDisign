@@ -125,7 +125,7 @@ const competitions_data_src_2011_raw: Array<Omit<Competition_src, 'years'>> = [
     id: 'beach-2011',
     title: 'Beach tournament Submission Grappling. 2011',
     imgRef: thumb('video-8.jpg'),
-    isInProgress: true,
+    heroImgRef: '/assets/img/videoGallery/08/main.jpg',
   },
   {
     id: 'beach-mix-2011',
