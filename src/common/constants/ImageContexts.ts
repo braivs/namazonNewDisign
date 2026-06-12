@@ -98,10 +98,19 @@ export const DIR_NATALIA_MYSIK_SUBGR = require.context('/public/assets/img/girl/
 export const DIR_KSENIYA_VOLOSHINA_SUBGR = require.context('/public/assets/img/girl/kseniya-voloshina/subgr', false)
 
 
-//competitions
-// export const DirDarinaViktoria = require.context('src/img/competitions/2013_2014/silovye_edinoborstva_2013/darina_viktoria', false)
-// export const DirYaroslavaMasha = require.context('src/img/competitions/2013_2014/silovye_edinoborstva_2013/yaroslava-masha', false)
-// export const DIR_YAROSLAVA_VIKA = require.context('src/img/competitions/2013_2014/silovye_edinoborstva_2013/yaroslava-vika', false)
+// competitions — Women's Power Event Tournament, October 2013
+export const DIR_TOURNAMENT2013_DARINA_VICTORIA = require.context(
+  '/public/assets/img/competitions/2013_2014/silovye_edinoborstva_2013/darina_viktoria',
+  false,
+)
+export const DIR_TOURNAMENT2013_YAROSLAVA_MASHA = require.context(
+  '/public/assets/img/competitions/2013_2014/silovye_edinoborstva_2013/yaroslava-masha',
+  false,
+)
+export const DIR_TOURNAMENT2013_YAROSLAVA_VIKA = require.context(
+  '/public/assets/img/competitions/2013_2014/silovye_edinoborstva_2013/yaroslava-vika',
+  false,
+)
 // Wrestling tournament for beginners. Women only. May, 2014:
 // export const DIR36_TOURNAMENT2014_1 = require.context('/public/assets/img/videoGallery/36', false, /\/(?:01|02|03)\.jpg$/) // Victoria Vardugina against Nina Trofimova
 // export const DIR36_TOURNAMENT2014_2 = require.context('/public/assets/img/videoGallery/36', false, /\/(?:0[4-9]|1[0-6])\.jpg$/) // Daria Uvarova and Irina Dzhanaeva

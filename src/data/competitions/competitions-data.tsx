@@ -55,8 +55,9 @@ const competitions_data_src_2013_2014: Competition_src[] = [
     id: 'tournament-2013',
     title: "Women's Power Event Tournament. October 2013",
     imgRef: thumb('tournament-2013.jpg'),
+    heroImgRef:
+      '/assets/img/competitions/2013_2014/silovye_edinoborstva_2013/yaroslava-masha/08.jpg',
     years: '2013_2014',
-    isInProgress: true,
   },
   {
     id: 'tournament-2014',

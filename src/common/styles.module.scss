@@ -47,6 +47,13 @@
     margin-right: 10px;
 }
 
+.textAlignCenter {
+    text-align: center;
+}
+
+.customTablePadding > :not(caption) > * > * {
+    padding: 0;
+}
 
 /* Common styles */
 .common-title-styles {
