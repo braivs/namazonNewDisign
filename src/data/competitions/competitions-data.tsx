@@ -119,7 +119,7 @@ const competitions_data_src_2011_raw: Array<Omit<Competition_src, 'years'>> = [
     id: 'christmas-2011',
     title: 'Christmas Cup 2011 Submission Grappling',
     imgRef: thumb('video-4.jpg'),
-    isInProgress: true,
+    heroImgRef: '/assets/img/videoGallery/04/19.jpg',
   },
   {
     id: 'beach-2011',

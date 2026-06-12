@@ -129,9 +129,16 @@ export const DIR_MMA_SPORT_HOLIDAY_3 = require.context(
   '/public/assets/img/competitions/2012/mma-sportivnyj-prazdnik-2012-3',
   false,
 )
-//Submission Grappling tournament "Christmas Cup 2011"
-// export const DIR_CHRISTMAS_2011_1 = require.context('src/img/competitions/2011/christmas-2011/rozhdestvenskij-kubok-2011-1', false)
-// export const DIR_CHRISTMAS_2011_2 = require.context('/public/assets/img/videoGallery/04', false, /\/(?:3[9-]|4[0-2])\.jpg$/)
+// Submission Grappling tournament "Christmas Cup 2011"
+export const DIR_CHRISTMAS_2011_1 = require.context(
+  '/public/assets/img/competitions/2011/christmas-2011/rozhdestvenskij-kubok-2011-1',
+  false,
+)
+export const DIR_CHRISTMAS_2011_2 = require.context(
+  '/public/assets/img/videoGallery/04',
+  false,
+  /\/(?:3[9-]|4[0-2])\.jpg$/,
+)
 //Mixed beach tournament. Submission Grappling. July, 2011
 // export const DIR_BEACH_MIX_2011 = require.context('src/img/competitions/2011/beach-mix-2011/smeshannyj-plyazhnyj-turnir-2011-1', false) // Villian vs Alex
 // export const DIR_BEACH_MIX_2011_2 = require.context('src/img/competitions/2011/beach-mix-2011/smeshannyj-plyazhnyj-turnir-2011-2', false) // Villian vs Elena Vasilyeva
