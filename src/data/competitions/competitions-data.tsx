@@ -86,7 +86,7 @@ const competitions_data_src_2012_raw: Array<Omit<Competition_src, 'years'>> = [
     id: 'mma-2012',
     title: 'ММА. Kara Teller vs Svetlana Solovyova. 2012',
     imgRef: thumb('Kara_Teller_vs_Svetlana_Solovyova.jpg'),
-    isInProgress: true,
+    heroImgRef: '/assets/img/videoGallery/17/mma-kara-svetlany-2012-2/5.jpg',
   },
   {
     id: 'sportHoliday-2012',
