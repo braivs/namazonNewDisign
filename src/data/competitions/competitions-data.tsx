@@ -104,7 +104,8 @@ const competitions_data_src_2012_raw: Array<Omit<Competition_src, 'years'>> = [
     id: 'nevskaya-arena-2012',
     title: 'The first Nevsky Arena. MMA  tournament. 2012',
     imgRef: thumb('video-20.jpg'),
-    isInProgress: true,
+    heroImgRef:
+      '/assets/img/videoGallery/20/mma-pervaya-nevskaya-arena-2012-1/26.jpg',
   },
 ]
 
