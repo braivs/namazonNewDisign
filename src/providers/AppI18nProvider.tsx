@@ -25,11 +25,15 @@ export const i18n = createInstance({
       menu: en.menu,
       language: en.language,
       common: en.common,
+      home: en.home,
+      banner: en.banner,
     },
     ru: {
       menu: ru.menu,
       language: ru.language,
       common: ru.common,
+      home: ru.home,
+      banner: ru.banner,
     },
   },
 }).use(initReactI18next)

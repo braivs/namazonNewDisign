@@ -1,11 +1,16 @@
+'use client'
+
 import sC from '@/common/styles.module.scss'
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import cn from 'classnames'
 import Link from 'next/link'
 import React from 'react'
+import {useTranslation} from 'react-i18next'
 
 const BannerArticle = () => {
+  const {t} = useTranslation('banner')
+
   return (
     <section
       className="breadcrumb__area pt-100 pb-120 breadcrumb__overlay"
@@ -19,9 +24,9 @@ const BannerArticle = () => {
             <div className="tp-breadcrumb">
               <Link className="tp-breadcrumb__element" href="/">
                 <FontAwesomeIcon icon={faArrowLeft} />
-                <span className={sC.return}>HOME</span>
+                <span className={sC.return}>{t('article.back')}</span>
               </Link>
-              <h2 className={cn(sC.selectedCategory, 'tp-breadcrumb__title')}>ARTICLE</h2>
+              <h2 className={cn(sC.selectedCategory, 'tp-breadcrumb__title')}>{t('article.title')}</h2>
             </div>
           </div>
         </div>

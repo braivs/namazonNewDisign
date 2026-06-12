@@ -1,11 +1,16 @@
+'use client'
+
 import React from 'react'
 import cn from 'classnames'
 import sC from '@/common/styles.module.scss'
 import Link from 'next/link'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
+import {useTranslation} from 'react-i18next'
 
 export const BannerCompetitionElement = () => {
+  const {t} = useTranslation('banner')
+
   return (
     <section
       className="breadcrumb__area pt-100 pb-120 breadcrumb__overlay"
@@ -19,9 +24,9 @@ export const BannerCompetitionElement = () => {
             <div className="tp-breadcrumb">
               <Link className="tp-breadcrumb__element" href="/competitions">
                 <FontAwesomeIcon icon={faArrowLeft} />
-                <span className={sC.return}>All competitions</span>
+                <span className={sC.return}>{t('competitions.back')}</span>
               </Link>
-              <h2 className={cn(sC.selectedCategory, 'tp-breadcrumb__title')}>Competition details</h2>
+              <h2 className={cn(sC.selectedCategory, 'tp-breadcrumb__title')}>{t('competitions.details')}</h2>
             </div>
           </div>
         </div>

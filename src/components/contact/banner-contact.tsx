@@ -1,27 +1,29 @@
-import React from "react"
+'use client'
+
+import React from 'react'
+import {useTranslation} from 'react-i18next'
 
 const BannerContact = () => {
-  return (
-    <>
-      <section
-        className="breadcrumb__area pt-100 pb-120 breadcrumb__overlay"
-        style={{
-          backgroundImage: `url("/assets/img/banner/breadcrumb-01.jpg")`,
-        }}
-      >
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6 col-md-7 col-12">
-              <div className="tp-breadcrumb">
-                <h2 className="tp-breadcrumb__title">Contact us</h2>
-              </div>
-            </div>
+  const {t} = useTranslation('banner')
 
+  return (
+    <section
+      className="breadcrumb__area pt-100 pb-120 breadcrumb__overlay"
+      style={{
+        backgroundImage: `url("/assets/img/banner/breadcrumb-01.jpg")`,
+      }}
+    >
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-6 col-md-7 col-12">
+            <div className="tp-breadcrumb">
+              <h2 className="tp-breadcrumb__title">{t('contact')}</h2>
+            </div>
           </div>
         </div>
-      </section>
-    </>
-  );
-};
+      </div>
+    </section>
+  )
+}
 
-export default BannerContact;
+export default BannerContact

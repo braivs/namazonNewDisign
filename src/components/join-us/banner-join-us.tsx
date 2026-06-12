@@ -1,6 +1,11 @@
-import React from "react"
+'use client'
+
+import React from 'react'
+import {useTranslation} from 'react-i18next'
 
 const BannerJoinUs = () => {
+  const {t} = useTranslation('banner')
+
   return (
     <section
       className="breadcrumb__area pt-100 pb-120 breadcrumb__overlay"
@@ -12,7 +17,7 @@ const BannerJoinUs = () => {
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-7 col-12">
             <div className="tp-breadcrumb">
-              <h2 className="tp-breadcrumb__title">Join Us</h2>
+              <h2 className="tp-breadcrumb__title">{t('joinUs')}</h2>
             </div>
           </div>
         </div>
