@@ -1,4 +1,5 @@
 import {articlesEn} from './articles-en'
+import {girlsEn} from './girls-en'
 import {videoEn} from './video-en'
 
 export const en = {
@@ -90,6 +91,7 @@ export const en = {
     },
   },
   articles: articlesEn,
+  girls: girlsEn,
   video: videoEn,
   competitions: {
     titles: {

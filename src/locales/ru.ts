@@ -1,4 +1,5 @@
 import {articlesRu} from './articles-ru'
+import {girlsRu} from './girls-ru'
 import {videoRu} from './video-ru'
 
 export const ru = {
@@ -90,6 +91,7 @@ export const ru = {
     },
   },
   articles: articlesRu,
+  girls: girlsRu,
   video: videoRu,
   competitions: {
     titles: {

@@ -29,6 +29,7 @@ export const i18n = createInstance({
       banner: en.banner,
       articles: en.articles,
       competitions: en.competitions,
+      girls: en.girls,
       video: en.video,
     },
     ru: {
@@ -39,6 +40,7 @@ export const i18n = createInstance({
       banner: ru.banner,
       articles: ru.articles,
       competitions: ru.competitions,
+      girls: ru.girls,
       video: ru.video,
     },
   },
