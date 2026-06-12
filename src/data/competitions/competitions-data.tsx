@@ -98,7 +98,7 @@ const competitions_data_src_2012_raw: Array<Omit<Competition_src, 'years'>> = [
     id: 'varvara-tais-2012',
     title: 'Varvara Akulova vs Tais. Submission grappling. 2012',
     imgRef: thumb('VarvaravsTais.jpg'),
-    isInProgress: true,
+    heroImgRef: '/assets/img/videoGallery/19/main.jpg',
   },
   {
     id: 'nevskaya-arena-2012',
