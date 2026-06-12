@@ -80,7 +80,7 @@ const competitions_data_src_2012_raw: Array<Omit<Competition_src, 'years'>> = [
     id: 'christmas-2012',
     title: 'Christmas Cup 2012 MMA fights',
     imgRef: thumb('Elena_Vasilyeva_vs_Kara_Teller.jpg'),
-    isInProgress: true,
+    heroImgRef: '/assets/img/videoGallery/09/mma-rozhdestvenskij-kubok-2012-1/16.jpg',
   },
   {
     id: 'mma-2012',

@@ -122,8 +122,8 @@ export const DIR_GRAPPLING2014_AWARDS = require.context(
   '/public/assets/img/competitions/2013_2014/grappling_2014/awardPhotos',
   false,
 )
-// export const DIR_CHRISTMAS2012_1 = require.context('/public/assets/img/videoGallery/09/mma-rozhdestvenskij-kubok-2012-1', false, /\/(?:0[1-9]|1[0-2])\.jpg$/) // Elena Vasilyeva vs Kara Teller, round 1 & 2
-// export const DIR_CHRISTMAS2012_2 = require.context('/public/assets/img/videoGallery/09/mma-rozhdestvenskij-kubok-2012-1', false, /\/1[3-7]\.jpg$/) // Elena Vasilyeva vs Kara Teller, round 3
+export const DIR_CHRISTMAS2012_1 = require.context('/public/assets/img/videoGallery/09/mma-rozhdestvenskij-kubok-2012-1', false, /\/(?:0[1-9]|1[0-2])\.jpg$/) // Elena Vasilyeva vs Kara Teller, round 1 & 2
+export const DIR_CHRISTMAS2012_2 = require.context('/public/assets/img/videoGallery/09/mma-rozhdestvenskij-kubok-2012-1', false, /\/1[3-7]\.jpg$/) // Elena Vasilyeva vs Kara Teller, round 3
 //MMA fights in the May holidays:
 // export const DIR_MMA_SPORT_HOLIDAY_3 = require.context('src/img/competitions/2012/mma-sportivnyj-prazdnik-2012-3', false)
 //Submission Grappling tournament "Christmas Cup 2011"

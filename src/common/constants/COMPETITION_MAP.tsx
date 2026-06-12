@@ -3,6 +3,7 @@ import {Maslenitsa2016Desc} from '@/data/competitions-description/maslenitsa2016
 import {Tournament2013Desc} from '@/data/competitions-description/tournament2013Desc'
 import {Tournament2014Desc} from '@/data/competitions-description/tournament2014Desc'
 import {Grappling2014Desc} from '@/data/competitions-description/grappling2014Desc'
+import {Christmas2012Desc} from '@/data/competitions-description/christmas2012Desc'
 
 /** Replace entries with real articles when ported from the old site. */
 const CompetitionArticlePlaceholder: FC = () => (
@@ -38,4 +39,5 @@ export const COMPETITION_MAP: Record<string, FC> = {
   'tournament-2013': Tournament2013Desc,
   'tournament-2014': Tournament2014Desc,
   'grappling-2014': Grappling2014Desc,
+  'christmas-2012': Christmas2012Desc,
 }
