@@ -12,14 +12,17 @@ export default function CompetitionContent({data}: Props) {
     <>
       <h3>{data.period}</h3>
       <h4>{data.title.replace(/\n/g, ' ')}</h4>
-      {/* These competitions render the hero image inside their article body at a specific position. */}
-      {data.id !== 'tournament-2013' && data.id !== 'tournament-2014' && data.id !== 'grappling-2014' && (
-        <img
-          src={data.heroImgRef ?? data.imgRef}
-          alt=""
-          className={cn('img-fluid w-100', sC.videosMainImg)}
-        />
-      )}
+      {/* Hero inside article, or no hero on the page at all. */}
+      {data.id !== 'tournament-2013' &&
+        data.id !== 'tournament-2014' &&
+        data.id !== 'grappling-2014' &&
+        data.id !== 'IzidaVsTais2008' && (
+          <img
+            src={data.heroImgRef ?? data.imgRef}
+            alt=""
+            className={cn('img-fluid w-100', sC.videosMainImg)}
+          />
+        )}
       <section className={cn('pt-10', sC.compArticlesVideoGirl)}>{data.description()}</section>
     </>
   )
