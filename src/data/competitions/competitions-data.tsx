@@ -63,8 +63,8 @@ const competitions_data_src_2013_2014: Competition_src[] = [
     id: 'tournament-2014',
     title: 'Wrestling tournament for beginners. May, 2014',
     imgRef: thumb('tournament-2014.jpg'),
+    heroImgRef: '/assets/img/videoGallery/36/03.jpg',
     years: '2013_2014',
-    isInProgress: true,
   },
   {
     id: 'grappling-2014',
