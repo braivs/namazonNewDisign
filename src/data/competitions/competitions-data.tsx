@@ -150,7 +150,6 @@ const competitions_data_src_archive_raw: Array<Omit<Competition_src, 'years'>> =
     id: 'IzidaVsIrina2008',
     title: 'Izida vs Irina Wrestling. 2008',
     imgRef: thumb('2008-izida-irina.jpg'),
-    isInProgress: true,
   },
   {
     id: 'IrinaVsTais2009',

@@ -16,12 +16,15 @@ export default function CompetitionContent({data}: Props) {
       {data.id !== 'tournament-2013' &&
         data.id !== 'tournament-2014' &&
         data.id !== 'grappling-2014' &&
-        data.id !== 'IzidaVsTais2008' && (
-          <img
-            src={data.heroImgRef ?? data.imgRef}
-            alt=""
-            className={cn('img-fluid w-100', sC.videosMainImg)}
-          />
+        data.id !== 'IzidaVsTais2008' &&
+        data.id !== 'IzidaVsIrina2008' && (
+          <div className="d-flex justify-content-center">
+            <img
+              src={data.heroImgRef ?? data.imgRef}
+              alt=""
+              className={sC.videosMainImg}
+            />
+          </div>
         )}
       <section className={cn('pt-10', sC.compArticlesVideoGirl)}>{data.description()}</section>
     </>
