@@ -10,7 +10,7 @@ export default function CompetitionContent({data}: Props) {
 
   return (
     <>
-      <h3>Competitions: {data.period}</h3>
+      <h3>{data.period}</h3>
       <h4>{data.title.replace(/\n/g, ' ')}</h4>
       {/* These competitions render the hero image inside their article body at a specific position. */}
       {data.id !== 'tournament-2013' && data.id !== 'tournament-2014' && data.id !== 'grappling-2014' && (

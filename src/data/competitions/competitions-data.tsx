@@ -92,7 +92,7 @@ const competitions_data_src_2012_raw: Array<Omit<Competition_src, 'years'>> = [
     id: 'sportHoliday-2012',
     title: 'MMA fights in the May holidays. 2012',
     imgRef: thumb('KaraTellervsDariaBalina.jpg'),
-    isInProgress: true,
+    heroImgRef: '/assets/img/videoGallery/18/mma-sportivnyj-prazdnik-2012-1/14.jpg',
   },
   {
     id: 'varvara-tais-2012',
