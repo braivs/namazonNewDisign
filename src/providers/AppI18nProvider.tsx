@@ -27,6 +27,7 @@ export const i18n = createInstance({
       common: en.common,
       home: en.home,
       banner: en.banner,
+      articles: en.articles,
       competitions: en.competitions,
     },
     ru: {
@@ -35,6 +36,7 @@ export const i18n = createInstance({
       common: ru.common,
       home: ru.home,
       banner: ru.banner,
+      articles: ru.articles,
       competitions: ru.competitions,
     },
   },

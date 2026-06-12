@@ -1,6 +1,9 @@
+'use client'
+
 import React, {useState} from 'react'
 import {Button} from 'react-bootstrap'
 import {Collapse} from '@mui/material'
+import {useTranslation} from 'react-i18next'
 import {getGalleryPhotosFromRequireFromArray, getSlides} from '@/common/helpers'
 import {LightboxMy, PhotoAlbumMy} from '@/common/ModdedComponents/ModdedComponents'
 
@@ -11,6 +14,7 @@ const armImages = Array.from({length: 13}, (_, i) => `${ARM_BASE}/${i + 1}.jpg`)
 const wrestleImages = Array.from({length: 38}, (_, i) => `${WRESTLE_BASE}/${i + 1}.jpg`)
 
 export const Maslenitsa2016Desc: React.FC = () => {
+  const {t} = useTranslation('competitions')
   const [open, setOpen] = useState(false)
   const [open2, setOpen2] = useState(false)
   const [index, setIndex] = useState(-1)
@@ -23,26 +27,15 @@ export const Maslenitsa2016Desc: React.FC = () => {
 
   return (
     <>
-      <p>
-        The female power competition for this year&apos;s Maslenitsa Festival took place at Namazon Club on Thursday,
-        March 10th. The event featured three categories: arm wrestling, leg wrestling, and pins-and-submissions wrestling,
-        where a wrestler could win by either submission or pin. There were three participants, all competing in the same
-        weight category - up to 60 kg:
-      </p>
+      <p>{t('maslenitsa-2016.intro')}</p>
       <ul>
-        <li>
-          Viktoria Vardugina - a well-known arm wrestler with numerous victories in combative sports competitions at
-          Namazon Club;
-        </li>
-        <li>Viktoria Smorodina - an ambitious fighter specializing in Wushu, boxing, and powerlifting;</li>
-        <li>Oxana Grigorenko - the representative of Namazon Club.</li>
+        <li>{t('maslenitsa-2016.participantVardugina')}</li>
+        <li>{t('maslenitsa-2016.participantSmorodina')}</li>
+        <li>{t('maslenitsa-2016.participantGrigorenko')}</li>
       </ul>
-      <p>
-        Viktoria Vardugina emerged as the winner in the arm wrestling category, confidently defeating both opponents in
-        left and right-hand matches.
-      </p>
+      <p>{t('maslenitsa-2016.armwrestling')}</p>
       <Button variant="primary" onClick={() => setOpen(!open)}>
-        Arm wrestling photos
+        {t('maslenitsa-2016.armPhotos')}
       </Button>
       <Collapse in={open}>
         <div>
@@ -50,15 +43,10 @@ export const Maslenitsa2016Desc: React.FC = () => {
           <LightboxMy slides={slides} index={index} closeCallback={setIndex} />
         </div>
       </Collapse>
-      <p>In the leg-wrestling contest, Viktoria Vardugina and Oxana Grigorenko shared 1st and 2nd places.</p>
-      <p>
-        The pins-and-submission matches were the most thrilling part of the competition. Each participant wrestled against
-        each other, with victories achieved by holding an opponent in a pin for a count of 7 or forcing her into
-        submission. The time limit for each match was 5 minutes. Oxana Grigorenko was the absolute winner of this
-        category. Viktoria Smorodina, who proved to be a strong competitor, secured 2nd place.
-      </p>
+      <p>{t('maslenitsa-2016.legwrestling')}</p>
+      <p>{t('maslenitsa-2016.wrestling')}</p>
       <Button variant="primary" onClick={() => setOpen2(!open2)}>
-        Wrestling photos
+        {t('maslenitsa-2016.wrestlePhotos')}
       </Button>
       <Collapse in={open2}>
         <div>
@@ -66,10 +54,7 @@ export const Maslenitsa2016Desc: React.FC = () => {
           <LightboxMy slides={slides2} index={index2} closeCallback={setIndex2} />
         </div>
       </Collapse>
-      <p>
-        Overall, it was an interesting sporting event. Despite the small number of participants, their high fitness and
-        wrestling skills made up for it.
-      </p>
+      <p>{t('maslenitsa-2016.closing')}</p>
     </>
   )
 }

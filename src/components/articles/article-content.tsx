@@ -1,3 +1,5 @@
+'use client'
+
 import {ARTICLE_MAP, isArticleSlug} from '@/common/constants/ARTICLE_MAP'
 import sC from '@/common/styles.module.scss'
 import cn from 'classnames'

@@ -1,3 +1,5 @@
+import {articlesEn} from './articles-en'
+
 export const en = {
   menu: {
     home: 'Home',
@@ -86,9 +88,29 @@ export const en = {
       },
     },
   },
+  articles: articlesEn,
   competitions: {
     titles: {
+      'maslenitsa-2016': 'Female Power Competitions for the Maslenitsa Festival, 2016',
       'maslenitsa-2017': 'Female Power Competitions for the Maslenitsa Festival, 2017',
+    },
+    'maslenitsa-2016': {
+      intro:
+        'The female power competition for this year\'s Maslenitsa Festival took place at Namazon Club on Thursday, March 10th. The event featured three categories: arm wrestling, leg wrestling, and pins-and-submissions wrestling, where a wrestler could win by either submission or pin. There were three participants, all competing in the same weight category - up to 60 kg:',
+      participantVardugina:
+        'Viktoria Vardugina - a well-known arm wrestler with numerous victories in combative sports competitions at Namazon Club;',
+      participantSmorodina:
+        'Viktoria Smorodina - an ambitious fighter specializing in Wushu, boxing, and powerlifting;',
+      participantGrigorenko: 'Oxana Grigorenko - the representative of Namazon Club.',
+      armwrestling:
+        'Viktoria Vardugina emerged as the winner in the arm wrestling category, confidently defeating both opponents in left and right-hand matches.',
+      armPhotos: 'Arm wrestling photos',
+      legwrestling: 'In the leg-wrestling contest, Viktoria Vardugina and Oxana Grigorenko shared 1st and 2nd places.',
+      wrestling:
+        'The pins-and-submission matches were the most thrilling part of the competition. Each participant wrestled against each other, with victories achieved by holding an opponent in a pin for a count of 7 or forcing her into submission. The time limit for each match was 5 minutes. Oxana Grigorenko was the absolute winner of this category. Viktoria Smorodina, who proved to be a strong competitor, secured 2nd place.',
+      wrestlePhotos: 'Wrestling photos',
+      closing:
+        'Overall, it was an interesting sporting event. Despite the small number of participants, their high fitness and wrestling skills made up for it.',
     },
     'maslenitsa-2017': {
       intro:
