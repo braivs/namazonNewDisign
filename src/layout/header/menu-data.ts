@@ -15,12 +15,20 @@ export type MenuItem = {
 
 const menu_data: MenuItem[] = [
   {
+    id: 0,
+    mega_menu: false,
+    has_dropdown: false,
+    title: 'Home',
+    link: '/',
+    active: 'active',
+  },
+  {
     id: 1,
     mega_menu: false,
     has_dropdown: false,
     title: 'Video',
     link: '/video',
-    active: 'active',
+    active: '',
   },
   {
     id: 2,

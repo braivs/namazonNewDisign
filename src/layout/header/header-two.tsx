@@ -1,5 +1,6 @@
 import Sidebar from "@/common/sidebar"
 import useSticky from "../../../hooks/use-sticky"
+import cn from "classnames"
 import React, {useState} from "react"
 import NavMenu from "./nav-menu"
 import youtube from '../../../public/assets/img/icon/youtube_small_color.png'
@@ -84,8 +85,8 @@ const HeaderTwo = () => {
             </div>
             <div className="header-menu-bottom">
               <div className="row">
-                <div className="col-lg-7">
-                  <div className="main-menu main-menu-second">
+                <div className="col-lg-12">
+                  <div className={cn('main-menu main-menu-second', s.navMenu)}>
                     <nav id="mobile-menu">
                       <NavMenu/>
                     </nav>

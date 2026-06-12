@@ -40,3 +40,40 @@
     width: 19px;
     height: 19px;
 }
+
+/* Keep all nav items on one row (7 items after Home was added). */
+.navMenu {
+    margin-left: 30px;
+
+    :global(ul) {
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    :global(ul li) {
+        flex-shrink: 0;
+        margin-right: 24px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    :global(ul li > a) {
+        font-size: 12px;
+        letter-spacing: 0.02em;
+    }
+
+    @media (min-width: 1400px) {
+        margin-left: 40px;
+
+        :global(ul li) {
+            margin-right: 32px;
+        }
+
+        :global(ul li > a) {
+            font-size: 13px;
+        }
+    }
+}
