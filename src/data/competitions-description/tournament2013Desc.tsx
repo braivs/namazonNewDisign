@@ -8,6 +8,7 @@ import {
 } from '@/common/constants/ImageContexts'
 import sC from '@/common/styles.module.scss'
 import sel from '@/data/competitions-description/tournament2013PageSelector.module.scss'
+import {findCompetitionData} from '@/data/competitions/competitions-data'
 import cn from 'classnames'
 import React, {useState} from 'react'
 import {Table} from 'react-bootstrap'
@@ -35,7 +36,7 @@ const PageSelector: React.FC<PageSelectorProps> = ({activePage, setActivePage, m
   }
 
   return (
-    <ul className={sel.pageList}>
+    <ul className={cn(sel.pageList, mode === 'prevNext' && sel.pageListPrevNext)}>
       {mode !== 'prevNext' ? (
         <>
           {[1, 2, 3].map((pageNumber) => (
@@ -465,6 +466,10 @@ const pages: Record<number, React.FC> = {
   3: Tournament2013Page3,
 }
 
+const tournament2013Data = findCompetitionData('2013_2014', 'tournament-2013')
+const tournament2013HeroSrc =
+  tournament2013Data?.heroImgRef ?? tournament2013Data?.imgRef ?? ''
+
 export const Tournament2013Desc: React.FC = () => {
   const [page, setPage] = useState(1)
   const Body = pages[page]
@@ -472,6 +477,13 @@ export const Tournament2013Desc: React.FC = () => {
   return (
     <>
       <PageSelector activePage={page} setActivePage={setPage} />
+      {page === 1 && tournament2013HeroSrc && (
+        <img
+          src={tournament2013HeroSrc}
+          alt=""
+          className={cn('img-fluid w-100', sC.videosMainImg)}
+        />
+      )}
       {Body ? <Body /> : null}
       <PageSelector activePage={page} setActivePage={setPage} mode="prevNext" />
     </>
