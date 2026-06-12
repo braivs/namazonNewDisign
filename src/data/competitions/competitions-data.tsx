@@ -155,7 +155,6 @@ const competitions_data_src_archive_raw: Array<Omit<Competition_src, 'years'>> =
     id: 'IrinaVsTais2009',
     title: 'Irina vs Tais Beach wrestling. 2009',
     imgRef: thumb('2009-irina-tais.jpg'),
-    isInProgress: true,
   },
   {
     id: 'beach-mix-2010',
