@@ -44,7 +44,7 @@ const competitions_data_src_2015_2017: Competition_src[] = [
   {
     id: 'maslenitsa-2016',
     title: 'Female power competitions for the Maslenitsa week, 2016',
-    imgRef: thumb('maslenitsa-2016.jpg'),
+    imgRef: '/assets/img/competitions/2016/Shrove_Tuesday/wrestling/25.jpg',
     heroImgRef: '/assets/img/competitions/2016/Shrove_Tuesday/armwrestling/1.jpg',
     years: '2015_2017',
   },

@@ -1,25 +1,42 @@
 import Link from 'next/link'
 import React from 'react'
 import type {HomeCard} from '@/data/home/home-cards-data'
-import s from './home-page.module.scss'
 
 type Props = {
   card: HomeCard
 }
 
+function truncateExcerpt(text: string, maxLength: number): string {
+  if (text.length <= maxLength) return text
+  return `${text.slice(0, maxLength).trimEnd()} ...`
+}
+
 export default function HomeArticleCard({card}: Props) {
+  const excerpt = truncateExcerpt(card.excerpt, 95)
+
   return (
-    <div className={s.card}>
+    <div className="blog-item">
       <Link href={card.href}>
-        <h3 className={s.title}>{card.title}</h3>
+        <div className="blog-item__thumb fix">
+          <img src={card.imgRef} alt={card.title} className="w-100"/>
+        </div>
       </Link>
-      <img src={card.imgRef} alt="" className={s.thumb} />
-      <p>{card.excerpt}</p>
-      <Link href={card.href}>
-        <button type="button" className={s.readMore}>
-          Read more...
-        </button>
-      </Link>
+      <div className="blog-item__content">
+        <h5 className="blog-item__title mb-15">
+          <Link href={card.href}>{card.title}</Link>
+        </h5>
+        <p>{excerpt}</p>
+        <div className="blog-item__date-info">
+          <ul className="d-flex align-items-center">
+            <li>
+              <Link href={card.href}>
+                Read more
+                <i className="fa-regular fa-arrow-right ms-2"></i>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }
