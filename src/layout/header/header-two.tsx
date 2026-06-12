@@ -10,6 +10,7 @@ import reddit from '../../../public/assets/img/icon/reddit-icon.png'
 import s from './header-two.module.scss'
 import {Logo} from "@/components/logo/Logo"
 import HeaderSlider from './header-slider'
+import LanguageSwitcher from '@/components/language-switcher'
 
 const Youtube = () => {
   return (
@@ -56,6 +57,9 @@ const HeaderTwo = () => {
                 <div className="tp-bt-btn-banner d-none d-md-block d-xl-none mr-30">
                   <Youtube/>
                 </div>
+                <div className={`tp-bt-btn-banner d-none d-md-block d-xl-none mr-30 ${s.mobileLanguage}`}>
+                  <LanguageSwitcher/>
+                </div>
                 <button
                   onClick={() => setIsActive(true)}
                   className="tp-menu-toggle"
@@ -83,10 +87,13 @@ const HeaderTwo = () => {
                   </div>
                 </div>
                 <div className="header-menu-bottom">
-                  <div className={cn('main-menu main-menu-second', s.navMenu)}>
-                    <nav id="mobile-menu">
-                      <NavMenu/>
-                    </nav>
+                  <div className={s.navRow}>
+                    <div className={cn('main-menu main-menu-second', s.navMenu)}>
+                      <nav id="mobile-menu">
+                        <NavMenu/>
+                      </nav>
+                    </div>
+                    <LanguageSwitcher/>
                   </div>
                 </div>
               </div>

@@ -3,6 +3,7 @@ import "../../node_modules/yet-another-react-lightbox/dist/styles.css";
 import {FC} from "react"
 import {Provider} from "react-redux"
 import {store} from "@/app/store/store"
+import {AppI18nProvider} from "@/providers/AppI18nProvider"
 import { config } from '@fortawesome/fontawesome-svg-core'; // fix for fontawesome big size issue on first start
 import "@fortawesome/fontawesome-svg-core/styles.css"
 config.autoAddCss = false;
@@ -17,9 +18,13 @@ if (typeof window !== "undefined") {
 }
 
 export default function App({ Component, pageProps }: AppProps) {
-  return  <Provider store={store}>
-    <Component {...pageProps} />
-  </Provider>
+  return (
+    <Provider store={store}>
+      <AppI18nProvider>
+        <Component {...pageProps} />
+      </AppI18nProvider>
+    </Provider>
+  )
 }
 
 //todo: setup pagination

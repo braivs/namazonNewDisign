@@ -3,6 +3,8 @@ import React, {FC} from 'react'
 
 import {Logo} from "@/components/logo/Logo"
 import {SocialIcons} from "@/components/social-icons/SocialIcons"
+import LanguageSwitcher from '@/components/language-switcher'
+import s from './sidebar.module.scss'
 
 // Define types for images
 interface ImageItem {
@@ -48,6 +50,9 @@ const Sidebar: FC<SidebarProps> = ({ isActive, setIsActive }) => {
           </a>
         </div>
         <SocialIcons />
+        <div className={s.language}>
+          <LanguageSwitcher variant="sidebar"/>
+        </div>
       </div>
 
       <div

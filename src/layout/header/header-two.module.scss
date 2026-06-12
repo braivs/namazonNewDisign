@@ -9,6 +9,19 @@
     min-width: 0;
 }
 
+.navRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-right: 12px;
+}
+
+.mobileLanguage {
+    display: flex;
+    align-items: center;
+}
+
 .headerSlider {
     flex-shrink: 0;
     display: flex;
