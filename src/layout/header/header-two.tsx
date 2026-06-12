@@ -9,6 +9,7 @@ import x from '../../../public/assets/img/icon/X_logo.png'
 import reddit from '../../../public/assets/img/icon/reddit-icon.png'
 import s from './header-two.module.scss'
 import {Logo} from "@/components/logo/Logo"
+import HeaderSlider from './header-slider'
 
 const Youtube = () => {
   return (
@@ -74,24 +75,23 @@ const HeaderTwo = () => {
         >
           <Logo/>
           <div className="header-menu-box">
-            <div className="header-menu-top">
-              <div className="row align-items-center">
-                <div className="col-lg-12">
+            <div className={s.headerMenuInner}>
+              <div className={s.headerMenuMain}>
+                <div className="header-menu-top">
                   <div className={s.headerTopMob}>
                     <Youtube/>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="header-menu-bottom">
-              <div className="row">
-                <div className="col-lg-12">
+                <div className="header-menu-bottom">
                   <div className={cn('main-menu main-menu-second', s.navMenu)}>
                     <nav id="mobile-menu">
                       <NavMenu/>
                     </nav>
                   </div>
                 </div>
+              </div>
+              <div className={s.headerSlider}>
+                <HeaderSlider/>
               </div>
             </div>
           </div>

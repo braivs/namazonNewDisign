@@ -1,3 +1,29 @@
+.headerMenuInner {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.headerMenuMain {
+    flex: 1;
+    min-width: 0;
+}
+
+.headerSlider {
+    flex-shrink: 0;
+    display: flex;
+    align-items: stretch;
+    width: 180px;
+    padding: 6px 12px 6px 6px;
+    border-left: 1px solid var(--tp-border-primary);
+    box-sizing: border-box;
+
+    @media (min-width: 1400px) {
+        width: 200px;
+        padding: 10px 14px 10px 8px;
+    }
+}
+
 .headerTopMob {
     text-wrap: nowrap;
 }
