@@ -143,22 +143,22 @@ const competitions_data_src_2011: Competition_src[] = competitions_data_src_2011
 const competitions_data_src_archive_raw: Array<Omit<Competition_src, 'years'>> = [
   {
     id: 'IzidaVsTais2008',
-    title: 'Izida vs Tais Wrestling. 2008',
+    title: 'Izida vs Tais\nWrestling. 2008',
     imgRef: thumb('2008-izida-tais.jpg'),
   },
   {
     id: 'IzidaVsIrina2008',
-    title: 'Izida vs Irina Wrestling. 2008',
+    title: 'Izida vs Irina\nWrestling. 2008',
     imgRef: thumb('2008-izida-irina.jpg'),
   },
   {
     id: 'IrinaVsTais2009',
-    title: 'Irina vs Tais Beach wrestling. 2009',
+    title: 'Irina vs Tais\nBeach wrestling. 2009',
     imgRef: thumb('2009-irina-tais.jpg'),
   },
   {
     id: 'beach-mix-2010',
-    title: 'Mixed beach tournament. 2010',
+    title: 'Mixed beach\ntournament. 2010',
     imgRef: thumb('2010-natalia-alex.jpg'),
   },
 ]

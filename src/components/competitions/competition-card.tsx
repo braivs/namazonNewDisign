@@ -35,8 +35,8 @@ export default function CompetitionCard({card}: Props) {
         <div className={cn('research-item__thum fix mb-20', cardS.competitionThumb)}>
           {thumb}
         </div>
-        <div className={cn('research-item__content', s.researchItemContent)}>
-          <h4 className="research-item__title mb-20" style={{fontSize: '19px', whiteSpace: 'pre-line'}}>
+        <div className={cn('research-item__content', s.researchItemContent, cardS.cardContent)}>
+          <h4 className={cn('research-item__title mb-20', cardS.title)}>
             {inProgress ? card.title : <Link href={href}>{card.title}</Link>}
           </h4>
           {!inProgress && (
