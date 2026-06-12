@@ -1,5 +1,6 @@
 import type {FC} from 'react'
 import {Maslenitsa2016Desc} from '@/data/competitions-description/maslenitsa2016Desc'
+import {Maslenitsa2017Desc} from '@/data/competitions-description/maslenitsa2017Desc'
 import {Tournament2013Desc} from '@/data/competitions-description/tournament2013Desc'
 import {Tournament2014Desc} from '@/data/competitions-description/tournament2014Desc'
 import {Grappling2014Desc} from '@/data/competitions-description/grappling2014Desc'
@@ -23,6 +24,7 @@ const CompetitionArticlePlaceholder: FC = () => (
 
 const competitionIds = [
   'maslenitsa-2016',
+  'maslenitsa-2017',
   'tournament-2013',
   'tournament-2014',
   'grappling-2014',
@@ -47,6 +49,7 @@ const competitionMapBase: Record<string, FC> = Object.fromEntries(
 export const COMPETITION_MAP: Record<string, FC> = {
   ...competitionMapBase,
   'maslenitsa-2016': Maslenitsa2016Desc,
+  'maslenitsa-2017': Maslenitsa2017Desc,
   'tournament-2013': Tournament2013Desc,
   'tournament-2014': Tournament2014Desc,
   'grappling-2014': Grappling2014Desc,

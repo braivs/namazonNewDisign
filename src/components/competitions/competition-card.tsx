@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
 import React from 'react'
+import {useTranslation} from 'react-i18next'
 import {toLink} from '@/common/helpers'
 import cn from 'classnames'
 import s from '@/components/video/video-area/video-area.module.scss'
@@ -12,11 +15,14 @@ type Props = {
 }
 
 export default function CompetitionCard({card}: Props) {
+  const {t} = useTranslation('competitions')
+  const {t: tCommon} = useTranslation('common')
   const href = toLink({
     ...card,
     variant: 'competition',
   })
   const inProgress = card.isInProgress === true
+  const title = t(`titles.${card.id}`, {defaultValue: card.title})
 
   const thumb = inProgress ? (
     <div className={inProgressS.imageContainer}>
@@ -37,11 +43,11 @@ export default function CompetitionCard({card}: Props) {
         </div>
         <div className={cn('research-item__content', s.researchItemContent, cardS.cardContent)}>
           <h4 className={cn('research-item__title mb-20', cardS.title)}>
-            {inProgress ? card.title : <Link href={href}>{card.title}</Link>}
+            {inProgress ? title : <Link href={href}>{title}</Link>}
           </h4>
           {!inProgress && (
             <Link href={href} className="research-item__btn">
-              Read More
+              {tCommon('readMore')}
             </Link>
           )}
         </div>

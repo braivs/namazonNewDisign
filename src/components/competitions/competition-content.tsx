@@ -1,18 +1,24 @@
+'use client'
+
 import React from 'react'
+import {useTranslation} from 'react-i18next'
 import type {Competition_data} from '@/data/competitions/competitions-data'
 import sC from '@/common/styles.module.scss'
 import cn from 'classnames'
 
 export default function CompetitionContent({data}: Props) {
+  const {t} = useTranslation('competitions')
+
   if (!data) {
     return <p>Competition not found.</p>
   }
 
+  const title = t(`titles.${data.id}`, {defaultValue: data.title})
+
   return (
     <>
       <h3>{data.period}</h3>
-      <h4>{data.title.replace(/\n/g, ' ')}</h4>
-      {/* Hero inside article, or no hero on the page at all. */}
+      <h4>{title.replace(/\n/g, ' ')}</h4>
       {data.id !== 'tournament-2013' &&
         data.id !== 'tournament-2014' &&
         data.id !== 'grappling-2014' &&

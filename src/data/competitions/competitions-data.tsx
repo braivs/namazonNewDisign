@@ -48,6 +48,13 @@ const competitions_data_src_2015_2017: Competition_src[] = [
     heroImgRef: '/assets/img/competitions/2016/Shrove_Tuesday/armwrestling/1.jpg',
     years: '2015_2017',
   },
+  {
+    id: 'maslenitsa-2017',
+    title: 'Female Power Competitions for the Maslenitsa Festival, 2017',
+    imgRef: '/assets/img/competitions/2017/Shrove_Tuesday/wrestling/26.jpg',
+    heroImgRef: '/assets/img/competitions/2017/Shrove_Tuesday/wrestling/15.jpg',
+    years: '2015_2017',
+  },
 ]
 
 const competitions_data_src_2013_2014: Competition_src[] = [

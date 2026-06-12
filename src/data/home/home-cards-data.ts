@@ -25,4 +25,9 @@ export const home_cards: HomeCard[] = [
     href: '/competition/2015_2017/maslenitsa-2016',
     imgRef: '/assets/img/competitions/2016/Shrove_Tuesday/wrestling/25.jpg',
   },
+  {
+    id: 'maslenitsa-2017',
+    href: '/competition/2015_2017/maslenitsa-2017',
+    imgRef: '/assets/img/competitions/2017/Shrove_Tuesday/wrestling/26.jpg',
+  },
 ]

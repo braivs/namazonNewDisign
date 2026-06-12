@@ -27,6 +27,7 @@ export const i18n = createInstance({
       common: en.common,
       home: en.home,
       banner: en.banner,
+      competitions: en.competitions,
     },
     ru: {
       menu: ru.menu,
@@ -34,6 +35,7 @@ export const i18n = createInstance({
       common: ru.common,
       home: ru.home,
       banner: ru.banner,
+      competitions: ru.competitions,
     },
   },
 }).use(initReactI18next)
