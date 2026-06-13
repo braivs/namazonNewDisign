@@ -1,5 +1,14 @@
 import {articlesRu} from './articles-ru'
-import {grappling2014Ru, tournament2013Ru, tournament2014Ru} from './competitions-ru'
+import {
+  christmas2012Ru,
+  grappling2014Ru,
+  mma2012Ru,
+  nevskayaArena2012Ru,
+  sportHoliday2012Ru,
+  tournament2013Ru,
+  tournament2014Ru,
+  varvaraTais2012Ru,
+} from './competitions-ru'
 import {girlsRu} from './girls-ru'
 import {videoRu} from './video-ru'
 
@@ -96,15 +105,25 @@ export const ru = {
   video: videoRu,
   competitions: {
     titles: {
-      'maslenitsa-2016': 'Женские силовые единоборства на Масленицу 2016',
-      'maslenitsa-2017': 'Женские силовые соревнования на Масленицу 2017',
-      'tournament-2013': 'Женские силовые единоборства. Турнир. Октябрь 2013',
-      'tournament-2014': 'Турнир по борьбе для начинающих. Женщины. Май 2014',
-      'grappling-2014': 'Турнир по сабмишн грэпплингу на призы клуба "НАМАЗОН". Октябрь 2014',
+      'maslenitsa-2016': 'Масленица 2016. Женские\n силовые единоборства',
+      'maslenitsa-2017': 'Масленица 2017. Женские\n силовые соревнования',
+      'tournament-2013': 'Женские силовые\n единоборства. Турнир. 2013',
+      'tournament-2014': 'Турнир по борьбе для \n начинающих. Май 2014',
+      'grappling-2014': 'Турнир по грэпплингу.\n Октябрь 2014',
+      'christmas-2012': 'Рождественский кубок.\nММА. 2012',
+      'mma-2012': 'Кара против Светланы\n и Таис. 2012',
+      'sportHoliday-2012': 'Спортивный праздник. ММА. 8 май 2012 года',
+      'varvara-tais-2012': 'Варвара Акулоа vs. Таис.\nБорьба. 2012',
+      'nevskaya-arena-2012': 'Первая Невская Арена\n ММА турнир. 2012',
     },
     'tournament-2013': tournament2013Ru,
     'tournament-2014': tournament2014Ru,
     'grappling-2014': grappling2014Ru,
+    'christmas-2012': christmas2012Ru,
+    'mma-2012': mma2012Ru,
+    'sportHoliday-2012': sportHoliday2012Ru,
+    'varvara-tais-2012': varvaraTais2012Ru,
+    'nevskaya-arena-2012': nevskayaArena2012Ru,
     'maslenitsa-2016': {
       intro:
         '10 марта в клубе НАМАЗОН прошло женское силовое многоборье, приуроченное к Масленице 2016. Соревнования прошли в трёх номинациях: армрестлинге, легрестлинге и борьбе, победить в которой можно было заставив соперницу сдаться или удержать её в пине. Была одна весовая категория 60+ и три участницы:',
