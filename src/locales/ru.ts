@@ -1,5 +1,5 @@
 import {articlesRu} from './articles-ru'
-import {tournament2013Ru} from './competitions-tournament2013-ru'
+import {grappling2014Ru, tournament2013Ru, tournament2014Ru} from './competitions-ru'
 import {girlsRu} from './girls-ru'
 import {videoRu} from './video-ru'
 
@@ -99,8 +99,12 @@ export const ru = {
       'maslenitsa-2016': 'Женские силовые единоборства на Масленицу 2016',
       'maslenitsa-2017': 'Женские силовые соревнования на Масленицу 2017',
       'tournament-2013': 'Женские силовые единоборства. Турнир. Октябрь 2013',
+      'tournament-2014': 'Турнир по борьбе для начинающих. Женщины. Май 2014',
+      'grappling-2014': 'Турнир по сабмишн грэпплингу на призы клуба "НАМАЗОН". Октябрь 2014',
     },
     'tournament-2013': tournament2013Ru,
+    'tournament-2014': tournament2014Ru,
+    'grappling-2014': grappling2014Ru,
     'maslenitsa-2016': {
       intro:
         '10 марта в клубе НАМАЗОН прошло женское силовое многоборье, приуроченное к Масленице 2016. Соревнования прошли в трёх номинациях: армрестлинге, легрестлинге и борьбе, победить в которой можно было заставив соперницу сдаться или удержать её в пине. Была одна весовая категория 60+ и три участницы:',
