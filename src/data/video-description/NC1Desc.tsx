@@ -1,21 +1,35 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR01} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import Link from 'next/link'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR01} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC1Desc = () => {
+  const {t, i18n} = useTranslation('video')
+  const isRu = i18n.language === 'ru'
+
   return (
     <>
       <p>
-        In this tournament participated three fighters: <b>Tais</b> (5'7" / 128 lb), <b>Maria Rylyova</b> (5'7"
-        / 126 lb) and <b>Nadezhda Akhmerova</b> (5'6" / 128 lb). Tais has already won such competitions several
-        times. Maria has lately improved her skill level significantly, and you could expect that she would have
-        a chance to become a winner. Nadezhda is specialized in Kickboxing and ММА. This was her first
-        Submission Grappling tournament.
+        <Trans
+          i18nKey="descriptions.1.p1"
+          ns="video"
+          components={{
+            link: <Link href="/articles/submission" />,
+            b: <b />,
+          }}
+        />
       </p>
-      <p>The tournament was held in two rounds. As it was expected, the main struggle in the first round was
-        between Tais and Maria. The two girls showed very tough and uncompromising wrestling. This video
-        features all the three matches of the first round.</p>
-      <ButtonGallery images={DIR01}/>
+      <p>
+        <Trans i18nKey="descriptions.1.p2" ns="video" components={{b: <b />}} />
+      </p>
+      {isRu && <p>{t('descriptions.1.p3')}</p>}
+      <ButtonGallery
+        images={DIR01}
+        buttonName={t('descriptions.1.screenshots', {defaultValue: 'SCREENSHOTS'})}
+      />
     </>
   )
 }

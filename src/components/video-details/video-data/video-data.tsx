@@ -6,6 +6,8 @@ import {Video_data} from "@/data/video-data/video-data"
 import s from './video-data.module.scss'
 import {formatNumber} from "@/common/helpers"
 import sC from '@/common/styles.module.scss'
+import {videoTitleKey} from '@/data/video-data/video-i18n'
+import {useTranslation} from 'react-i18next'
 
 function patreonUrlForVideo(patreonId: string, isPost?: boolean): string {
   if (!patreonId) return ''
@@ -16,8 +18,14 @@ function patreonUrlForVideo(patreonId: string, isPost?: boolean): string {
 }
 
 export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
+  const {t, i18n} = useTranslation('video')
+  const isRu = i18n.language === 'ru'
   let videoDataIdFormatted = ''
   if (videoData) videoDataIdFormatted = formatNumber(videoData.id)
+
+  const title = videoData
+    ? t(`titles.${videoTitleKey(videoData.id)}`, {defaultValue: videoData.title})
+    : ''
 
   const directUrls = useMemo(() => {
     const raw = videoData?.directVideoUrl
@@ -49,7 +57,7 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
   return (
     <div className={sC.compArticlesVideoGirl}>
       <h3>{`NC${videoDataIdFormatted}`}</h3>
-      <h4>{videoData?.title}</h4>
+      <h4>{title}</h4>
       <Row>
         <Col
           className={cn(
@@ -168,8 +176,36 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
       <Row>
         <hr/>
         <p>
-          You can purchase <b>video {`NC${videoDataIdFormatted}`}</b> on <a className={s.violet}
-                                                                            href={videoData ? patreonUrlForVideo(videoData.patreonId, videoData.isPost) : '#'}><b>Patreon</b></a>.
+          {isRu ? (
+            <>
+              <b>
+                {t('details.purchaseRuLabel')} {`NC${videoDataIdFormatted}`}
+              </b>{' '}
+              {t('details.purchaseRuSuffix')}{' '}
+              <a
+                className={s.violet}
+                href={videoData ? patreonUrlForVideo(videoData.patreonId, videoData.isPost) : '#'}
+              >
+                <b>Patreon</b>
+              </a>
+              .
+            </>
+          ) : (
+            <>
+              {t('details.purchaseBefore')}{' '}
+              <b>
+                {t('details.purchaseLabel')} {`NC${videoDataIdFormatted}`}
+              </b>{' '}
+              {t('details.purchaseOn')}{' '}
+              <a
+                className={s.violet}
+                href={videoData ? patreonUrlForVideo(videoData.patreonId, videoData.isPost) : '#'}
+              >
+                <b>Patreon</b>
+              </a>
+              .
+            </>
+          )}
         </p>
       </Row>
     </div>

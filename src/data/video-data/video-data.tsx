@@ -9,14 +9,14 @@ const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 1,
     youtubeID: 'G7RTYfRO4B4',
-    title: 'Submission Grappling. Part 2. June, 2010',
+    title: 'Submission Grappling. Part 1. June, 2010',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc01-submission-grappling-tournament-1-301844',
   },
   {
     id: 2,
     youtubeID: 'Y_ixTzxIj44',
-    title: 'Submission Grappling. Part 1. June, 2010',
+    title: 'Submission Grappling. Part 2. June, 2010',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc02-submission-grappling-tournament-2-301832'
   },
