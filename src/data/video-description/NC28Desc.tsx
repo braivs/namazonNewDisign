@@ -1,22 +1,34 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR28_TAIS_ALEXANDER, DIR28_TAIS_VILLIAN} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR28_TAIS_ALEXANDER, DIR28_TAIS_VILLIAN} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC28Desc = () => {
+  const {t, i18n} = useTranslation('video')
+  const isRu = i18n.language === 'ru'
+  const screenshots = t('descriptions.28.screenshots', {defaultValue: 'See photos'})
+
   return (
     <>
       <p>
-        This is the third video of the series titled "<b>Mixed wrestling - the best fights</b>". Here you can
-        see two separate wrestling matches featuring <b>Tais</b> (5'7" / 132 lb) against two male
-        opponents: <b>Villian</b> (5'8" / 177 lb) and <b>Alexander</b> (5’10’’ / 205 lb). Despite Tais's strength
-        and experience, she faced challenging opponents, particularly against the significantly heavier Alexander,
-        who outweighed her by 73 lb.
+        <Trans i18nKey="descriptions.28.p1" ns="video" components={{b: <b />}} />
       </p>
-      <p>To discover the outcomes of these tough matches, watch this video.</p>
-      <h5>Tais vs Alexander</h5>
-      <ButtonGallery images={DIR28_TAIS_ALEXANDER}/>
-      <h5>Tais vs Villian</h5>
-      <ButtonGallery images={DIR28_TAIS_VILLIAN}/>
+      {isRu ? (
+        <>
+          <p>{t('descriptions.28.p2')}</p>
+          <p>
+            <Trans i18nKey="descriptions.28.p3" ns="video" components={{b: <b />}} />
+          </p>
+        </>
+      ) : (
+        <p>{t('descriptions.28.p2')}</p>
+      )}
+      <h5>{t('descriptions.28.section1')}</h5>
+      <ButtonGallery images={DIR28_TAIS_ALEXANDER} buttonName={screenshots} />
+      <h5>{t('descriptions.28.section2')}</h5>
+      <ButtonGallery images={DIR28_TAIS_VILLIAN} buttonName={screenshots} />
     </>
   )
 }

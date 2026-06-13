@@ -1,28 +1,41 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR25_VILLIAN_ELENA, DIR25_VILLIAN_LYUDMILA, DIR25_VILLIAN_TAIS} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR25_VILLIAN_ELENA, DIR25_VILLIAN_LYUDMILA, DIR25_VILLIAN_TAIS} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC25Desc = () => {
+  const {t, i18n} = useTranslation('video')
+  const isRu = i18n.language === 'ru'
+  const screenshots = t('descriptions.25.screenshots', {defaultValue: 'See photos'})
+
   return (
     <>
       <p>
-        This is the second video of the series titled "<b>Mixed wrestling - the best fights</b>". Here you can
-        see <b>Villian</b> (5'7" / 177 lb) wrestle three strong female fighters: <b>Tais</b> (5'7" / 130
-        lb), <b>Elena Vasilyeva</b> (5'6" / 135 lb), and <b>Lyudmila</b> (5'11" / 154 lb).<br/>
-        Each of these ladies presents a unique challenge: tall blonde Lyudmila, a newcomer in competitions, is engaged
-        in Muay Thai; strong and ambitious Elena competes successfully in arm wrestling, submission grappling, and MMA;
-        and Tais, the strongest and most experienced fighter among them.
+        <Trans
+          i18nKey="descriptions.25.p1"
+          ns="video"
+          components={{
+            b: <b />,
+            br: <br />,
+          }}
+        />
       </p>
-      <p>This video features five submission grappling fights (Tais and Elena wrestled Villian twice). The fights
-        take place both in a gym on a mat and outdoors on a sandy beach and on grass. If you like mixed
-        wrestling, then don’t miss this video.</p>
-      <p>If you enjoy mixed wrestling, then this video is a must-watch.</p>
-      <h5>Villian vs Elena Vasilyeva</h5>
-      <ButtonGallery images={DIR25_VILLIAN_ELENA}/>
-      <h5>Villian vs Lyudmila</h5>
-      <ButtonGallery images={DIR25_VILLIAN_LYUDMILA}/>
-      <h5>Villian vs Tais</h5>
-      <ButtonGallery images={DIR25_VILLIAN_TAIS}/>
+      <p>{t('descriptions.25.p2')}</p>
+      <p>
+        {isRu ? (
+          <Trans i18nKey="descriptions.25.p3" ns="video" components={{b: <b />}} />
+        ) : (
+          t('descriptions.25.p3')
+        )}
+      </p>
+      <h5>{t('descriptions.25.section1')}</h5>
+      <ButtonGallery images={DIR25_VILLIAN_ELENA} buttonName={screenshots} />
+      <h5>{t('descriptions.25.section2')}</h5>
+      <ButtonGallery images={DIR25_VILLIAN_LYUDMILA} buttonName={screenshots} />
+      <h5>{t('descriptions.25.section3')}</h5>
+      <ButtonGallery images={DIR25_VILLIAN_TAIS} buttonName={screenshots} />
     </>
   )
 }

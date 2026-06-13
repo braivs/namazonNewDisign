@@ -1,22 +1,32 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR26} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR26} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC26Desc = () => {
+  const {t, i18n} = useTranslation('video')
+  const isRu = i18n.language === 'ru'
+  const screenshots = t('descriptions.26.screenshots', {defaultValue: 'See photos'})
+
   return (
     <>
       <p>
-        This video features a sand-wrestling contest between two ambitious women, <b>Tais</b> (5&quot;7&quot; / 130
-        lb)
-        and <b>Elena Vasilyeva</b> (5&quot;6&quot; / 134 lb). Tais, who has competed in various grappling and MMA
-        tournaments, has more experience than her younger opponent. But Elena is not a pushover either.
+        <Trans i18nKey="descriptions.26.p1" ns="video" components={{b: <b />}} />
       </p>
-      <p>
-        The two women fought nine rounds with submission grappling rules. It was an interesting and exciting
-        wrestling match with many different pins, chokes, and submission holds. Both wrestlers struggled
-        arduously for every single point. The weaker woman didn’t give up easily.
-      </p>
-      <ButtonGallery images={DIR26}/>
+      {isRu ? (
+        <>
+          <p>{t('descriptions.26.p2')}</p>
+          <p>{t('descriptions.26.p3')}</p>
+          <p>
+            <Trans i18nKey="descriptions.26.p4" ns="video" components={{b: <b />}} />
+          </p>
+        </>
+      ) : (
+        <p>{t('descriptions.26.p2')}</p>
+      )}
+      <ButtonGallery images={DIR26} buttonName={screenshots} />
     </>
   )
 }

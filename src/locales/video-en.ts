@@ -173,6 +173,89 @@ export const videoEn = {
         'If you enjoy intense and uncompromising fights between athletic and charismatic women, this bout is sure to captivate you.',
       screenshots: 'See photos',
     },
+    '21': {
+      p1:
+        'This is the second MMA fight at the <b>"First Nevsky Arena Tournament"</b>. <b>Darya Balina</b> (5\'4" / 124 lb) and <b>Olga</b> (5\'7" / 139 lb) are young participants who don\'t yet have enough experience in MMA fights, but that doesn\'t diminish the interest or entertainment value of their bout; their punches are strong, and the struggle is tough.',
+      p2: 'The fighters engage in three full rounds, with neither willing to concede defeat.',
+      p3:
+        'If you prefer fights with minimal striking, this match may not fully satisfy you. However, if you appreciate genuine, intense, and uncompromising MMA bouts, this fight will surely captivate you.',
+      screenshots: 'See photos',
+    },
+    '22': {
+      p1:
+        'In these wrestling matches, <b>Villian</b> (5\'8" / 177 lb) takes on two experienced women (though not both at once but one after the other). <b>Irina</b> (5\'9" / 154 lb) is a strong woman who has been engaged in Muay Thai and pole dancing. <b>Elena</b> (5\'6" / 135 lb), the youngest one of the three participants, is a talented and very ambitious fighter with good performances in arm wrestling, submission grappling, and MMA competitions.',
+      p2:
+        'If you like mixed wrestling and want to enjoy competitive matches fought in a submission grappling style, then this video is for you.',
+      screenshots: 'See photos',
+    },
+    '23': {
+      p1:
+        '<b>Irina</b> (5\'9" / 154 lb) is a strong young athlete engaged in Muay Thai and pole dancing, but she is still a newcomer in her wrestling matches in the Namazon Club\'s tournaments. <b>Tais</b> (5\'7" / 130 lb) is a well-known, strong, and skilled lady who specializes in Submission Grappling and MMA.',
+      p2:
+        'In this competitive match, Irina, using her height and weight advantage, tried to force her experienced opponent into a hard body-to-body fight. You will see what came out of it if you watch our video.',
+      p3:
+        'If you like real female wrestling and want to see two trained women struggling hard against each other in a competitive ground fight, then this video is just for you.',
+      screenshots: 'See photos',
+    },
+    '24': {
+      p1:
+        '<b>Lyudmila</b> (5\'11" / 154 lb) is a strong sportswoman engaged in Muay Thai, but she is a newcomer in our Club\'s competitions, while <b>Tais</b> (5\'7" / 130 lb) is a repeat winner in the competitions, specializing in Submission Grappling and MMA.',
+      p2:
+        'As you can see, Lyudmila is much heavier and taller than Tais. In this match, the girls wrestled three rounds. Lyudmila managed to place Tais in a very difficult position at the beginning of the first round.',
+      p3:
+        'Watch the video to see what followed and how it all ended. If you like real mat wrestling between some of the fittest and most beautiful women, then this video is for you.',
+      screenshots: 'See photos',
+    },
+    '25': {
+      p1:
+        'This is the second video of the series titled "<b>Mixed wrestling - the best fights</b>". Here you can see <b>Villian</b> (5\'7" / 177 lb) wrestle three strong female fighters: <b>Tais</b> (5\'7" / 130 lb), <b>Elena Vasilyeva</b> (5\'6" / 135 lb), and <b>Lyudmila</b> (5\'11" / 154 lb).<br/>Each of these ladies presents a unique challenge: tall blonde Lyudmila, a newcomer in competitions, is engaged in Muay Thai; strong and ambitious Elena competes successfully in arm wrestling, submission grappling, and MMA; and Tais, the strongest and most experienced fighter among them.',
+      p2:
+        'This video features five submission grappling fights (Tais and Elena wrestled Villian twice). The fights take place both in a gym on a mat and outdoors on a sandy beach and on grass. If you like mixed wrestling, then don\'t miss this video.',
+      p3: 'If you enjoy mixed wrestling, then this video is a must-watch.',
+      section1: 'Villian vs Elena Vasilyeva',
+      section2: 'Villian vs Lyudmila',
+      section3: 'Villian vs Tais',
+      screenshots: 'See photos',
+    },
+    '26': {
+      p1:
+        'This video features a sand-wrestling contest between two ambitious women, <b>Tais</b> (5\'7" / 130 lb) and <b>Elena Vasilyeva</b> (5\'6" / 134 lb). Tais, who has competed in various grappling and MMA tournaments, has more experience than her younger opponent. But Elena is not a pushover either.',
+      p2:
+        'The two women fought nine rounds with submission grappling rules. It was an interesting and exciting wrestling match with many different pins, chokes, and submission holds. Both wrestlers struggled arduously for every single point. The weaker woman didn\'t give up easily.',
+      screenshots: 'See photos',
+    },
+    '27': {
+      p1:
+        'This is a continuation of the multi-round sand-wrestling contest between <b>Tais</b> (5\'7" / 130 lb) and <b>Elena Vasilyeva</b> (5\'6" / 135 lb). The first nine rounds of this exciting match were featured in our Video 26 (scroll down to see the initial description). In Part 2, you can see eight more rounds fought with the same rules as in Part 1.',
+      p2:
+        'Although both women are very ambitious, they are not quite equal in experience and skill. One of them is still using nice wrestling combinations, applying effective choking and submission holds, while the other is just struggling heavily, showing her fighting spirit and refusing to give up.',
+      p3:
+        'If you enjoy watching strong, skilled, and athletic women in real wrestling, then we recommend you purchase this video.',
+      screenshots: 'See photos',
+    },
+    '28': {
+      p1:
+        'This is the third video of the series titled "<b>Mixed wrestling - the best fights</b>". Here you can see two separate wrestling matches featuring <b>Tais</b> (5\'7" / 132 lb) against two male opponents: <b>Villian</b> (5\'8" / 177 lb) and <b>Alexander</b> (5\'10" / 205 lb). Despite Tais\'s strength and experience, she faced challenging opponents, particularly against the significantly heavier Alexander, who outweighed her by 73 lb.',
+      p2: 'To discover the outcomes of these tough matches, watch this video.',
+      section1: 'Tais vs Alexander',
+      section2: 'Tais vs Villian',
+      screenshots: 'See photos',
+    },
+    '29': {
+      p1:
+        '<b>Elena</b> (5\'7" / 157 lb) is a strong and ambitious young woman. She had fought <b>Tais</b> (5\'7" / 130 lb) many times two years ago, but then she disappeared from the Club. Now she\'s back, stronger, heavier, more skillful, and confident than ever.',
+      p2:
+        'Right from the start, it\'s clear that Elena intends to give her experienced rival a real fight. Despite Tais being very strong, she immediately finds herself in trouble against the aggressive Elena. After 15 intense minutes of wrestling, she is forced to admit defeat. This marks the first time Tais has lost a competitive submission match to Elena.',
+      p3: 'If you\'re curious to see how it all unfolded, watch this video.',
+      screenshots: 'See photos',
+    },
+    '30': {
+      p1:
+        'This is the fourth video in the series titled "<b>Mixed wrestling - the best fights</b>". It showcases a four-and-a-half-minute submission match between two long-time rivals: <b>Tais</b> (5\'7" / 135 lb) and <b>Villian</b> (5\'8" / 177 lb). These fighters are intimately familiar with each other and are nearly evenly matched. The video features three rounds of intense, aggressive, and highly competitive wrestling on a mat, with momentum swinging back and forth between the man and the woman in each round.',
+      p2:
+        'The winner is determined at the very end of the match. Watch the video to discover who emerges victorious!',
+      screenshots: 'See photos',
+    },
   },
   details: {
     purchaseBefore: 'You can purchase',

@@ -1,22 +1,38 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR_NEVSKAYA_ARENA_2} from "@/common/constants/ImageContexts"
-import {COMPETITIONS_BUTTON_TEXT} from "@/common/constants"
+'use client'
+
+import React from 'react'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR_NEVSKAYA_ARENA_2} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC21Desc = () => {
+  const {t, i18n} = useTranslation('video')
+  const isRu = i18n.language === 'ru'
+  const screenshots = t('descriptions.21.screenshots', {defaultValue: 'See photos'})
+
   return (
     <>
-      <p>This is the second MMA fight at the <b>"First Nevsky Arena Tournament"</b>. <b>Darya Balina</b> (5'4" /
-        124 lb) and <b>Olga</b> (5'7" / 139 lb) are young participants who don't yet have enough experience in
-        MMA fights, but that doesn't diminish the interest or entertainment value of their bout; their punches are
-        strong, and the struggle is tough.
-      </p>
-      <p>The fighters engage in three full rounds, with neither willing to concede defeat.</p>
       <p>
-        If you prefer fights with minimal striking, this match may not fully satisfy you. However, if you appreciate
-        genuine, intense, and uncompromising MMA bouts, this fight will surely captivate you.
+        <Trans i18nKey="descriptions.21.p1" ns="video" components={{b: <b />}} />
       </p>
-      <ButtonGallery images={DIR_NEVSKAYA_ARENA_2} buttonName={COMPETITIONS_BUTTON_TEXT}/>
+      <p>
+        <Trans
+          i18nKey="descriptions.21.p2"
+          ns="video"
+          components={{
+            b: <b />,
+            br: <br />,
+          }}
+        />
+      </p>
+      {isRu ? (
+        <p>
+          <Trans i18nKey="descriptions.21.p3" ns="video" components={{b: <b />}} />
+        </p>
+      ) : (
+        <p>{t('descriptions.21.p3')}</p>
+      )}
+      <ButtonGallery images={DIR_NEVSKAYA_ARENA_2} buttonName={screenshots} />
     </>
   )
 }
