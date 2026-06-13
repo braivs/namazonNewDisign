@@ -1,22 +1,25 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR05} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR05} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC5Desc = () => {
+  const {t} = useTranslation('video')
+
   return (
     <>
-      <p>This film features a completely new wrestling encounter between <b>Villian</b> and <b>Tais</b>, spanning 9
-        rounds of long and arduous wrestling, presented in HD quality with an optimized file size! <b>Villian</b>
-        (5'8" / 177 lb) is a friend of our club and a constant sparring partner of our girls. <b>Tais</b> (5'7" / 132
-        lb) is the strongest girl at the Namazon Club.</p>
       <p>
-        This is the first video of our NEW SERIES of mixed matches. We showcase only real mixed wrestling, no
-        compromises. It's a battle of the sexes to victory!
+        <Trans i18nKey="descriptions.5.p1" ns="video" components={{b: <b />}} />
       </p>
-      <ButtonGallery images={DIR05}/>
-
+      <p>
+        <Trans i18nKey="descriptions.5.p2" ns="video" components={{b: <b />}} />
+      </p>
+      <ButtonGallery
+        images={DIR05}
+        buttonName={t('descriptions.5.screenshots', {defaultValue: 'SCREENSHOTS'})}
+      />
     </>
   )
 }
-
-//todo: there is second chapter there nc05b, need to combine it with with this. Join videos and etc...

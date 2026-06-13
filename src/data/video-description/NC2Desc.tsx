@@ -1,20 +1,34 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR02} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import Link from 'next/link'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR02} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC2Desc = () => {
+  const {t} = useTranslation('video')
+
   return (
     <>
       <p>
-        This is the continuation of movie 1, featuring all the matches from the second round.<br/>
-        Here, you can witness another aggressive fight between two favorites: <b>Tais</b> (5'7" / 128 lb) and <b>Maria
-        Rylyova</b> (5'7" / 126 lb). Particularly dramatic were the bouts involving <b>Nadezhda Akhmerova</b> (5'6"
-        / 128 lb). In her match against Tais, Nadezhda was knocked down but managed to continue the fight.<br/>
-        Against Maria, Nadezhda put up a fierce struggle, with the advantage shifting back and forth between the two
-        competitors.
+        <Trans
+          i18nKey="descriptions.2.p1"
+          ns="video"
+          components={{
+            link: <Link href="/articles/submission" />,
+            b: <b />,
+            br: <br />,
+          }}
+        />
       </p>
-      <p>If you want to witness these intense matches and find out the final results, watch the film!</p>
-      <ButtonGallery images={DIR02}/>
+      <p>
+        <Trans i18nKey="descriptions.2.p2" ns="video" components={{b: <b />}} />
+      </p>
+      <ButtonGallery
+        images={DIR02}
+        buttonName={t('descriptions.2.screenshots', {defaultValue: 'SCREENSHOTS'})}
+      />
     </>
   )
 }
