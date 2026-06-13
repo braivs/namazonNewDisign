@@ -30,7 +30,7 @@ const transComponents = {
   ),
 }
 
-export const kara_tellerDesc = () => {
+export const KaraTellerDesc = () => {
   const {t} = useTranslation('girls')
   const ns = 'descriptions.kara_teller'
   const buttonText = t(`${ns}.otherPhotos`, {defaultValue: 'Other photos'})

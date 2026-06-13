@@ -10,7 +10,7 @@ import {DIR_VALENTINA_KICK, DIR_VALENTINA_SUBGR} from '@/common/constants/ImageC
 import Link from 'next/link'
 import {Trans, useTranslation} from 'react-i18next'
 
-export const valentinaPerfilevaDesc = () => {
+export const ValentinaPerfilevaDesc = () => {
   const {t} = useTranslation('girls')
   const ns = 'descriptions.valentina-perfileva'
 

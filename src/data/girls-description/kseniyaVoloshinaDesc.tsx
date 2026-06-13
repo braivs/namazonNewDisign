@@ -10,7 +10,7 @@ import {DIR_KSENIYA_VOLOSHINA_SUBGR} from '@/common/constants/ImageContexts'
 import Link from 'next/link'
 import {Trans, useTranslation} from 'react-i18next'
 
-export const kseniyaVoloshinaDesc = () => {
+export const KseniyaVoloshinaDesc = () => {
   const {t} = useTranslation('girls')
   const ns = 'descriptions.kseniya-voloshina'
 

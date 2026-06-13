@@ -10,7 +10,7 @@ import {DIR_NATALIA_MYSIK_SUBGR} from '@/common/constants/ImageContexts'
 import Link from 'next/link'
 import {Trans, useTranslation} from 'react-i18next'
 
-export const nataliaMysikDesc = () => {
+export const NataliaMysikDesc = () => {
   const {t} = useTranslation('girls')
   const ns = 'descriptions.natalia-mysik'
 

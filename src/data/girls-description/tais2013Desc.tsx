@@ -22,7 +22,7 @@ const transComponents = {
   ),
 }
 
-export const tais2013Desc = () => {
+export const Tais2013Desc = () => {
   const {t} = useTranslation('girls')
   const ns = 'descriptions.tais2013'
   const buttonText = t(`${ns}.otherPhotos`, {defaultValue: 'Other photos'})

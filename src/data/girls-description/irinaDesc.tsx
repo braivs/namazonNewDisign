@@ -14,7 +14,7 @@ const transComponents = {
   br: <br />,
 }
 
-export const irinaDesc = () => {
+export const IrinaDesc = () => {
   const {t} = useTranslation('girls')
   const ns = 'descriptions.irina'
   const buttonName = t(`${ns}.seePhotos`, {defaultValue: 'See photos'})

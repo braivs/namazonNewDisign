@@ -13,7 +13,7 @@ import {
 import Link from 'next/link'
 import {Trans, useTranslation} from 'react-i18next'
 
-export const nadezhdaAkhmerovaDesc = () => {
+export const NadezhdaAkhmerovaDesc = () => {
   const {t} = useTranslation('girls')
   const ns = 'descriptions.nadezhda-akhmerova'
 

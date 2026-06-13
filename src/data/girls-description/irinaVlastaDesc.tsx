@@ -10,7 +10,7 @@ import {DIR_VLASTA_BEACHGR, DIR_VLASTA_SUBGR} from '@/common/constants/ImageCont
 import Link from 'next/link'
 import {Trans, useTranslation} from 'react-i18next'
 
-export const irinaVlastaDesc = () => {
+export const IrinaVlastaDesc = () => {
   const {t} = useTranslation('girls')
   const ns = 'descriptions.irina-vlasta'
 

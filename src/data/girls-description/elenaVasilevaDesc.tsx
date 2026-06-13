@@ -10,7 +10,7 @@ import {DIR_ELENA_VASILEVA_MMA, DIR_ELENA_VASILEVA_SUBGR} from '@/common/constan
 import Link from 'next/link'
 import {Trans, useTranslation} from 'react-i18next'
 
-export const elenaVasilevaDesc = () => {
+export const ElenaVasilevaDesc = () => {
   const {t} = useTranslation('girls')
   const ns = 'descriptions.elena-vasileva'
 

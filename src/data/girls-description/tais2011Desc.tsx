@@ -14,7 +14,7 @@ import {Table} from 'react-bootstrap'
 import Link from 'next/link'
 import {Trans, useTranslation} from 'react-i18next'
 
-export const tais2011Desc = () => {
+export const Tais2011Desc = () => {
   const {t} = useTranslation('girls')
   const ns = 'descriptions.tais2011'
 
