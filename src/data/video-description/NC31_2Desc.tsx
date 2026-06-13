@@ -1,22 +1,32 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR31_2} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import Link from 'next/link'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR31_2} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC31_2Desc = () => {
+  const {t} = useTranslation('video')
+  const screenshots = t('descriptions.31_2.screenshots', {defaultValue: 'See photos'})
+
   return (
     <>
       <p>
-        This is the second part of the fifth video in the series titled <b>«Mixed wrestling - the best fights»</b>. It
-        features four intense bouts between <b>Tais</b> (5'7" / 135 lb) and <b>Villian</b> (5'8" / 177 lb). Refer to the
-        description of Part 5.1 for more details.
+        <Trans
+          i18nKey="descriptions.31_2.p1"
+          ns="video"
+          components={{
+            b: <b />,
+            link31_1: <Link href="/video/nc31_1" />,
+          }}
+        />
       </p>
+      <p>{t('descriptions.31_2.p2')}</p>
       <p>
-        Our mixed wrestling contests are always purely competitive (not semi-competitive!) and showcase high-standard
-        wrestling performances. On the mat, there are only fighters, regardless of gender.
+        <Trans i18nKey="descriptions.31_2.p3" ns="video" components={{b: <b />}} />
       </p>
-      <p>To discover the outcomes of these matches (including who scored the most submissions and emerged victorious),
-        watch the video.</p>
-      <ButtonGallery images={DIR31_2}/>
+      <ButtonGallery images={DIR31_2} buttonName={screenshots} />
     </>
   )
 }

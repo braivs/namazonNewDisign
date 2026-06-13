@@ -1,22 +1,27 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR34} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR34} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC34Desc = () => {
+  const {t, i18n} = useTranslation('video')
+  const isRu = i18n.language === 'ru'
+  const screenshots = t('descriptions.34.screenshots', {defaultValue: 'See photos'})
+
   return (
     <>
       <p>
-        This video features several competitive wrestling matches of <b>Tais</b> (5’7” / 133 lb) against two male
-        opponents, <b>Villian</b> (5’7” / 173 lb) and <b>Alexander</b> (5’10” / 183 lb). Both men outweigh her by more
-        than 40 pounds and possess superior physical strength. The rules are straightforward - victory is achieved by
-        making the opponent submit.
+        <Trans i18nKey="descriptions.34.p1" ns="video" components={{b: <b />}} />
       </p>
-      <p>
-        The video includes seven fights totaling 14 minutes of intense action filled with hard and strenuous struggles.
-        Tais needed exceptional concentration and speed to withstand the attacks from these larger opponents. Each of
-        her victories was hard-won, and each defeat drained her energy significantly.
-      </p>
-      <ButtonGallery images={DIR34}/>
+      <p>{t('descriptions.34.p2')}</p>
+      {isRu && (
+        <p>
+          <Trans i18nKey="descriptions.34.p3" ns="video" components={{b: <b />}} />
+        </p>
+      )}
+      <ButtonGallery images={DIR34} buttonName={screenshots} />
     </>
   )
 }

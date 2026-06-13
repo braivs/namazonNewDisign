@@ -256,6 +256,100 @@ export const videoEn = {
         'The winner is determined at the very end of the match. Watch the video to discover who emerges victorious!',
       screenshots: 'See photos',
     },
+    '31_1': {
+      p1:
+        'This is the first part of the fifth video of the series titled "<b>Mixed wrestling - the best fights</b>". The reason why we decided to divide the entire video into two parts is that all the fights had taken place in one day but they could not all go in one video due to the site-imposed file size limits. <b>Tais</b> (5\'7" / 135 lb) and <b>Villian</b> (5\'8" / 177 lb) know each other very well and are about equal in terms of wrestling ability. The fights between them are usually extremely competitive, uncompromisingly hard and interesting from a technical point of view.',
+      p2:
+        'On this day it was no exception. This part of the video includes the first five fights of the day.<br/>Highly recommended for those of you who like real competitive mixed!',
+      screenshots: 'See photos',
+    },
+    '31_2': {
+      p1:
+        'This is the second part of the fifth video in the series titled <b>«Mixed wrestling - the best fights»</b>. It features four intense bouts between <b>Tais</b> (5\'7" / 135 lb) and <b>Villian</b> (5\'8" / 177 lb). Refer to the description of Part 5.1 for more details.',
+      p2:
+        'Our mixed wrestling contests are always purely competitive (not semi-competitive!) and showcase high-standard wrestling performances. On the mat, there are only fighters, regardless of gender.',
+      p3:
+        'To discover the outcomes of these matches (including who scored the most submissions and emerged victorious), watch the video.',
+      screenshots: 'See photos',
+    },
+    '32': {
+      p1:
+        'This unique wrestling match took place during Tais\'s (5\'7" / 135 lb) summer vacation in the south of Ukraine in 2013. Her opponent, <b>Artem</b> (5\'11" / 177 lb), had prior experience in competitive wrestling against women, including bouts with the well-known bodybuilder <b>Izida</b> early in his career.',
+      p2:
+        'Despite not being exceptionally strong, Artem was ambitious and challenged Tais to this "duel" to prove to both her and himself that he could compete. The match took place in the woods near the banks of the Dnieper River, with sunny weather adding to the excitement of the physical contest under the open sky. The picturesque natural setting highlighted the unusualness of the event - a competitive fight between a man and a woman.',
+      p3:
+        'If you enjoy this type of wrestling and are curious to see who emerged victorious, watch this video!',
+      screenshots: 'See photos',
+    },
+    '33': {
+      p1:
+        'This video features two submission grappling matches held as the final part of a Crossfit tournament organized by the St. Petersburg Athletic Center in cooperation with the Namazon Club.<br/>The matches were to determine winners in two weight categories: up to 70 kg / 155 lb between <b>Lidia Oslopovskih</b> (53 kg / 117 lb) and <b>Victoria Vardugina</b> (69 kg / 152 lb), and in the absolute category between <b>Yulia Borovik</b> (91 kg / 201 lb) and <b>Tais</b> (61 kg / 135 lb).',
+      p2:
+        'Despite significant weight differences between the opponents in each pair, their struggle on the mat was strenuous, entertaining, and exciting. The girls fought hard and bravely to win this last decisive part of the tournament.',
+      section1: 'Lidia Oslopovskih vs Victoria Vardugina',
+      section2: 'Yulia Borovik vs Tais',
+      screenshots: 'See photos',
+    },
+    '34': {
+      p1:
+        'This video features several competitive wrestling matches of <b>Tais</b> (5\'7" / 133 lb) against two male opponents, <b>Villian</b> (5\'7" / 173 lb) and <b>Alexander</b> (5\'10" / 183 lb). Both men outweigh her by more than 40 pounds and possess superior physical strength. The rules are straightforward - victory is achieved by making the opponent submit.',
+      p2:
+        'The video includes seven fights totaling 14 minutes of intense action filled with hard and strenuous struggles. Tais needed exceptional concentration and speed to withstand the attacks from these larger opponents. Each of her victories was hard-won, and each defeat drained her energy significantly.',
+      screenshots: 'See photos',
+    },
+    '35': {
+      p1:
+        'Lovely young lady, <b>Lidiya Oslopovskih</b> (53 kg / 117 lbs), is a newcomer to the Namazon wrestling competitions. She is a small but agile fighter, with a very well-built body. In this video, you can see her three fights with the strongest and most experienced woman of the club, <b>Tais</b> (60 kg / 132 lb).',
+      p2:
+        'It\'s somewhat interesting and exciting to watch how Lidiya struggles, especially on the ground. The rules required the opponents to wrestle to submission only, regardless of whether one wrestler would pin the other to submission or use another move. This time Tais decided to use a little "naughty" tactic for success.',
+      p3:
+        'If you like to watch competitive mat wrestling between two strong and fit women and if you like to see some long pin holds, as well as some hard attempts of the bottom lady to bridge out of these pins, then this video is highly recommended for you.',
+      screenshots: 'See photos',
+    },
+    '36': {
+      p1:
+        'In this competition, five fighters participated: Christina (67.4 kg / 148.6 lb), Daria (66.5 kg / 146.6 lb), Irina (70.7 kg / 155.9 lb), Nina (66.1 kg / 145.7 lb), and Victoria (70.7 kg / 155.9 lb). Rules: fights with submissions or pins counted to 10.',
+      p2:
+        'All the girls except Victoria Vardugina, who has already wrestled once before at the Namazon Club, are beginners in submission grappling and are participating here for the first time.<br/>About half a year ago, in October 2013, Vika won a women\'s <link33>crossfit wrestling</link33> competition in our club by forcing the uncompromising wrestler Lidiya Oslopovskih to submit in the final fight. Vika is a physically strong young woman who not only learns how to wrestle but also competes successfully in college arm wrestling tournaments.',
+      p3:
+        'Our competition today is notable for its typically FEMALE wrestling. The rules require the winner of a match to win at least 2 rounds out of 3. Each round has a 4-minute time limit.<br/>The video includes three matches, the first two consisting of two rounds each, and the last one (Vika vs Christina) going three rounds.',
+      p4:
+        'We recommend you watch this video (Video 36) if you like to see ambitious, athletic girls with beautiful bodies competing with each other in a hard-fought contest where everything is allowed: choking, pinning, and submission holds.',
+      screenshots: 'See photos',
+    },
+    '37': {
+      intro: 'Weight class: 145 to 160 lb. May, 2014',
+      p1:
+        'This video is a continuation of the Video 36 that featured the preliminary fights (see its description <link36>HERE</link36>). Now here you can see two final fights in which the loser and the winner of the tournament were determined.',
+      p2:
+        'In one of them, Nina and Irina fought with each other for the IV place (for not becoming the outsider), and in the other Daria and Victoria decided between themselves who was the best wrestler of the competition. The fight Nina vs Irina went fast and ended pretty soon – one of the girls defeated the other twice by applying submission holds.',
+      p3:
+        'The final fight was much longer and more strenuous. Suffice it to say that in the first round neither wrestler was able to gain a victory within the 4 min of time limit.',
+      p4:
+        'We recommend this video for those of you who like real female wrestling and young sexy-looking girls with competitive spirit. You will find it especially entertaining if you are interested to see a fight in which one of the two girls grappling on the mat continuously struggles to pin her opponent down and finally succeeds after long hard attempts.',
+      screenshots: 'See photos',
+    },
+    '38': {
+      p1:
+        'Here you can see another real wrestling fight between a man and woman. <b>Alexandr</b> (5\'10" / 187 lb) is pretty big and very strong. <b>Tais</b> (5\'7" / 137 lb) has difficulties applying her technique due to his size. However, she is strong and fast enough to efficiently use Alex\'s relative slowness.',
+      p2:
+        'If you are a lover of real competitive mixed wrestling and enjoy aggressive and uncompromised struggle between a man and woman on a mat, then we recommend you to watch this video.',
+      screenshots: 'See photos',
+    },
+    '39': {
+      p1:
+        'In comparison with Alexandr, whom you can see in our <link38>VIDEO 38</link38>, <b>Villian</b> doesn\'t appear as big and strong, weighing only 180 pounds. However, he compensates with speed, experience, and wrestling skill. In their personal matches, Villian usually emerges as the victor. Interestingly, despite being 44 pounds lighter than Villian, <b>Tais</b> finds it easier to fight Villian than Alexandr because she can more effectively apply her techniques against him.',
+      p2:
+        'This video showcases six competitive fights, all of which were real and intense! You can judge from the screens below how intense and uncompromising the battles were. If you enjoy competitive mixed wrestling, then this video is definitely for you.',
+      screenshots: 'See photos',
+    },
+    '40': {
+      p1:
+        '<b>This video</b> is the continuation of <link39>VIDEO 39</link39>. Here you can see six more wrestling fights between <b>Villian</b> (180 lb) and <b>Tais</b> (136 lb), which took place in 2014. The two competitors knew each other very well, having wrestled each other many times over the years, resulting in always aggressive and competitive fights.',
+      p2:
+        'It\'s noteworthy that although their fights are generally evenly matched, Tais maintains a certain advantage over Villian. She adeptly utilizes her legs to control her opponents, a skill Villian lacks expertise in. Additionally, Villian\'s legs are more susceptible to submission holds when on the ground.<br/>If you\'re a fan of competitive wrestling between a man and woman, then this <b>VIDEO</b> is for you!',
+      screenshots: 'See photos',
+    },
   },
   details: {
     purchaseBefore: 'You can purchase',

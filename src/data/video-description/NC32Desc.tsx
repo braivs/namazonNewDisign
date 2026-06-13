@@ -1,23 +1,29 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR32} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR32} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC32Desc = () => {
+  const {t, i18n} = useTranslation('video')
+  const isRu = i18n.language === 'ru'
+  const screenshots = t('descriptions.32.screenshots', {defaultValue: 'See photos'})
+
   return (
     <>
       <p>
-        This unique wrestling match took place during Tais's (5'7" / 135 lb) summer vacation in the south of Ukraine in
-        2013. Her opponent, <b>Artem</b> (5'11" / 177 lb), had prior experience in competitive wrestling against women,
-        including bouts with the well-known bodybuilder <b>Izida</b> early in his career.
+        <Trans i18nKey="descriptions.32.p1" ns="video" components={{b: <b />}} />
       </p>
-      <p>
-        Despite not being exceptionally strong, Artem was ambitious and challenged Tais to this "duel" to prove to both
-        her and himself that he could compete. The match took place in the woods near the banks of the Dnieper River,
-        with sunny weather adding to the excitement of the physical contest under the open sky. The picturesque natural
-        setting highlighted the unusualness of the event - a competitive fight between a man and a woman.
-      </p>
-      <p>If you enjoy this type of wrestling and are curious to see who emerged victorious, watch this video!</p>
-      <ButtonGallery images={DIR32}/>
+      <p>{t('descriptions.32.p2')}</p>
+      {isRu ? (
+        <p>
+          <Trans i18nKey="descriptions.32.p3" ns="video" components={{b: <b />}} />
+        </p>
+      ) : (
+        <p>{t('descriptions.32.p3')}</p>
+      )}
+      <ButtonGallery images={DIR32} buttonName={screenshots} />
     </>
   )
 }
