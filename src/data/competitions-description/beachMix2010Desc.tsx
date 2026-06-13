@@ -1,56 +1,74 @@
+'use client'
+
 import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
-import {COMPETITIONS_BUTTON_TEXT} from '@/common/constants'
 import {DIR03_1, DIR03_2, DIR03_3} from '@/common/constants/ImageContexts'
 import sC from '@/common/styles.module.scss'
 import Link from 'next/link'
 import React from 'react'
+import {Trans, useTranslation} from 'react-i18next'
 
 const LINK_SHOP_MAIN = 'https://www.patreon.com/namazon/shop'
+const NS = 'beach-mix-2010'
 const IMG_MAIN = '/assets/img/videoGallery/03mix/wm1/12.jpg'
 
+const linkNatalia = <Link href="/girls/natalia-mysik" />
+const linkTais = <Link href="/girls/tais2011" />
+
 export const BeachMix2010Desc: React.FC = () => {
+  const {t} = useTranslation('competitions')
+  const tr = (key: string, defaultValue: string) => t(`${NS}.${key}`, {defaultValue})
+
   return (
     <>
       <div className="d-flex justify-content-center">
         <img src={IMG_MAIN} alt="" className={sC.videosMainImg} />
       </div>
       <p>
-        <b>Alex</b> (5&apos;9&quot; / 150 lb) faced off against two regular members of the Namazon Club:{' '}
-        <Link href="/girls/natalia-mysik">Natalia Mysik</Link> (5&apos;11&quot; / 154 lb) and{' '}
-        <Link href="/girls/tais2011">Tais</Link> (5&apos;7&quot; / 132 lb). The competition unfolded in two rounds without
-        a specific time limit for each fight. Matches continued until one opponent could no longer continue and admitted
-        defeat, typically through joint locks or chokes.
+        <Trans
+          ns="competitions"
+          i18nKey={`${NS}.intro`}
+          components={{1: <b />, br: <br />, linkNatalia, linkTais}}
+          defaults={`<linkNatalia>Natalia Mysik</linkNatalia> (5'11" / 154 lb) and <linkTais>Tais</linkTais> (5'7" / 132 lb) represented the Namazon Club. <1>Alex</1> (5'9" / 150 lb) from Moscow was the male participant. The competition unfolded in three rounds without a time limit for each fight. Matches continued until one opponent submitted through joint locks or chokes.<br/>Natalia and Alex went first on the slightly damp sand. Alex brought Natalia down and made her submit — an unexpected result for Natalia, who had apparently expected an easy win.<br/>Angered by the defeat, Natalia wrestled Alex very confidently in the second and third rounds, pinning him to the sand and eliminating his ability to resist.<br/>The overall score was 2-1 in favor of Natalia Mysik.`}
+        />
       </p>
-      <h5>Alex vs Natalia Mysik</h5>
+      <h5>{tr('pairAlexNatalia', 'Alex vs Natalia Mysik')}</h5>
+      <ButtonGallery images={DIR03_1} buttonName={tr('seePhotos', 'See photos')} />
       <p>
-        Natalia Mysik initially underestimated Alex, who quickly gained the upper hand by bringing her down on the sand and
-        submitting her. This unexpected defeat spurred Natalia into a more aggressive approach in the next two rounds. She
-        decisively pinned Alex down with her superior strength and immobilized him on the sand, securing two consecutive
-        victories.
+        <Trans
+          ns="competitions"
+          i18nKey={`${NS}.taisVsAlex`}
+          components={{br: <br />}}
+          defaults={`Tais gave our guest from Moscow no chance of victory. Complete domination by Tais — the fights ended with chokes or an elbow lock.<br/>As a result, Tais defeated Alex 3-0.`}
+        />
       </p>
-      <ButtonGallery images={DIR03_1} buttonName={COMPETITIONS_BUTTON_TEXT} />
-      <h5>Alex vs Tais</h5>
+      <h5>{tr('pairAlexTais', 'Alex vs Tais')}</h5>
+      <ButtonGallery images={DIR03_2} buttonName={tr('seePhotos', 'See photos')} />
       <p>
-        Tais, on the other hand, dominated Alex completely. She consistently forced him into submission with effective choke
-        holds and armlocks, winning all three fights decisively.
+        <Trans
+          ns="competitions"
+          i18nKey={`${NS}.nataliaVsTais`}
+          components={{br: <br />}}
+          defaults={`The first two fights between Natalia Mysik and Tais were quite dramatic. Once the loose sand let Tais down, and Tais made a couple of mistakes herself. Natalia had good chances to win on the sand (in groundwork). However, although Natalia tried hard, she could not capitalize on the advantageous moments and lost.<br/>In the final round, Natalia's fatigue showed, and Tais won convincingly.<br/>There were no surprises — Tais defeated Natalia Mysik with an overall score of 3-0.`}
+        />
       </p>
-      <ButtonGallery images={DIR03_2} buttonName={COMPETITIONS_BUTTON_TEXT} />
-      <h5>Natalia Mysik vs Tais</h5>
+      <h5>{tr('pairNataliaTais', 'Natalia Mysik vs Tais')}</h5>
+      <ButtonGallery images={DIR03_3} buttonName={tr('seePhotos', 'See photos')} />
       <p>
-        The matches between Natalia Mysik and Tais were intense and dramatic. Both fighters had moments of advantage, with
-        the momentum swinging back and forth. Despite Tais making occasional mistakes, Natalia couldn&apos;t capitalize on
-        them in the first two rounds. However, as fatigue set in, Tais secured a quick submission victory in the final round
-        with a pin combined with an armbar.
-      </p>
-      <ButtonGallery images={DIR03_3} buttonName={COMPETITIONS_BUTTON_TEXT} />
-      <p>
-        Ultimately, Tais emerged as the tournament winner, with Natalia Mysik taking second place and Alex finishing third.
+        <Trans
+          ns="competitions"
+          i18nKey={`${NS}.results`}
+          components={{1: <b />, 2: <b />, 3: <b />}}
+          defaults={`Thus, <1>Tais</1> took 1st place, <2>Natalia Mysik</2> took 2nd, and <3>Alex</3> took 3rd.`}
+        />
       </p>
       <hr />
       <p>
-        The full video of the beach mixed wrestling round-robin tournament featuring Natalia Mysik, Tais, and Alex (
-        <b>VIDEO 3.</b> Beach Submission Grappling. Two girls vs one man) is available for purchase on our online store at{' '}
-        <a href={LINK_SHOP_MAIN}>Patreon</a>.
+        <Trans
+          ns="competitions"
+          i18nKey={`${NS}.shop`}
+          components={{1: <b />, 2: <a href={LINK_SHOP_MAIN} />}}
+          defaults={`The video of the mixed beach tournament featuring two Namazon girls (Natalia Mysik and Tais) and Alex (<1>VIDEO 3</1>) is available for purchase in our online store on <2>Patreon</2>.`}
+        />
       </p>
     </>
   )

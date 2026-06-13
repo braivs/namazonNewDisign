@@ -1,10 +1,14 @@
 import {articlesRu} from './articles-ru'
 import {
   beach2011Ru,
+  beachMix2010Ru,
   beachMix2011Ru,
   christmas2011Ru,
   christmas2012Ru,
   grappling2014Ru,
+  irinaVsTais2009Ru,
+  izidaVsIrina2008Ru,
+  izidaVsTais2008Ru,
   mma2012Ru,
   nevskayaArena2012Ru,
   sportHoliday2012Ru,
@@ -121,6 +125,10 @@ export const ru = {
       'christmas-2011': 'Рождественский турнир.\nБорьба. 2011',
       'beach-2011': 'Пляжный турнир.\nБорьба. 2011',
       'beach-mix-2011': 'Смешанный пляжный\nтурнир. 2011',
+      IzidaVsTais2008: 'Изида vs. Таис.\nБорьба. 2008',
+      IzidaVsIrina2008: 'Изида vs. Ирина.\nБорьба. 2008',
+      IrinaVsTais2009: 'Ирина vs. Таис.\nПляжная борьба. 2009',
+      'beach-mix-2010': 'Смешанный пляжный\nтурнир. 2010',
     },
     'tournament-2013': tournament2013Ru,
     'tournament-2014': tournament2014Ru,
@@ -133,6 +141,10 @@ export const ru = {
     'christmas-2011': christmas2011Ru,
     'beach-2011': beach2011Ru,
     'beach-mix-2011': beachMix2011Ru,
+    IzidaVsTais2008: izidaVsTais2008Ru,
+    IzidaVsIrina2008: izidaVsIrina2008Ru,
+    IrinaVsTais2009: irinaVsTais2009Ru,
+    'beach-mix-2010': beachMix2010Ru,
     'maslenitsa-2016': {
       intro:
         '10 марта в клубе НАМАЗОН прошло женское силовое многоборье, приуроченное к Масленице 2016. Соревнования прошли в трёх номинациях: армрестлинге, легрестлинге и борьбе, победить в которой можно было заставив соперницу сдаться или удержать её в пине. Была одна весовая категория 60+ и три участницы:',
