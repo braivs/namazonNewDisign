@@ -45,6 +45,48 @@ export const videoEn = {
         'This is the first video of our NEW SERIES of mixed matches. We showcase only real mixed wrestling, no compromises. It\'s a battle of the sexes to victory!',
       screenshots: 'SCREENSHOTS',
     },
+    '6': {
+      p1:
+        '<b>Tais</b> (5\'7" / 128 lb) is a multiple winner of Submission Grappling competitions organized by our club. <b>Maria Rylyova</b> (5\'8" / 126 lb) is the winner of the Namazon Club Championship in Submission Grappling in 2010 and a master of sports in armwrestling.<br/>The competition started with an arm wrestling contest using both arms (lying on the floor), which ended in a draw. They then continued their rivalry on the wrestling mat, engaging in several rounds of submission grappling.',
+      p2:
+        'If you enjoy watching skillful wrestling between women who are evenly matched, you will love this film.',
+      screenshots: 'SCREENSHOTS',
+    },
+    '7': {
+      p1:
+        '<b>Alex</b> (5\'7" / 150 lb) hadn\'t forgotten the loss to <b>Tais</b> (5\'7" / 128 lb) in their previous beach wrestling match (<link>Video 3</link>), and now, having a transit stay in St. Petersburg, he tried to take every opportunity for a rematch. With not enough time to go to the sports hall, it was decided to hold the rematch in the forest on the lake shore.<br/>A strong cold wind blew on the shore. Tais arrived wearing a red cap …',
+      p2:
+        'Who eventually won the fight between the modern Little Red Cap and Gray Wolf? Watch our film and find out! If you enjoy sporting mixed wrestling, then this film is for you.',
+      screenshots: 'SCREENSHOTS',
+    },
+    '8': {
+      p1:
+        'Two new competitors — <b>Elena Vasilyeva</b> (5\'6" / 135 lb) and <b>Irina (Vlasta)</b> (5\'9" / 154 lb) — participated in the beach wrestling tournament alongside <b>Tais</b> (5\'7" / 130 lb). Elena specializes in submission grappling, judo, and arm wrestling, while Irina specializes in submission grappling, muay thai, and pole dancing.<br/>The tournament was held in two rounds with no time limits. The struggle for the 2nd place between the newcomers was especially tough and intense. Young and skilled Elena fought bravely against the older Irina.',
+      p2:
+        'If you enjoy female wrestling not only indoors, but also under the open sky, this film is perfect for you.',
+      section1: 'Elena Vasilyeva vs Tais',
+      section2: 'Irina (Vlasta) vs Tais',
+      section3: 'Elena Vasilyeva vs Irina (Vlasta)',
+      screenshots: 'See photos',
+    },
+    '9': {
+      p1:
+        'Three fighters participated in this tournament: <b>Elena Vasilyeva</b> (St. Petersburg, 5\'6" / 132 lb), <b>Kara Teller</b>, a newcomer from Namazon Club (Moscow, 5\'7" / 119 lb), and <b>Tais</b> (St. Petersburg, 5\'7" / 130 lb). The tournament was conducted in a single round format, with each fighter having two matches. Each match consisted of three 4-minute rounds with a 1-minute rest period between rounds.',
+      p2: 'The fighters competed fiercely and uncompromisingly in all three matches.',
+      p3:
+        'If you enjoy competitive fights involving strikes with arms and legs, as well as wrestling with armlocks and chokes, then you will definitely enjoy our film.',
+      section1: 'First fight: Elena Vasilyeva vs Kara Teller',
+      section2: 'Second fight: Kara Teller vs Tais',
+      section3: 'Third fight: Elena Vasilyeva vs Tais',
+      screenshots: 'See photos',
+    },
+    '10': {
+      p1:
+        'We are starting a new series titled "Mixed wrestling - the best fights". In the first part of our film, two guys confront <b>Tais</b> (5\'7" / 128 lb). One of them — <b>Pasha</b> (5\'9" / 143 lb) — is relatively light and fast, while the other — <b>Villian</b> (5\'8" / 177 lb) — is heavier compared to Tais and slower. We have selected what we believe are the most interesting fights of Pasha and Villian against Tais, both on a mat and a beach.',
+      p2:
+        'If you want to watch highly competitive mixed wrestling matches fought in a submission grappling style, then watch our film.',
+      screenshots: 'See photos',
+    },
   },
   details: {
     purchaseBefore: 'You can purchase',

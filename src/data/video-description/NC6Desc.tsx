@@ -1,22 +1,39 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR06} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR06} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC6Desc = () => {
+  const {t} = useTranslation('video')
+
   return (
     <>
       <p>
-        <b>Tais</b> (5’7” / 128 lb) is a multiple winner of Submission Grappling competitions organized by our
-        club. <b>Maria
-        Rylyova</b> (5’8” / 126 lb) is the winner of the Namazon Club Championship in Submission Grappling in 2010 and
-        a
-        master of sports in armwrestling.<br/>
-        The competition started with an arm wrestling contest using both arms (lying on the floor), which ended in a
-        draw. They then continued their rivalry on the wrestling mat, engaging in several rounds of submission
-        grappling.
+        <Trans
+          i18nKey="descriptions.6.p1"
+          ns="video"
+          components={{
+            b: <b />,
+            br: <br />,
+          }}
+        />
       </p>
-      <p>If you enjoy watching skillful wrestling between women who are evenly matched, you will love this film.</p>
-      <ButtonGallery images={DIR06}/>
+      <p>
+        <Trans
+          i18nKey="descriptions.6.p2"
+          ns="video"
+          components={{
+            b: <b />,
+            br: <br />,
+          }}
+        />
+      </p>
+      <ButtonGallery
+        images={DIR06}
+        buttonName={t('descriptions.6.screenshots', {defaultValue: 'SCREENSHOTS'})}
+      />
     </>
   )
 }

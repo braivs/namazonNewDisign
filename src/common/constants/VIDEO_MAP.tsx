@@ -42,6 +42,7 @@ import {NC23Desc} from "@/data/video-description/NC23Desc"
 import {NC12Desc} from "@/data/video-description/NC12Desc"
 import {NC18Desc} from "@/data/video-description/NC18Desc"
 import {NC17Desc} from "@/data/video-description/NC17Desc"
+import {NC9Desc} from "@/data/video-description/NC9Desc"
 
 export const VIDEO_MAP: Record<number | string, FC> = {
     1: NC1Desc,
@@ -52,6 +53,7 @@ export const VIDEO_MAP: Record<number | string, FC> = {
     6: NC6Desc,
     7: NC7Desc,
     8: NC8Desc,
+    9: NC9Desc,
     10: NC10Desc,
     11: NC11Desc,
     12: NC12Desc,
