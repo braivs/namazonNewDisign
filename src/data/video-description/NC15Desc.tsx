@@ -1,21 +1,43 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR15} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import Link from 'next/link'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR15} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC15Desc = () => {
+  const {t, i18n} = useTranslation('video')
+  const isRu = i18n.language === 'ru'
+
   return (
     <>
       <p>
-        In this video, you can see what happened a few days after the 1st part of the mixed beach tournament (<b>Video
-        14</b>).
-        <b>Alex</b> (5’9” / 154 lb) and <b>Villian</b> (5’8” / 177 lb) insisted on continuing to wrestle.
-        <b>Tais</b> (5’7” / 130 lb) accepted the challenge of the two men and wrestled them a few more times.
+        <Trans
+          i18nKey="descriptions.15.p1"
+          ns="video"
+          components={{
+            link11: <Link href="/video/nc11" />,
+            link14: <Link href="/video/nc14" />,
+            b: <b />,
+          }}
+        />
       </p>
-      <p>The action took place on the sandy beach and on the grass. It was a nice sunny day, which helped us capture
-        colorful footage. The video includes several fights, each ending with the submission of one fighter.</p>
-      <p>If you like competitive mixed wrestling where a woman struggles hard against men, then this video is for
-        you.</p>
-      <ButtonGallery images={DIR15}/>
+      <p>
+        <Trans
+          i18nKey="descriptions.15.p2"
+          ns="video"
+          components={{
+            b: <b />,
+            br: <br />,
+          }}
+        />
+      </p>
+      {!isRu && <p>{t('descriptions.15.p3')}</p>}
+      <ButtonGallery
+        images={DIR15}
+        buttonName={t('descriptions.15.screenshots', {defaultValue: 'SCREENSHOTS'})}
+      />
     </>
   )
 }

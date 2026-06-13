@@ -1,18 +1,40 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR13} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR13} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC13Desc = () => {
+  const {t, i18n} = useTranslation('video')
+  const isRu = i18n.language === 'ru'
+
   return (
     <>
-      <p>In this video, you will witness two kickboxing matches where low kicks are allowed. <b>Valentina
-        Perfilyeva</b> (5'8" / 132 lb) specializes in karate (kumite), while <b>Nadezhda Akhmerova</b> (5'6"
-        / 128 lb) practices kickboxing.</p>
-      <p>Both fights were intense and uncompromising, featuring aggressive exchanges of kicks and punches, with many
-        strikes landing accurately and powerfully.</p>
-      <p>If kickboxing is your passion, this film is likely to captivate you. Watch it to find out who emerged
-        victorious.</p>
-      <ButtonGallery images={DIR13}/>
+      <p>
+        <Trans i18nKey="descriptions.13.p1" ns="video" components={{b: <b />}} />
+      </p>
+      {isRu ? (
+        <p>
+          <Trans
+            i18nKey="descriptions.13.p2"
+            ns="video"
+            components={{
+              b: <b />,
+              br: <br />,
+            }}
+          />
+        </p>
+      ) : (
+        <>
+          <p>{t('descriptions.13.p2')}</p>
+          <p>{t('descriptions.13.p3')}</p>
+        </>
+      )}
+      <ButtonGallery
+        images={DIR13}
+        buttonName={t('descriptions.13.screenshots', {defaultValue: 'SCREENSHOTS'})}
+      />
     </>
   )
 }

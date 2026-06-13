@@ -87,6 +87,92 @@ export const videoEn = {
         'If you want to watch highly competitive mixed wrestling matches fought in a submission grappling style, then watch our film.',
       screenshots: 'See photos',
     },
+    '11': {
+      p1:
+        'This film features two fights for the 3rd place between <b>Elena Vasilyeva</b> (5\'6" / 135 lb) and <b>Alex</b> (5\'9" / 154 lb), which were held as part of a mixed wrestling tournament in St. Petersburg, July 2011. Each individual fight had no time limit, according to the tournament rules.<br/>The struggle between Elena and Alex proved to be extremely hard and exhausting. Their first fight lasted more than 12 minutes.',
+      p2:
+        'If you enjoy sporting mixed wrestling with choke holds, body scissors, and head scissors, then we believe you will love our film. Watch to find out who — <b>Elena</b> or <b>Alex</b> — took 3rd place in this mixed tournament.',
+      screenshots: 'SCREENSHOTS',
+    },
+    '12': {
+      p1:
+        'This film documents the Submission Grappling tournament held in April 2010, featuring <b>Natalia Mysik</b> (5\'11" / 154 lb), <b>Maria Rylyova</b> (5\'8" / 126 lb), and <b>Valentina Perfilyeva</b> (5\'8" / 132 lb). The wrestlers competed across different weight categories, essentially making it a club competition based on total weight. Natalia, being the heaviest wrestler, was a favorite in the tournament, while Maria was favored for her exceptional skill. Maria and Valentina engaged in a closely contested match, showcasing their comparable abilities. Natalia demonstrated her superiority over Valentina in their bouts.',
+      p2:
+        'However, to find out how the fights between our favorites ended, who won, and how, you will need to watch our film.',
+      screenshots: 'SCREENSHOTS',
+    },
+    '13': {
+      p1:
+        'In this video, you will witness two kickboxing matches where low kicks are allowed. <b>Valentina Perfilyeva</b> (5\'8" / 132 lb) specializes in karate (kumite), while <b>Nadezhda Akhmerova</b> (5\'6" / 128 lb) practices kickboxing.',
+      p2: 'Both fights were intense and uncompromising, featuring aggressive exchanges of kicks and punches, with many strikes landing accurately and powerfully.',
+      p3: 'If kickboxing is your passion, this film is likely to captivate you. Watch it to find out who emerged victorious.',
+      screenshots: 'SCREENSHOTS',
+    },
+    '14': {
+      p1:
+        'This video features a short improvised mixed wrestling tournament held on one of the beaches of St. Petersburg. The men were represented by <b>Alex</b> (5\'9" / 154 lb) and <b>Villian</b> (5\'8" / 177 lb). The female fighter was <b>Tais</b> (5\'7" / 130 lb), the strongest girl of the Namazon Club. The competition was organized in two rounds.<br/>In the 1st part of the video series, you will see two short male and four mixed fights.',
+      p2:
+        'If you like sporting mixed wrestling (in a submission grappling style) on a beach, then you will love our film. Purchase it if you want to see mixed fights with a strong and skilled female wrestler!',
+      section1: 'Tais vs Alex',
+      section2: 'Tais vs Villian',
+      screenshots: 'SCREENSHOTS',
+    },
+    '15': {
+      p1:
+        'In this video, you can see what happened a few days after the 1st part of the mixed beach tournament (<link14>Video 14</link14>). <b>Alex</b> (5\'9" / 154 lb) and <b>Villian</b> (5\'8" / 177 lb) insisted on continuing to wrestle. <b>Tais</b> (5\'7" / 130 lb) accepted the challenge of the two men and wrestled them a few more times.',
+      p2:
+        'The action took place on the sandy beach and on the grass. It was a nice sunny day, which helped us capture colorful footage. The video includes several fights, each ending with the submission of one fighter.',
+      p3: 'If you like competitive mixed wrestling where a woman struggles hard against men, then this video is for you.',
+      screenshots: 'SCREENSHOTS',
+    },
+    '16': {
+      p1:
+        '<b>Elena Vasilyeva (Gladiatriks)</b> (5\'6" / 135 lb) specializes in submission grappling, MMA, judo, and arm wrestling. <b>Tais</b> (5\'7" / 130 lb) also specializes in submission grappling and MMA. To win this competition, the girls needed not only physical strength and wrestling skill but also a lot of endurance. The fight consisted of 9 rounds, each with no time limit, lasting until there was a clear winner. Between each round, the fighters had only 1 minute to rest.',
+      p2: 'Each round was fought hard and aggressively, with the girls giving all their strength to win the battle.',
+      p3:
+        'Which of the girls was more exhausted? And who was the winner in the end? You can find out by purchasing our film.',
+      screenshots: 'SCREENSHOTS',
+    },
+    '17': {
+      p1:
+        'Our video features two MMA fights: <b>Kara Teller</b> (Moscow, 5\'7" / 123 lb) vs <b>Tais</b> (St. Petersburg, 5\'7" / 130 lb) and <b>Kara Teller</b> (Moscow, 5\'7" / 119 lb) vs <b>Svetlana Solovyeva</b> (St. Petersburg, 5\'7" / 123 lb). Kara and Tais were featured in our previous film (Video 9), while this was Svetlana\'s first MMA fight.',
+      p2:
+        'In the second part of the movie, you will witness a highly competitive submission grappling fight between Kara and Svetlana Solovyeva. Sveta had the edge in strength, while Kara demonstrated superior experience and technical skill in this matchup.',
+      p3: 'To find out who emerged victorious, you\'ll have to watch our film.',
+      section1: 'MMA: Svetlana Solovyeva vs Kara Teller',
+      section2: 'MMA: Kara Teller vs Tais',
+      section3: 'Submission Grappling: Svetlana Solovyeva vs Kara Teller',
+      screenshots: 'See photos',
+    },
+    '18': {
+      p1:
+        'The first match is between the experienced fighter <b>Kara Teller</b> (Moscow, 5\'7" / 119 lb) and the newcomer <b>Darya Balina</b> (St. Petersburg, 5\'4" / 124 lb). Almost the entire fight is contested standing up, where Kara clearly dominates. Despite this, Darya proves to be very strong and holds her own for nearly two rounds.',
+      p2:
+        'The second fight (Kara Teller vs Tais), unlike the first, primarily takes place on the mat. Over two rounds, Tais strives to secure victory with a chokehold or submission lock, occasionally enduring strikes from her opponent. The final outcome is quite surprising.',
+      section1: 'MMA: Darya Balina vs Kara Teller',
+      section2: 'MMA: Kara Teller vs Tais',
+      screenshots: 'See photos',
+    },
+    '19': {
+      p1:
+        '<b>Varvara Akulova</b> is a great athlete. As a child and teenager, she was several times recognized as the strongest girl on the planet, which was twice confirmed by the Guinness Book of World Records. Varvara\'s strength results at various periods of her life have been presented, for example, on the official website of the <link1>St. Petersburg Athletic Center</link1>. Look also <link2>here</link2>.',
+      p2:
+        '<linkTais>Tais</linkTais> (5\'7" / 130 lb) is the leader of the Namazon Club. She specializes in wrestling and MMA. In this fight, Varvara has a significant advantage in weight (about 33 lb) and in strength, but Tais is more experienced and technically skilled.',
+      p3:
+        'The fight is fought in the grappling style. The intrigue is that nobody knows in advance who will win in the end. The principal question is <b>WHICH will be better, the skill or pure strength</b>.',
+      p4:
+        'It is really a hard fight! Clearly, the big, strong Varvara does not want to lose to her smaller opponent. In turn, Tais would like nothing better than to beat the bigger and stronger athlete to demonstrate her skill and competitiveness. Who will prevail?',
+      screenshots: 'SCREENSHOTS',
+    },
+    '20': {
+      p1:
+        '<b>Yulia Fedutenko</b> (5\'8" / 130 lb) — from the mixed martial arts Club "Tibron" in St. Petersburg. <b>Kara Teller</b> (5\'7" / 123 lb) — representing the Vityaz Club in Moscow. This bout took place at the <b>First Nevsky Arena Tournament</b>. Both fighters are technically skilled, showcasing a blend of hard punches, kicks, and close-quarter power struggles.',
+      p2:
+        'The match extends over three full rounds. Yulia demonstrates more confidence in stand-up fighting, while Kara focuses on ground techniques to secure victory.',
+      p3:
+        'If you enjoy intense and uncompromising fights between athletic and charismatic women, this bout is sure to captivate you.',
+      screenshots: 'See photos',
+    },
   },
   details: {
     purchaseBefore: 'You can purchase',

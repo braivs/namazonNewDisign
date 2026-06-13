@@ -1,24 +1,25 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR_MMA_SPORT_HOLIDAY_1, DIR_MMA_SPORT_HOLIDAY_2} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR_MMA_SPORT_HOLIDAY_1, DIR_MMA_SPORT_HOLIDAY_2} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC18Desc = () => {
+  const {t, i18n} = useTranslation('video')
+  const isRu = i18n.language === 'ru'
+  const screenshots = t('descriptions.18.screenshots', {defaultValue: 'See photos'})
+
   return (
     <>
       <p>
-        The first match is between the experienced fighter <b>Kara Teller</b> (Moscow, 5’7” / 119 lb) and the
-        newcomer <b>Darya Balina</b> (St. Petersburg, 5’4” / 124 lb). Almost the entire fight is contested standing
-        up,
-        where Kara clearly dominates. Despite this, Darya proves to be very strong and holds her own for nearly two
-        rounds.
+        <Trans i18nKey="descriptions.18.p1" ns="video" components={{b: <b />}} />
       </p>
-      <p>The second fight (Kara Teller vs Tais), unlike the first, primarily takes place on the mat. Over two rounds,
-        Tais strives to secure victory with a chokehold or submission lock, occasionally enduring strikes from her
-        opponent. The final outcome is quite surprising.</p>
-      <h5><u>MMA:</u> Darya Balina vs Kara Teller</h5>
-      <ButtonGallery images={DIR_MMA_SPORT_HOLIDAY_1}/>
-      <h5><u>MMA:</u> Kara Teller vs Tais</h5>
-      <ButtonGallery images={DIR_MMA_SPORT_HOLIDAY_2}/>
+      {!isRu && <p>{t('descriptions.18.p2')}</p>}
+      <h5>{t('descriptions.18.section1')}</h5>
+      <ButtonGallery images={DIR_MMA_SPORT_HOLIDAY_1} buttonName={screenshots} />
+      <h5>{t('descriptions.18.section2')}</h5>
+      <ButtonGallery images={DIR_MMA_SPORT_HOLIDAY_2} buttonName={screenshots} />
     </>
   )
 }

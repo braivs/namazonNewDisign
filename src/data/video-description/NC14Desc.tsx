@@ -1,27 +1,33 @@
-import React from "react"
-import ButtonGallery from "@/common/ButtonGallery/ButtonGallery"
-import {DIR14_1, DIR14_2} from "@/common/constants/ImageContexts"
+'use client'
+
+import React from 'react'
+import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
+import {DIR14_1, DIR14_2} from '@/common/constants/ImageContexts'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const NC14Desc = () => {
+  const {t} = useTranslation('video')
+  const screenshots = t('descriptions.14.screenshots', {defaultValue: 'SCREENSHOTS'})
+
   return (
     <>
       <p>
-        This video features a short improvised mixed wrestling tournament held on one of the beaches of St. Petersburg.
-        The men were represented by <b>Alex</b> (5’9” / 154 lb) and <b>Villian</b> (5'8” / 177 lb). The female fighter
-        was <b>Tais</b> (5’7” / 130 lb), the strongest girl of the Namazon Club. The competition was organized in two
-        rounds.<br/>
-        In the 1st part of the video series, you will see two short male and four mixed fights.
+        <Trans
+          i18nKey="descriptions.14.p1"
+          ns="video"
+          components={{
+            b: <b />,
+            br: <br />,
+          }}
+        />
       </p>
       <p>
-        If you like sporting mixed wrestling (in a submission grappling style) on a beach, then you will love our film.
-        Purchase it if you want to see mixed fights with a strong and skilled female wrestler!
+        <Trans i18nKey="descriptions.14.p2" ns="video" components={{b: <b />}} />
       </p>
-      <h5>Tais vs Alex</h5>
-      <ButtonGallery images={DIR14_1}/>
-      <h5>Tais vs Villian</h5>
-      <ButtonGallery images={DIR14_2}/>
+      <h5>{t('descriptions.14.section1')}</h5>
+      <ButtonGallery images={DIR14_1} buttonName={screenshots} />
+      <h5>{t('descriptions.14.section2')}</h5>
+      <ButtonGallery images={DIR14_2} buttonName={screenshots} />
     </>
   )
 }
-
-// todo: in this file should be second video. Or maybe combine videos.
