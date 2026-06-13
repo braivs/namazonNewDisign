@@ -350,6 +350,37 @@ export const videoEn = {
         'It\'s noteworthy that although their fights are generally evenly matched, Tais maintains a certain advantage over Villian. She adeptly utilizes her legs to control her opponents, a skill Villian lacks expertise in. Additionally, Villian\'s legs are more susceptible to submission holds when on the ground.<br/>If you\'re a fan of competitive wrestling between a man and woman, then this <b>VIDEO</b> is for you!',
       screenshots: 'See photos',
     },
+    '41': {
+      p1:
+        'Our full HD video featuring the submission grappling mini-tournament that was held on October 13, 2014, has been divided into two parts: <b>VIDEO 41</b> and <b>VIDEO 42</b>. The first part includes four fights featuring <b>Zoya Dorofeeva</b> (56 kg / 123.5 lb), who is a newcomer to our competitions.',
+      p2:
+        'Prior to this event, Zoya participated in Russian hand-to-hand fighting. Here, her opponents were two competitors who previously faced off in the May 2014 Grappling tournament for beginners – <b>Christina Shvets</b> (68.9 kg / 151.9 lb) and <b>Victoria Vardugina</b> (65.3 kg / 144.0 lb). The rules remained the same – pins-and-submissions, requiring a wrestler to either force her opponent to submit or hold her in a pin for a count of five to win an individual fight. Zoya proved to be a brave and resilient fighter. Despite being outweighed by her opponents, she fought tenaciously, avoiding submissions.',
+      p3:
+        'In the first fight between Zoya and Christina, neither the 4 minutes of regular time nor the 2 extra minutes produced a winner. Only in their second encounter did Christina manage to secure a pinfall victory after a hard-fought struggle.',
+      p4:
+        'Victoria proved to be an even more formidable opponent for Zoya, defeating her twice with chokeholds. Despite this, Zoya had several opportunities to defeat Victoria in both their first and second fights. Unfortunately, due to her lack of experience in such competitions, she was unable to capitalize on those chances.',
+      section1: 'Christina Shvets vs Zoya Dorofeeva',
+      section2: 'Victoria Vardugina vs Zoya Dorofeeva',
+      screenshots: 'See photos',
+    },
+    '42': {
+      p1:
+        '<b>This video</b> is the second part of our full HD video featuring the submission grappling mini-tournament that took place on October 13, 2014. It includes two fights between <b>Christina Shvets</b> (68.9 kg / 151.9 lb) and <b>Victoria Vardugina</b> (65.3 kg / 144.0 lb). After defeating Zoya Dorofeeva (see <b>VIDEO 41</b>), they competed to determine the winner of this small wrestling event.',
+      p2:
+        'This was their second encounter. The first was at a <link36>tournament for beginners held on May 9th of that year</link36>, where Victoria emerged victorious. Here they were again on the same mat, with Christina determined for a rematch!',
+      p3:
+        'According to the rules, to win an individual fight, it was necessary to either submit the opponent or pin her for a count of 5.<br/>By this time, they were evenly matched in weight and strength. The fight began cautiously, with both studying and feeling each other out for a long while, avoiding takedowns. However, the pace picked up, and once on the ground, Christina found herself in a precarious position: Victoria applied a headlock and attempted a pin, from which Christina narrowly escaped! It was an exhilarating moment, but neither emerged as the victor. The regular time ended in a draw, leading to a short rest break followed by an additional 2-minute extension, yet neither wrestler managed to secure a submission or pin.',
+      p4:
+        'The second fight followed a similar pattern to the first. After regular time, it also resulted in a draw. However, adhering to our rules to determine a clear winner, we extended the extra time from 2 to 10 minutes. The remainder of the fight became an endurance test. As the struggle persisted, controlling the match became increasingly challenging for Christina, who appeared fatigued by the end, unlike Victoria.',
+      screenshots: 'See photos',
+    },
+    '44': {
+      p1:
+        'You can read the report on the competitions, the main part of which was these fights, <linkMaslenitsa>here</linkMaslenitsa>. There you will find a short report on the fights, as well as many photos. For extra beauty, we have added a couple of photos from each fight here.',
+      section1: 'Viktoria Smorodina vs Viktoria Vardugina',
+      section2: 'Oksana Grigorenko vs Viktoria Vardugina',
+      section3: 'Oksana Grigorenko vs Viktoria Smorodina',
+    },
   },
   details: {
     purchaseBefore: 'You can purchase',

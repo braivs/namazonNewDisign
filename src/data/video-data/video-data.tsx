@@ -657,11 +657,7 @@ export type Video_data = Video_data_src_all & {
   description: () => React.ReactNode
 }
 
-//todo: understand what to do with nc03
-
+// todo: solve NC43
 // todo: v2 after release: remake pictures size for video
 // todo: v2: integrate shop into app
-// todo: v2: add new NC clips
-// todo: v2: pud age restricted videos on hosting directly
-
-// add preview for NC69
+// todo: v2: fix video previews that is not available
