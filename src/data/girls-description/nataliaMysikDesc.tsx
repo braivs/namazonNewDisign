@@ -1,3 +1,5 @@
+'use client'
+
 import imgMain from 'public/assets/img/girl/natalia-mysik/natalia.jpg'
 import sC from '@/common/styles.module.scss'
 import cn from 'classnames'
@@ -6,43 +8,63 @@ import Image from 'next/image'
 import ButtonGallery from '@/common/ButtonGallery/ButtonGallery'
 import {DIR_NATALIA_MYSIK_SUBGR} from '@/common/constants/ImageContexts'
 import Link from 'next/link'
+import {Trans, useTranslation} from 'react-i18next'
 
 export const nataliaMysikDesc = () => {
+  const {t} = useTranslation('girls')
+  const ns = 'descriptions.natalia-mysik'
+
   return (
     <>
       <Col className={cn('d-flex', 'justify-content-center')}>
         <Image className={sC.videosMainImg} src={imgMain} alt="Natalia Mysik" />
       </Col>
       <p>
-        <b>Natalia Mysik</b> (5&apos;11&quot; / 154 lb) - a participant in the club&apos;s tournaments on Submission
-        Grappling.
-        <br />
-        She is the winner of the &quot;Christmas Cup 2011&quot; tournament in Submission Grappling.
+        <Trans
+          i18nKey={`${ns}.intro`}
+          ns="girls"
+          components={{b: <b />, br: <br />}}
+          defaults={`<b>Natalia Mysik</b> (5'11" / 154 lb) - a participant in the club's tournaments on Submission Grappling.<br/>She is the winner of the "Christmas Cup 2011" tournament in Submission Grappling.`}
+        />
       </p>
-      <ButtonGallery images={DIR_NATALIA_MYSIK_SUBGR} buttonName="Submission grappling" />
+      <ButtonGallery
+        images={DIR_NATALIA_MYSIK_SUBGR}
+        buttonName={t(`${ns}.gallerySubgr`, {defaultValue: 'Submission grappling'})}
+      />
       <h4>
-        <u>Results of Fights</u>
+        <u>
+          <Trans
+            i18nKey={`${ns}.resultsSection`}
+            ns="girls"
+            components={{b: <b />}}
+            defaults="Results of Fights"
+          />
+        </u>
       </h4>
       <Table bordered>
         <tbody>
           <tr>
-            <th>Natalia Mysik vs. Maria Rylyova</th>
-            <th>Natalia Mysik vs. Valentina Perfilyeva</th>
+            <th>{t(`${ns}.table1col1`, {defaultValue: 'Natalia Mysik vs. Maria Rylyova'})}</th>
+            <th>{t(`${ns}.table1col2`, {defaultValue: 'Natalia Mysik vs. Valentina Perfilyeva'})}</th>
           </tr>
           <tr>
             <td>
-              <Link href="/video/nc12">VIDEO 12. Submission grappling. Tournament. April, 2010</Link>
+              <Link href="/video/nc12">
+                {t('videoLinks.nc12', {defaultValue: 'VIDEO 12. Submission grappling. Tournament. April, 2010'})}
+              </Link>
             </td>
             <td>
               <Link href="/video/nc04">
-                VIDEO 4. &quot;Christmas Cup 2011&quot;. Tournament on Submission Grappling
+                {t('videoLinks.nc04', {defaultValue: 'VIDEO 4. "Christmas Cup 2011". Tournament on Submission Grappling'})}
               </Link>
             </td>
           </tr>
           <tr>
             <td></td>
             <td>
-              <Link href="/video/nc12">VIDEO 12. Submission grappling. Tournament. April, 2010</Link>
+              <Link href="/video/nc12">
+                {t('videoLinks.nc12', {defaultValue: 'VIDEO 12. Submission grappling. Tournament. April, 2010'})}
+              </Link>
             </td>
           </tr>
         </tbody>
@@ -50,12 +72,12 @@ export const nataliaMysikDesc = () => {
       <Table bordered>
         <tbody>
           <tr>
-            <th>Natalia Mysik vs. Ksenia Voloshina</th>
+            <th>{t(`${ns}.table2col1`, {defaultValue: 'Natalia Mysik vs. Ksenia Voloshina'})}</th>
           </tr>
           <tr>
             <td>
               <Link href="/video/nc04">
-                VIDEO 4. &quot;Christmas Cup 2011&quot;. Tournament on Submission Grappling
+                {t('videoLinks.nc04', {defaultValue: 'VIDEO 4. "Christmas Cup 2011". Tournament on Submission Grappling'})}
               </Link>
             </td>
           </tr>
