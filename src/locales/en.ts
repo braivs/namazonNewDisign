@@ -63,6 +63,11 @@ export const en = {
   },
   home: {
     cards: {
+      'june-update': {
+        title: 'June update',
+        excerpt:
+          '- Added three new videos: Radmila vs Alex, Lilya vs Alex, Sveta vs Alex. Previews are already on the Video page.\n- Updated membership packages...',
+      },
       submission: {
         title: 'Submission Grappling (Wrestling) as Single Combat',
         excerpt:

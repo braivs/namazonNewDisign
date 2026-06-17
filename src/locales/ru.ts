@@ -80,6 +80,11 @@ export const ru = {
   },
   home: {
     cards: {
+      'june-update': {
+        title: 'Июньское обновление',
+        excerpt:
+          '- Добавили три свежих видео: Radmila vs Alex, Lilya vs Alex, Sveta vs Alex. Превью уже висят на странице «Видео».\n- Обновили пакеты членства...',
+      },
       submission: {
         title: 'Сабмишн грэпплинг (борьба до капитуляции)',
         excerpt:

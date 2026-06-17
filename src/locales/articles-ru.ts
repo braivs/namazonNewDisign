@@ -1,4 +1,11 @@
 export const articlesRu = {
+  'june-update': {
+    title: 'Июньское обновление',
+    items: [
+      'Добавили три свежих видео: Radmila vs Alex, Lilya vs Alex, Sveta vs Alex. Превью уже висят на странице «Видео».',
+      'Обновили пакеты членства: Fresh pack теперь включает эти три новых ролика. А Video access получает те три видео, которые раньше были в Fresh.',
+    ],
+  },
   submission: {
     title: 'Сабмишн грэпплинг (борьба до капитуляции)',
     intro1:

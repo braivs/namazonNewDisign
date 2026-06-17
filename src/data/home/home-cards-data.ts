@@ -6,6 +6,11 @@ export type HomeCard = {
 
 export const home_cards: HomeCard[] = [
   {
+    id: 'june-update',
+    href: '/articles/june-update',
+    imgRef: '/assets/img/Triple_Namazon_June_update.jpg',
+  },
+  {
     id: 'submission',
     href: '/articles/submission',
     imgRef: '/assets/img/videoGallery/16/09.jpg',

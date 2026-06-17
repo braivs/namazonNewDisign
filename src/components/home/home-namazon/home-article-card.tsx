@@ -28,7 +28,7 @@ export default function HomeArticleCard({card}: Props) {
         <h5 className="blog-item__title mb-15">
           <Link href={card.href}>{t(`cards.${card.id}.title`)}</Link>
         </h5>
-        <p>{t(`cards.${card.id}.excerpt`)}</p>
+        <p style={{whiteSpace: 'pre-line'}}>{t(`cards.${card.id}.excerpt`)}</p>
         <div className="blog-item__date-info">
           <ul className="d-flex align-items-center">
             <li>

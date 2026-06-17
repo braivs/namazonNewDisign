@@ -1,4 +1,11 @@
 export const articlesEn = {
+  'june-update': {
+    title: 'June update',
+    items: [
+      'Added three new videos: Radmila vs Alex, Lilya vs Alex, Sveta vs Alex. Previews are already on the Video page.',
+      'Updated membership packages: Fresh pack now includes these three new videos. Video access gets the three videos that were previously in Fresh.',
+    ],
+  },
   submission: {
     title: 'Submission Grappling (Wrestling) as Single Combat',
     intro1:
