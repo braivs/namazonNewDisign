@@ -598,6 +598,45 @@ const video_data_src_all: Array<Video_data_src_all> = [
     patreonId: 'nc73-candy-vs-160023333',
     isPost: true,
     mvtubeId: 'k4AGMnMhkdF7sLe',
+  },
+  {
+    id: 74,
+    youtubeID: '',
+    title: 'Radmila vs Alex',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+      </p>
+    ),
+    patreonId: 'nc74-radmila-vs-161324586',
+    isPost: true,
+    mvtubeId: 'aRxF6KkbZmKakBL',
+  },
+  {
+    id: 75,
+    youtubeID: '',
+    title: 'Lilya vs Alex',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+      </p>
+    ),
+    patreonId: 'nc75-lilya-vs-161325573',
+    isPost: true,
+    mvtubeId: 'b3SlUDpxrasuPb4',
+  },
+  {
+    id: 76,
+    youtubeID: '',
+    title: 'Sveta vs Alex',
+    category: 'MIXED WRESTLING',
+    description: () => (
+      <p>
+      </p>
+    ),
+    patreonId: 'nc76-sveta-vs-161326775',
+    isPost: true,
+    mvtubeId: 'Ah2b6fPeCDQYLEK',
   }
 ];
 

@@ -7,14 +7,14 @@ const membershipTiers = [
   {
     title: "Fresh pack",
     price: "$30 / month",
-    description: "Access to 5 new videos (NC69-NC73) not included in the Video Access tier.",
+    description: "Access to 5 new videos (NC72–NC76) not included in the Video Access tier.",
   },
   {
     title: "Video access",
     price: "$45 / month",
     description: (
       <>
-        Access to all Namazon Club videos from the beginning up to NC68{" "}
+        Access to all Namazon Club videos from the beginning up to NC71{" "}
         <em>except Siya&apos;s exclusive series</em>.
       </>
     ),
