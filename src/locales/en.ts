@@ -142,4 +142,13 @@ export const en = {
         'The bout between Alyona Piven and Viktoria Vardugina was in many ways a matter of principle. Alyona has been practicing grappling at the club for a relatively short time, progresses every session and has achieved significant success in that time. It remained to be seen how her match with Viktoria would end.',
     },
   },
+  footer: {
+    contactPrompt: 'FEEL FREE TO CONTACT US',
+    usefulLinks: 'Useful links',
+    contactInfo: 'Contact Info',
+    mixedWrestlingForum: 'Mixed Wrestling Forum',
+    copyright: '© Copyright',
+    clubName: 'Namazon club',
+    rightsReserved: 'All Rights Reserved',
+  },
 }
