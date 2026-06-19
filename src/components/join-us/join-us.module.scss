@@ -5,12 +5,22 @@
   border-radius: 14px;
   text-align: center;
   box-shadow: 0 10px 24px rgba(23, 17, 81, 0.08);
+
+  @media (prefers-color-scheme: dark) {
+    background: var(--tp-surface);
+    border-color: var(--tp-border-primary);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .membershipTitle {
   color: #171151;
   font-size: 1.35rem;
   margin-bottom: 0.4rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--tp-header-1);
+  }
 }
 
 .membershipPrice {
@@ -18,6 +28,10 @@
   font-size: 1.05rem;
   font-weight: 600;
   margin-bottom: 1rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--tp-text-2);
+  }
 }
 
 .membershipText {
@@ -35,5 +49,13 @@
 
   &:hover {
     color: #007bff;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--tp-icon-sky);
+
+    &:hover {
+      color: var(--tp-icon-green);
+    }
   }
 }

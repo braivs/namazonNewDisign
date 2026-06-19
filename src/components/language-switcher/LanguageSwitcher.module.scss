@@ -17,6 +17,11 @@
   letter-spacing: 0.02em;
   cursor: pointer;
 
+  @media (prefers-color-scheme: dark) {
+    background: var(--tp-surface);
+    color: var(--tp-text-2);
+  }
+
   &:hover {
     color: var(--tp-text-body);
     border-color: var(--tp-text-body);

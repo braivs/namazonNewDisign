@@ -1,0 +1,104 @@
+/* System dark mode — follows OS setting on Windows, macOS, Android, iOS */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --tp-page-bg: #0f0e1a;
+    --tp-surface: #18162a;
+    --tp-surface-elevated: #201e34;
+
+    --tp-header-1: #eceaf5;
+    --tp-grey-1: #12101f;
+
+    --tp-text-body: #dddbe8;
+    --tp-text-1: #a8a6b8;
+    --tp-text-2: #9492a8;
+    --tp-text-3: #7e7c92;
+
+    --tp-border-primary: #2e2c44;
+    --tp-border-secondary: #3a3858;
+
+    --tp-icon-blue-light: rgba(14, 99, 255, 0.18);
+    --tp-icon-green-light: rgba(16, 208, 161, 0.14);
+    --tp-icon-pink-light: rgba(247, 42, 117, 0.14);
+    --tp-icon-sky-light: rgba(66, 191, 255, 0.14);
+  }
+
+  body {
+    background-color: var(--tp-page-bg);
+    color: var(--tp-text-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--tp-header-1);
+  }
+
+  a:hover {
+    color: var(--tp-icon-green);
+  }
+
+  /* Surfaces that were white in light theme */
+  .white-bg,
+  .grey-bg {
+    background-color: var(--tp-surface) !important;
+  }
+
+  .header-custom,
+  .header-sticky,
+  .tp-mobile-header-area.header-sticky {
+    background-color: var(--tp-surface-elevated) !important;
+    border-color: var(--tp-border-primary);
+  }
+
+  .header-menu-box,
+  .header-menu-top,
+  .header-slider {
+    border-color: var(--tp-border-primary);
+  }
+
+  .team-item__content,
+  .blog-item__content,
+  .tp-section__title.left-line::before,
+  .tp-section__title.right-line::after {
+    background-color: var(--tp-surface);
+  }
+
+  .research-item__title a {
+    background-image: linear-gradient(var(--tp-text-body), var(--tp-text-body)),
+      linear-gradient(var(--tp-text-body), var(--tp-text-body));
+  }
+
+  .contactform input,
+  .contactform textarea {
+    background-color: var(--tp-surface);
+    color: var(--tp-text-body);
+    border-color: var(--tp-border-primary);
+    box-shadow: none;
+  }
+
+  .tpcontact__item {
+    background-color: var(--tp-surface);
+  }
+
+  #preloadertp {
+    background-color: var(--tp-page-bg);
+  }
+
+  .scroll-top {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .mean-container .mean-nav {
+    background: var(--tp-surface-elevated);
+  }
+
+  img {
+    opacity: 0.95;
+  }
+}

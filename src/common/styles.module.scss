@@ -15,6 +15,10 @@
 .compArticlesVideoGirl {
     a {
         color: #007bff;
+
+        @media (prefers-color-scheme: dark) {
+            color: var(--tp-icon-sky);
+        }
     }
 
     /* Theme reset strips list bullets globally; restore for article prose */

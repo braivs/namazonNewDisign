@@ -11,6 +11,10 @@
     .text {
         font-size: 1.7rem;
         margin-left: 10px;
+
+        @media (prefers-color-scheme: dark) {
+            color: var(--tp-text-body);
+        }
     }
 }
 
