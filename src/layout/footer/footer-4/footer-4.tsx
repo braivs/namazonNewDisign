@@ -5,6 +5,7 @@ import {Container, Row, Col} from 'react-bootstrap'
 import {useTranslation} from 'react-i18next'
 import s from './footer-4.module.scss'
 import {SocialIcons} from '@/components/social-icons/SocialIcons'
+import ClubSlider from '@/components/club-slider/club-slider'
 
 const FooterFour = ({style_2 = false}) => {
   const {t} = useTranslation(['footer', 'menu'])
@@ -57,6 +58,7 @@ const FooterFour = ({style_2 = false}) => {
               <div className="tp-footer-widget footer-2-col-4 mb-40">
                 <span className="tp-footer-widget__title mb-15">{t('footer:contactInfo')}</span>
                 <SocialIcons />
+                <ClubSlider variant="footer" />
               </div>
             </Col>
           </Row>

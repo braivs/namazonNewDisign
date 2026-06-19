@@ -2,13 +2,18 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.header {
   height: 100%;
 }
 
+.footer {
+  margin-top: 20px;
+}
+
 .slider {
-  flex: 1;
   width: 100%;
-  min-height: 0;
   overflow: hidden;
 
   :global(.carousel),
@@ -24,11 +29,25 @@
   }
 }
 
+.header .slider {
+  flex: 1;
+  min-height: 0;
+}
+
+.footer .slider {
+  aspect-ratio: 16 / 10;
+  border-radius: 4px;
+}
+
 .slideImg {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.footer .slideImg {
+  object-fit: cover;
 }
 
 .indicators {
@@ -60,8 +79,25 @@
   }
 }
 
+/* Footer sits on theme-bg (always dark navy) */
+.onDark .indicator {
+  background: rgba(255, 255, 255, 0.3);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.onDark .indicatorActive {
+  background: var(--tp-common-white);
+
+  &:hover {
+    background: var(--tp-common-white);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
-  .indicator {
+  .header .indicator {
     background: rgba(236, 234, 245, 0.3);
 
     &:hover {
@@ -69,7 +105,7 @@
     }
   }
 
-  .indicatorActive {
+  .header .indicatorActive {
     background: var(--tp-header-1);
 
     &:hover {
