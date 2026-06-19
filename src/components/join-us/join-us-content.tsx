@@ -1,49 +1,38 @@
-import React from "react"
-import s from "./join-us.module.scss"
+'use client'
 
-const PATREON_MEMBERSHIP_URL = "https://www.patreon.com/c/namazon/membership"
+import React from 'react'
+import {Trans, useTranslation} from 'react-i18next'
+import s from './join-us.module.scss'
 
-const membershipTiers = [
-  {
-    title: "Fresh pack",
-    price: "$30 / month",
-    description: "Access to 5 new videos (NC72–NC76) not included in the Video Access tier.",
-  },
-  {
-    title: "Video access",
-    price: "$45 / month",
-    description: (
-      <>
-        Access to all Namazon Club videos from the beginning up to NC71{" "}
-        <em>except Siya&apos;s exclusive series</em>.
-      </>
-    ),
-  },
-  {
-    title: "Siya pack",
-    price: "$50 / month",
-    description: "Unlock Siya's exclusive 5-clip series: NC60 to NC64.",
-  },
-]
+const PATREON_MEMBERSHIP_URL = 'https://www.patreon.com/c/namazon/membership'
+
+const membershipTierIds = ['freshPack', 'videoAccess', 'siyaPack'] as const
 
 const JoinUsContent = () => {
+  const {t} = useTranslation('joinUs')
+
   return (
     <section className="contact-area pt-130 pb-115">
       <div className="container">
         <div className="row justify-content-center g-4">
-          {membershipTiers.map((tier) => (
-            <div key={tier.title} className="col-lg-4 col-md-6 col-12">
+          {membershipTierIds.map((tierId) => (
+            <div key={tierId} className="col-lg-4 col-md-6 col-12">
               <article className={s.membershipCard}>
-                <h3 className={s.membershipTitle}>{tier.title}</h3>
-                <p className={s.membershipPrice}>{tier.price}</p>
-                <p className={s.membershipText}>{tier.description}</p>
+                <h3 className={s.membershipTitle}>{t(`tiers.${tierId}.title`)}</h3>
+                <p className={s.membershipPrice}>{t(`tiers.${tierId}.price`)}</p>
+                <p className={s.membershipText}>
+                  <Trans
+                    i18nKey={`joinUs:tiers.${tierId}.description`}
+                    components={{em: <em />}}
+                  />
+                </p>
                 <a
                   className={s.membershipLink}
                   href={PATREON_MEMBERSHIP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Join on Patreon
+                  {t('joinOnPatreon')}
                 </a>
               </article>
             </div>

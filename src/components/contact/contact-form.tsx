@@ -1,4 +1,7 @@
-import React from "react";
+'use client'
+
+import React from 'react'
+import {useTranslation} from 'react-i18next'
 import styles from './contactForm.module.scss'
 
 
@@ -68,8 +71,14 @@ const ContactCard = ({title, href, value, iconSrc, iconAlt, iconClassName}: Cont
   )
 }
 
-const contactCards: ContactCardProps[] = [
+type ContactCardConfig = ContactCardProps & {
+  id: string
+  titleKey?: string
+}
+
+const contactCards: ContactCardConfig[] = [
   {
+    id: 'email',
     title: 'Email',
     href: `mailto:${email}`,
     value: email,
@@ -77,6 +86,7 @@ const contactCards: ContactCardProps[] = [
     iconAlt: 'Email Icon',
   },
   {
+    id: 'telegram',
     title: 'Telegram',
     href: telegram_link,
     value: telegram,
@@ -84,6 +94,8 @@ const contactCards: ContactCardProps[] = [
     iconAlt: 'Telegram Icon',
   },
   {
+    id: 'telegramChannel',
+    titleKey: 'telegramChannel',
     title: 'Telegram channel',
     href: telegramChannel_link,
     value: telegramChannel,
@@ -91,6 +103,7 @@ const contactCards: ContactCardProps[] = [
     iconAlt: 'Telegram Icon',
   },
   {
+    id: 'youtube',
     title: 'YouTube',
     href: youtube_link,
     value: youtube,
@@ -99,6 +112,7 @@ const contactCards: ContactCardProps[] = [
     iconClassName: styles.x,
   },
   {
+    id: 'facebook',
     title: 'Facebook',
     href: facebook_link,
     value: facebook,
@@ -106,6 +120,7 @@ const contactCards: ContactCardProps[] = [
     iconAlt: 'Facebook Icon',
   },
   {
+    id: 'vk',
     title: 'VK',
     href: vk_link,
     value: vk,
@@ -113,6 +128,7 @@ const contactCards: ContactCardProps[] = [
     iconAlt: 'VK Icon',
   },
   {
+    id: 'x',
     title: 'X',
     href: x_link,
     value: x,
@@ -121,6 +137,7 @@ const contactCards: ContactCardProps[] = [
     iconClassName: styles.x,
   },
   {
+    id: 'reddit',
     title: 'Reddit',
     href: reddit_link,
     value: reddit,
@@ -131,13 +148,19 @@ const contactCards: ContactCardProps[] = [
 ]
 
 const ContactForm = () => {
+  const {t} = useTranslation('contact')
+
   return (
     <>
       <section className="contact-area pt-130 pb-115">
         <div className="container">
           <div className="row">
             {contactCards.map((card) => (
-              <ContactCard key={card.title} {...card}/>
+              <ContactCard
+                key={card.id}
+                {...card}
+                title={card.titleKey ? t(card.titleKey) : card.title}
+              />
             ))}
           </div>
         </div>

@@ -32,6 +32,8 @@ export const i18n = createInstance({
       girls: en.girls,
       video: en.video,
       footer: en.footer,
+      contact: en.contact,
+      joinUs: en.joinUs,
     },
     ru: {
       menu: ru.menu,
@@ -44,6 +46,8 @@ export const i18n = createInstance({
       girls: ru.girls,
       video: ru.video,
       footer: ru.footer,
+      contact: ru.contact,
+      joinUs: ru.joinUs,
     },
   },
 }).use(initReactI18next)

@@ -23,6 +23,9 @@ export const en = {
   },
   common: {
     readMore: 'Read more',
+    clubName: 'NAMAZON CLUB',
+    clubNameLine1: 'NAMAZON',
+    clubNameLine2: 'CLUB',
   },
   banner: {
     home: 'HOME',
@@ -99,6 +102,7 @@ export const en = {
   girls: girlsEn,
   video: videoEn,
   competitions: {
+    subtitle: 'Results of the past competitions',
     titles: {
       'maslenitsa-2016': 'Female Power Competitions for the Maslenitsa Festival, 2016',
       'maslenitsa-2017': 'Female Power Competitions for the Maslenitsa Festival, 2017',
@@ -150,5 +154,30 @@ export const en = {
     copyright: '© Copyright',
     clubName: 'Namazon club',
     rightsReserved: 'All Rights Reserved',
+  },
+  contact: {
+    telegramChannel: 'Telegram channel',
+  },
+  joinUs: {
+    tiers: {
+      freshPack: {
+        title: 'Fresh pack',
+        price: '$30 / month',
+        description:
+          'Access to 5 new videos (NC72–NC76) not included in the Video Access tier.',
+      },
+      videoAccess: {
+        title: 'Video access',
+        price: '$45 / month',
+        description:
+          'Access to all Namazon Club videos from the beginning up to NC71 <em>except Siya\'s exclusive series</em>.',
+      },
+      siyaPack: {
+        title: 'Siya pack',
+        price: '$50 / month',
+        description: "Unlock Siya's exclusive 5-clip series: NC60 to NC64.",
+      },
+    },
+    joinOnPatreon: 'Join on Patreon',
   },
 }

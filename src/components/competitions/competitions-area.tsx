@@ -1,5 +1,8 @@
+'use client'
+
 import React, {useMemo} from 'react'
 import cn from 'classnames'
+import {useTranslation} from 'react-i18next'
 import CompetitionCard from '@/components/competitions/competition-card'
 import {useAppSelector} from '@/app/store/store'
 import {competitionsFilteredSelector} from '@/data/competitions/competitions.slice'
@@ -18,6 +21,7 @@ const sectionTitle: Record<Competition_data['period'], string> = {
 }
 
 const CompetitionsArea = () => {
+  const {t} = useTranslation('competitions')
   const filtered = useAppSelector(competitionsFilteredSelector)
 
   const sections = useMemo(() => {
@@ -42,7 +46,7 @@ const CompetitionsArea = () => {
                 <span
                   className={cn('tp-section__sub-title left-line right-line mb-25', s.subTitle)}
                 >
-                  Results of the past competitions
+                  {t('subtitle')}
                 </span>
               </div>
               <div className="tp-section">

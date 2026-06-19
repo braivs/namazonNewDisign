@@ -40,6 +40,9 @@ export const ru = {
   },
   common: {
     readMore: 'Подробнее',
+    clubName: 'КЛУБ НАМАЗОН',
+    clubNameLine1: 'КЛУБ',
+    clubNameLine2: 'НАМАЗОН',
   },
   banner: {
     home: 'ГЛАВНАЯ',
@@ -116,6 +119,7 @@ export const ru = {
   girls: girlsRu,
   video: videoRu,
   competitions: {
+    subtitle: 'Результаты прошедших соревнований',
     titles: {
       'maslenitsa-2016': 'Масленица 2016. Женские\n силовые единоборства',
       'maslenitsa-2017': 'Масленица 2017. Женские\n силовые соревнования',
@@ -195,5 +199,30 @@ export const ru = {
     copyright: '©',
     clubName: 'Клуб Намазон',
     rightsReserved: 'Все права защищены',
+  },
+  contact: {
+    telegramChannel: 'Telegram канал',
+  },
+  joinUs: {
+    tiers: {
+      freshPack: {
+        title: 'Fresh pack',
+        price: '$30 / месяц',
+        description:
+          'Доступ к 5 новым видео (NC72–NC76), не входящим в пакет Video access.',
+      },
+      videoAccess: {
+        title: 'Video access',
+        price: '$45 / месяц',
+        description:
+          'Доступ ко всем видео клуба Намазон с самого начала до NC71, <em>за исключением эксклюзивной серии Siya</em>.',
+      },
+      siyaPack: {
+        title: 'Siya pack',
+        price: '$50 / месяц',
+        description: 'Эксклюзивная серия Siya из 5 роликов: NC60–NC64.',
+      },
+    },
+    joinOnPatreon: 'Присоединиться на Patreon',
   },
 }
