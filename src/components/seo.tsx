@@ -19,7 +19,7 @@ const SEO = ({pageTitleKey, pageTitle}: SEOProps) => {
       <title>{title && `${title} - ${t('suffix')}`}</title>
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta name="description" content={t('description')} />
-      <meta name="robots" content="noindex, follow" />
+      <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
