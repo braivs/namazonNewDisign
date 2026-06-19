@@ -94,8 +94,10 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   }
 
-  .mean-container .mean-nav {
-    background: var(--tp-surface-elevated);
+  /* Mobile sidebar: keep uniform theme-primary, same as light theme */
+  .tpsideinfo .mean-container .mean-nav,
+  .tpsideinfo .mean-container .mean-bar {
+    background: none;
   }
 
   img {
