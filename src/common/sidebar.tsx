@@ -1,8 +1,11 @@
+'use client'
+
 import MobileMenus from '@/layout/header/mobile-menus'
 import React, {FC} from 'react'
+import {useTranslation} from 'react-i18next'
 
-import {Logo} from "@/components/logo/Logo"
-import {SocialIcons} from "@/components/social-icons/SocialIcons"
+import {Logo} from '@/components/logo/Logo'
+import {SocialIcons} from '@/components/social-icons/SocialIcons'
 import LanguageSwitcher from '@/components/language-switcher'
 import s from './sidebar.module.scss'
 
@@ -17,7 +20,8 @@ interface SidebarProps {
   setIsActive: (active: boolean) => void;
 }
 
-const Sidebar: FC<SidebarProps> = ({ isActive, setIsActive }) => {
+const Sidebar: FC<SidebarProps> = ({isActive, setIsActive}) => {
+  const {t} = useTranslation('banner')
 
   return (
     <>
@@ -44,7 +48,7 @@ const Sidebar: FC<SidebarProps> = ({ isActive, setIsActive }) => {
           {/*<p className="d-none d-xl-block">
             Club of single combats for women.
           </p>*/}
-          <span>Contact Us</span>
+          <span>{t('contact')}</span>
           <a href="mailto:namazonclub@gmail.com">
             <i className="fa-solid fa-star"></i>namazonclub@gmail.com
           </a>
