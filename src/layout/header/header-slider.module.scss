@@ -59,3 +59,21 @@
     background: var(--tp-theme-primary);
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .indicator {
+    background: rgba(236, 234, 245, 0.3);
+
+    &:hover {
+      background: rgba(236, 234, 245, 0.5);
+    }
+  }
+
+  .indicatorActive {
+    background: var(--tp-header-1);
+
+    &:hover {
+      background: var(--tp-header-1);
+    }
+  }
+}
