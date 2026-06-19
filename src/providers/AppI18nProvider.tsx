@@ -34,6 +34,8 @@ export const i18n = createInstance({
       footer: en.footer,
       contact: en.contact,
       joinUs: en.joinUs,
+      seo: en.seo,
+      header: en.header,
     },
     ru: {
       menu: ru.menu,
@@ -48,6 +50,8 @@ export const i18n = createInstance({
       footer: ru.footer,
       contact: ru.contact,
       joinUs: ru.joinUs,
+      seo: ru.seo,
+      header: ru.header,
     },
   },
 }).use(initReactI18next)

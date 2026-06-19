@@ -79,6 +79,7 @@ type ContactCardConfig = ContactCardProps & {
 const contactCards: ContactCardConfig[] = [
   {
     id: 'email',
+    titleKey: 'email',
     title: 'Email',
     href: `mailto:${email}`,
     value: email,
@@ -87,6 +88,7 @@ const contactCards: ContactCardConfig[] = [
   },
   {
     id: 'telegram',
+    titleKey: 'telegram',
     title: 'Telegram',
     href: telegram_link,
     value: telegram,
@@ -104,6 +106,7 @@ const contactCards: ContactCardConfig[] = [
   },
   {
     id: 'youtube',
+    titleKey: 'youtube',
     title: 'YouTube',
     href: youtube_link,
     value: youtube,
@@ -113,6 +116,7 @@ const contactCards: ContactCardConfig[] = [
   },
   {
     id: 'facebook',
+    titleKey: 'facebook',
     title: 'Facebook',
     href: facebook_link,
     value: facebook,
@@ -121,6 +125,7 @@ const contactCards: ContactCardConfig[] = [
   },
   {
     id: 'vk',
+    titleKey: 'vk',
     title: 'VK',
     href: vk_link,
     value: vk,
@@ -129,6 +134,7 @@ const contactCards: ContactCardConfig[] = [
   },
   {
     id: 'x',
+    titleKey: 'x',
     title: 'X',
     href: x_link,
     value: x,
@@ -138,6 +144,7 @@ const contactCards: ContactCardConfig[] = [
   },
   {
     id: 'reddit',
+    titleKey: 'reddit',
     title: 'Reddit',
     href: reddit_link,
     value: reddit,
@@ -159,7 +166,7 @@ const ContactForm = () => {
               <ContactCard
                 key={card.id}
                 {...card}
-                title={card.titleKey ? t(card.titleKey) : card.title}
+                title={t(card.titleKey ?? card.id)}
               />
             ))}
           </div>

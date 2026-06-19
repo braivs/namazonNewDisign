@@ -12,12 +12,11 @@ import {
 } from '@/data/competitions/competitions-data'
 import s from '@/components/girls/girls-area/girls-area.module.scss'
 
-const sectionTitle: Record<Competition_data['period'], string> = {
+const sectionTitle: Record<Exclude<Competition_data['period'], 'Archive'>, string> = {
   '2015-2017': '2015 - 2017',
   '2013-2014': '2013 - 2014',
   '2012': '2012',
   '2011': '2011',
-  Archive: 'Archive',
 }
 
 const CompetitionsArea = () => {
@@ -54,7 +53,7 @@ const CompetitionsArea = () => {
                   <div className="row" key={period}>
                     <div className="col-12 text-center">
                       <h3 className={cn('tp-section__title mb-70', s.title)}>
-                        {sectionTitle[period]}
+                        {period === 'Archive' ? t('periods.archive') : sectionTitle[period]}
                       </h3>
                     </div>
                     {items.map((card) => (

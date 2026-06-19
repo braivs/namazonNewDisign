@@ -120,6 +120,10 @@ export const ru = {
   video: videoRu,
   competitions: {
     subtitle: 'Результаты прошедших соревнований',
+    inProgress: 'В процессе',
+    periods: {
+      archive: 'Архив',
+    },
     titles: {
       'maslenitsa-2016': 'Масленица 2016. Женские\n силовые единоборства',
       'maslenitsa-2017': 'Масленица 2017. Женские\n силовые соревнования',
@@ -201,7 +205,14 @@ export const ru = {
     rightsReserved: 'Все права защищены',
   },
   contact: {
+    email: 'Эл. почта',
+    telegram: 'Telegram',
     telegramChannel: 'Telegram канал',
+    youtube: 'YouTube',
+    facebook: 'Facebook',
+    vk: 'ВКонтакте',
+    x: 'X',
+    reddit: 'Reddit',
   },
   joinUs: {
     tiers: {
@@ -224,5 +235,26 @@ export const ru = {
       },
     },
     joinOnPatreon: 'Присоединиться на Patreon',
+  },
+  seo: {
+    suffix: 'Клуб Namazon — женские единоборства',
+    description: 'Клуб Namazon — видео и соревнования по женским единоборствам',
+    pages: {
+      home: 'Главная',
+      video: 'Видео',
+      girls: 'Участницы',
+      competitions: 'Соревнования',
+      contact: 'Контакты',
+      joinUs: 'Присоединиться',
+      article: 'Статья',
+    },
+  },
+  header: {
+    social: {
+      x: 'X.com',
+      telegram: 'Telegram',
+      reddit: 'Reddit',
+      youtube: 'YouTube',
+    },
   },
 }

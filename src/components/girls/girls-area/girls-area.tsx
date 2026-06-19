@@ -66,7 +66,7 @@ const GirlsArea = () => {
                                   <div className={s.imageContainer}>
                                     <img src={item.img} className={s.filter} alt={name} />
                                     <div className={s.textOverlay}>
-                                      {t('inProgress', {defaultValue: 'In progress'})}
+                                      {t('inProgress')}
                                     </div>
                                   </div>
                                 )}

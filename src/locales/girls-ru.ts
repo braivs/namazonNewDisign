@@ -1,5 +1,6 @@
 export const girlsRu = {
   subtitle: 'участницы соревнований',
+  inProgress: 'В процессе',
   year2012_2013: '2012 - 2013',
   year2010_2011: '2010 - 2011',
   pageTitle: {

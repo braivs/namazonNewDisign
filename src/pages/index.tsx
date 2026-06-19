@@ -6,7 +6,7 @@ import React from 'react'
 export default function Home() {
   return (
     <Wrapper>
-      <SEO pageTitle="Home" />
+      <SEO pageTitleKey="home" />
       <HomeNamazon />
     </Wrapper>
   )

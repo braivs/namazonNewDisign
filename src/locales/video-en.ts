@@ -381,10 +381,42 @@ export const videoEn = {
       section2: 'Oksana Grigorenko vs Viktoria Vardugina',
       section3: 'Oksana Grigorenko vs Viktoria Smorodina',
     },
+    '45': {
+      p1: 'Braivs and Alyona are evenly matched in strength. The full video contains 15 minutes of action.',
+    },
+    '49': {
+      p1:
+        'This is a collection of wrestling clips featuring Braivs and Alyona, compiled into a single film. Filmed over 5 days between late 2016 and early 2017. The full clip is 56 minutes long! Please note, it is more male-dominated.',
+    },
+    '50': {
+      p1:
+        'This is a collection of wrestling clips featuring Braivs and Tais, compiled into a single film. Filmed over 8 days between 2014 and 2017, Braivs put forth his best effort, but Tais proved to be stronger. The full clip is 23 minutes long.',
+    },
+    '59': {
+      p1:
+        "We're back with this new mixed wrestling — Alex vs Amrita. This video begins as judo improvisation and goes into wrestling after.<br/>Full video duration 15 mins.",
+    },
+    '60': {p1: 'Full video duration 30 mins.'},
+    '61': {p1: 'Full video duration 19 mins.'},
+    '62': {p1: 'Full video duration 21 mins.'},
+    '63': {p1: 'Full video duration 20 mins.'},
+    '64': {p1: 'Full video duration 29 mins.'},
+    '65': {p1: 'Full video duration 14 mins.'},
+    '66': {p1: 'Full video duration 13 mins.'},
+    '67': {p1: 'Full video duration 11 mins.'},
+    '68': {p1: 'Full video duration 27 mins.'},
   },
   details: {
     purchaseBefore: 'You can purchase',
     purchaseLabel: 'video',
     purchaseOn: 'on',
+    playerPrimary: 'Primary player',
+    playerAlternative: 'Alternative player',
+    playerN: 'Player {{n}}',
+    previewUnavailableMultiple:
+      "If the preview isn't available, please try alternative player or email us.",
+    previewUnavailableSingle: "If the preview isn't available please email us.",
+    clickToSeeVideo: 'click to see the video',
+    clickToSeeVideoYoutube: 'click to see the video on YouTube',
   },
 }

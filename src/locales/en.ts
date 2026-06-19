@@ -103,6 +103,10 @@ export const en = {
   video: videoEn,
   competitions: {
     subtitle: 'Results of the past competitions',
+    inProgress: 'In progress',
+    periods: {
+      archive: 'Archive',
+    },
     titles: {
       'maslenitsa-2016': 'Female Power Competitions for the Maslenitsa Festival, 2016',
       'maslenitsa-2017': 'Female Power Competitions for the Maslenitsa Festival, 2017',
@@ -156,7 +160,14 @@ export const en = {
     rightsReserved: 'All Rights Reserved',
   },
   contact: {
+    email: 'Email',
+    telegram: 'Telegram',
     telegramChannel: 'Telegram channel',
+    youtube: 'YouTube',
+    facebook: 'Facebook',
+    vk: 'VK',
+    x: 'X',
+    reddit: 'Reddit',
   },
   joinUs: {
     tiers: {
@@ -179,5 +190,26 @@ export const en = {
       },
     },
     joinOnPatreon: 'Join on Patreon',
+  },
+  seo: {
+    suffix: 'Namazon - Club of single combats for women',
+    description: 'Namazon Club — videos and competitions in women\'s combat sports',
+    pages: {
+      home: 'Home',
+      video: 'Video',
+      girls: 'Girls',
+      competitions: 'Competitions',
+      contact: 'Contact',
+      joinUs: 'Join Us',
+      article: 'Article',
+    },
+  },
+  header: {
+    social: {
+      x: 'X.com',
+      telegram: 'Telegram',
+      reddit: 'Reddit',
+      youtube: 'YouTube',
+    },
   },
 }

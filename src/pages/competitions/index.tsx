@@ -6,7 +6,7 @@ import React from 'react'
 const CompetitionsPage = () => {
   return (
     <Wrapper>
-      <SEO pageTitle="Competitions" />
+      <SEO pageTitleKey="competitions" />
       <Competitions />
     </Wrapper>
   )

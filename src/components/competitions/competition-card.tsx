@@ -27,7 +27,7 @@ export default function CompetitionCard({card}: Props) {
   const thumb = inProgress ? (
     <div className={inProgressS.imageContainer}>
       <img src={card.imgRef} className={inProgressS.filter} alt="" />
-      <div className={inProgressS.textOverlay}>In progress</div>
+      <div className={inProgressS.textOverlay}>{t('inProgress')}</div>
     </div>
   ) : (
     <Link href={href} className={cardS.thumbLink}>

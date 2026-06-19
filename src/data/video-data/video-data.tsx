@@ -326,11 +326,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: 'Ew7fMthTt0Q',
     title: 'Braivs vs Alyona 11.10.2016',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-        Braivs and Alyona are evenly matched in strength. The full video contains 15 minutes of action.
-      </p>
-    ),
     patreonId: 'nc45-braivs-vs-alyona-13-10-2016-294185'
   },
   {
@@ -359,11 +354,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: 'LETUteJJ724',
     title: 'Braivs vs Alyona collection 2016-2017',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-        This is a collection of wrestling clips featuring Braivs and Alyona, compiled into a single film. Filmed over 5 days between late 2016 and early 2017. The full clip is 56 minutes long! Please note, it is more male-dominated.
-      </p>
-    ),
     patreonId: 'nc49-braivs-vs-alyona-collection-2016-293193'
   },
   {
@@ -371,23 +361,12 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: 'W8TqBxzEMaI',
     title: 'Tais vs Braivs collection 2014-2017',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-        This is a collection of wrestling clips featuring Braivs and Tais, compiled into a single film. Filmed over 8 days between 2014 and 2017, Braivs put forth his best effort, but Tais proved to be stronger. The full clip is 23 minutes long.
-      </p>
-    ),
     patreonId: 'nc50-braivs-vs-tais-collection-2014-2017-290070'
   }, {
     id: 59,
     youtubeID: 'e72ZJ7JQt10',
     title: 'Alex vs JudoGirlAmrita',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-        We're back with this new mixed wrestling — Alex vs Amrita. This video begins as judo improvisation and goes into wrestling after. <br/>
-        Full video duration 15 mins.
-      </p>
-    ),
     patreonId: 'nc59-fm-alex-vs-157250136',
     isPost: true
   },
@@ -396,11 +375,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: 'zRC8TWQKzi0',
     title: 'Siya vs Skuf - round 1',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-        Full video duration 30 mins.
-      </p>
-    ),
     patreonId: 'nc60-fm-siya-vs-157276901',
     isPost: true,
     isClickable: true
@@ -410,11 +384,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Siya vs Skuf - round 2',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-        Full video duration 19 mins.
-      </p>
-    ),
     patreonId: 'nc61-fm-siya-vs-157346614',
     isPost: true,
     directVideoUrl: [
@@ -427,11 +396,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Siya vs Tryapka',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-        Full video duration 21 mins.
-      </p>
-    ),
     patreonId: 'nc62-siya-vs-157533888',
     isPost: true,
     directVideoUrl: [
@@ -444,11 +408,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Siya vs Skuf - fight 2',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-        Full video duration 20 mins.
-      </p>
-    ),
     patreonId: 'nc63-siya-vs-2-157655160',
     isPost: true,
     directVideoUrl: [
@@ -461,11 +420,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Siya in socks',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-        Full video duration 29 mins.
-      </p>
-    ),
     patreonId: 'nc64-siya-in-157720494',
     isPost: true,
     directVideoUrl: [
@@ -482,11 +436,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
       'https://www.udrop.com/file/Ow4j/NC65_Aizet_vs_Alex_preview.mp4',
       'https://files.catbox.moe/pew83m.mp4'
     ],
-    description: () => (
-      <p>
-        Full video duration 14 mins.
-      </p>
-    ),
     patreonId: 'nc65-aizet-vs-157731669',
     isPost: true,
   },
@@ -495,11 +444,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: 'RIMTtVZDtFA',
     title: 'Aizet in kimono vs Alex',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-        Full video duration 13 mins.
-      </p>
-    ),
     patreonId: 'nc66-aizet-in-vs-157950269',
     isPost: true,
   },
@@ -508,11 +452,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Aizet vs Alex wrestling & shibari',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-        Full video duration 11 mins.
-      </p>
-    ),
     patreonId: 'nc67-aizet-vs-157954076',
     isPost: true,
     directVideoUrl: [
@@ -525,11 +464,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Angelina vs Alex',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-        Full video duration 27 mins.
-      </p>
-    ),
     patreonId: 'nc68-angelina-vs-157976798',
     isPost: true,
     facebookPreview: 'https://www.facebook.com/share/v/1CswLNz6JV/',
@@ -539,10 +473,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Simona vs Alex fight 1',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-      </p>
-    ),
     patreonId: 'nc69-simona-vs-1-159381795',
     isPost: true,
     mvtubeId: 'hf4N7tVyhllOilh',
@@ -552,10 +482,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Simona vs Alex fight 2',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-      </p>
-    ),
     patreonId: 'nc70-simona-vs-2-159379562',
     isPost: true,
     mvtubeId: 'inMebeYw1MuozTy',
@@ -565,10 +491,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Simona vs Alex fight 3',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-      </p>
-    ),
     patreonId: 'nc71-simona-vs-159383997',
     isPost: true,
     mvtubeId: '7wqmxpwcpwFygwE',
@@ -578,10 +500,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: 'CxURntYDiJAxxMP',
     title: 'Simona vs Alex',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-      </p>
-    ),
     patreonId: 'nc72-nastya-vs-159387030',
     isPost: true,
     mvtubeId: 'CxURntYDiJAxxMP',
@@ -591,10 +509,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: 'CxURntYDiJAxxMP',
     title: 'Candy vs Alex',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-      </p>
-    ),
     patreonId: 'nc73-candy-vs-160023333',
     isPost: true,
     mvtubeId: 'k4AGMnMhkdF7sLe',
@@ -604,10 +518,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Radmila vs Alex',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-      </p>
-    ),
     patreonId: 'nc74-radmila-vs-161324586',
     isPost: true,
     mvtubeId: 'aRxF6KkbZmKakBL',
@@ -617,10 +527,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Lilya vs Alex',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-      </p>
-    ),
     patreonId: 'nc75-lilya-vs-161325573',
     isPost: true,
     mvtubeId: 'b3SlUDpxrasuPb4',
@@ -630,10 +536,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Sveta vs Alex',
     category: 'MIXED WRESTLING',
-    description: () => (
-      <p>
-      </p>
-    ),
     patreonId: 'nc76-sveta-vs-161326775',
     isPost: true,
     mvtubeId: 'Ah2b6fPeCDQYLEK',

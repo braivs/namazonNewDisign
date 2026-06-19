@@ -11,7 +11,7 @@ type PageProps = {
 function ArticlePage({article}: PageProps) {
   return (
     <Wrapper>
-      <SEO pageTitle="Article" />
+      <SEO pageTitleKey="article" />
       <Article article={article} />
     </Wrapper>
   )

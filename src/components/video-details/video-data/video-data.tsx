@@ -52,7 +52,11 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
   const mvtubeId = videoData?.mvtubeId?.trim()
   const hasMvTube = Boolean(mvtubeId)
 
-  const previewUnavailableText = ''
+  const playerLabel = (index: number) => {
+    if (index === 0) return t('details.playerPrimary')
+    if (index === 1) return t('details.playerAlternative')
+    return t('details.playerN', {n: index + 1})
+  }
 
   return (
     <div className={sC.compArticlesVideoGirl}>
@@ -83,7 +87,7 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
                         }}
                         role="tab"
                       >
-                        {i === 0 ? "Primary player" : i === 1 ? "Alternative player" : `Player ${i + 1}`}
+                        {playerLabel(i)}
                       </Nav.Link>
                     </Nav.Item>
                   ))}
@@ -96,11 +100,9 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
                 </div>
               ))}
               <p className="text-muted mt-2 mb-0 text-center px-2 small">
-                {directUrls.length >= 2 ?
-                  'If the preview isn`t available, please try alternative player or email us.'
-                  : 'If the preview isn`t available please email us.'
-                }
-
+                {directUrls.length >= 2
+                  ? t('details.previewUnavailableMultiple')
+                  : t('details.previewUnavailableSingle')}
               </p>
             </>
           )}
@@ -115,11 +117,11 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
                 href={facebookPreview}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="click to see the video"
+                aria-label={t('details.clickToSeeVideo')}
               >
                 <img className={s.youtubeCoverImg} src={videoData.img} alt="" />
                 <span className={s.youtubeCoverOverlay} aria-hidden>
-                  <span className={s.youtubeCoverText}>click to see the video</span>
+                  <span className={s.youtubeCoverText}>{t('details.clickToSeeVideo')}</span>
                 </span>
               </a>
             )
@@ -137,11 +139,11 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
                 href={`https://www.youtube.com/watch?v=${youtubeID}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="click to see the video on YouTube"
+                aria-label={t('details.clickToSeeVideoYoutube')}
               >
                 <img className={s.youtubeCoverImg} src={videoData.img} alt="" />
                 <span className={s.youtubeCoverOverlay} aria-hidden>
-                  <span className={s.youtubeCoverText}>click to see the video</span>
+                  <span className={s.youtubeCoverText}>{t('details.clickToSeeVideo')}</span>
                 </span>
               </a>
             )
