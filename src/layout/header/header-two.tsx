@@ -3,7 +3,8 @@
 import Sidebar from '@/common/sidebar'
 import useSticky from '../../../hooks/use-sticky'
 import cn from 'classnames'
-import React, {useState} from 'react'
+import {useRouter} from 'next/router'
+import React, {useEffect, useState} from 'react'
 import {useTranslation} from 'react-i18next'
 import NavMenu from './nav-menu'
 import youtube from '../../../public/assets/img/icon/youtube_small_color.png'
@@ -41,8 +42,21 @@ const SocialLinks = () => {
 }
 
 const HeaderTwo = () => {
-  const {sticky} = useSticky()
+  const router = useRouter()
+  const [mobileView, setMobileView] = useState(false)
+  const isVideoPage = router.pathname === '/video/[videoId]'
+  // Part of mobile fullscreen fix — no fixed header on /video/* below xl breakpoint.
+  const {sticky} = useSticky({disabled: isVideoPage && mobileView})
   const [isActive, setIsActive] = useState(false)
+
+  useEffect(() => {
+    // Match d-xl-none mobile header breakpoint (1199px).
+    const mq = window.matchMedia('(max-width: 1199px)')
+    const update = () => setMobileView(mq.matches)
+    update()
+    mq.addEventListener('change', update)
+    return () => mq.removeEventListener('change', update)
+  }, [])
 
   return (
     <>

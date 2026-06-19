@@ -1,0 +1,16 @@
+// Mobile video fullscreen fix: fixed header (z-index 99) was covering MvTube iframe
+// and stealing taps (pause). Hidden while iframe/video is in browser fullscreen.
+body.video-fullscreen {
+  .header-sticky,
+  .tp-mobile-header-area,
+  #header-mob-sticky,
+  #header-sticky {
+    visibility: hidden !important;
+    pointer-events: none !important; // don't intercept player touches
+  }
+
+  .scroll-top {
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}

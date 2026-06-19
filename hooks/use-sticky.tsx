@@ -1,22 +1,28 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState} from 'react'
 
-const useSticky = () => {
-  const [sticky, setSticky] = useState(false);
+type UseStickyOptions = {
+  // Skip sticky on mobile video pages — orientation/scroll was pinning header over player.
+  disabled?: boolean
+}
+const useSticky = (options?: UseStickyOptions) => {
+  const disabled = options?.disabled ?? false
+  const [sticky, setSticky] = useState(false)
 
-  const stickyHeader = () => {
-    if (window.scrollY > 80) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
-  };
   useEffect(() => {
-    window.addEventListener("scroll", stickyHeader);
-  }, []);
+    const stickyHeader = () => {
+      if (disabled) {
+        setSticky(false)
+        return
+      }
+      setSticky(window.scrollY > 80)
+    }
 
-  return {
-    sticky,
-  };
-};
+    stickyHeader()
+    window.addEventListener('scroll', stickyHeader, {passive: true})
+    return () => window.removeEventListener('scroll', stickyHeader)
+  }, [disabled])
 
-export default useSticky;
+  return {sticky}
+}
+
+export default useSticky

@@ -34,11 +34,12 @@ export const MyYouTube = (props: YoutubePropsType) => {
 
   return (
     <iframe
+      className="video-embed-iframe"
       width={frameWidth}
       height={frameHeight}
       src={`https://www.youtube-nocookie.com/embed/${props.videoId}`}
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+      allowFullScreen // triggers document.fullscreenElement → body.video-fullscreen
     />
   );
 };
@@ -50,6 +51,7 @@ export const MyMvTube = (props: MvTubePropsType) => {
 
   return (
     <iframe
+      className="video-embed-iframe"
       width={frameWidth}
       height={frameHeight}
       src={`https://mixedwrestling.video/embed/${props.videoId}`}
@@ -57,7 +59,8 @@ export const MyMvTube = (props: MvTubePropsType) => {
       // Prevent iframe-internal scrollbars during playback controls/layout changes.
       scrolling="no"
       style={{display: 'block', border: 0}}
-      allowFullScreen
+      allow="fullscreen"
+      allowFullScreen // parent page hides header via fullscreenchange listener
     />
   );
 };
@@ -77,6 +80,7 @@ export const MyDirectVideo = (props: {src: string; isActive?: boolean}) => {
   return (
     <video
       ref={videoRef}
+      className="video-embed-iframe" // same fullscreen chrome handling as iframes
       width={frameWidth}
       height={frameHeight}
       controls
