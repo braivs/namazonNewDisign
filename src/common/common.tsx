@@ -1,13 +1,18 @@
 import React, {useEffect, useRef, useState} from 'react'
 import {Photo} from "react-photo-album"
 import {Slide} from "yet-another-react-lightbox"
+import s from './video-embed.module.scss'
+function isDocumentFullscreen(): boolean {
+  const doc = document as Document & {webkitFullscreenElement?: Element | null}
+  return Boolean(doc.fullscreenElement ?? doc.webkitFullscreenElement)
+}
 
 function useVideoFrameDimensions() {
   const [frameWidth, setFrameWidth] = useState(640);
   const [frameHeight, setFrameHeight] = useState(360);
 
   useEffect(() => {
-    const updateWindowDimensions = () => {
+    const applyDimensions = () => {
       const newWidth = window.innerWidth;
       if (newWidth < 768) {
         setFrameWidth(340);
@@ -21,9 +26,28 @@ function useVideoFrameDimensions() {
       }
     };
 
-    updateWindowDimensions();
-    window.addEventListener("resize", updateWindowDimensions);
-    return () => window.removeEventListener("resize", updateWindowDimensions);
+    const updateWindowDimensions = () => {
+      // Mobile: resize during fullscreen re-renders iframe and drops fullscreen.
+      if (isDocumentFullscreen()) return
+      applyDimensions()
+    };
+
+    applyDimensions();
+    window.addEventListener('resize', updateWindowDimensions);
+
+    const onFullscreenChange = () => {
+      if (!isDocumentFullscreen()) {
+        applyDimensions()
+      }
+    }
+    document.addEventListener('fullscreenchange', onFullscreenChange)
+    document.addEventListener('webkitfullscreenchange', onFullscreenChange)
+
+    return () => {
+      window.removeEventListener('resize', updateWindowDimensions);
+      document.removeEventListener('fullscreenchange', onFullscreenChange)
+      document.removeEventListener('webkitfullscreenchange', onFullscreenChange)
+    };
   }, []);
 
   return {frameWidth, frameHeight};
@@ -39,32 +63,23 @@ export const MyYouTube = (props: YoutubePropsType) => {
       height={frameHeight}
       src={`https://www.youtube-nocookie.com/embed/${props.videoId}`}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-      allowFullScreen // triggers document.fullscreenElement → body.video-fullscreen
+      allowFullScreen
     />
   );
 };
 
-export const MyMvTube = (props: MvTubePropsType) => {
-  const {frameWidth} = useVideoFrameDimensions();
-  // MixedWrestling embed is 700x400 (7:4), not 16:9.
-  const frameHeight = Math.round((frameWidth * 4) / 7);
-
-  return (
+export const MyMvTube = (props: MvTubePropsType) => (
+  <div className={s.mvtubeShell}>
     <iframe
-      className="video-embed-iframe"
-      width={frameWidth}
-      height={frameHeight}
+      className={`video-embed-iframe ${s.mvtubeIframe}`}
       src={`https://mixedwrestling.video/embed/${props.videoId}`}
-      frameBorder="0"
-      // Prevent iframe-internal scrollbars during playback controls/layout changes.
+      title={`MixedWrestling video ${props.videoId}`}
       scrolling="no"
-      style={{display: 'block', border: 0}}
-      allow="fullscreen"
-      allowFullScreen // parent page hides header via fullscreenchange listener
+      allow="autoplay; fullscreen"
+      allowFullScreen
     />
-  );
-};
-
+  </div>
+);
 export const MyDirectVideo = (props: {src: string; isActive?: boolean}) => {
   const {frameWidth, frameHeight} = useVideoFrameDimensions();
   const videoRef = useRef<HTMLVideoElement>(null);

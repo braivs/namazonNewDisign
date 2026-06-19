@@ -1,0 +1,22 @@
+// MvTube embed is 700×400 (7:4). CSS-only sizing — stable iframe for native fullscreen.
+.mvtubeShell {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 7 / 4;
+  background: #000;
+
+  @media (min-width: 768px) {
+    max-width: 480px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 640px;
+  }
+}
+
+.mvtubeIframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}

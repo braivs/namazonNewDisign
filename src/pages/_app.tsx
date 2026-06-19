@@ -4,7 +4,6 @@ import {FC} from "react"
 import {Provider} from "react-redux"
 import {store} from "@/app/store/store"
 import {AppI18nProvider} from "@/providers/AppI18nProvider"
-import VideoFullscreenChrome from "@/components/video-fullscreen-chrome"
 import { config } from '@fortawesome/fontawesome-svg-core'; // fix for fontawesome big size issue on first start
 import "@fortawesome/fontawesome-svg-core/styles.css"
 config.autoAddCss = false;
@@ -22,8 +21,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <AppI18nProvider>
-        {/* Hides fixed header when embed/video goes fullscreen on mobile */}
-        <VideoFullscreenChrome />
         <Component {...pageProps} />
       </AppI18nProvider>
     </Provider>
