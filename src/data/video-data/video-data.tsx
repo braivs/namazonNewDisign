@@ -372,12 +372,13 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 60,
-    youtubeID: 'zRC8TWQKzi0',
+    youtubeID: '',
     title: 'Siya vs Skuf - round 1',
     category: 'MIXED WRESTLING',
     patreonId: 'nc60-fm-siya-vs-157276901',
     isPost: true,
-    isClickable: true
+    isClickable: true,
+    mvtubeId: 'k7IAbybh84TnQro'
   },
   {
     id: 61,
