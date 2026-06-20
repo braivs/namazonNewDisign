@@ -11,12 +11,9 @@ function isDocumentFullscreen(): boolean {
   return Boolean(doc.fullscreenElement ?? doc.webkitFullscreenElement)
 }
 
-function getFullscreenElement(): Element | null {
-  const doc = document as Document & {webkitFullscreenElement?: Element | null}
-  return doc.fullscreenElement ?? doc.webkitFullscreenElement ?? null
-}
-
-// Responsive iframe/video width — skips resize while fullscreen to avoid dropping embed FS.
+// Shared sizing hook for YouTube/direct <video>.
+// We intentionally do not resize while fullscreen is active:
+// some embeds collapse fullscreen when resize events fire.
 function useVideoFrameDimensions() {
   const [frameWidth, setFrameWidth] = useState(640);
   const [frameHeight, setFrameHeight] = useState(360);
@@ -62,7 +59,9 @@ function useVideoFrameDimensions() {
   return {frameWidth, frameHeight};
 }
 
-// Must match the listener in MyMvTube — different values break resize updates (change only fires at this breakpoint).
+// Must match the listener in MyMvTube — different values break resize updates
+// (MediaQueryList "change" only fires when this exact breakpoint is crossed).
+// This bucket maps to the environment where Chromium + cross-origin iframe fullscreen is unstable.
 const MVTUBE_BLOCK_FS_MEDIA = '(max-width: 1199px)'
 
 function isChromiumBrowser(): boolean {
@@ -70,30 +69,10 @@ function isChromiumBrowser(): boolean {
   return /Chrome|CriOS/i.test(ua) && !/Firefox|FxiOS/i.test(ua) && !/Edg/i.test(ua)
 }
 
+// Block native iframe fullscreen only in the problematic environment.
+// On desktop/Firefox we keep normal iframe fullscreen permissions.
 function shouldBlockMvTubeIframeFullscreen(): boolean {
   return window.matchMedia(MVTUBE_BLOCK_FS_MEDIA).matches && isChromiumBrowser()
-}
-
-async function requestElementFullscreen(el: HTMLElement): Promise<void> {
-  const anyEl = el as HTMLElement & {webkitRequestFullscreen?: () => Promise<void> | void}
-  if (el.requestFullscreen) {
-    await el.requestFullscreen()
-    return
-  }
-  if (anyEl.webkitRequestFullscreen) {
-    await anyEl.webkitRequestFullscreen()
-  }
-}
-
-async function exitDocumentFullscreen(): Promise<void> {
-  const doc = document as Document & {webkitExitFullscreen?: () => Promise<void> | void}
-  if (document.exitFullscreen) {
-    await document.exitFullscreen()
-    return
-  }
-  if (doc.webkitExitFullscreen) {
-    await doc.webkitExitFullscreen()
-  }
 }
 
 export const MyYouTube = (props: YoutubePropsType) => {
@@ -110,15 +89,22 @@ export const MyYouTube = (props: YoutubePropsType) => {
   );
 };
 
+// MvTube strategy:
+// 1) Inline mode by default.
+// 2) On mobile Chromium we disable native iframe fullscreen and use CSS theater overlay.
+// 3) Exit button stays over video because we avoid native cross-origin fullscreen layer.
 export const MyMvTube = (props: MvTubePropsType) => {
   const {t} = useTranslation('video')
-  const shellRef = useRef<HTMLDivElement>(null)
   const iframeRef = useRef<HTMLIFrameElement>(null)
+  // True => strip iframe fullscreen permissions and show custom Fullscreen control.
   const [blockIframeFullscreen, setBlockIframeFullscreen] = useState(false)
+  // Delay first iframe render until client-only media/UA policy is known.
   const [embedReady, setEmbedReady] = useState(false)
-  const [shellFullscreen, setShellFullscreen] = useState(false)
+  // CSS theater overlay (viewport-fixed), not browser Fullscreen API.
+  const [theater, setTheater] = useState(false)
   const embedSrc = `https://mixedwrestling.video/embed/${props.videoId}`
 
+  // Keep policy synchronized when viewport crosses MVTUBE_BLOCK_FS_MEDIA breakpoint.
   useEffect(() => {
     const mq = window.matchMedia(MVTUBE_BLOCK_FS_MEDIA)
     const update = () => {
@@ -130,20 +116,7 @@ export const MyMvTube = (props: MvTubePropsType) => {
     return () => mq.removeEventListener('change', update)
   }, [])
 
-  useEffect(() => {
-    const syncShellFullscreen = () => {
-      const shell = shellRef.current
-      setShellFullscreen(Boolean(shell && getFullscreenElement() === shell))
-    }
-    document.addEventListener('fullscreenchange', syncShellFullscreen)
-    document.addEventListener('webkitfullscreenchange', syncShellFullscreen)
-    syncShellFullscreen()
-    return () => {
-      document.removeEventListener('fullscreenchange', syncShellFullscreen)
-      document.removeEventListener('webkitfullscreenchange', syncShellFullscreen)
-    }
-  }, [])
-
+  // Remove legacy fullscreen attrs when fullscreen is blocked in this environment.
   useEffect(() => {
     const iframe = iframeRef.current
     if (!iframe || !blockIframeFullscreen) return
@@ -152,24 +125,26 @@ export const MyMvTube = (props: MvTubePropsType) => {
     iframe.removeAttribute('mozallowfullscreen')
   }, [blockIframeFullscreen, embedReady])
 
-  const enterShellFullscreen = useCallback(async () => {
-    const shell = shellRef.current
-    if (!shell) return
-    try {
-      await requestElementFullscreen(shell)
-    } catch {
-      /* user gesture / browser policy */
-    }
-  }, [])
+  // Stable handlers are reused by click callbacks and Escape effect dependencies.
+  const openTheater = useCallback(() => setTheater(true), [])
+  const closeTheater = useCallback(() => setTheater(false), [])
 
-  const exitShellFullscreen = useCallback(async () => {
-    try {
-      await exitDocumentFullscreen()
-    } catch {
-      /* already exited */
+  // Theater lifecycle: lock page scroll and allow keyboard exit via Escape.
+  useEffect(() => {
+    if (!theater) return
+    const prevOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeTheater()
     }
-  }, [])
+    window.addEventListener('keydown', onKey)
+    return () => {
+      document.body.style.overflow = prevOverflow
+      window.removeEventListener('keydown', onKey)
+    }
+  }, [theater, closeTheater])
 
+  // Placeholder keeps layout stable while client policy is being computed.
   if (!embedReady) {
     return (
       <div className={s.mvtubeWrap}>
@@ -178,37 +153,41 @@ export const MyMvTube = (props: MvTubePropsType) => {
     )
   }
 
-  // Layout: shell clips embed height; Fullscreen button is in .mvtubeActions below the shell.
   return (
-    <div className={s.mvtubeWrap}>
-      {/* Shell size = aspect-ratio only (see common.module.scss). No width/height on iframe — that caused the white gap. */}
-      <div ref={shellRef} className={cn(s.mvtubeShell, 'mvtube-shell')}>
-        <iframe
-          ref={iframeRef}
-          key={blockIframeFullscreen ? 'mvtube-no-fs' : 'mvtube-fs'}
-          className={cn(s.mvtubeIframe, 'mvtube-embed-iframe', 'video-embed-iframe')}
-          src={embedSrc}
-          title={`MixedWrestling video ${props.videoId}`}
-          scrolling="no"
-          allow={blockIframeFullscreen ? 'autoplay' : 'autoplay; fullscreen'}
-          allowFullScreen={!blockIframeFullscreen}
-        />
-        {blockIframeFullscreen && shellFullscreen && (
+    <div className={cn(s.mvtubeWrap, theater && s.mvtubeWrapTheater, theater && 'mvtube-theater')}>
+      {/* Shell is the clipping box: masks embed footer artifacts and hosts overlay controls. */}
+      <div className={cn(s.mvtubeShell, 'mvtube-shell')}>
+        {/* Iframe slot isolates sizing rules between inline and theater modes. */}
+        <div className={s.mvtubeIframeSlot}>
+          <iframe
+            ref={iframeRef}
+            key={blockIframeFullscreen ? 'mvtube-no-fs' : 'mvtube-fs'}
+            className={cn(s.mvtubeIframe, 'mvtube-embed-iframe', 'video-embed-iframe')}
+            src={embedSrc}
+            title={`MixedWrestling video ${props.videoId}`}
+            scrolling="no"
+            frameBorder={0}
+            allow={blockIframeFullscreen ? 'autoplay' : 'autoplay; fullscreen'}
+            allowFullScreen={!blockIframeFullscreen}
+          />
+        </div>
+        {blockIframeFullscreen && theater && (
           <button
             type="button"
             className={s.mvtubeExitBtn}
-            onClick={() => void exitShellFullscreen()}
+            onClick={closeTheater}
           >
             {t('details.mvtubeExitFullscreen')}
           </button>
         )}
       </div>
-      {blockIframeFullscreen && !shellFullscreen && (
+      {/* Entry button appears only when native iframe fullscreen is intentionally blocked. */}
+      {blockIframeFullscreen && !theater && (
         <div className={s.mvtubeActions}>
           <button
             type="button"
             className={s.mvtubeFullscreenBtn}
-            onClick={() => void enterShellFullscreen()}
+            onClick={openTheater}
           >
             {t('details.mvtubeFullscreen')}
           </button>

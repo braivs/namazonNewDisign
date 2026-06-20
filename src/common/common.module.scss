@@ -1,6 +1,5 @@
-// MvTube layout — fixes white gap between player controls and the Fullscreen button below.
-// Problem: iframe had width/height attrs + shell width:100% → embed (~400px tall) stuck out below the visible player.
-// Fix: shell uses aspect-ratio 7/4 + overflow:hidden; iframe fills shell via position:absolute (no HTML dimensions).
+// MvTube layout — embed page has white footer inside cross-origin iframe.
+// Mobile Chromium: theater overlay (fixed) instead of native FS — exit button can sit over the video.
 
 .mvtubeWrap {
   display: flex;
@@ -9,15 +8,30 @@
   width: 100%;
 }
 
-// MvTube native embed is 700×400 (7:4). Height comes from aspect-ratio, not from iframe attributes.
+// Primary clipping container for inline mode.
+// It limits iframe paint and masks bottom embed artifacts with a tiny black bar (::after).
 .mvtubeShell {
   position: relative;
+  display: block;
   width: 100%;
   max-width: 340px;
-  aspect-ratio: 7 / 4;
+  aspect-ratio: 700 / 392;
   overflow: hidden;
   background: #000;
   flex-shrink: 0;
+  line-height: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    //height: 4px;
+    background: #000;
+    z-index: 2;
+    pointer-events: none;
+  }
 
   @media (min-width: 768px) {
     max-width: 480px;
@@ -26,39 +40,31 @@
   @media (min-width: 992px) {
     max-width: 640px;
   }
-
-  &:fullscreen,
-  &:-webkit-full-screen {
-    width: 100vw;
-    height: 100vh;
-    max-width: none;
-    aspect-ratio: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
-// Fill shell exactly; overflow on shell clips extra embed page (white strip under controls).
+// Dedicated slot so iframe sizing can switch per mode
+// without changing outer shell layout rules.
+.mvtubeIframeSlot {
+  position: absolute;
+  inset: 0;
+}
+
+// Inline iframe: slight top-anchored scale + bottom clip removes white seam under controls.
 .mvtubeIframe {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  border: 0;
+  border: none;
+  outline: none;
   display: block;
+  background: #000;
+  transform: scale(1.02);
+  transform-origin: top center;
+  clip-path: inset(0 0 3px 0);
 }
 
-.mvtubeShell:fullscreen .mvtubeIframe,
-.mvtubeShell:-webkit-full-screen .mvtubeIframe {
-  position: relative;
-  inset: auto;
-  width: 100%;
-  height: 100%;
-  max-height: 100vh;
-}
-
-// Outside shell — only margin-top, not part of iframe layout height.
+// Action row below the player in inline mode.
 .mvtubeActions {
   display: flex;
   justify-content: center;
@@ -76,15 +82,62 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  line-height: normal;
 
   &:hover {
     opacity: 0.9;
   }
 }
 
+// Exit over the video (works because we are not in native iframe fullscreen).
 .mvtubeExitBtn {
   position: absolute;
   top: 12px;
   right: 12px;
-  z-index: 2;
+  z-index: 10;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+}
+
+// CSS theater — no requestFullscreen (cross-origin iframe covers HTML overlays in native FS).
+// This mode keeps the Exit button clickable over video.
+.mvtubeWrapTheater {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #000;
+  justify-content: center;
+
+  // Theater shell expands to viewport and disables inline bottom mask.
+  .mvtubeShell {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    aspect-ratio: auto;
+    flex: 1;
+    align-self: stretch;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  // Center video surface in viewport and keep black background around it.
+  .mvtubeIframeSlot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+  }
+
+  // Theater iframe prefers full width; small bottom clip still removes residual white footer.
+  .mvtubeIframe {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    aspect-ratio: 700 / 400;
+    transform: none;
+    clip-path: inset(0 0 2% 0);
+  }
 }

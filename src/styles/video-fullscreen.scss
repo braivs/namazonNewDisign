@@ -1,4 +1,5 @@
-// Hide fixed header while MvTube shell or embed is in browser fullscreen.
+// Hide fixed header while MvTube theater or embed is in browser fullscreen.
+body:has(.mvtube-theater),
 body:has(.mvtube-shell:fullscreen),
 body:has(.mvtube-shell:-webkit-full-screen),
 body:has(iframe.mvtube-embed-iframe:fullscreen),
