@@ -121,8 +121,6 @@ export const MyMvTube = (props: MvTubePropsType) => {
   const [theaterLandscape, setTheaterLandscape] = useState(false)
   // Theater overlay box synced to visualViewport (mobile chrome + rotation).
   const [theaterBox, setTheaterBox] = useState({top: 0, left: 0, width: 0, height: 0})
-  // Force iframe remount when viewport/orientation changes in theater mode.
-  const [theaterViewportVersion, setTheaterViewportVersion] = useState(0)
   const embedSrc = `https://mixedwrestling.video/embed/${props.videoId}`
 
   // Re-check fullscreen policy when viewport crosses the configured breakpoint.
@@ -183,7 +181,7 @@ export const MyMvTube = (props: MvTubePropsType) => {
   }, [theater, closeTheater])
 
   // On real phones, orientationchange often fires before innerWidth/innerHeight settle.
-  // Re-read visualViewport with short delays and switch landscape CSS fit strategy.
+  // Update overlay geometry + landscape CSS only; keep the same iframe to preserve playback.
   useEffect(() => {
     if (!theater) return
 
@@ -216,9 +214,6 @@ export const MyMvTube = (props: MvTubePropsType) => {
         height: next.height,
       })
       setTheaterLandscape(next.landscape)
-      if (orientationChanged || changedEnough) {
-        setTheaterViewportVersion((v) => v + 1)
-      }
     }
 
     const scheduleApply = () => {
@@ -283,7 +278,8 @@ export const MyMvTube = (props: MvTubePropsType) => {
         <div className={s.mvtubeIframeSlot}>
           <iframe
             ref={iframeRef}
-            key={`${blockIframeFullscreen ? 'mvtube-no-fs' : 'mvtube-fs'}-${theater ? `t-${theaterViewportVersion}` : 'inline'}`}
+            // Remount only when fullscreen policy changes — not on theater toggle or rotation.
+            key={blockIframeFullscreen ? 'mvtube-no-fs' : 'mvtube-fs'}
             className={cn(s.mvtubeIframe, 'mvtube-embed-iframe', 'video-embed-iframe')}
             src={embedSrc}
             title={`MixedWrestling video ${props.videoId}`}
