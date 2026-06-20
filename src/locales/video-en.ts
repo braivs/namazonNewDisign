@@ -420,5 +420,7 @@ export const videoEn = {
     clickToSeeVideoYoutube: 'click to see the video on YouTube',
     mvtubeFullscreen: 'Fullscreen',
     mvtubeExitFullscreen: 'Exit fullscreen',
+    mvtubeFullscreenHint:
+      'Tap the button below for fullscreen.\nThe player’s built-in fullscreen button is disabled.',
   },
 }

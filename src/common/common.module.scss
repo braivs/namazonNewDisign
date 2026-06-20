@@ -70,9 +70,28 @@
 // Button row shown under the player in inline mode.
 .mvtubeActions {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
   margin-top: 10px;
   flex-shrink: 0;
+  max-width: 340px;
+
+  @media (min-width: 768px) {
+    max-width: 480px;
+  }
+}
+
+.mvtubeFullscreenHint {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre-line;
+  color: var(--tp-text-body, #666);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--tp-text-body, #aaa);
+  }
 }
 
 .mvtubeFullscreenBtn,

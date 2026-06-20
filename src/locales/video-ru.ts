@@ -504,5 +504,7 @@ export const videoRu = {
     clickToSeeVideoYoutube: 'нажмите, чтобы посмотреть видео на YouTube',
     mvtubeFullscreen: 'На весь экран',
     mvtubeExitFullscreen: 'Выйти из полноэкранного режима',
+    mvtubeFullscreenHint:
+      'Нажми кнопку ниже, чтобы развернуть видео на весь экран. \nВстроенная кнопка полноэкранного режима в плеере отключена.',
   },
 }

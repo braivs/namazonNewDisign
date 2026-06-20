@@ -313,6 +313,7 @@ export const MyMvTube = (props: MvTubePropsType) => {
           >
             {t('details.mvtubeFullscreen')}
           </button>
+          <p className={s.mvtubeFullscreenHint}>{t('details.mvtubeFullscreenHint')}</p>
         </div>
       )}
     </div>
