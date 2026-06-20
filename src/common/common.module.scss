@@ -1,7 +1,5 @@
-// MvTube layout notes:
-// - The embed can paint a white footer area inside a cross-origin iframe.
-// - On mobile Chromium we use a fixed "theater" overlay instead of native fullscreen
-//   so the Exit button stays reliably visible over the video.
+// MvTube layout — shell aspect-ratio clips embed; native shell fullscreen on mobile Chromium.
+// No width/height on iframe HTML attrs — that caused the white gap below controls.
 
 .mvtubeWrap {
   display: flex;
@@ -10,30 +8,14 @@
   width: 100%;
 }
 
-// Main clipping container for inline mode.
-// It constrains iframe paint and hides bottom-edge artifacts via a small black mask (::after).
 .mvtubeShell {
   position: relative;
-  display: block;
   width: 100%;
   max-width: 340px;
-  aspect-ratio: 700 / 392;
+  aspect-ratio: 7 / 4;
   overflow: hidden;
   background: #000;
   flex-shrink: 0;
-  line-height: 0;
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    //height: 4px;
-    background: #000;
-    z-index: 2;
-    pointer-events: none;
-  }
 
   @media (min-width: 768px) {
     max-width: 480px;
@@ -42,32 +24,37 @@
   @media (min-width: 992px) {
     max-width: 640px;
   }
+
+  &:fullscreen,
+  &:-webkit-full-screen {
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    aspect-ratio: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-// Wrapper around iframe.
-// Lets us switch sizing rules per mode without changing shell layout.
-.mvtubeIframeSlot {
-  position: absolute;
-  inset: 0;
-}
-
-// Inline iframe tuning:
-// slight top-anchored scale + bottom clip to hide the thin white seam under controls.
 .mvtubeIframe {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  border: none;
-  outline: none;
+  border: 0;
   display: block;
-  background: #000;
-  transform: scale(1.02);
-  transform-origin: top center;
-  clip-path: inset(0 0 3px 0);
 }
 
-// Button row shown under the player in inline mode.
+.mvtubeShell:fullscreen .mvtubeIframe,
+.mvtubeShell:-webkit-full-screen .mvtubeIframe {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+}
+
 .mvtubeActions {
   display: flex;
   flex-direction: column;
@@ -76,6 +63,7 @@
   margin-top: 10px;
   flex-shrink: 0;
   max-width: 340px;
+  text-align: center;
 
   @media (min-width: 768px) {
     max-width: 480px;
@@ -111,71 +99,10 @@
   }
 }
 
-// Exit button overlay in theater mode.
 .mvtubeExitBtn {
   position: absolute;
   top: 12px;
   right: 12px;
   z-index: 10;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
-}
-
-// CSS theater mode (no requestFullscreen).
-// Native fullscreen with cross-origin iframes can hide HTML overlays;
-// theater mode keeps controls visible and clickable.
-.mvtubeWrapTheater {
-  position: fixed;
-  // top/left/width/height come from visualViewport in JS (mobile chrome + rotation).
-  z-index: 9999;
-  background: #000;
-  justify-content: center;
-
-  // Expand shell to viewport and disable inline bottom mask.
-  .mvtubeShell {
-    width: 100%;
-    max-width: none;
-    height: 100%;
-    aspect-ratio: auto;
-    flex: 1;
-    align-self: stretch;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  // Center video area in viewport with black background around it.
-  .mvtubeIframeSlot {
-    position: relative;
-    inset: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background: #000;
-  }
-
-  // Portrait theater: fit by width; landscape overrides below.
-  .mvtubeIframe {
-    position: relative;
-    inset: auto;
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-    aspect-ratio: 700 / 400;
-    transform: none;
-    clip-path: inset(0 0 2% 0);
-  }
-}
-
-// Landscape theater: fit by height (wide + short viewport); width follows aspect-ratio.
-.mvtubeWrapTheaterLandscape {
-  .mvtubeIframe {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    clip-path: inset(0 0 1.2% 0);
-  }
 }
