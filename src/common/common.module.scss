@@ -1,5 +1,7 @@
-// MvTube layout — embed page has white footer inside cross-origin iframe.
-// Mobile Chromium: theater overlay (fixed) instead of native FS — exit button can sit over the video.
+// MvTube layout notes:
+// - The embed can paint a white footer area inside a cross-origin iframe.
+// - On mobile Chromium we use a fixed "theater" overlay instead of native fullscreen
+//   so the Exit button stays reliably visible over the video.
 
 .mvtubeWrap {
   display: flex;
@@ -8,8 +10,8 @@
   width: 100%;
 }
 
-// Primary clipping container for inline mode.
-// It limits iframe paint and masks bottom embed artifacts with a tiny black bar (::after).
+// Main clipping container for inline mode.
+// It constrains iframe paint and hides bottom-edge artifacts via a small black mask (::after).
 .mvtubeShell {
   position: relative;
   display: block;
@@ -42,14 +44,15 @@
   }
 }
 
-// Dedicated slot so iframe sizing can switch per mode
-// without changing outer shell layout rules.
+// Wrapper around iframe.
+// Lets us switch sizing rules per mode without changing shell layout.
 .mvtubeIframeSlot {
   position: absolute;
   inset: 0;
 }
 
-// Inline iframe: slight top-anchored scale + bottom clip removes white seam under controls.
+// Inline iframe tuning:
+// slight top-anchored scale + bottom clip to hide the thin white seam under controls.
 .mvtubeIframe {
   position: absolute;
   inset: 0;
@@ -64,7 +67,7 @@
   clip-path: inset(0 0 3px 0);
 }
 
-// Action row below the player in inline mode.
+// Button row shown under the player in inline mode.
 .mvtubeActions {
   display: flex;
   justify-content: center;
@@ -89,7 +92,7 @@
   }
 }
 
-// Exit over the video (works because we are not in native iframe fullscreen).
+// Exit button overlay in theater mode.
 .mvtubeExitBtn {
   position: absolute;
   top: 12px;
@@ -98,8 +101,9 @@
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
 }
 
-// CSS theater — no requestFullscreen (cross-origin iframe covers HTML overlays in native FS).
-// This mode keeps the Exit button clickable over video.
+// CSS theater mode (no requestFullscreen).
+// Native fullscreen with cross-origin iframes can hide HTML overlays;
+// theater mode keeps controls visible and clickable.
 .mvtubeWrapTheater {
   position: fixed;
   inset: 0;
@@ -107,7 +111,7 @@
   background: #000;
   justify-content: center;
 
-  // Theater shell expands to viewport and disables inline bottom mask.
+  // Expand shell to viewport and disable inline bottom mask.
   .mvtubeShell {
     width: 100%;
     max-width: none;
@@ -121,7 +125,7 @@
     }
   }
 
-  // Center video surface in viewport and keep black background around it.
+  // Center video area in viewport with black background around it.
   .mvtubeIframeSlot {
     display: flex;
     align-items: center;
@@ -129,7 +133,7 @@
     background: #000;
   }
 
-  // Theater iframe prefers full width; small bottom clip still removes residual white footer.
+  // In theater mode, fit by width and keep a small bottom clip for residual footer artifacts.
   .mvtubeIframe {
     position: relative;
     inset: auto;
@@ -139,5 +143,12 @@
     aspect-ratio: 700 / 400;
     transform: none;
     clip-path: inset(0 0 2% 0);
+  }
+}
+
+// Landscape theater usually needs a smaller bottom clip than portrait.
+.mvtubeWrapTheaterLandscape {
+  .mvtubeIframe {
+    clip-path: inset(0 0 1.2% 0);
   }
 }
