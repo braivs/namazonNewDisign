@@ -74,6 +74,21 @@ function shouldBlockMvTubeIframeFullscreen(): boolean {
   return window.matchMedia(MVTUBE_BLOCK_FS_MEDIA).matches && isChromiumBrowser()
 }
 
+// Read the visible viewport on mobile (address bar / rotation aware).
+function readTheaterViewport() {
+  const vv = window.visualViewport
+  const width = Math.round(vv?.width ?? window.innerWidth)
+  const height = Math.round(vv?.height ?? window.innerHeight)
+  return {
+    top: Math.round(vv?.offsetTop ?? 0),
+    left: Math.round(vv?.offsetLeft ?? 0),
+    width,
+    height,
+    landscape:
+      window.matchMedia('(orientation: landscape)').matches || width > height,
+  }
+}
+
 export const MyYouTube = (props: YoutubePropsType) => {
   const {frameWidth, frameHeight} = useVideoFrameDimensions();
 
@@ -95,7 +110,7 @@ export const MyYouTube = (props: YoutubePropsType) => {
 export const MyMvTube = (props: MvTubePropsType) => {
   const {t} = useTranslation('video')
   const iframeRef = useRef<HTMLIFrameElement>(null)
-  const viewportRef = useRef({w: 0, h: 0})
+  const viewportRef = useRef({w: 0, h: 0, top: 0, left: 0, landscape: false})
   // When true, remove iframe fullscreen permissions and use custom Fullscreen control.
   const [blockIframeFullscreen, setBlockIframeFullscreen] = useState(false)
   // Delay first iframe render until client-only policy (viewport + UA) is known.
@@ -104,6 +119,8 @@ export const MyMvTube = (props: MvTubePropsType) => {
   const [theater, setTheater] = useState(false)
   // Track orientation for theater-specific styling tweaks.
   const [theaterLandscape, setTheaterLandscape] = useState(false)
+  // Theater overlay box synced to visualViewport (mobile chrome + rotation).
+  const [theaterBox, setTheaterBox] = useState({top: 0, left: 0, width: 0, height: 0})
   // Force iframe remount when viewport/orientation changes in theater mode.
   const [theaterViewportVersion, setTheaterViewportVersion] = useState(0)
   const embedSrc = `https://mixedwrestling.video/embed/${props.videoId}`
@@ -129,8 +146,25 @@ export const MyMvTube = (props: MvTubePropsType) => {
     iframe.removeAttribute('mozallowfullscreen')
   }, [blockIframeFullscreen, embedReady])
 
-  // Stable handlers keep effect dependencies clean and predictable.
-  const openTheater = useCallback(() => setTheater(true), [])
+  // Seed theater geometry on open so the first paint already matches the device viewport.
+  const openTheater = useCallback(() => {
+    const next = readTheaterViewport()
+    viewportRef.current = {
+      w: next.width,
+      h: next.height,
+      top: next.top,
+      left: next.left,
+      landscape: next.landscape,
+    }
+    setTheaterBox({
+      top: next.top,
+      left: next.left,
+      width: next.width,
+      height: next.height,
+    })
+    setTheaterLandscape(next.landscape)
+    setTheater(true)
+  }, [])
   const closeTheater = useCallback(() => setTheater(false), [])
 
   // Theater lifecycle: lock page scroll and support Escape to close.
@@ -148,34 +182,70 @@ export const MyMvTube = (props: MvTubePropsType) => {
     }
   }, [theater, closeTheater])
 
-  // When rotating device in theater mode, some browsers keep stale iframe layout.
-  // We detect real viewport changes and remount iframe to recalculate correctly.
+  // On real phones, orientationchange often fires before innerWidth/innerHeight settle.
+  // Re-read visualViewport with short delays and switch landscape CSS fit strategy.
   useEffect(() => {
     if (!theater) return
 
-    const update = () => {
-      const w = window.innerWidth
-      const h = window.innerHeight
+    let rafId = 0
+    let timeoutId = 0
+
+    const applyViewport = () => {
+      const next = readTheaterViewport()
       const prev = viewportRef.current
-      const changedEnough = Math.abs(w - prev.w) > 8 || Math.abs(h - prev.h) > 8
-      const orientationChanged = (w > h) !== (prev.w > prev.h)
+      const changedEnough =
+        Math.abs(next.width - prev.w) > 8 ||
+        Math.abs(next.height - prev.h) > 8 ||
+        Math.abs(next.top - prev.top) > 2 ||
+        Math.abs(next.left - prev.left) > 2
+      const orientationChanged = next.landscape !== prev.landscape
 
-      if (!changedEnough && !orientationChanged) return
+      if (!changedEnough && !orientationChanged && prev.w > 0) return
 
-      viewportRef.current = {w, h}
-      setTheaterLandscape(w > h)
-      setTheaterViewportVersion((v) => v + 1)
+      viewportRef.current = {
+        w: next.width,
+        h: next.height,
+        top: next.top,
+        left: next.left,
+        landscape: next.landscape,
+      }
+      setTheaterBox({
+        top: next.top,
+        left: next.left,
+        width: next.width,
+        height: next.height,
+      })
+      setTheaterLandscape(next.landscape)
+      if (orientationChanged || changedEnough) {
+        setTheaterViewportVersion((v) => v + 1)
+      }
     }
 
-    update()
-    window.addEventListener('resize', update)
-    window.addEventListener('orientationchange', update)
-    window.visualViewport?.addEventListener('resize', update)
+    const scheduleApply = () => {
+      applyViewport()
+      cancelAnimationFrame(rafId)
+      rafId = requestAnimationFrame(() => {
+        applyViewport()
+        requestAnimationFrame(applyViewport)
+      })
+      window.clearTimeout(timeoutId)
+      timeoutId = window.setTimeout(applyViewport, 150)
+    }
+
+    scheduleApply()
+    window.addEventListener('resize', scheduleApply)
+    window.addEventListener('orientationchange', scheduleApply)
+    const vv = window.visualViewport
+    vv?.addEventListener('resize', scheduleApply)
+    vv?.addEventListener('scroll', scheduleApply)
 
     return () => {
-      window.removeEventListener('resize', update)
-      window.removeEventListener('orientationchange', update)
-      window.visualViewport?.removeEventListener('resize', update)
+      window.removeEventListener('resize', scheduleApply)
+      window.removeEventListener('orientationchange', scheduleApply)
+      vv?.removeEventListener('resize', scheduleApply)
+      vv?.removeEventListener('scroll', scheduleApply)
+      cancelAnimationFrame(rafId)
+      window.clearTimeout(timeoutId)
     }
   }, [theater])
 
@@ -196,6 +266,16 @@ export const MyMvTube = (props: MvTubePropsType) => {
         theater && theaterLandscape && s.mvtubeWrapTheaterLandscape,
         theater && 'mvtube-theater',
       )}
+      style={
+        theater
+          ? {
+              top: theaterBox.top,
+              left: theaterBox.left,
+              width: theaterBox.width,
+              height: theaterBox.height,
+            }
+          : undefined
+      }
     >
       {/* Shell is the clipping box and anchor for overlay controls. */}
       <div className={cn(s.mvtubeShell, 'mvtube-shell')}>

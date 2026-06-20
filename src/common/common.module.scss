@@ -106,7 +106,7 @@
 // theater mode keeps controls visible and clickable.
 .mvtubeWrapTheater {
   position: fixed;
-  inset: 0;
+  // top/left/width/height come from visualViewport in JS (mobile chrome + rotation).
   z-index: 9999;
   background: #000;
   justify-content: center;
@@ -127,13 +127,17 @@
 
   // Center video area in viewport with black background around it.
   .mvtubeIframeSlot {
+    position: relative;
+    inset: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
     background: #000;
   }
 
-  // In theater mode, fit by width and keep a small bottom clip for residual footer artifacts.
+  // Portrait theater: fit by width; landscape overrides below.
   .mvtubeIframe {
     position: relative;
     inset: auto;
@@ -146,9 +150,13 @@
   }
 }
 
-// Landscape theater usually needs a smaller bottom clip than portrait.
+// Landscape theater: fit by height (wide + short viewport); width follows aspect-ratio.
 .mvtubeWrapTheaterLandscape {
   .mvtubeIframe {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     clip-path: inset(0 0 1.2% 0);
   }
 }
