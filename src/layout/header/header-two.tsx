@@ -45,7 +45,7 @@ const HeaderTwo = () => {
   const router = useRouter()
   const [mobileView, setMobileView] = useState(false)
   const isVideoPage = router.pathname === '/video/[videoId]'
-  // Part of mobile fullscreen fix — no fixed header on /video/* below xl breakpoint.
+  // No sticky header on mobile video pages — keeps header from covering the player.
   const {sticky} = useSticky({disabled: isVideoPage && mobileView})
   const [isActive, setIsActive] = useState(false)
 

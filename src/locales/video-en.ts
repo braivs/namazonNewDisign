@@ -418,5 +418,7 @@ export const videoEn = {
     previewUnavailableSingle: "If the preview isn't available please email us.",
     clickToSeeVideo: 'click to see the video',
     clickToSeeVideoYoutube: 'click to see the video on YouTube',
+    mvtubeFullscreen: 'Fullscreen',
+    mvtubeExitFullscreen: 'Exit fullscreen',
   },
 }

@@ -1,8 +1,8 @@
-// Hide fixed header while embed/video is in browser fullscreen (:has only, no JS body class).
-body:has(iframe.video-embed-iframe:fullscreen),
-body:has(video.video-embed-iframe:fullscreen),
-body:has(iframe.video-embed-iframe:-webkit-full-screen),
-body:has(video.video-embed-iframe:-webkit-full-screen) {
+// Hide fixed header while MvTube shell or embed is in browser fullscreen.
+body:has(.mvtube-shell:fullscreen),
+body:has(.mvtube-shell:-webkit-full-screen),
+body:has(iframe.mvtube-embed-iframe:fullscreen),
+body:has(iframe.mvtube-embed-iframe:-webkit-full-screen) {
   .header-sticky,
   .tp-mobile-header-area,
   #header-mob-sticky,

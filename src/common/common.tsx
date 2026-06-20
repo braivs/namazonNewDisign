@@ -1,12 +1,22 @@
-import React, {useEffect, useRef, useState} from 'react'
+import cn from 'classnames'
+import React, {useCallback, useEffect, useRef, useState} from 'react'
 import {Photo} from "react-photo-album"
 import {Slide} from "yet-another-react-lightbox"
-import s from './video-embed.module.scss'
+import {useTranslation} from 'react-i18next'
+import s from './common.module.scss'
+
+// Cross-browser check for an element in native fullscreen (YouTube/MvTube iframe, <video>).
 function isDocumentFullscreen(): boolean {
   const doc = document as Document & {webkitFullscreenElement?: Element | null}
   return Boolean(doc.fullscreenElement ?? doc.webkitFullscreenElement)
 }
 
+function getFullscreenElement(): Element | null {
+  const doc = document as Document & {webkitFullscreenElement?: Element | null}
+  return doc.fullscreenElement ?? doc.webkitFullscreenElement ?? null
+}
+
+// Responsive iframe/video width — skips resize while fullscreen to avoid dropping embed FS.
 function useVideoFrameDimensions() {
   const [frameWidth, setFrameWidth] = useState(640);
   const [frameHeight, setFrameHeight] = useState(360);
@@ -27,7 +37,6 @@ function useVideoFrameDimensions() {
     };
 
     const updateWindowDimensions = () => {
-      // Mobile: resize during fullscreen re-renders iframe and drops fullscreen.
       if (isDocumentFullscreen()) return
       applyDimensions()
     };
@@ -53,12 +62,45 @@ function useVideoFrameDimensions() {
   return {frameWidth, frameHeight};
 }
 
+// Must match the listener in MyMvTube — different values break resize updates (change only fires at this breakpoint).
+const MVTUBE_BLOCK_FS_MEDIA = '(max-width: 1199px)'
+
+function isChromiumBrowser(): boolean {
+  const ua = navigator.userAgent
+  return /Chrome|CriOS/i.test(ua) && !/Firefox|FxiOS/i.test(ua) && !/Edg/i.test(ua)
+}
+
+function shouldBlockMvTubeIframeFullscreen(): boolean {
+  return window.matchMedia(MVTUBE_BLOCK_FS_MEDIA).matches && isChromiumBrowser()
+}
+
+async function requestElementFullscreen(el: HTMLElement): Promise<void> {
+  const anyEl = el as HTMLElement & {webkitRequestFullscreen?: () => Promise<void> | void}
+  if (el.requestFullscreen) {
+    await el.requestFullscreen()
+    return
+  }
+  if (anyEl.webkitRequestFullscreen) {
+    await anyEl.webkitRequestFullscreen()
+  }
+}
+
+async function exitDocumentFullscreen(): Promise<void> {
+  const doc = document as Document & {webkitExitFullscreen?: () => Promise<void> | void}
+  if (document.exitFullscreen) {
+    await document.exitFullscreen()
+    return
+  }
+  if (doc.webkitExitFullscreen) {
+    await doc.webkitExitFullscreen()
+  }
+}
+
 export const MyYouTube = (props: YoutubePropsType) => {
   const {frameWidth, frameHeight} = useVideoFrameDimensions();
 
   return (
     <iframe
-      className="video-embed-iframe"
       width={frameWidth}
       height={frameHeight}
       src={`https://www.youtube-nocookie.com/embed/${props.videoId}`}
@@ -68,18 +110,114 @@ export const MyYouTube = (props: YoutubePropsType) => {
   );
 };
 
-export const MyMvTube = (props: MvTubePropsType) => (
-  <div className={s.mvtubeShell}>
-    <iframe
-      className={`video-embed-iframe ${s.mvtubeIframe}`}
-      src={`https://mixedwrestling.video/embed/${props.videoId}`}
-      title={`MixedWrestling video ${props.videoId}`}
-      scrolling="no"
-      allow="autoplay; fullscreen"
-      allowFullScreen
-    />
-  </div>
-);
+export const MyMvTube = (props: MvTubePropsType) => {
+  const {t} = useTranslation('video')
+  const shellRef = useRef<HTMLDivElement>(null)
+  const iframeRef = useRef<HTMLIFrameElement>(null)
+  const [blockIframeFullscreen, setBlockIframeFullscreen] = useState(false)
+  const [embedReady, setEmbedReady] = useState(false)
+  const [shellFullscreen, setShellFullscreen] = useState(false)
+  const embedSrc = `https://mixedwrestling.video/embed/${props.videoId}`
+
+  useEffect(() => {
+    const mq = window.matchMedia(MVTUBE_BLOCK_FS_MEDIA)
+    const update = () => {
+      setBlockIframeFullscreen(shouldBlockMvTubeIframeFullscreen())
+      setEmbedReady(true)
+    }
+    update()
+    mq.addEventListener('change', update)
+    return () => mq.removeEventListener('change', update)
+  }, [])
+
+  useEffect(() => {
+    const syncShellFullscreen = () => {
+      const shell = shellRef.current
+      setShellFullscreen(Boolean(shell && getFullscreenElement() === shell))
+    }
+    document.addEventListener('fullscreenchange', syncShellFullscreen)
+    document.addEventListener('webkitfullscreenchange', syncShellFullscreen)
+    syncShellFullscreen()
+    return () => {
+      document.removeEventListener('fullscreenchange', syncShellFullscreen)
+      document.removeEventListener('webkitfullscreenchange', syncShellFullscreen)
+    }
+  }, [])
+
+  useEffect(() => {
+    const iframe = iframeRef.current
+    if (!iframe || !blockIframeFullscreen) return
+    iframe.removeAttribute('allowfullscreen')
+    iframe.removeAttribute('webkitallowfullscreen')
+    iframe.removeAttribute('mozallowfullscreen')
+  }, [blockIframeFullscreen, embedReady])
+
+  const enterShellFullscreen = useCallback(async () => {
+    const shell = shellRef.current
+    if (!shell) return
+    try {
+      await requestElementFullscreen(shell)
+    } catch {
+      /* user gesture / browser policy */
+    }
+  }, [])
+
+  const exitShellFullscreen = useCallback(async () => {
+    try {
+      await exitDocumentFullscreen()
+    } catch {
+      /* already exited */
+    }
+  }, [])
+
+  if (!embedReady) {
+    return (
+      <div className={s.mvtubeWrap}>
+        <div className={s.mvtubeShell} aria-hidden />
+      </div>
+    )
+  }
+
+  // Layout: shell clips embed height; Fullscreen button is in .mvtubeActions below the shell.
+  return (
+    <div className={s.mvtubeWrap}>
+      {/* Shell size = aspect-ratio only (see common.module.scss). No width/height on iframe — that caused the white gap. */}
+      <div ref={shellRef} className={cn(s.mvtubeShell, 'mvtube-shell')}>
+        <iframe
+          ref={iframeRef}
+          key={blockIframeFullscreen ? 'mvtube-no-fs' : 'mvtube-fs'}
+          className={cn(s.mvtubeIframe, 'mvtube-embed-iframe', 'video-embed-iframe')}
+          src={embedSrc}
+          title={`MixedWrestling video ${props.videoId}`}
+          scrolling="no"
+          allow={blockIframeFullscreen ? 'autoplay' : 'autoplay; fullscreen'}
+          allowFullScreen={!blockIframeFullscreen}
+        />
+        {blockIframeFullscreen && shellFullscreen && (
+          <button
+            type="button"
+            className={s.mvtubeExitBtn}
+            onClick={() => void exitShellFullscreen()}
+          >
+            {t('details.mvtubeExitFullscreen')}
+          </button>
+        )}
+      </div>
+      {blockIframeFullscreen && !shellFullscreen && (
+        <div className={s.mvtubeActions}>
+          <button
+            type="button"
+            className={s.mvtubeFullscreenBtn}
+            onClick={() => void enterShellFullscreen()}
+          >
+            {t('details.mvtubeFullscreen')}
+          </button>
+        </div>
+      )}
+    </div>
+  )
+}
+
 export const MyDirectVideo = (props: {src: string; isActive?: boolean}) => {
   const {frameWidth, frameHeight} = useVideoFrameDimensions();
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -95,7 +233,6 @@ export const MyDirectVideo = (props: {src: string; isActive?: boolean}) => {
   return (
     <video
       ref={videoRef}
-      className="video-embed-iframe" // same fullscreen chrome handling as iframes
       width={frameWidth}
       height={frameHeight}
       controls
