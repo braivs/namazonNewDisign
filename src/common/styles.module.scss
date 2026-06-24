@@ -2,6 +2,8 @@
 
 .videosMainImg {
     max-width: 100%;
+    height: auto;
+    display: block;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -127,6 +129,24 @@
             margin-left: 10px;
             font-family: var(--tp-ff-heading), serif;
             text-wrap: nowrap;
+        }
+    }
+}
+
+.competitionsBreadcrumb {
+    @media (max-width: 520px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .group {
+            margin-top: 8px;
+            margin-left: 0;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .element {
+            margin-left: 0;
         }
     }
 }

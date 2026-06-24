@@ -29,7 +29,7 @@ const BannerCompetitions = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-12">
-            <div className={sC.tpBreadcrumb}>
+            <div className={cn(sC.tpBreadcrumb, sC.competitionsBreadcrumb)}>
               <h2 className={sC.title}>{t('competitions.title')}</h2>
               <div className={sC.group}>
                 <div
