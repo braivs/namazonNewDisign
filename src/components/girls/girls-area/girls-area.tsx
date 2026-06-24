@@ -35,7 +35,9 @@ const GirlsArea = () => {
                           <div key={item.id} className="col-xl-3 col-lg-4 col-md-6">
                             <div className="team-item mb-35">
                               <div className="team-item__thumb mb-40">
-                                <img src={item.img} alt="team-thumb" />
+                                <Link href={`/girls/${item.id}`}>
+                                  <img src={item.img} alt={name} />
+                                </Link>
                               </div>
                               <div className="team-item__content">
                                 <h5 className="team-item__title mb-15">
@@ -61,7 +63,9 @@ const GirlsArea = () => {
                             <div className="team-item mb-35">
                               <div className="team-item__thumb mb-40">
                                 {!item.isInProgress ? (
-                                  <img src={item.img} alt="team-thumb" />
+                                  <Link href={`/girls/${item.id}`}>
+                                    <img src={item.img} alt={name} />
+                                  </Link>
                                 ) : (
                                   <div className={s.imageContainer}>
                                     <img src={item.img} className={s.filter} alt={name} />
