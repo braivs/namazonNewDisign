@@ -21,7 +21,7 @@ export const BannerCompetitionElement = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-6 col-12">
-            <div className="tp-breadcrumb">
+            <div className={cn(sC.competitionDetailsBreadcrumb, 'tp-breadcrumb')}>
               <Link className="tp-breadcrumb__element" href="/competitions">
                 <FontAwesomeIcon icon={faArrowLeft} />
                 <span className={sC.return}>{t('competitions.back')}</span>
