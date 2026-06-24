@@ -46,6 +46,20 @@
     text-decoration-thickness: 4px;
 }
 
+.videoDetailsBreadcrumb {
+    @media (max-width: 440px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .selectedCategory {
+            flex-basis: 100%;
+            margin-left: 33px;
+            margin-top: 8px;
+        }
+    }
+}
+
 .return {
     margin-left: 5px;
     margin-right: 10px;
