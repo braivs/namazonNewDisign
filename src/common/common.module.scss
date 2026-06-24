@@ -12,7 +12,8 @@
   position: relative;
   width: 100%;
   max-width: 340px;
-  aspect-ratio: 7 / 4;
+  // Slightly shorter than the native 700/400 embed to clip the white footer strip.
+  aspect-ratio: 700 / 392;
   overflow: hidden;
   background: #000;
   flex-shrink: 0;
