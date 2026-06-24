@@ -40,7 +40,7 @@ const Sidebar: FC<SidebarProps> = ({isActive, setIsActive}) => {
 
         <div className="mobile-menu mean-container d-block">
           <div className="mean-bar">
-            <MobileMenus />
+            <MobileMenus onNavigate={() => setIsActive(false)} />
           </div>
         </div>
 
@@ -55,7 +55,7 @@ const Sidebar: FC<SidebarProps> = ({isActive, setIsActive}) => {
         </div>
         <SocialIcons />
         <div className={s.language}>
-          <LanguageSwitcher variant="sidebar"/>
+          <LanguageSwitcher variant="sidebar" onChange={() => setIsActive(false)}/>
         </div>
       </div>
 

@@ -10,13 +10,14 @@ import s from './LanguageSwitcher.module.scss'
 
 type Props = {
   variant?: 'default' | 'sidebar'
+  onChange?: () => void
 }
 
 function normalizeLocale(language: string | undefined): AppLocale {
   return language?.startsWith('ru') ? 'ru' : 'en'
 }
 
-export default function LanguageSwitcher({variant = 'default'}: Props) {
+export default function LanguageSwitcher({variant = 'default', onChange}: Props) {
   const {t, i18n} = useTranslation('language')
   const [, setLocale] = useLocale()
   const [activeLocale, setActiveLocale] = useState<AppLocale>(() => readStoredLocale())
@@ -46,7 +47,10 @@ export default function LanguageSwitcher({variant = 'default'}: Props) {
             activeLocale === lng && s.buttonActive,
             activeLocale === lng && variant === 'sidebar' && s.buttonActiveSidebar,
           )}
-          onClick={() => setLocale(lng)}
+          onClick={() => {
+            setLocale(lng)
+            onChange?.()
+          }}
           aria-current={activeLocale === lng}
         >
           {t(lng)}

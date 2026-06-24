@@ -5,7 +5,11 @@ import {useLocale} from '@/hooks/use-locale'
 import menu_data from './menu-data'
 import {getMenuTitle, getSubMenuTitle} from './menu-i18n-keys'
 
-const MobileMenus = () => {
+type MobileMenusProps = {
+  onNavigate?: () => void
+}
+
+const MobileMenus = ({onNavigate}: MobileMenusProps) => {
   const [navTitle, setNavTitle] = useState<string>('')
   const {t} = useTranslation('menu')
   const [, , ready] = useLocale()
@@ -28,7 +32,7 @@ const MobileMenus = () => {
             <React.Fragment key={menu.id}>
               {menu.has_dropdown && menu.sub_menus?.length ? (
                 <li className="has-dropdown">
-                  <Link href={menu.link}>{menuTitle}</Link>
+                  <Link href={menu.link} onClick={onNavigate}>{menuTitle}</Link>
                   <ul
                     className="submenu"
                     style={{
@@ -37,7 +41,7 @@ const MobileMenus = () => {
                   >
                     {menu.sub_menus.map((sub) => (
                       <li key={sub.link}>
-                        <Link href={sub.link}>
+                        <Link href={sub.link} onClick={onNavigate}>
                           {getSubMenuTitle(sub.link, sub.title, t, ready)}
                         </Link>
                       </li>
@@ -53,7 +57,7 @@ const MobileMenus = () => {
                 </li>
               ) : (
                 <li>
-                  <Link href={menu.link}>{menuTitle}</Link>
+                  <Link href={menu.link} onClick={onNavigate}>{menuTitle}</Link>
                 </li>
               )}
             </React.Fragment>
