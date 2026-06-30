@@ -198,7 +198,7 @@ export const en = {
       kicker: 'Memorial page',
       name: 'Vladimir Ustimov',
       text:
-        'Vladimir Ustimov transferred the rights to Namazon Club to me, Braivs, and passed away.',
+        'Vladimir Ustimov transferred the rights to Namazon сlub to me, Braivs, and passed away.',
       memory: 'May his memory live on.',
     },
   },
