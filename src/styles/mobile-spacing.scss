@@ -1,0 +1,6 @@
+// Mobile pages feel too loose after breadcrumb banners; keep desktop spacing intact.
+@media (max-width: 767px) {
+  .breadcrumb__area + :is(section, div)[class*='pt-'] {
+    padding-top: 65px;
+  }
+}
