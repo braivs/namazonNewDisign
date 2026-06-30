@@ -80,9 +80,9 @@
     height: 19px;
 }
 
-/* Keep all nav items on one row (7 items after Home was added). */
+/* Keep all nav items on one row (8 items with Memory page). */
 .navMenu {
-    margin-left: 30px;
+    margin-left: 24px;
 
     :global(ul) {
         display: flex;
@@ -92,7 +92,7 @@
 
     :global(ul li) {
         flex-shrink: 0;
-        margin-right: 24px;
+        margin-right: 18px;
 
         &:last-child {
             margin-right: 0;
@@ -105,10 +105,10 @@
     }
 
     @media (min-width: 1400px) {
-        margin-left: 40px;
+        margin-left: 34px;
 
         :global(ul li) {
-            margin-right: 32px;
+            margin-right: 26px;
         }
 
         :global(ul li > a) {

@@ -8,6 +8,7 @@ export const en = {
     video: 'Video',
     girls: 'Girls',
     competitions: 'Competitions',
+    memory: 'Memory',
     shop: 'Shop',
     contact: 'Contact',
     joinUs: 'Join Us',
@@ -191,6 +192,16 @@ export const en = {
     },
     joinOnPatreon: 'Join on Patreon',
   },
+  memory: {
+    vladimirUstimov: {
+      title: 'In Memory of Vladimir Ustimov',
+      kicker: 'Memorial page',
+      name: 'Vladimir Ustimov',
+      text:
+        'Vladimir Ustimov transferred the rights to Namazon Club to me, Braivs, and passed away.',
+      memory: 'May his memory live on.',
+    },
+  },
   seo: {
     suffix: 'Namazon - Club of single combats for women',
     description: 'Namazon Club — videos and competitions in women\'s combat sports',
@@ -202,6 +213,7 @@ export const en = {
       contact: 'Contact',
       joinUs: 'Join Us',
       article: 'Article',
+      vladimirUstimovMemory: 'In Memory of Vladimir Ustimov',
     },
   },
   header: {

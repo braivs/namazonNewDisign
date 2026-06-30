@@ -25,6 +25,7 @@ export const ru = {
     video: 'Видео',
     girls: 'Участницы',
     competitions: 'Соревнования',
+    memory: 'Память',
     shop: 'Магазин',
     contact: 'Написать нам',
     joinUs: 'Присоединиться',
@@ -236,6 +237,16 @@ export const ru = {
     },
     joinOnPatreon: 'Присоединиться на Patreon',
   },
+  memory: {
+    vladimirUstimov: {
+      title: 'Памяти Владимира Устимова',
+      kicker: 'Страница памяти',
+      name: 'Владимир Устимов',
+      text:
+        'Владимир Устимов передал мне, Брайвсу, права на Намазон клуб и ушёл.',
+      memory: 'Светлая память.',
+    },
+  },
   seo: {
     suffix: 'Клуб Namazon — женские единоборства',
     description: 'Клуб Namazon — видео и соревнования по женским единоборствам',
@@ -247,6 +258,7 @@ export const ru = {
       contact: 'Контакты',
       joinUs: 'Присоединиться',
       article: 'Статья',
+      vladimirUstimovMemory: 'Памяти Владимира Устимова',
     },
   },
   header: {

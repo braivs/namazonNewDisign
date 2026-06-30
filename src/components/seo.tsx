@@ -3,7 +3,15 @@
 import Head from 'next/head'
 import {useTranslation} from 'react-i18next'
 
-type SeoPageKey = 'home' | 'video' | 'girls' | 'competitions' | 'contact' | 'joinUs' | 'article'
+type SeoPageKey =
+  | 'home'
+  | 'video'
+  | 'girls'
+  | 'competitions'
+  | 'contact'
+  | 'joinUs'
+  | 'article'
+  | 'vladimirUstimovMemory'
 
 interface SEOProps {
   pageTitleKey?: SeoPageKey

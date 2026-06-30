@@ -3,6 +3,7 @@ export const menuI18nKeys: Record<number, string> = {
   1: 'video',
   2: 'girls',
   6: 'competitions',
+  7: 'memory',
   3: 'shop',
   4: 'contact',
   5: 'joinUs',

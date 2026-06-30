@@ -86,6 +86,14 @@ const menu_data_production: MenuItem[] = [
     active: '',
   },
   {
+    id: 7,
+    mega_menu: false,
+    has_dropdown: false,
+    title: 'Memory',
+    link: '/memory/vladimir-ustimov',
+    active: '',
+  },
+  {
     id: 3,
     mega_menu: false,
     has_dropdown: false,
