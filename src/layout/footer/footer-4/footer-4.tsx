@@ -37,6 +37,12 @@ const FooterFour = ({style_2 = false}) => {
                       <Link href="/girls">{t('menu:girls')}</Link>
                     </li>
                     <li>
+                      <Link href="/competitions">{t('menu:competitions')}</Link>
+                    </li>
+                    <li>
+                      <Link href="/memory/vladimir-ustimov">{t('menu:memory')}</Link>
+                    </li>
+                    <li>
                       <Link href="https://www.patreon.com/namazon/shop">{t('menu:shop')}</Link>
                     </li>
                     <li>
