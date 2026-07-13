@@ -499,7 +499,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 72,
     youtubeID: 'CxURntYDiJAxxMP',
-    title: 'Simona vs Alex',
+    title: 'Nastya vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc72-nastya-vs-159387030',
     isPost: true,
