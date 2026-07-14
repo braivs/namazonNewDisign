@@ -472,7 +472,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 69,
     youtubeID: '',
-    title: 'Simona vs Alex fight 1',
+    title: 'Simona vs Alex - fight 1',
     category: 'MIXED WRESTLING',
     patreonId: 'nc69-simona-vs-1-159381795',
     isPost: true,
@@ -481,7 +481,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 70,
     youtubeID: '',
-    title: 'Simona vs Alex fight 2',
+    title: 'Simona vs Alex - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc70-simona-vs-2-159379562',
     isPost: true,
@@ -490,7 +490,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 71,
     youtubeID: '',
-    title: 'Simona vs Alex fight 3',
+    title: 'Simona vs Alex - fight 3',
     category: 'MIXED WRESTLING',
     patreonId: 'nc71-simona-vs-159383997',
     isPost: true,
@@ -553,7 +553,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 78,
     youtubeID: '',
-    title: 'Sima vs Cherviak. Fight 4',
+    title: 'Sima vs Cherviak - fight 4',
     category: 'MIXED WRESTLING',
     patreonId: '',
     isPost: true,
@@ -562,7 +562,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 79,
     youtubeID: '',
-    title: 'Sima vs Cherviak fight 2',
+    title: 'Sima vs Cherviak - fight 5',
     category: 'MIXED WRESTLING',
     patreonId: '',
     isPost: true,
@@ -571,7 +571,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 80,
     youtubeID: '',
-    title: 'Sima vs Alex fight 3',
+    title: 'Sima vs Alex - fight 6',
     category: 'MIXED WRESTLING',
     patreonId: '',
     isPost: true,
@@ -580,7 +580,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 81,
     youtubeID: '',
-    title: 'Amrita vs Alex fight 2',
+    title: 'Amrita vs Alex - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: '',
     isPost: true,
@@ -589,7 +589,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 82,
     youtubeID: '',
-    title: 'Sveta vs Alex fight 2',
+    title: 'Sveta vs Alex - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: '',
     isPost: true,
