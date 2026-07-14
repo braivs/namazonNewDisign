@@ -1,3 +1,12 @@
+const cherviakNicknameDescription =
+  'Cherviak (Worm) is the nickname Siya gave to her sparring partner Alex.'
+
+const simaKnownAsSimonaDescription =
+  'Sima is already known as Simona in our club'
+
+const simaFightHierarchyDescription = (fightNumber: number, suffix = '') =>
+  `${simaKnownAsSimonaDescription}, so hierarchically this is their ${fightNumber}th fight${suffix}.`
+
 export const videoEn = {
   categories: {
     'SUBMISSION WRESTLING': 'SUBMISSION WRESTLING',
@@ -405,6 +414,10 @@ export const videoEn = {
     '66': {p1: 'Full video duration 13 mins.'},
     '67': {p1: 'Full video duration 11 mins.'},
     '68': {p1: 'Full video duration 27 mins.'},
+    '77': {p1: cherviakNicknameDescription},
+    '78': {p1: `${cherviakNicknameDescription} ${simaFightHierarchyDescription(4)}`},
+    '79': {p1: `${cherviakNicknameDescription} ${simaFightHierarchyDescription(5)} The video includes two different Sima outfits.`},
+    '80': {p1: simaFightHierarchyDescription(5, ' with Alex')},
   },
   details: {
     purchaseBefore: 'You can purchase',

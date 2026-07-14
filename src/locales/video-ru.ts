@@ -1,3 +1,12 @@
+const cherviakNicknameDescription =
+  'Червяк - такое прозвище дала Сия спарринг партнёру Алексу.'
+
+const simaKnownAsSimonaDescription =
+  'Сима уже известна под именем Симона в нашем клубе'
+
+const simaFightHierarchyDescription = (fightNumber: number, suffix = '') =>
+  `${simaKnownAsSimonaDescription}, поэтому иерархически это их ${fightNumber}-й бой${suffix}.`
+
 export const videoRu = {
   categories: {
     'SUBMISSION WRESTLING': 'Борьба',
@@ -496,6 +505,10 @@ export const videoRu = {
     '66': {p1: 'Полная длительность видео — 13 минут.'},
     '67': {p1: 'Полная длительность видео — 11 минут.'},
     '68': {p1: 'Полная длительность видео — 27 минут.'},
+    '77': {p1: cherviakNicknameDescription},
+    '78': {p1: `${cherviakNicknameDescription} ${simaFightHierarchyDescription(4)}`},
+    '79': {p1: `${cherviakNicknameDescription} ${simaFightHierarchyDescription(5)} Видео включает два разных костюма Симы.`},
+    '80': {p1: simaFightHierarchyDescription(5, ' с Алексом')},
   },
   details: {
     purchaseRuLabel: 'Видео',
