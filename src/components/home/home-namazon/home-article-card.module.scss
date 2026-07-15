@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer :global(.blog-item__date-info li) {
+  margin-right: 0;
+}
+
+.date {
+  flex-shrink: 0;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--tp-text-2);
+  white-space: nowrap;
+}

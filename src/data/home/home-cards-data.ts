@@ -3,6 +3,7 @@ export type HomeCard = {
   href: string
   imgRef: string
   imgRef2?: string
+  date?: string
 }
 
 export const HOME_CARDS_INITIAL_VISIBLE = 5
@@ -13,11 +14,13 @@ export const home_cards: HomeCard[] = [
     href: '/articles/july-update',
     imgRef: '/assets/img/Jule_2026_4parts.jpg',
     imgRef2: '/assets/img/Jule_2026_3parts.jpg',
+    date: '07.2026',
   },
   {
     id: 'june-update',
     href: '/articles/june-update',
     imgRef: '/assets/img/Triple_Namazon_June_update.jpg',
+    date: '06.2026',
   },
   {
     id: 'submission',

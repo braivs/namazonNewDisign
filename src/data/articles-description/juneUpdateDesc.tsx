@@ -2,6 +2,7 @@
 
 import imgMain from 'public/assets/img/Triple_Namazon_June_update.jpg'
 import sC from '@/common/styles.module.scss'
+import ArticleTitleRow from '@/components/articles/article-title-row'
 import cn from 'classnames'
 import Image from 'next/image'
 import {Col} from 'react-bootstrap'
@@ -14,7 +15,7 @@ export const JuneUpdateDesc: React.FC = () => {
 
   return (
     <>
-      <h3>{t('june-update.title')}</h3>
+      <ArticleTitleRow id="june-update" />
       <Col className={cn('d-flex', 'justify-content-center')}>
         <Image
           className={sC.MainImg}

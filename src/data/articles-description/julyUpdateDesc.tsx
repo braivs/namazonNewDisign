@@ -3,6 +3,7 @@
 import imgMain from 'public/assets/img/Jule_2026_4parts.jpg'
 import imgSecondary from 'public/assets/img/Jule_2026_3parts.jpg'
 import sC from '@/common/styles.module.scss'
+import ArticleTitleRow from '@/components/articles/article-title-row'
 import cn from 'classnames'
 import Image from 'next/image'
 import React from 'react'
@@ -15,7 +16,7 @@ export const JulyUpdateDesc: React.FC = () => {
 
   return (
     <>
-      <h3>{t('july-update.title')}</h3>
+      <ArticleTitleRow id="july-update" />
       <div className={s.imagesRow}>
         <div className={s.imageCol}>
           <Image

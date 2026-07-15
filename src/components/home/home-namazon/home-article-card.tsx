@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import {useTranslation} from 'react-i18next'
 import type {HomeCard} from '@/data/home/home-cards-data'
+import s from './home-article-card.module.scss'
 
 type Props = {
   card: HomeCard
@@ -37,15 +38,18 @@ export default function HomeArticleCard({card}: Props) {
           <Link href={card.href}>{t(`cards.${card.id}.title`)}</Link>
         </h5>
         <p style={{whiteSpace: 'pre-line'}}>{t(`cards.${card.id}.excerpt`)}</p>
-        <div className="blog-item__date-info">
-          <ul className="d-flex align-items-center">
-            <li>
-              <Link href={card.href}>
-                {tCommon('readMore')}
-                <i className="fa-regular fa-arrow-right ms-2"></i>
-              </Link>
-            </li>
-          </ul>
+        <div className={s.footer}>
+          <div className="blog-item__date-info">
+            <ul className="d-flex align-items-center">
+              <li>
+                <Link href={card.href}>
+                  {tCommon('readMore')}
+                  <i className="fa-regular fa-arrow-right ms-2"></i>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {card.date && <span className={s.date}>{card.date}</span>}
         </div>
       </div>
     </div>

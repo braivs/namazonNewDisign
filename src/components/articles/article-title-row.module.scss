@@ -1,0 +1,22 @@
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin-bottom: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.date {
+  flex-shrink: 0;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--tp-text-2);
+  white-space: nowrap;
+}

@@ -1,6 +1,7 @@
 'use client'
 
 import sC from '@/common/styles.module.scss'
+import ArticleTitleRow from '@/components/articles/article-title-row'
 import cn from 'classnames'
 import {Col, Row} from 'react-bootstrap'
 import React from 'react'
@@ -13,7 +14,7 @@ export const MixDesc: React.FC = () => {
 
   return (
     <>
-      <h3>{t('mix.title')}</h3>
+      <ArticleTitleRow id="mix" />
       <Row>
         <Col xl={2}>
           <img src={IMG} alt="" className={cn(sC.videosMainImg)} />

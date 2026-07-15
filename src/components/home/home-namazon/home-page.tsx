@@ -2,6 +2,7 @@
 
 import HomeArticleCard from '@/components/home/home-namazon/home-article-card'
 import {HOME_CARDS_INITIAL_VISIBLE, home_cards} from '@/data/home/home-cards-data'
+import cn from 'classnames'
 import React, {useState} from 'react'
 import {useTranslation} from 'react-i18next'
 import s from './home-page.module.scss'
@@ -26,7 +27,7 @@ export default function HomePage() {
         </div>
         {hasMoreCards && !showAll && (
           <div className={s.showAllWrap}>
-            <button type="button" className="tp-btn" onClick={() => setShowAll(true)}>
+            <button type="button" className={cn('tp-btn', s.showAllBtn)} onClick={() => setShowAll(true)}>
               {t('allArticles')}
             </button>
           </div>

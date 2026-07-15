@@ -1,6 +1,7 @@
 'use client'
 
 import sC from '@/common/styles.module.scss'
+import ArticleTitleRow from '@/components/articles/article-title-row'
 import cn from 'classnames'
 import {Col, Row, Table} from 'react-bootstrap'
 import React from 'react'
@@ -20,7 +21,7 @@ export const SubmissionDesc: React.FC = () => {
 
   return (
     <>
-      <h3>{t('submission.title')}</h3>
+      <ArticleTitleRow id="submission" />
       <Row>
         <Col xl={2}>
           <img src={IMG} alt="" className={cn(sC.videosMainImg)} />
