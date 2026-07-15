@@ -1,4 +1,12 @@
 export const articlesEn = {
+  'july-update': {
+    title: 'July update',
+    items: [
+      'Added 3 videos with Siya to her series: "Siya and Cherviak", two "Sima and Cherviak" fights. The series now includes videos featuring Siya\'s friends as well.',
+      '3 new videos in the main section: Sima, Amrita and Sveta - fight 2.',
+      'Updated membership packages: Fresh pack now includes three new videos from the main section. Video access gets the three videos that were previously in Fresh. Siya pack received 3 new videos and now totals 8 clips.',
+    ],
+  },
   'june-update': {
     title: 'June update',
     items: [

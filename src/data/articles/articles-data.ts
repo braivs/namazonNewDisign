@@ -1,4 +1,4 @@
-export const ARTICLE_SLUGS = ['june-update', 'submission', 'mix', 'mma'] as const
+export const ARTICLE_SLUGS = ['july-update', 'june-update', 'submission', 'mix', 'mma'] as const
 
 export type ArticleSlug = (typeof ARTICLE_SLUGS)[number]
 

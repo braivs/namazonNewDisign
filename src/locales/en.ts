@@ -67,6 +67,11 @@ export const en = {
   },
   home: {
     cards: {
+      'july-update': {
+        title: 'July update',
+        excerpt:
+          '- Added 3 videos with Siya to her series: "Siya and Cherviak", two "Sima and Cherviak" fights. The series now includes videos featuring Siya\'s friends as well.\n- 3 new videos in the main section: Sima, Amrita and Sveta - fight 2.\n- Updated...',
+      },
       'june-update': {
         title: 'June update',
         excerpt:
