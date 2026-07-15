@@ -22,6 +22,14 @@ export default function HomeArticleCard({card}: Props) {
             alt={t(`cards.${card.id}.title`)}
             className="w-100"
           />
+          {card.imgRef2 && (
+            <img
+              src={card.imgRef2}
+              alt={t(`cards.${card.id}.title`)}
+              className="w-100"
+              style={{marginTop: 10}}
+            />
+          )}
         </div>
       </Link>
       <div className="blog-item__content">

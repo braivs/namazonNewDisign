@@ -2,13 +2,15 @@ export type HomeCard = {
   id: string
   href: string
   imgRef: string
+  imgRef2?: string
 }
 
 export const home_cards: HomeCard[] = [
   {
     id: 'july-update',
     href: '/articles/july-update',
-    imgRef: '/assets/img/Triple_Namazon_June_update.jpg',
+    imgRef: '/assets/img/Jule_2026_4parts.jpg',
+    imgRef2: '/assets/img/Jule_2026_3parts.jpg',
   },
   {
     id: 'june-update',
