@@ -5,6 +5,8 @@ export type HomeCard = {
   imgRef2?: string
 }
 
+export const HOME_CARDS_INITIAL_VISIBLE = 5
+
 export const home_cards: HomeCard[] = [
   {
     id: 'july-update',

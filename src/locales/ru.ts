@@ -83,6 +83,7 @@ export const ru = {
     },
   },
   home: {
+    allArticles: 'Все статьи',
     cards: {
       'july-update': {
         title: 'Июльское обновление',

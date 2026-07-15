@@ -66,6 +66,7 @@ export const en = {
     },
   },
   home: {
+    allArticles: 'All articles',
     cards: {
       'july-update': {
         title: 'July update',
