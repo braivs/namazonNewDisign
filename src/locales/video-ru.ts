@@ -519,6 +519,7 @@ export const videoRu = {
     previewUnavailableMultiple:
       'Если превью недоступно, попробуйте альтернативный плеер или напишите нам.',
     previewUnavailableSingle: 'Если превью недоступно, напишите нам.',
+    previewAvailableInOneDay: 'Превью будет доступно через 1 день.',
     clickToSeeVideo: 'нажмите, чтобы посмотреть видео',
     clickToSeeVideoYoutube: 'нажмите, чтобы посмотреть видео на YouTube',
     mvtubeFullscreen: 'На весь экран',

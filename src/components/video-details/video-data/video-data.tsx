@@ -48,6 +48,7 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
   const hasDirect = directUrls.length > 0
 
   const facebookPreview = videoData?.facebookPreview?.trim()
+  const willBeAvailableString = videoData?.willBeAvailableString?.trim()
   // If set, we render MixedWrestling iframe before legacy YouTube/Facebook fallbacks.
   const mvtubeId = videoData?.mvtubeId?.trim()
   const hasMvTube = Boolean(mvtubeId)
@@ -107,9 +108,26 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
             </>
           )}
           {
-            // Priority 3: external preview page (e.g. Facebook) when direct/mvtube are absent.
+            // Priority 3a: poster with “preview coming soon” overlay (no link).
             !hasDirect &&
             !hasMvTube &&
+            willBeAvailableString &&
+            videoData?.img && (
+              <div className={s.youtubeCoverLink}>
+                <img className={s.youtubeCoverImg} src={videoData.img} alt="" />
+                <span className={s.youtubeCoverOverlay} aria-hidden>
+                  <span className={s.youtubeCoverText}>
+                    {t(`details.${willBeAvailableString}`)}
+                  </span>
+                </span>
+              </div>
+            )
+          }
+          {
+            // Priority 3b: external preview page (e.g. Facebook) when direct/mvtube are absent.
+            !hasDirect &&
+            !hasMvTube &&
+            !willBeAvailableString &&
             facebookPreview &&
             (videoData && videoData.img) && (
               <a
@@ -130,6 +148,7 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
             // Priority 4: clickable YouTube poster (opens YouTube page, no inline iframe).
             !hasDirect &&
             !hasMvTube &&
+            !willBeAvailableString &&
             !facebookPreview &&
             youtubeID &&
             videoData?.isClickable &&
@@ -154,7 +173,7 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
           }
           {
             // Priority 5: default inline YouTube player fallback.
-            !hasDirect && !hasMvTube && !facebookPreview && youtubeID && !videoData?.isClickable && <MyYouTube videoId={youtubeID}/>
+            !hasDirect && !hasMvTube && !willBeAvailableString && !facebookPreview && youtubeID && !videoData?.isClickable && <MyYouTube videoId={youtubeID}/>
           }
         </Col>
       </Row>
@@ -162,6 +181,7 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
         // Secondary YouTube block is shown only for legacy dual-YouTube entries.
         !hasDirect &&
         !hasMvTube &&
+        !willBeAvailableString &&
         !facebookPreview &&
         youtubeID2 &&
           <Row className={s.youtube2}>

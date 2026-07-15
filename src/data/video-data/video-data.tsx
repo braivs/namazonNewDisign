@@ -548,7 +548,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: '',
     isPost: true,
-    mvtubeId: '',
+    mvtubeId: '6lVdprR4br7llcK',
   },
   {
     id: 78,
@@ -557,7 +557,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: '',
     isPost: true,
-    mvtubeId: '',
+    mvtubeId: 'zPz9hCrEOlAFt1D',
   },
   {
     id: 79,
@@ -566,7 +566,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: '',
     isPost: true,
-    mvtubeId: '',
+    mvtubeId: 'PPllWWxHRkLvKoM',
   },
   {
     id: 80,
@@ -575,7 +575,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: '',
     isPost: true,
-    mvtubeId: '',
+    mvtubeId: 'xE8kU2VK24l9M2p',
   },
   {
     id: 81,
@@ -584,7 +584,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: '',
     isPost: true,
-    mvtubeId: '',
+    mvtubeId: '7r8bTlQ6VqrDUHH',
   },
   {
     id: 82,
@@ -594,6 +594,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     patreonId: '',
     isPost: true,
     mvtubeId: '',
+    willBeAvailableString: 'previewAvailableInOneDay',
   }
 ];
 
@@ -644,6 +645,8 @@ type Video_data_src_all = {
   mvtubeId?: string
   /** If set (non-empty), poster links to this URL with “click to see the video” overlay (e.g. Facebook). */
   facebookPreview?: string
+  /** i18n key under `video.details` — shows poster with overlay text instead of a video player. */
+  willBeAvailableString?: string
 }
 
 export type Video_data = Video_data_src_all & {
