@@ -510,9 +510,10 @@ export const videoRu = {
     previewUnavailableMultiple:
       'Если превью недоступно, попробуйте альтернативный плеер или напишите нам.',
     previewUnavailableSingle: 'Если превью недоступно, напишите нам.',
-    videoLength_one: 'Полная длительность видео — {{minutes}} минута.',
-    videoLength_few: 'Полная длительность видео — {{minutes}} минуты.',
-    videoLength_many: 'Полная длительность видео — {{minutes}} минут.',
+    videoDuration_one: 'Полная длительность видео — {{minutes}} минута.',
+    videoDuration_few: 'Полная длительность видео — {{minutes}} минуты.',
+    videoDuration_many: 'Полная длительность видео — {{minutes}} минут.',
+    videoDurationExact: 'Полная длительность видео — {{duration}} минут.',
     previewAvailableInOneDay: 'Превью будет доступно через 1 день.',
     clickToSeeVideo: 'нажмите, чтобы посмотреть видео',
     clickToSeeVideoYoutube: 'нажмите, чтобы посмотреть видео на YouTube',

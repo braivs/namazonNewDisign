@@ -420,7 +420,8 @@ export const videoEn = {
     previewUnavailableMultiple:
       "If the preview isn't available, please try alternative player or email us.",
     previewUnavailableSingle: "If the preview isn't available please email us.",
-    videoLength: 'Full video duration {{minutes}} mins.',
+    videoDuration: 'Full video duration {{minutes}} mins.',
+    videoDurationExact: 'Full video duration {{duration}} mins.',
     previewAvailableInOneDay: 'The preview will be available in 1 day.',
     clickToSeeVideo: 'click to see the video',
     clickToSeeVideoYoutube: 'click to see the video on YouTube',

@@ -2,16 +2,16 @@ import React, {FC} from 'react'
 import {VIDEO_MAP} from '@/common/constants/VIDEO_MAP'
 import {GIRLS_MAP} from '@/common/constants/GIRLS_MAP'
 import {COMPETITION_MAP} from '@/common/constants/COMPETITION_MAP'
-import {VideoLengthLine} from '@/data/video-description/VideoLengthLine'
+import {VideoDurationLine} from '@/data/video-description/VideoDurationLine'
 import {VideoSimpleDesc} from '@/data/video-description/VideoSimpleDesc'
 
 interface DescriptionComponentProps {
   id: number | string
   version?: 'video' | 'girls' | 'competition'
-  length?: number
+  duration?: number | string
 }
 
-const DescriptionComponent: FC<DescriptionComponentProps> = ({id, version, length}) => {
+const DescriptionComponent: FC<DescriptionComponentProps> = ({id, version, duration}) => {
   if (version === 'girls') {
     const Component = GIRLS_MAP[id]
     return Component ? <Component /> : null
@@ -22,14 +22,16 @@ const DescriptionComponent: FC<DescriptionComponentProps> = ({id, version, lengt
     return Component ? <Component /> : null
   }
 
-  const lengthLine = length != null ? <VideoLengthLine minutes={length} /> : null
+  const hasDuration =
+    duration != null && (typeof duration !== 'string' || duration.trim() !== '')
+  const durationLine = hasDuration ? <VideoDurationLine duration={duration} /> : null
 
   const MappedDesc = VIDEO_MAP[id]
   if (MappedDesc) {
     return (
       <>
         <MappedDesc />
-        {lengthLine}
+        {durationLine}
       </>
     )
   }
@@ -38,7 +40,7 @@ const DescriptionComponent: FC<DescriptionComponentProps> = ({id, version, lengt
     return (
       <>
         <VideoSimpleDesc id={id} />
-        {lengthLine}
+        {durationLine}
       </>
     )
   }
@@ -48,7 +50,7 @@ const DescriptionComponent: FC<DescriptionComponentProps> = ({id, version, lengt
     return (
       <>
         <VideoSimpleDesc id={numericId} />
-        {lengthLine}
+        {durationLine}
       </>
     )
   }

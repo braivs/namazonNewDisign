@@ -327,7 +327,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     title: 'Braivs vs Alyona 11.10.2016',
     category: 'MIXED WRESTLING',
     patreonId: 'nc45-braivs-vs-alyona-13-10-2016-294185',
-    length: 15,
+    duration: 15,
   },
   {
     id: 46,
@@ -356,7 +356,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     title: 'Braivs vs Alyona collection 2016-2017',
     category: 'MIXED WRESTLING',
     patreonId: 'nc49-braivs-vs-alyona-collection-2016-293193',
-    length: 56,
+    duration: 56,
   },
   {
     id: 50,
@@ -364,7 +364,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     title: 'Tais vs Braivs collection 2014-2017',
     category: 'MIXED WRESTLING',
     patreonId: 'nc50-braivs-vs-tais-collection-2014-2017-290070',
-    length: 23,
+    duration: 23,
   }, {
     id: 59,
     youtubeID: 'e72ZJ7JQt10',
@@ -372,7 +372,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc59-fm-alex-vs-157250136',
     isPost: true,
-    length: 15,
+    duration: 15,
   },
   {
     id: 60,
@@ -383,7 +383,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     isPost: true,
     isClickable: true,
     mvtubeId: 'k7IAbybh84TnQro',
-    length: 30,
+    duration: 30,
   },
   {
     id: 61,
@@ -396,7 +396,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
       'https://www.udrop.com/file/Ow4f/NC61_FM_Siya_vs_Skuf_round2_preview.mp4',
       'https://files.catbox.moe/umbng1.mp4'
     ],
-    length: 19,
+    duration: 19,
   },
   {
     id: 62,
@@ -409,7 +409,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
       'https://www.udrop.com/file/Ow4g/NC62_Siya_vs_Tryapka_preview_v2.mp4',
       'https://files.catbox.moe/b050nq.mp4'
     ],
-    length: 21,
+    duration: 21,
   },
   {
     id: 63,
@@ -422,7 +422,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
       'https://www.udrop.com/file/Ow4h/NC63_Siya_vs_Skuf_fight_2_preview.mp4',
       'https://files.catbox.moe/l1dtmv.mp4'
     ],
-    length: 20,
+    duration: 20,
   },
   {
     id: 64,
@@ -435,7 +435,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
       'https://www.udrop.com/file/Ow4i/NC64_Siya_in_socks_preview2.mp4',
       'https://files.catbox.moe/iaqmqh.mp4'
     ],
-    length: 29,
+    duration: 29,
   },
   {
     id: 65,
@@ -448,7 +448,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     ],
     patreonId: 'nc65-aizet-vs-157731669',
     isPost: true,
-    length: 14,
+    duration: 14,
   },
   {
     id: 66,
@@ -457,7 +457,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc66-aizet-in-vs-157950269',
     isPost: true,
-    length: 13,
+    duration: 13,
   },
   {
     id: 67,
@@ -470,7 +470,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
       'https://www.udrop.com/file/Ow4k/NC67_Aizet_vs_Alex_wrestling___shibari_preview.mp4',
       'https://files.catbox.moe/ri4qtu.mp4'
     ],
-    length: 11,
+    duration: 11,
   },
   {
     id: 68,
@@ -480,7 +480,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     patreonId: 'nc68-angelina-vs-157976798',
     isPost: true,
     facebookPreview: 'https://www.facebook.com/share/v/1CswLNz6JV/',
-    length: 27,
+    duration: 27,
   },
   {
     id: 69,
@@ -559,18 +559,20 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Siya vs Cherviak',
     category: 'MIXED WRESTLING',
-    patreonId: '',
+    patreonId: 'nc77-siya-vs-163923789',
     isPost: true,
     mvtubeId: '6lVdprR4br7llcK',
+    duration: 14,
   },
   {
     id: 78,
     youtubeID: '',
     title: 'Sima vs Cherviak - fight 4',
     category: 'MIXED WRESTLING',
-    patreonId: '',
+    patreonId: 'nc78-sima-vs-4-163971597',
     isPost: true,
     mvtubeId: 'zPz9hCrEOlAFt1D',
+    duration: '20:36',
   },
   {
     id: 79,
@@ -580,34 +582,38 @@ const video_data_src_all: Array<Video_data_src_all> = [
     patreonId: '',
     isPost: true,
     mvtubeId: 'PPllWWxHRkLvKoM',
+    duration: 12,
   },
   {
     id: 80,
     youtubeID: '',
     title: 'Sima vs Alex - fight 6',
     category: 'MIXED WRESTLING',
-    patreonId: '',
+    patreonId: 'nc80-sima-vs-6-163972724',
     isPost: true,
     mvtubeId: 'xE8kU2VK24l9M2p',
+    duration: '12:55',
   },
   {
     id: 81,
     youtubeID: '',
     title: 'Amrita vs Alex - fight 2',
     category: 'MIXED WRESTLING',
-    patreonId: '',
+    patreonId: 'nc81-amrita-vs-2-163974393',
     isPost: true,
     mvtubeId: '7r8bTlQ6VqrDUHH',
+    duration: '40:26'
   },
   {
     id: 82,
     youtubeID: '',
     title: 'Sveta vs Alex - fight 2',
     category: 'MIXED WRESTLING',
-    patreonId: '',
+    patreonId: 'nc82-sveta-vs-2-163975412',
     isPost: true,
     mvtubeId: '',
     willBeAvailableString: 'previewAvailableInOneDay',
+    duration: '34:56'
   }
 ];
 
@@ -620,7 +626,7 @@ export const video_data: Array<Video_data> = video_data_src_all.reverse().map(vi
     img: `/assets/img/video/NC${formattedId}.jpg`,
     des: video.des ?? '',
     description: video.description ?? function () {
-      return <DescriptionComponent id={video.id} length={video.length}/>
+      return <DescriptionComponent id={video.id} duration={video.duration}/>
     }
   }
 })
@@ -658,8 +664,8 @@ type Video_data_src_all = {
   mvtubeId?: string
   /** If set (non-empty), poster links to this URL with “click to see the video” overlay (e.g. Facebook). */
   facebookPreview?: string
-  /** Full video duration in minutes; shown in the description when set. */
-  length?: number
+  /** Full video duration: minutes as number, or exact time as string (e.g. '20:36'). */
+  duration?: number | string
   /** i18n key under `video.details` — shows poster with overlay text instead of a video player. */
   willBeAvailableString?: string
 }
