@@ -611,8 +611,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc82-sveta-vs-2-163975412',
     isPost: true,
-    mvtubeId: '',
-    willBeAvailableString: 'previewAvailableInOneDay',
+    mvtubeId: 'EMD3fMHCLQHFTit',
     duration: '34:56'
   }
 ];
