@@ -579,7 +579,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
     youtubeID: '',
     title: 'Sima vs Cherviak - fight 5',
     category: 'MIXED WRESTLING',
-    patreonId: '',
+    patreonId: 'nc79-sima-vs-5-163972314',
     isPost: true,
     mvtubeId: 'PPllWWxHRkLvKoM',
     duration: 12,
