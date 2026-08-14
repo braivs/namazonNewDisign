@@ -409,6 +409,9 @@ export const videoEn = {
     '78': {p1: `${cherviakNicknameDescription} ${simaFightHierarchyDescription(4)}`},
     '79': {p1: `${cherviakNicknameDescription} ${simaFightHierarchyDescription(5)} The video includes two different Sima outfits.`},
     '80': {p1: simaFightHierarchyDescription(5, ' with Alex')},
+    '84': {
+      p1: 'Rada is already known as Radmila in our club, so hierarchically this is their second fight.',
+    },
   },
   details: {
     purchaseBefore: 'You can purchase',

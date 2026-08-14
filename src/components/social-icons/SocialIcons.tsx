@@ -6,9 +6,6 @@ export const SocialIcons = () => {
       <a href="https://t.me/namazonclub">
         <i className="fa-brands fa-telegram"></i>
       </a>
-      <a href="https://www.youtube.com/@namazonclub">
-        <i className="fa-brands fa-youtube"></i>
-      </a>
       <a href="https://www.facebook.com/groups/namazonclub">
         <i className="fa-brands fa-facebook-f"></i>
       </a>

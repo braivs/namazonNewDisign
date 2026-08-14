@@ -89,6 +89,8 @@ export const videoRu = {
     '80': 'Сима и Алекс - бой 6',
     '81': 'Амрита и Алекс - бой 2',
     '82': 'Света и Алекс - бой 2',
+    '83': 'Альфия и Алекс 2026',
+    '84': 'Рада и Алекс 2026 - бой 2',
   },
   descriptions: {
     '1': {
@@ -500,6 +502,9 @@ export const videoRu = {
     '78': {p1: `${cherviakNicknameDescription} ${simaFightHierarchyDescription(4)}`},
     '79': {p1: `${cherviakNicknameDescription} ${simaFightHierarchyDescription(5)} Видео включает два разных костюма Симы.`},
     '80': {p1: simaFightHierarchyDescription(5, ' с Алексом')},
+    '84': {
+      p1: 'Рада уже известна под именем Радмила в нашем клубе, поэтому иерархически это их 2-й бой.',
+    },
   },
   details: {
     purchaseRuLabel: 'Видео',

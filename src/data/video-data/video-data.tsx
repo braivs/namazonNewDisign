@@ -613,6 +613,26 @@ const video_data_src_all: Array<Video_data_src_all> = [
     isPost: true,
     mvtubeId: 'EMD3fMHCLQHFTit',
     duration: '34:56'
+  },
+  {
+    id: 83,
+    youtubeID: '',
+    title: 'Alfia vs Alex 2026',
+    category: 'MIXED WRESTLING',
+    patreonId: 'nc83-alfia-vs-166669247',
+    isPost: true,
+    mvtubeId: 'gn3wuoWncNBfO8m',
+    duration: '36:12'
+  },
+  {
+    id: 84,
+    youtubeID: '',
+    title: 'Rada vs Alex 2026 - fight 2',
+    category: 'MIXED WRESTLING',
+    patreonId: 'nc84-rada-vs-2-166667619',
+    isPost: true,
+    mvtubeId: 'FClrxFsWpc7Wup3',
+    duration: '24:21'
   }
 ];
 

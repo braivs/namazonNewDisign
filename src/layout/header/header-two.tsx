@@ -33,10 +33,6 @@ const SocialLinks = () => {
         <img className={s.socialIconSquare} src={reddit.src} alt="reddit" />
         <span>{t('social.reddit')}</span>
       </a>
-      <a className={s.socialLinkGroup} href="https://www.youtube.com/@namazonclub">
-        <img className={s.socialIcon} src={youtube.src} alt="youtube" />
-        <span>{t('social.youtube')}</span>
-      </a>
     </div>
   )
 }
