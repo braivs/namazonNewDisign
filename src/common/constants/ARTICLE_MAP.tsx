@@ -1,4 +1,5 @@
 import type {FC} from 'react'
+import {AugustUpdateDesc} from '@/data/articles-description/augustUpdateDesc'
 import {JulyUpdateDesc} from '@/data/articles-description/julyUpdateDesc'
 import {JuneUpdateDesc} from '@/data/articles-description/juneUpdateDesc'
 import {SubmissionDesc} from '@/data/articles-description/submissionDesc'
@@ -10,6 +11,7 @@ export type {ArticleSlug} from '@/data/articles/articles-data'
 export {ARTICLE_SLUGS, isArticleSlug} from '@/data/articles/articles-data'
 
 export const ARTICLE_MAP: Record<ArticleSlug, FC> = {
+  'august-update': AugustUpdateDesc,
   'july-update': JulyUpdateDesc,
   'june-update': JuneUpdateDesc,
   submission: SubmissionDesc,

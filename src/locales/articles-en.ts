@@ -1,4 +1,11 @@
 export const articlesEn = {
+  'august-update': {
+    title: 'August update',
+    items: [
+      'Added two new videos: Alfia vs Alex 2026, Rada vs Alex 2026 fight 2. Previews are already on the Video page.',
+      'Expanded Siya pack: it now includes these two new videos.',
+    ],
+  },
   'july-update': {
     title: 'July update',
     items: [

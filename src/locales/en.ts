@@ -68,6 +68,11 @@ export const en = {
   home: {
     allArticles: 'All articles',
     cards: {
+      'august-update': {
+        title: 'August update',
+        excerpt:
+          '- Added two new videos: Alfia vs Alex 2026, Rada vs Alex 2026 fight 2. Previews are already on the Video page.\n- Expanded Siya pack...',
+      },
       'july-update': {
         title: 'July update',
         excerpt:
@@ -193,7 +198,7 @@ export const en = {
       siyaPack: {
         title: 'Siya pack',
         price: '$50 / month',
-        description: "Siya's exclusive 8-clip series: NC60–NC64 & NC77–NC79.",
+        description: "Siya's exclusive 10-video series: NC83, NC84, NC60–NC64 and NC77–NC79.",
       },
     },
     joinOnPatreon: 'Join on Patreon',

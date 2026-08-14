@@ -10,6 +10,12 @@ export const HOME_CARDS_INITIAL_VISIBLE = 5
 
 export const home_cards: HomeCard[] = [
   {
+    id: 'august-update',
+    href: '/articles/august-update',
+    imgRef: '/assets/img/August_2026_2parts.jpg',
+    date: '08.2026',
+  },
+  {
     id: 'july-update',
     href: '/articles/july-update',
     imgRef: '/assets/img/Jule_2026_4parts.jpg',
