@@ -8,35 +8,40 @@ import {Category} from "@/common/types"
 const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 1,
-    youtubeID: 'G7RTYfRO4B4',
+    youtubeID: '',
+    mvtubeId: 'JmW4Pw6XXqPRVcg',
     title: 'Submission Grappling. Part 1. June, 2010',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc01-submission-grappling-tournament-1-301844',
   },
   {
     id: 2,
-    youtubeID: 'Y_ixTzxIj44',
+    youtubeID: '',
+    mvtubeId: 'S1zzA3flUeKrKtt',
     title: 'Submission Grappling. Part 2. June, 2010',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc02-submission-grappling-tournament-2-301832'
   },
   {
     id: 3,
-    youtubeID: 'sddvDSjafEY',
+    youtubeID: '',
+    mvtubeId: 'iOxRsL6uO8d52dP',
     title: 'Beach Wrestling. Mixed Tournament. 2010',
     category: 'MIXED WRESTLING',
     patreonId: 'nc03wm-beach-wrestling-mixed-tournament-301818'
   },
   {
     id: 4,
-    youtubeID: 'QAgCAy7XJiQ',
+    youtubeID: '',
+    mvtubeId: 'wDGeP3GNRuHsFH8',
     title: 'Submission Grappling. Christmas Cup 2011',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc04-christmas-cup-2011-tournament-on-301595'
   },
   {
     id: 5,
-    youtubeID: 'hGAZo2Ffrz4',
+    youtubeID: '',
+    mvtubeId: 'oLCqqIRC23PwJfT',
     title: 'Villian vs Tais. Mixed Wrestling. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc05a-villain-vs-tais-mixed-wrestling-1-301564'
