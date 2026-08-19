@@ -428,6 +428,8 @@ export const videoEn = {
     previewAvailableInOneDay: 'The preview will be available in 1 day.',
     clickToSeeVideo: 'click to see the video',
     clickToSeeVideoYoutube: 'click to see the video on YouTube',
+    clickToSeePreviewFacebook: 'Click to watch the preview on Facebook',
+    clickToSeePreviewPatreon: 'Click to watch the preview on Patreon',
     mvtubeFullscreen: 'Fullscreen',
     mvtubeExitFullscreen: 'Exit fullscreen',
     mvtubeFullscreenHint:

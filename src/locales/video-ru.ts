@@ -522,6 +522,8 @@ export const videoRu = {
     previewAvailableInOneDay: 'Превью будет доступно через 1 день.',
     clickToSeeVideo: 'нажмите, чтобы посмотреть видео',
     clickToSeeVideoYoutube: 'нажмите, чтобы посмотреть видео на YouTube',
+    clickToSeePreviewFacebook: 'Нажмите, чтобы посмотреть превью на Facebook',
+    clickToSeePreviewPatreon: 'Нажмите, чтобы посмотреть превью на Patreon',
     mvtubeFullscreen: 'На весь экран',
     mvtubeExitFullscreen: 'Выйти из полноэкранного режима',
     mvtubeFullscreenHint:

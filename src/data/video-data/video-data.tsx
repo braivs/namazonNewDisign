@@ -8,7 +8,6 @@ import {Category} from "@/common/types"
 const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 1,
-    youtubeID: '',
     mvtubeId: 'JmW4Pw6XXqPRVcg',
     title: 'Submission Grappling. Part 1. June, 2010',
     category: 'SUBMISSION WRESTLING',
@@ -16,7 +15,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 2,
-    youtubeID: '',
     mvtubeId: 'S1zzA3flUeKrKtt',
     title: 'Submission Grappling. Part 2. June, 2010',
     category: 'SUBMISSION WRESTLING',
@@ -24,7 +22,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 3,
-    youtubeID: '',
     mvtubeId: 'iOxRsL6uO8d52dP',
     title: 'Beach Wrestling. Mixed Tournament. 2010',
     category: 'MIXED WRESTLING',
@@ -32,7 +29,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 4,
-    youtubeID: '',
     mvtubeId: 'wDGeP3GNRuHsFH8',
     title: 'Submission Grappling. Christmas Cup 2011',
     category: 'SUBMISSION WRESTLING',
@@ -40,7 +36,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 5,
-    youtubeID: '',
     mvtubeId: 'oLCqqIRC23PwJfT',
     mvtubeId2: 'm3mBV9sCaMf7sej',
     title: 'Villian vs Tais. Mixed Wrestling. 2011',
@@ -49,7 +44,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 6,
-    youtubeID: '',
     mvtubeId: 'BxxeGAKl2CZ8ZP9',
     title: 'Maria Rylyova vs Tais. Armwrestling and Wrestling',
     category: 'SUBMISSION WRESTLING',
@@ -57,7 +51,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 7,
-    youtubeID: '',
     mvtubeId: 'BwmPc6arNpTL6BV',
     title: 'Alex vs Tais. Extreme fight. 2011',
     category: 'MIXED WRESTLING',
@@ -65,7 +58,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 8,
-    youtubeID: '',
     mvtubeId: 'xVPlVJFlkPYP4wy',
     title: 'Women\'s Beach Tournament. Submission Grappling. 2011',
     category: 'SUBMISSION WRESTLING',
@@ -73,7 +65,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 9,
-    youtubeID: '',
     mvtubeId: 'xaGx13rwQbv9csS',
     title: 'MMA tournament “Christmas Cup 2012',
     category: 'MMA',
@@ -81,259 +72,221 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 10,
-    youtubeID: 'xbguaf9YTGo',
     title: 'Mixed Wrestling. Best Fights. Part 1. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc10-mixed-wrestling-best-fights-part-1-298291'
   },
   {
     id: 11,
-    youtubeID: '_T6qzHq5H60',
     title: 'Alex vs Elena. Beach Wrestling. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc11-alex-vs-gladiatriks-mixed-beach-298265'
   },
   {
     id: 12,
-    youtubeID: 'tB47JzDQ-mc',
     title: 'Submission Grappling. Tournament. April, 2010',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc12-submission-grappling-tournament-298243'
   },
   {
     id: 13,
-    youtubeID: '0-6S3nnMNYk',
     title: 'Valentina Perfilyeva vs Nadezhda Akhmerova. Kickboxing. 2011',
     category: "BOXING",
     patreonId: 'nc13-valentina-perfilyeva-vs-nadezhda-298205'
   },
   {
     id: 14,
-    youtubeID: 'mXLIzt6ZBFk',
-    youtubeID2: 'dQjBmmyLnC0',
     title: 'Two men against one woman. Part 1. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc14-1-two-men-against-one-woman-mixed-1-298161'
   },
   {
     id: 15,
-    youtubeID: 'piZ5J6Rierc',
     title: 'Two men against one woman. Part 2. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc15-two-men-against-one-woman-mixed-on-298110'
   },
   {
     id: 16,
-    youtubeID: '-uNa-IIOOQk',
     title: 'Elena Vasilyeva vs Tais. Submission Grappling. 2011',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc16-elena-vasilyeva-vs-tais-submission-296712'
   },
   {
     id: 17,
-    youtubeID: '93iT7iBJVik',
     title: 'MMA and Submission Grappling. February, 2012',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc17-mma-and-submission-grappling-2012-296635'
   },
   {
     id: 18,
-    youtubeID: 'fYEVVlzkUsA',
     title: 'MMA. Kara Teller vs Darya. Balina and Tais. May, 2012',
     category: 'MMA',
     patreonId: 'nc18-mma-kara-teller-vs-darya-balina-and-296597'
   },
   {
     id: 19,
-    youtubeID: 'lJwlQIrfGww',
     title: 'Varvara Akulova vs Tais. Submission Grappling. 2012',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc19-varvara-akulova-vs-tais-submission-296544'
   },
   {
     id: 20,
-    youtubeID: 'qo9DmpAXT5w',
     title: 'MMA. Kara Teller vs Darya. Balina and Tais. May, 2012',
     category: 'MMA',
     patreonId: 'nc20-mma-yulia-fedutenko-vs-kara-teller-296522'
   },
   {
     id: 21,
-    youtubeID: 'WO77phk8NWk',
     title: 'MMA. Darya Balina vs Olga. July, 2012',
     category: 'MMA',
     patreonId: 'nc21-mma-darya-balina-vs-olga-july-2012-296468'
   },
   {
     id: 22,
-    youtubeID: 'FTCeUYW5O2g',
     title: 'Irina and Elena vs Villian. Mixed Wrestling. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc22-irina-and-elena-vs-villian-mixed-296366'
   },
   {
     id: 23,
-    youtubeID: 'fbESZrys6fc',
     title: 'Irina (Vlasta) vs Tais. Submission Grappling. 2011',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc23-irina-vlasta-vs-tais-submission-may-296334'
   },
   {
     id: 24,
-    youtubeID: 'NctqeFj1TG8',
     title: 'Lyudmila vs Tais Submission Grappling. 2011',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc24-lyudmila-vs-tais-submission-october-296220'
   },
   {
     id: 25,
-    youtubeID: '29EMwdnOvJk',
     title: 'Mixed Wrestling. Best Fights. Part 2. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc25-mixed-wrestling-best-fights-part-2-296203'
   },
   {
     id: 26,
-    youtubeID: 'iBBVt0JNN-Y',
     title: 'Female Beach Wrestling. Part 1. June, 2011',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc26-female-beach-wrestling-part-1-june-296112'
   },
   {
     id: 27,
-    youtubeID: 'HaMtoel8Tdw',
     title: 'Female Beach Wrestling Part 2. June, 2011',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc27-female-beach-wrestling-part-2-june-296064'
   },
   {
     id: 28,
-    youtubeID: '6nP3PAUF7hw',
     title: 'Mixed Wrestling. Best Fights. Part 3. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc28-mixed-wrestling-best-fights-part-3-296037'
   },
   {
     id: 29,
-    youtubeID: 'HaMtoel8Tdw',
     title: 'Elena Vasilyeva vs Tais. Submission Grappling. 2013',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc29-elena-vasilyeva-vs-tais-submission-296001'
   },
   {
     id: 30,
-    youtubeID: 'Xf_8wprghvA',
     title: 'Mixed Wrestling. Best Fights. Part 4. 2013',
     category: 'MIXED WRESTLING',
     patreonId: 'nc30-mixed-wrestling-best-fights-part-4-295973'
   },
   {
     id: 31.1,
-    youtubeID: '0C9U65HQSxY',
     title: 'Mixed Wrestling. Best Fights. Part 5.1. 2013',
     category: 'MIXED WRESTLING',
     patreonId: 'nc31-1-mixed-wrestling-best-fights-part-295438'
   },
   {
     id: 31.2,
-    youtubeID: '-3kHYn2U8Vo',
     title: 'Mixed Wrestling. Best Fights. Part 5.2. 2013',
     category: 'MIXED WRESTLING',
     patreonId: 'nc31-2-mixed-wrestling-best-fights-part-295964'
   },
   {
     id: 32,
-    youtubeID: 'hOdvtSS6Nbw',
     title: 'Mixed Wrestling. Artem vs Tais. 2013',
     category: 'MIXED WRESTLING',
     patreonId: 'nc32-mixed-wrestling-artem-vs-tais-2013-295426'
   },
   {
     id: 33,
-    youtubeID: 'UdxhMrIku4A',
     title: 'Crossfit tournament. Submission Grappling. 2013',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc33-crossfit-tournament-submission-2013-295417'
   },
   {
     id: 34,
-    youtubeID: 'U0Eu-u52FQs',
     title: 'Mixed Wrestling. Alexander and Villian against Tais. 2013',
     category: 'MIXED WRESTLING',
     patreonId: 'nc34-mixed-wrestling-alexander-and-tais-295404'
   },
   {
     id: 35,
-    youtubeID: 'tYIIf2sPt4c',
     title: 'Lidiya Oslopovskih vs Tais. Pins matches. 2013',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc35-lidiya-oslopovskih-vs-tais-pins-295364'
   },
   {
     id: 36,
-    youtubeID: 'kkbQ7YEQ9nQ',
     title: 'Tournament between beginners. Part 1. Preliminary fights. 2014',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc36-tournament-between-beginners-part-1-295379'
   },
   {
     id: 37,
-    youtubeID: 'oxAzT_GWSJA',
     title: 'Tournament between beginners. Part 2. Final fights. 2014',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc37-tournament-between-beginners-part-2-295319'
   },
   {
     id: 38,
-    youtubeID: 'Syc6WtXS2w0',
     title: 'Mixed Wrestling Alexander vs Tais. 2014',
     category: 'MIXED WRESTLING',
     patreonId: 'nc38-mixed-wrestling-alexander-against-295273'
   },
   {
     id: 39,
-    youtubeID: 'kpBVV_5iaYQ',
     title: 'Mixed Wrestling Villian vs Tais. Part 1. 2014',
     category: 'MIXED WRESTLING',
     patreonId: 'nc39-mixed-wrestling-villian-vs-tais-1-295259'
   },
   {
     id: 40,
-    youtubeID: '_nBXLJXazc0',
     title: 'Mixed Wrestling Villian vs Tais. Part 2. 2014',
     category: 'MIXED WRESTLING',
     patreonId: 'nc40-mixed-wrestling-villian-vs-tais-2-295238'
   },
   {
     id: 41,
-    youtubeID: 'vE6uc_UXaWc',
     title: 'Mixed Wrestling Elena vs Tais. 2014',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc41-submission-grappling-tournament-1-295210'
   },
   {
     id: 42,
-    youtubeID: 'e8fADPtHm7w',
     title: 'Mixed Wrestling. Tournament. 2014',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc42-submission-grappling-tournament-2-295188'
   },
  /* {
     id: 43,
-    youtubeID: 'K6S9UO8XGB8',
     title: 'Lidiya Oslopovskih vs Tais. Final of the Cup. 2014',
     category: 'SUBMISSION WRESTLING',
   },*/ //todo v2: this unallocated
   {
     id: 44,
-    youtubeID: 'bc9RU5hP4k4',
     title: 'Training Submission Wrestling. November, 2016',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc44-maslenitsa-festival-2016-pins-and-290002'
   },
   {
     id: 45,
-    youtubeID: 'Ew7fMthTt0Q',
     title: 'Braivs vs Alyona 11.10.2016',
     category: 'MIXED WRESTLING',
     patreonId: 'nc45-braivs-vs-alyona-13-10-2016-294185',
@@ -341,28 +294,24 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 46,
-    youtubeID: 'lDgKoh-9KG4',
     title: 'Mixed Wrestling. Training. 2017',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc46-alena-kurmandi-30-03-2017-06-04-294096'
   },
   {
     id: 47,
-    youtubeID: 'fb5NUMSB2qg',
     title: 'Women’s Submission Wrestling. Tournament. 2017',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc47-competitions-at-maslenitsa-16-02-294121'
   },
   {
     id: 48,
-    youtubeID: 'K_z4YsnNWbs',
     title: 'Training Submission Wrestling. August, 2017',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc48-competitions-spring-2017-294141'
   },
   {
     id: 49,
-    youtubeID: 'LETUteJJ724',
     title: 'Braivs vs Alyona collection 2016-2017',
     category: 'MIXED WRESTLING',
     patreonId: 'nc49-braivs-vs-alyona-collection-2016-293193',
@@ -370,14 +319,12 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 50,
-    youtubeID: 'W8TqBxzEMaI',
     title: 'Tais vs Braivs collection 2014-2017',
     category: 'MIXED WRESTLING',
     patreonId: 'nc50-braivs-vs-tais-collection-2014-2017-290070',
     duration: 23,
   }, {
     id: 59,
-    youtubeID: 'e72ZJ7JQt10',
     title: 'Alex vs JudoGirlAmrita',
     category: 'MIXED WRESTLING',
     patreonId: 'nc59-fm-alex-vs-157250136',
@@ -386,7 +333,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 60,
-    youtubeID: '',
     title: 'Siya vs Skuf - round 1',
     category: 'MIXED WRESTLING',
     patreonId: 'nc60-fm-siya-vs-157276901',
@@ -397,7 +343,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 61,
-    youtubeID: '',
     title: 'Siya vs Skuf - round 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc61-fm-siya-vs-157346614',
@@ -410,7 +355,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 62,
-    youtubeID: '',
     title: 'Siya vs Tryapka',
     category: 'MIXED WRESTLING',
     patreonId: 'nc62-siya-vs-157533888',
@@ -423,7 +367,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 63,
-    youtubeID: '',
     title: 'Siya vs Skuf - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc63-siya-vs-2-157655160',
@@ -436,7 +379,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 64,
-    youtubeID: '',
     title: 'Siya in socks',
     category: 'MIXED WRESTLING',
     patreonId: 'nc64-siya-in-157720494',
@@ -449,7 +391,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 65,
-    youtubeID: '',
     title: 'Aizet vs Alex',
     category: 'MIXED WRESTLING',
     directVideoUrl: [
@@ -462,7 +403,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 66,
-    youtubeID: 'RIMTtVZDtFA',
     title: 'Aizet in kimono vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc66-aizet-in-vs-157950269',
@@ -471,7 +411,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 67,
-    youtubeID: '',
     title: 'Aizet vs Alex wrestling & shibari',
     category: 'MIXED WRESTLING',
     patreonId: 'nc67-aizet-vs-157954076',
@@ -484,7 +423,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 68,
-    youtubeID: '',
     title: 'Angelina vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc68-angelina-vs-157976798',
@@ -494,7 +432,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 69,
-    youtubeID: '',
     title: 'Simona vs Alex - fight 1',
     category: 'MIXED WRESTLING',
     patreonId: 'nc69-simona-vs-1-159381795',
@@ -503,7 +440,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 70,
-    youtubeID: '',
     title: 'Simona vs Alex - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc70-simona-vs-2-159379562',
@@ -512,7 +448,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 71,
-    youtubeID: '',
     title: 'Simona vs Alex - fight 3',
     category: 'MIXED WRESTLING',
     patreonId: 'nc71-simona-vs-159383997',
@@ -521,7 +456,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 72,
-    youtubeID: 'CxURntYDiJAxxMP',
     title: 'Nastya vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc72-nastya-vs-159387030',
@@ -530,7 +464,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 73,
-    youtubeID: 'CxURntYDiJAxxMP',
     title: 'Candy vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc73-candy-vs-160023333',
@@ -539,7 +472,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 74,
-    youtubeID: '',
     title: 'Radmila vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc74-radmila-vs-161324586',
@@ -548,7 +480,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 75,
-    youtubeID: '',
     title: 'Lilya vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc75-lilya-vs-161325573',
@@ -557,7 +488,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 76,
-    youtubeID: '',
     title: 'Sveta vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc76-sveta-vs-161326775',
@@ -566,7 +496,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 77,
-    youtubeID: '',
     title: 'Siya vs Cherviak',
     category: 'MIXED WRESTLING',
     patreonId: 'nc77-siya-vs-163923789',
@@ -576,7 +505,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 78,
-    youtubeID: '',
     title: 'Sima vs Cherviak - fight 4',
     category: 'MIXED WRESTLING',
     patreonId: 'nc78-sima-vs-4-163971597',
@@ -586,7 +514,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 79,
-    youtubeID: '',
     title: 'Sima vs Cherviak - fight 5',
     category: 'MIXED WRESTLING',
     patreonId: 'nc79-sima-vs-5-163972314',
@@ -596,7 +523,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 80,
-    youtubeID: '',
     title: 'Sima vs Alex - fight 6',
     category: 'MIXED WRESTLING',
     patreonId: 'nc80-sima-vs-6-163972724',
@@ -606,7 +532,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 81,
-    youtubeID: '',
     title: 'Amrita vs Alex - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc81-amrita-vs-2-163974393',
@@ -616,7 +541,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 82,
-    youtubeID: '',
     title: 'Sveta vs Alex - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc82-sveta-vs-2-163975412',
@@ -626,7 +550,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 83,
-    youtubeID: '',
     title: 'Alfia vs Alex 2026',
     category: 'MIXED WRESTLING',
     patreonId: 'nc83-alfia-vs-166669247',
@@ -636,7 +559,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 84,
-    youtubeID: '',
     title: 'Rada vs Alex 2026 - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc84-rada-vs-2-166667619',
@@ -662,7 +584,6 @@ export const video_data: Array<Video_data> = video_data_src_all.reverse().map(vi
 
 export const video_data_blank: Video_data = {
   id: 0,
-  youtubeID: '',
   color: '',
   img: '',
   category: "SUBMISSION WRESTLING",
@@ -677,7 +598,7 @@ export const video_data_blank: Video_data = {
 type Video_data_src_all = {
   id: number
   category: Category
-  youtubeID: string
+  youtubeID?: string
   youtubeID2?: string
   title: string
   des?: string,

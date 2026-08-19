@@ -52,7 +52,7 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
   // If set, we render MixedWrestling iframe before legacy YouTube/Facebook fallbacks.
   const mvtubeId = videoData?.mvtubeId?.trim()
   const mvtubeId2 = videoData?.mvtubeId2?.trim()
-  const hasMvTube = Boolean(mvtubeId)
+  const hasMvTube = Boolean(mvtubeId || mvtubeId2)
 
   const playerLabel = (index: number) => {
     if (index === 0) return t('details.playerPrimary')
@@ -136,11 +136,13 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
                 href={facebookPreview}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={t('details.clickToSeeVideo')}
+                aria-label={t('details.clickToSeePreviewFacebook')}
               >
                 <img className={s.youtubeCoverImg} src={videoData.img} alt="" />
                 <span className={s.youtubeCoverOverlay} aria-hidden>
-                  <span className={s.youtubeCoverText}>{t('details.clickToSeeVideo')}</span>
+                  <span className={s.youtubeCoverText}>
+                    {t('details.clickToSeePreviewFacebook')}
+                  </span>
                 </span>
               </a>
             )
@@ -175,6 +177,32 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
           {
             // Priority 5: default inline YouTube player fallback.
             !hasDirect && !hasMvTube && !willBeAvailableString && !facebookPreview && youtubeID && !videoData?.isClickable && <MyYouTube videoId={youtubeID}/>
+          }
+          {
+            // Final fallback: link the video cover to its Patreon post when no preview exists.
+            !hasDirect &&
+            !hasMvTube &&
+            !willBeAvailableString &&
+            !facebookPreview &&
+            !youtubeID &&
+            !youtubeID2 &&
+            videoData?.patreonId &&
+            videoData.img && (
+              <a
+                className={s.youtubeCoverLink}
+                href={patreonUrlForVideo(videoData.patreonId, videoData.isPost)}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={t('details.clickToSeePreviewPatreon')}
+              >
+                <img className={s.youtubeCoverImg} src={videoData.img} alt="" />
+                <span className={s.youtubeCoverOverlay} aria-hidden>
+                  <span className={s.youtubeCoverText}>
+                    {t('details.clickToSeePreviewPatreon')}
+                  </span>
+                </span>
+              </a>
+            )
           }
         </Col>
       </Row>
