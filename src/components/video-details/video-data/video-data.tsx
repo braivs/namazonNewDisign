@@ -235,38 +235,69 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
 
       <Row>
         <hr/>
-        <p>
-          {isRu ? (
-            <>
-              <b>
-                {t('details.purchaseRuLabel')} {`NC${videoDataIdFormatted}`}
-              </b>{' '}
-              {t('details.purchaseRuSuffix')}{' '}
-              <a
-                className={s.violet}
-                href={videoData ? patreonUrlForVideo(videoData.patreonId, videoData.isPost) : '#'}
-              >
-                <b>Patreon</b>
-              </a>
-              .
-            </>
-          ) : (
-            <>
-              {t('details.purchaseBefore')}{' '}
-              <b>
-                {t('details.purchaseLabel')} {`NC${videoDataIdFormatted}`}
-              </b>{' '}
-              {t('details.purchaseOn')}{' '}
-              <a
-                className={s.violet}
-                href={videoData ? patreonUrlForVideo(videoData.patreonId, videoData.isPost) : '#'}
-              >
-                <b>Patreon</b>
-              </a>
-              .
-            </>
-          )}
-        </p>
+        {videoData?.patreonId2 ? (
+          <div>
+            <p className="mb-2">
+              {t('details.purchaseMultipleIntro')}{' '}
+              <b>Patreon</b>:
+            </p>
+            <ul className="mb-0 ps-3">
+              <li>
+                <a
+                  className={s.violet}
+                  href={patreonUrlForVideo(videoData.patreonId, videoData.isPost)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t('details.purchasePart1')}
+                </a>
+              </li>
+              <li>
+                <a
+                  className={s.violet}
+                  href={patreonUrlForVideo(videoData.patreonId2, videoData.isPost2)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t('details.purchasePart2')}
+                </a>
+              </li>
+            </ul>
+          </div>
+        ) : (
+          <p>
+            {isRu ? (
+              <>
+                <b>
+                  {t('details.purchaseRuLabel')} {`NC${videoDataIdFormatted}`}
+                </b>{' '}
+                {t('details.purchaseRuSuffix')}{' '}
+                <a
+                  className={s.violet}
+                  href={videoData ? patreonUrlForVideo(videoData.patreonId, videoData.isPost) : '#'}
+                >
+                  <b>Patreon</b>
+                </a>
+                .
+              </>
+            ) : (
+              <>
+                {t('details.purchaseBefore')}{' '}
+                <b>
+                  {t('details.purchaseLabel')} {`NC${videoDataIdFormatted}`}
+                </b>{' '}
+                {t('details.purchaseOn')}{' '}
+                <a
+                  className={s.violet}
+                  href={videoData ? patreonUrlForVideo(videoData.patreonId, videoData.isPost) : '#'}
+                >
+                  <b>Patreon</b>
+                </a>
+                .
+              </>
+            )}
+          </p>
+        )}
       </Row>
     </div>
   )

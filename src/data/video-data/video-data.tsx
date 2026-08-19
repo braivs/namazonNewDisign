@@ -40,7 +40,8 @@ const video_data_src_all: Array<Video_data_src_all> = [
     mvtubeId2: 'm3mBV9sCaMf7sej',
     title: 'Villian vs Tais. Mixed Wrestling. 2011',
     category: 'MIXED WRESTLING',
-    patreonId: 'nc05a-villain-vs-tais-mixed-wrestling-1-301564'
+    patreonId: 'nc05a-villain-vs-tais-mixed-wrestling-1-301564',
+    patreonId2: 'nc05b-villain-vs-tais-mixed-wrestling-2-301581'
   },
   {
     id: 6,
@@ -604,8 +605,12 @@ type Video_data_src_all = {
   des?: string,
   description?: () => React.ReactNode
   patreonId: string
+  /** Optional second Patreon product when the page has two separately purchasable videos. */
+  patreonId2?: string
   /** If true, Patreon link is `patreon.com/posts/{patreonId}` instead of shop. */
   isPost?: boolean
+  /** If true, second Patreon link uses `patreon.com/posts/{patreonId2}` instead of shop. */
+  isPost2?: boolean
   /** If true, video page shows poster `img` linking to YouTube instead of an embed. */
   isClickable?: boolean
   /** One or more direct MP4 URLs; if several, the video page shows tabs (primary / alternative player). */

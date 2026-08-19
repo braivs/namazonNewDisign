@@ -509,6 +509,9 @@ export const videoRu = {
   details: {
     purchaseRuLabel: 'Видео',
     purchaseRuSuffix: 'можно приобрести на',
+    purchaseMultipleIntro: 'Эти видео можно приобрести на',
+    purchasePart1: 'Часть 1',
+    purchasePart2: 'Часть 2',
     playerPrimary: 'Основной плеер',
     playerAlternative: 'Альтернативный плеер',
     playerN: 'Плеер {{n}}',
