@@ -18,14 +18,22 @@ function patreonUrlForVideo(patreonId: string, isPost?: boolean): string {
 }
 
 export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
-  const {t, i18n} = useTranslation('video')
-  const isRu = i18n.language === 'ru'
+  const {t} = useTranslation('video')
   let videoDataIdFormatted = ''
   if (videoData) videoDataIdFormatted = formatNumber(videoData.id)
 
   const title = videoData
     ? t(`titles.${videoTitleKey(videoData.id)}`, {defaultValue: videoData.title})
     : ''
+
+  const videoCode = `NC${videoDataIdFormatted}`
+  const hasSecondPurchase = Boolean(videoData?.patreonId2?.trim())
+  const primaryPatreonUrl = videoData
+    ? patreonUrlForVideo(videoData.patreonId, videoData.isPost)
+    : '#'
+  const secondaryPatreonUrl = videoData?.patreonId2
+    ? patreonUrlForVideo(videoData.patreonId2, videoData.isPost2)
+    : '#'
 
   const directUrls = useMemo(() => {
     const raw = videoData?.directVideoUrl
@@ -235,69 +243,44 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
 
       <Row>
         <hr/>
-        {videoData?.patreonId2 ? (
-          <div>
-            <p className="mb-2">
-              {t('details.purchaseMultipleIntro')}{' '}
-              <b>Patreon</b>:
-            </p>
-            <ul className="mb-0 ps-3">
-              <li>
+        <div className={s.purchasePanel}>
+          <p className={s.purchaseTitle}>
+            {hasSecondPurchase
+              ? t('details.purchaseTitleMultiple')
+              : t('details.purchaseTitleSingle')}
+          </p>
+          <div className={s.purchaseActions}>
+            {hasSecondPurchase ? (
+              <>
                 <a
-                  className={s.violet}
-                  href={patreonUrlForVideo(videoData.patreonId, videoData.isPost)}
+                  className={s.purchaseBtn}
+                  href={primaryPatreonUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {t('details.purchasePart1')}
                 </a>
-              </li>
-              <li>
                 <a
-                  className={s.violet}
-                  href={patreonUrlForVideo(videoData.patreonId2, videoData.isPost2)}
+                  className={s.purchaseBtn}
+                  href={secondaryPatreonUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {t('details.purchasePart2')}
                 </a>
-              </li>
-            </ul>
-          </div>
-        ) : (
-          <p>
-            {isRu ? (
-              <>
-                <b>
-                  {t('details.purchaseRuLabel')} {`NC${videoDataIdFormatted}`}
-                </b>{' '}
-                {t('details.purchaseRuSuffix')}{' '}
-                <a
-                  className={s.violet}
-                  href={videoData ? patreonUrlForVideo(videoData.patreonId, videoData.isPost) : '#'}
-                >
-                  <b>Patreon</b>
-                </a>
-                .
               </>
             ) : (
-              <>
-                {t('details.purchaseBefore')}{' '}
-                <b>
-                  {t('details.purchaseLabel')} {`NC${videoDataIdFormatted}`}
-                </b>{' '}
-                {t('details.purchaseOn')}{' '}
-                <a
-                  className={s.violet}
-                  href={videoData ? patreonUrlForVideo(videoData.patreonId, videoData.isPost) : '#'}
-                >
-                  <b>Patreon</b>
-                </a>
-                .
-              </>
+              <a
+                className={s.purchaseBtn}
+                href={primaryPatreonUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('details.purchaseBtnSingle', {code: videoCode})}
+              </a>
             )}
-          </p>
-        )}
+          </div>
+        </div>
       </Row>
     </div>
   )

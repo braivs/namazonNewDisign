@@ -507,9 +507,9 @@ export const videoRu = {
     },
   },
   details: {
-    purchaseRuLabel: 'Видео',
-    purchaseRuSuffix: 'можно приобрести на',
-    purchaseMultipleIntro: 'Эти видео можно приобрести на',
+    purchaseTitleSingle: 'Полное видео доступно на Patreon',
+    purchaseTitleMultiple: 'Оба видео доступны на Patreon',
+    purchaseBtnSingle: 'Приобрести {{code}} на Patreon',
     purchasePart1: 'Часть 1',
     purchasePart2: 'Часть 2',
     playerPrimary: 'Основной плеер',

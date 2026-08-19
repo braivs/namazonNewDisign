@@ -414,10 +414,9 @@ export const videoEn = {
     },
   },
   details: {
-    purchaseBefore: 'You can purchase',
-    purchaseLabel: 'video',
-    purchaseOn: 'on',
-    purchaseMultipleIntro: 'You can purchase these videos on',
+    purchaseTitleSingle: 'Full video available on Patreon',
+    purchaseTitleMultiple: 'Both videos available on Patreon',
+    purchaseBtnSingle: 'Get {{code}} on Patreon',
     purchasePart1: 'Part 1',
     purchasePart2: 'Part 2',
     playerPrimary: 'Primary player',
