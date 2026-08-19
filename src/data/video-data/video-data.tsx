@@ -42,34 +42,39 @@ const video_data_src_all: Array<Video_data_src_all> = [
     id: 5,
     youtubeID: '',
     mvtubeId: 'oLCqqIRC23PwJfT',
+    mvtubeId2: 'm3mBV9sCaMf7sej',
     title: 'Villian vs Tais. Mixed Wrestling. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc05a-villain-vs-tais-mixed-wrestling-1-301564'
   },
   {
     id: 6,
-    youtubeID: 'ARwmIhW7goQ',
+    youtubeID: '',
+    mvtubeId: 'BxxeGAKl2CZ8ZP9',
     title: 'Maria Rylyova vs Tais. Armwrestling and Wrestling',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc06-maria-rylyova-vs-tais-submission-301557'
   },
   {
     id: 7,
-    youtubeID: 'sKIu0T-a4wE',
+    youtubeID: '',
+    mvtubeId: 'BwmPc6arNpTL6BV',
     title: 'Alex vs Tais. Extreme fight. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc07-alex-vs-tais-extreme-fight-2011-301540',
   },
   {
     id: 8,
-    youtubeID: '_7gBrg1KOYw',
+    youtubeID: '',
+    mvtubeId: 'xVPlVJFlkPYP4wy',
     title: 'Women\'s Beach Tournament. Submission Grappling. 2011',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc08-beach-tournament-submission-june-298410'
   },
   {
     id: 9,
-    youtubeID: '8NnbhTgPKXE',
+    youtubeID: '',
+    mvtubeId: 'xaGx13rwQbv9csS',
     title: 'MMA tournament “Christmas Cup 2012',
     category: 'MMA',
     patreonId: 'nc09-mma-tournament-christmas-cup-2012-298352'
@@ -686,6 +691,8 @@ type Video_data_src_all = {
   directVideoUrl?: string | string[]
   /** MixedWrestling.Video embed id to render via iframe when set. */
   mvtubeId?: string
+  /** Optional second MixedWrestling.Video embed shown below the primary player. */
+  mvtubeId2?: string
   /** If set (non-empty), poster links to this URL with “click to see the video” overlay (e.g. Facebook). */
   facebookPreview?: string
   /** Full video duration: minutes as number, or exact time as string (e.g. '20:36'). */

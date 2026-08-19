@@ -51,6 +51,7 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
   const willBeAvailableString = videoData?.willBeAvailableString?.trim()
   // If set, we render MixedWrestling iframe before legacy YouTube/Facebook fallbacks.
   const mvtubeId = videoData?.mvtubeId?.trim()
+  const mvtubeId2 = videoData?.mvtubeId2?.trim()
   const hasMvTube = Boolean(mvtubeId)
 
   const playerLabel = (index: number) => {
@@ -177,6 +178,15 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
           }
         </Col>
       </Row>
+      {
+        // Optional second MixedWrestling player is shown below the primary player.
+        !hasDirect &&
+        hasMvTube &&
+        mvtubeId2 &&
+          <Row className={s.youtube2}>
+              <Col className={cn('d-flex', 'justify-content-center')}> <MyMvTube videoId={mvtubeId2}/> </Col>
+          </Row>
+      }
       {
         // Secondary YouTube block is shown only for legacy dual-YouTube entries.
         !hasDirect &&
