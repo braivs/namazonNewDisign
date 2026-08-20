@@ -329,7 +329,56 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc50-braivs-vs-tais-collection-2014-2017-290070',
     duration: 23,
-  }, {
+  },
+  {
+    id: 51,
+    title: 'Kara, Darya, Tais. 08.05.2012',
+    category: 'SUBMISSION WRESTLING',
+    patreonId: 'nc51-kara-darya-tais-2012-290104',
+  },
+  {
+    id: 52,
+    title: 'Braivs vs MMA girl. 06.10.2016',
+    category: 'MIXED WRESTLING',
+    patreonId: 'nc52-braivs-vs-mma-girl-06-10-2016-290101',
+  },
+  {
+    id: 53,
+    title: 'Tais vs Alexsander. 05.08.2012',
+    category: 'MIXED WRESTLING',
+    patreonId: 'nc53-tais-vs-alexsander-05-08-2012-290083',
+  },
+  {
+    id: 54,
+    title: 'Tais vs Alyona collection 2016',
+    category: 'SUBMISSION WRESTLING',
+    patreonId: 'nc54-tais-vs-alyona-collection-2016-289972',
+  },
+  {
+    id: 55,
+    title: '1 vs 2. Tais vs Kristina & Natasha. Pins. 25.05.2015',
+    category: 'SUBMISSION WRESTLING',
+    patreonId: 'nc55-1-vs-2-tais-vs-kristina-natasha-25-289954',
+  },
+  {
+    id: 56,
+    title: 'Tais, Braivs, Nastya. 10.02.2014',
+    category: 'MIXED WRESTLING',
+    patreonId: 'nc56-tais-braivs-nastya-10-02-2014-289942',
+  },
+  {
+    id: 57,
+    title: 'Tais vs Villian. 16.02.2017',
+    category: 'MIXED WRESTLING',
+    patreonId: 'nc57-tais-vs-villian-16-02-2017-289868',
+  },
+  {
+    id: 58,
+    title: 'Namazon girls vs Newcomers. 2015',
+    category: 'SUBMISSION WRESTLING',
+    patreonId: 'nc58-namazon-girls-vs-newcomers-2015-289819',
+  },
+  {
     id: 59,
     title: 'Alex vs JudoGirlAmrita',
     category: 'MIXED WRESTLING',
