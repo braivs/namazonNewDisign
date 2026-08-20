@@ -73,30 +73,35 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 10,
+    mvtubeId: 'lpiBTJexnhvx3dL',
     title: 'Mixed Wrestling. Best Fights. Part 1. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc10-mixed-wrestling-best-fights-part-1-298291'
   },
   {
     id: 11,
+    mvtubeId: '9Ph7IFLV45VQ9Dp',
     title: 'Alex vs Elena. Beach Wrestling. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc11-alex-vs-gladiatriks-mixed-beach-298265'
   },
   {
     id: 12,
+    mvtubeId: 'tE6hsv92caOcSkW',
     title: 'Submission Grappling. Tournament. April, 2010',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc12-submission-grappling-tournament-298243'
   },
   {
     id: 13,
+    mvtubeId: 'dsB3vypcBjPcfjm',
     title: 'Valentina Perfilyeva vs Nadezhda Akhmerova. Kickboxing. 2011',
     category: "BOXING",
     patreonId: 'nc13-valentina-perfilyeva-vs-nadezhda-298205'
   },
   {
     id: 14,
+    mvtubeId: 'Guhl5a5KFy8BUD8',
     title: 'Two men against one woman. Part 1. 2011',
     category: 'MIXED WRESTLING',
     patreonId: 'nc14-1-two-men-against-one-woman-mixed-1-298161'
