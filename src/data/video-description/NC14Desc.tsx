@@ -24,10 +24,13 @@ export const NC14Desc = () => {
       <p>
         <Trans i18nKey="descriptions.14.p2" ns="video" components={{b: <b />}} />
       </p>
-      <h5>{t('descriptions.14.section1')}</h5>
+            <h5>{t('descriptions.14.section1')}</h5>
       <ButtonGallery images={DIR14_1} buttonName={screenshots} />
       <h5>{t('descriptions.14.section2')}</h5>
       <ButtonGallery images={DIR14_2} buttonName={screenshots} />
+      <p>
+        <Trans i18nKey="descriptions.14.p3" ns="video" components={{b: <b />}} />
+      </p>
     </>
   )
 }
