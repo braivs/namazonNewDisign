@@ -277,30 +277,35 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 38,
+    mvtubeId: 'ZF71BTcGvPIvl6L',
     title: 'Mixed Wrestling Alexander vs Tais. 2014',
     category: 'MIXED WRESTLING',
     patreonId: 'nc38-mixed-wrestling-alexander-against-295273'
   },
   {
     id: 39,
+    mvtubeId: '8MAI2sYkVx3i64T',
     title: 'Mixed Wrestling Villian vs Tais. Part 1. 2014',
     category: 'MIXED WRESTLING',
     patreonId: 'nc39-mixed-wrestling-villian-vs-tais-1-295259'
   },
   {
     id: 40,
+    mvtubeId: 'p1MlVP8h37XPCSq',
     title: 'Mixed Wrestling Villian vs Tais. Part 2. 2014',
     category: 'MIXED WRESTLING',
     patreonId: 'nc40-mixed-wrestling-villian-vs-tais-2-295238'
   },
   {
     id: 41,
+    mvtubeId: 'DSoMSsTobuNrFSo',
     title: 'Mixed Wrestling Elena vs Tais. 2014',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc41-submission-grappling-tournament-1-295210'
   },
   {
     id: 42,
+    mvtubeId: 'qOZMmFsPiV23vcO',
     title: 'Mixed Wrestling. Tournament. 2014',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc42-submission-grappling-tournament-2-295188'
