@@ -3,6 +3,9 @@
   "homepage": "https://braivs.github.io/namazonNewDisign",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev --webpack",
     "dev mobile": "npm run dev -- --hostname 0.0.0.0",
