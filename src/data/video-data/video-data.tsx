@@ -317,12 +317,14 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },*/ //todo v2: this unallocated
   {
     id: 44,
+    mvtubeId: 'qJ1jjO3G37btOGj',
     title: 'Training Submission Wrestling. November, 2016',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc44-maslenitsa-festival-2016-pins-and-290002'
   },
   {
     id: 45,
+    mvtubeId: 'yUPcXalpinNNUg7',
     title: 'Braivs vs Alyona 11.10.2016',
     category: 'MIXED WRESTLING',
     patreonId: 'nc45-braivs-vs-alyona-13-10-2016-294185',
@@ -330,24 +332,28 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 46,
+    mvtubeId: 'Q8Z4aHkqpavc6EN',
     title: 'Mixed Wrestling. Training. 2017',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc46-alena-kurmandi-30-03-2017-06-04-294096'
   },
   {
     id: 47,
+    mvtubeId: 'Z7PC8DRRlMK4jHq',
     title: 'Women’s Submission Wrestling. Tournament. 2017',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc47-competitions-at-maslenitsa-16-02-294121'
   },
   {
     id: 48,
+    mvtubeId: 's7oGefTTJTCjMm8',
     title: 'Training Submission Wrestling. August, 2017',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc48-competitions-spring-2017-294141'
   },
   {
     id: 49,
+    mvtubeId: 'vcL4e3z9da8TiLH',
     title: 'Braivs vs Alyona collection 2016-2017',
     category: 'MIXED WRESTLING',
     patreonId: 'nc49-braivs-vs-alyona-collection-2016-293193',
@@ -355,6 +361,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 50,
+    mvtubeId: 'bZiPRW4dB8LtA4J',
     title: 'Tais vs Braivs collection 2014-2017',
     category: 'MIXED WRESTLING',
     patreonId: 'nc50-braivs-vs-tais-collection-2014-2017-290070',
@@ -362,18 +369,21 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 51,
+    mvtubeId: 'm9ekQpiuFFP9N6B',
     title: 'Kara, Darya, Tais. 08.05.2012',
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc51-kara-darya-tais-2012-290104',
   },
   {
     id: 52,
+    mvtubeId: 'UOmYWuD9Pvel7ta',
     title: 'Braivs vs MMA girl. 06.10.2016',
     category: 'MIXED WRESTLING',
     patreonId: 'nc52-braivs-vs-mma-girl-06-10-2016-290101',
   },
   {
     id: 53,
+    mvtubeId: 'Nh5y4CBbeLKiKw9',
     title: 'Tais vs Alexsander. 05.08.2012',
     category: 'MIXED WRESTLING',
     patreonId: 'nc53-tais-vs-alexsander-05-08-2012-290083',
