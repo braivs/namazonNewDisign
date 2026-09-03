@@ -136,9 +136,13 @@
 .tpBreadcrumb {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     @extend .common-title-styles;
-    
 
+    @media #{$xs} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
     .title {
         @extend .common-title-styles; /* Using extend for nested .title */
@@ -147,9 +151,14 @@
 
     .group {
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
 
         @media #{$xs} {
             flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            margin-top: 6px;
         }
 
         .element {
@@ -157,6 +166,59 @@
             margin-left: 10px;
             font-family: var(--tp-ff-heading), serif;
             text-wrap: nowrap;
+
+            @media #{$xs} {
+                margin-left: 0;
+            }
+        }
+
+        .separator {
+            margin-left: 10px;
+            font-family: var(--tp-ff-heading), serif;
+            opacity: 0.7;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .freeGroup {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+/*
+  Video filters adaptive:
+  VIDEO :
+  ALL  WRESTLING  MMA  MIXED
+  FREE VIDEOS
+  — keep categories in a row; only Free wraps. No full column stack.
+*/
+.videoBreadcrumb {
+    @media (max-width: 1399px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .group {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            margin-top: 6px;
+            gap: 0 10px;
+
+            .element {
+                margin-left: 0;
+            }
+
+            .freeGroup {
+                flex-basis: 100%;
+                margin-top: 6px;
+
+                .separator {
+                    display: none;
+                }
+            }
         }
     }
 }

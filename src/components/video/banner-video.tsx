@@ -16,6 +16,7 @@ const BannerVideo = () => {
   const onWrestling = () => dispatch(videoActions.filterVideos('SUBMISSION WRESTLING'))
   const onMMA = () => dispatch(videoActions.filterVideos('MMA'))
   const onMixedWrestling = () => dispatch(videoActions.filterVideos('MIXED WRESTLING'))
+  const onFree = () => dispatch(videoActions.filterVideos('FREE'))
 
   const selected_category = useAppSelector(selected_categorySelector)
 
@@ -28,8 +29,8 @@ const BannerVideo = () => {
     >
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-6 col-md-6 col-12">
-            <div className={sC.tpBreadcrumb}>
+          <div className="col-12">
+            <div className={cn(sC.tpBreadcrumb, sC.videoBreadcrumb)}>
               <h2 className={sC.title}>{t('video.title')}</h2>
               <div className={sC.group}>
                 <div
@@ -55,6 +56,17 @@ const BannerVideo = () => {
                   onClick={onMixedWrestling}
                 >
                   {t('video.mixedWrestling')}
+                </div>
+                <div className={sC.freeGroup}>
+                  <span className={sC.separator} aria-hidden>
+                    ·
+                  </span>
+                  <div
+                    className={cn(sC.element, selected_category === 'FREE' && sC.selectedCategory)}
+                    onClick={onFree}
+                  >
+                    {t('video.free')}
+                  </div>
                 </div>
               </div>
             </div>

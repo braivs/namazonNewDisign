@@ -27,13 +27,16 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
     : ''
 
   const videoCode = `NC${videoDataIdFormatted}`
+  const hasPurchase = Boolean(videoData?.patreonId?.trim())
+  const hasDownload = Boolean(videoData?.downloadUrl?.trim())
   const hasSecondPurchase = Boolean(videoData?.patreonId2?.trim())
-  const primaryPatreonUrl = videoData
+  const primaryPatreonUrl = videoData?.patreonId
     ? patreonUrlForVideo(videoData.patreonId, videoData.isPost)
     : '#'
   const secondaryPatreonUrl = videoData?.patreonId2
     ? patreonUrlForVideo(videoData.patreonId2, videoData.isPost2)
     : '#'
+  const downloadUrl = videoData?.downloadUrl?.trim() || '#'
 
   const directUrls = useMemo(() => {
     const raw = videoData?.directVideoUrl
@@ -212,6 +215,21 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
               </a>
             )
           }
+          {
+            // Free / no-source placeholder: show cover without purchase or external link.
+            !hasDirect &&
+            !hasMvTube &&
+            !willBeAvailableString &&
+            !facebookPreview &&
+            !youtubeID &&
+            !youtubeID2 &&
+            !videoData?.patreonId &&
+            videoData?.img && (
+              <div className={s.youtubeCoverLink}>
+                <img className={s.youtubeCoverImg} src={videoData.img} alt="" />
+              </div>
+            )
+          }
         </Col>
       </Row>
       {
@@ -241,47 +259,71 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
 
       }
 
-      <Row>
-        <hr/>
-        <div className={s.purchasePanel}>
-          <p className={s.purchaseTitle}>
-            {hasSecondPurchase
-              ? t('details.purchaseTitleMultiple')
-              : t('details.purchaseTitleSingle')}
-          </p>
-          <div className={s.purchaseActions}>
-            {hasSecondPurchase ? (
-              <>
+      {
+        hasPurchase && (
+          <Row>
+            <hr/>
+            <div className={s.purchasePanel}>
+              <p className={s.purchaseTitle}>
+                {hasSecondPurchase
+                  ? t('details.purchaseTitleMultiple')
+                  : t('details.purchaseTitleSingle')}
+              </p>
+              <div className={s.purchaseActions}>
+                {hasSecondPurchase ? (
+                  <>
+                    <a
+                      className={s.purchaseBtn}
+                      href={primaryPatreonUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t('details.purchasePart1')}
+                    </a>
+                    <a
+                      className={s.purchaseBtn}
+                      href={secondaryPatreonUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t('details.purchasePart2')}
+                    </a>
+                  </>
+                ) : (
+                  <a
+                    className={s.purchaseBtn}
+                    href={primaryPatreonUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t('details.purchaseBtnSingle', {code: videoCode})}
+                  </a>
+                )}
+              </div>
+            </div>
+          </Row>
+        )
+      }
+      {
+        !hasPurchase && hasDownload && (
+          <Row>
+            <hr/>
+            <div className={s.purchasePanel}>
+              <p className={s.purchaseTitle}>{t('details.downloadTitle')}</p>
+              <div className={s.purchaseActions}>
                 <a
                   className={s.purchaseBtn}
-                  href={primaryPatreonUrl}
+                  href={downloadUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {t('details.purchasePart1')}
+                  {t('details.downloadBtn', {code: videoCode})}
                 </a>
-                <a
-                  className={s.purchaseBtn}
-                  href={secondaryPatreonUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t('details.purchasePart2')}
-                </a>
-              </>
-            ) : (
-              <a
-                className={s.purchaseBtn}
-                href={primaryPatreonUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t('details.purchaseBtnSingle', {code: videoCode})}
-              </a>
-            )}
-          </div>
-        </div>
-      </Row>
+              </div>
+            </div>
+          </Row>
+        )
+      }
     </div>
   )
 }

@@ -21,6 +21,8 @@ const stylePicker = (category: Category) => {
       return s.red
     case 'BOXING':
       return s.violet
+    case 'FREE':
+      return s.free
     default:
       return ''
   }

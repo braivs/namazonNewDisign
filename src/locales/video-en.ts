@@ -13,6 +13,7 @@ export const videoEn = {
     MMA: 'MMA',
     'MIXED WRESTLING': 'MIXED WRESTLING',
     BOXING: 'BOXING',
+    FREE: 'FREE VIDEOS',
   },
   titles: {},
   descriptions: {
@@ -419,6 +420,8 @@ export const videoEn = {
     purchaseTitleSingle: 'Full video available on Patreon',
     purchaseTitleMultiple: 'Both videos available on Patreon',
     purchaseBtnSingle: 'Get {{code}} on Patreon',
+    downloadTitle: 'Full video available for free',
+    downloadBtn: 'Download {{code}}',
     purchasePart1: 'Part 1',
     purchasePart2: 'Part 2',
     playerPrimary: 'Primary player',

@@ -59,6 +59,7 @@ export const ru = {
       wrestling: 'Борьба',
       mma: 'MMA',
       mixedWrestling: 'Смешанная борьба',
+      free: 'Бесплатные видео',
       back: 'Все категории',
       details: 'Видео',
     },

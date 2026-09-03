@@ -310,11 +310,12 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'SUBMISSION WRESTLING',
     patreonId: 'nc42-submission-grappling-tournament-2-295188'
   },
- /* {
+  {
     id: 43,
-    title: 'Lidiya Oslopovskih vs Tais. Final of the Cup. 2014',
-    category: 'SUBMISSION WRESTLING',
-  },*/ //todo v2: this unallocated
+    title: 'Arm wrestling & leg wrestling',
+    category: 'FREE',
+    downloadUrl: 'https://drive.google.com/file/d/1FWwyz7n3iwti1iC3ZnVeTHjxsoL3w36i',
+  },
   {
     id: 44,
     mvtubeId: 'qJ1jjO3G37btOGj',
@@ -692,7 +693,6 @@ export const video_data_blank: Video_data = {
   description: () => {
     return <></>
   },
-  patreonId: ''
 }
 
 type Video_data_src_all = {
@@ -703,7 +703,8 @@ type Video_data_src_all = {
   title: string
   des?: string,
   description?: () => React.ReactNode
-  patreonId: string
+  /** Patreon shop/post id. Omit (or leave empty) for free videos. */
+  patreonId?: string
   /** Optional second Patreon product when the page has two separately purchasable videos. */
   patreonId2?: string
   /** If true, Patreon link is `patreon.com/posts/{patreonId}` instead of shop. */
@@ -724,6 +725,8 @@ type Video_data_src_all = {
   duration?: number | string
   /** i18n key under `video.details` — shows poster with overlay text instead of a video player. */
   willBeAvailableString?: string
+  /** Direct download / Drive link for free videos (shown instead of Patreon purchase). */
+  downloadUrl?: string
 }
 
 export type Video_data = Video_data_src_all & {
@@ -733,7 +736,6 @@ export type Video_data = Video_data_src_all & {
   description: () => React.ReactNode
 }
 
-// todo: solve NC43
 // todo: v2 after release: remake pictures size for video
 // todo: v2: integrate shop into app
 // todo: v2: fix video previews that is not available

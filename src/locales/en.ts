@@ -37,11 +37,12 @@ export const en = {
     contact: 'CONTACT US',
     joinUs: 'Join Us',
     video: {
-      title: 'VIDEO :',
+      title: 'VIDEOS :',
       all: 'All categories',
       wrestling: 'Wrestling',
       mma: 'MMA',
       mixedWrestling: 'Mixed wrestling',
+      free: 'Free videos',
       back: 'All categories',
       details: 'Video details',
     },
