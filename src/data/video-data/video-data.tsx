@@ -436,6 +436,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 60,
+    mvtubeId: 'dSGfRJktswuPNox',
     title: 'Siya vs Skuf - round 1',
     category: 'MIXED WRESTLING',
     patreonId: 'nc60-fm-siya-vs-157276901',
@@ -463,6 +464,8 @@ const video_data_src_all: Array<Video_data_src_all> = [
   {
     id: 63,
     mvtubeId: 'qKUnt72zLyUTsdr',
+    // Source file is 960×720 (4:3); default MvTube shell is ~16:9 and left black bars.
+    mvtubeAspectRatio: '4 / 3',
     title: 'Siya vs Skuf - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc63-siya-vs-2-157655160',
@@ -710,6 +713,8 @@ type Video_data_src_all = {
   mvtubeId?: string
   /** Optional second MixedWrestling.Video embed shown below the primary player. */
   mvtubeId2?: string
+  /** CSS aspect-ratio for MvTube shell when the source is not ~16:9 (e.g. '4 / 3'). */
+  mvtubeAspectRatio?: string
   /** If set (non-empty), poster links to this URL with “click to see the video” overlay (e.g. Facebook). */
   facebookPreview?: string
   /** Full video duration: minutes as number, or exact time as string (e.g. '20:36'). */

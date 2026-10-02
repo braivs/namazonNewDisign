@@ -181,14 +181,29 @@ export const MyMvTube = (props: MvTubePropsType) => {
   if (!embedReady) {
     return (
       <div className={s.mvtubeWrap}>
-        <div className={s.mvtubeShell} aria-hidden />
+        <div
+          className={s.mvtubeShell}
+          style={props.aspectRatio ? {aspectRatio: props.aspectRatio} : undefined}
+          aria-hidden
+        />
       </div>
     )
   }
 
   return (
     <div className={s.mvtubeWrap}>
-      <div ref={shellRef} className={cn(s.mvtubeShell, 'mvtube-shell')}>
+      <div
+        ref={shellRef}
+        className={cn(s.mvtubeShell, 'mvtube-shell')}
+        style={
+          props.aspectRatio
+            ? ({
+                aspectRatio: props.aspectRatio,
+                ['--mvtube-aspect' as string]: props.aspectRatio,
+              } as React.CSSProperties)
+            : undefined
+        }
+      >
         <iframe
           ref={iframeRef}
           key={blockIframeFullscreen ? 'mvtube-no-fs' : 'mvtube-fs'}
@@ -265,6 +280,8 @@ type YoutubePropsType = {
 
 type MvTubePropsType = {
   videoId: string
+  /** CSS aspect-ratio for the shell, e.g. '4 / 3'. Defaults to ~16:9 clip used for most embeds. */
+  aspectRatio?: string
 }
 
 type CustomButtonGalleryType = {

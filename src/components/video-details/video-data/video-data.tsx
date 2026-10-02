@@ -183,7 +183,9 @@ export default function VideoData({videoData, youtubeID, youtubeID2}: Props) {
           }
           {
             // Priority 2: MixedWrestling inline embed (used when there is no direct mp4).
-            !hasDirect && hasMvTube && mvtubeId && <MyMvTube videoId={mvtubeId}/>
+            !hasDirect && hasMvTube && mvtubeId && (
+              <MyMvTube videoId={mvtubeId} aspectRatio={videoData?.mvtubeAspectRatio} />
+            )
           }
           {
             // Priority 5: default inline YouTube player fallback.
