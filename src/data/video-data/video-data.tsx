@@ -427,6 +427,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 59,
+    mvtubeId: 'm2KQuzVzOhL1Cvs',
     title: 'Alex vs JudoGirlAmrita',
     category: 'MIXED WRESTLING',
     patreonId: 'nc59-fm-alex-vs-157250136',
@@ -439,44 +440,33 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc60-fm-siya-vs-157276901',
     isPost: true,
-    isClickable: true,
-    mvtubeId: 'k7IAbybh84TnQro',
     duration: 30,
   },
   {
     id: 61,
+    mvtubeId: 'BceCOJkbbY7z65l',
     title: 'Siya vs Skuf - round 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc61-fm-siya-vs-157346614',
     isPost: true,
-    directVideoUrl: [
-      'https://www.udrop.com/file/Ow4f/NC61_FM_Siya_vs_Skuf_round2_preview.mp4',
-      'https://files.catbox.moe/umbng1.mp4'
-    ],
     duration: 19,
   },
   {
     id: 62,
+    mvtubeId: 'tJJLhl71bzkCl66',
     title: 'Siya vs Tryapka',
     category: 'MIXED WRESTLING',
     patreonId: 'nc62-siya-vs-157533888',
     isPost: true,
-    directVideoUrl: [
-      'https://www.udrop.com/file/Ow4g/NC62_Siya_vs_Tryapka_preview_v2.mp4',
-      'https://files.catbox.moe/b050nq.mp4'
-    ],
     duration: 21,
   },
   {
     id: 63,
+    mvtubeId: 'qKUnt72zLyUTsdr',
     title: 'Siya vs Skuf - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc63-siya-vs-2-157655160',
     isPost: true,
-    directVideoUrl: [
-      'https://www.udrop.com/file/Ow4h/NC63_Siya_vs_Skuf_fight_2_preview.mp4',
-      'https://files.catbox.moe/l1dtmv.mp4'
-    ],
     duration: 20,
   },
   {
