@@ -478,20 +478,12 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc64-siya-in-157720494',
     isPost: true,
-    directVideoUrl: [
-      'https://www.udrop.com/file/Ow4i/NC64_Siya_in_socks_preview2.mp4',
-      'https://files.catbox.moe/iaqmqh.mp4'
-    ],
     duration: 29,
   },
   {
     id: 65,
     title: 'Aizet vs Alex',
     category: 'MIXED WRESTLING',
-    directVideoUrl: [
-      'https://www.udrop.com/file/Ow4j/NC65_Aizet_vs_Alex_preview.mp4',
-      'https://files.catbox.moe/pew83m.mp4'
-    ],
     patreonId: 'nc65-aizet-vs-157731669',
     isPost: true,
     duration: 14,
@@ -510,10 +502,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc67-aizet-vs-157954076',
     isPost: true,
-    directVideoUrl: [
-      'https://www.udrop.com/file/Ow4k/NC67_Aizet_vs_Alex_wrestling___shibari_preview.mp4',
-      'https://files.catbox.moe/ri4qtu.mp4'
-    ],
     duration: 11,
   },
   {
@@ -522,7 +510,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc68-angelina-vs-157976798',
     isPost: true,
-    facebookPreview: 'https://www.facebook.com/share/v/1CswLNz6JV/',
     duration: 27,
   },
   {
@@ -531,7 +518,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc69-simona-vs-1-159381795',
     isPost: true,
-    mvtubeId: 'hf4N7tVyhllOilh',
   },
   {
     id: 70,
@@ -539,7 +525,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc70-simona-vs-2-159379562',
     isPost: true,
-    mvtubeId: 'inMebeYw1MuozTy',
   },
   {
     id: 71,
@@ -547,7 +532,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc71-simona-vs-159383997',
     isPost: true,
-    mvtubeId: '7wqmxpwcpwFygwE',
   },
   {
     id: 72,
@@ -555,7 +539,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc72-nastya-vs-159387030',
     isPost: true,
-    mvtubeId: 'CxURntYDiJAxxMP',
   },
   {
     id: 73,
@@ -563,7 +546,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc73-candy-vs-160023333',
     isPost: true,
-    mvtubeId: 'k4AGMnMhkdF7sLe',
   },
   {
     id: 74,
@@ -571,7 +553,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc74-radmila-vs-161324586',
     isPost: true,
-    mvtubeId: 'aRxF6KkbZmKakBL',
   },
   {
     id: 75,
@@ -579,7 +560,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc75-lilya-vs-161325573',
     isPost: true,
-    mvtubeId: 'b3SlUDpxrasuPb4',
   },
   {
     id: 76,
@@ -587,7 +567,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc76-sveta-vs-161326775',
     isPost: true,
-    mvtubeId: 'Ah2b6fPeCDQYLEK',
   },
   {
     id: 77,
@@ -595,7 +574,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc77-siya-vs-163923789',
     isPost: true,
-    mvtubeId: '6lVdprR4br7llcK',
     duration: 14,
   },
   {
@@ -604,7 +582,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc78-sima-vs-4-163971597',
     isPost: true,
-    mvtubeId: 'zPz9hCrEOlAFt1D',
     duration: '20:36',
   },
   {
@@ -613,7 +590,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc79-sima-vs-5-163972314',
     isPost: true,
-    mvtubeId: 'PPllWWxHRkLvKoM',
     duration: 12,
   },
   {
@@ -622,7 +598,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc80-sima-vs-6-163972724',
     isPost: true,
-    mvtubeId: 'xE8kU2VK24l9M2p',
     duration: '12:55',
   },
   {
@@ -631,7 +606,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc81-amrita-vs-2-163974393',
     isPost: true,
-    mvtubeId: '7r8bTlQ6VqrDUHH',
     duration: '40:26'
   },
   {
@@ -640,7 +614,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc82-sveta-vs-2-163975412',
     isPost: true,
-    mvtubeId: 'EMD3fMHCLQHFTit',
     duration: '34:56'
   },
   {
@@ -649,7 +622,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc83-alfia-vs-166669247',
     isPost: true,
-    mvtubeId: 'gn3wuoWncNBfO8m',
     duration: '36:12'
   },
   {
@@ -658,7 +630,6 @@ const video_data_src_all: Array<Video_data_src_all> = [
     category: 'MIXED WRESTLING',
     patreonId: 'nc84-rada-vs-2-166667619',
     isPost: true,
-    mvtubeId: 'FClrxFsWpc7Wup3',
     duration: '24:21'
   }
 ];
