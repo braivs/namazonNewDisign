@@ -474,6 +474,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 64,
+    mvtubeId: 'VD3uiI3PuzS5w23',
     title: 'Siya in socks',
     category: 'MIXED WRESTLING',
     patreonId: 'nc64-siya-in-157720494',
@@ -482,6 +483,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 65,
+    mvtubeId: 'S1H3piGl5ICftOh',
     title: 'Aizet vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc65-aizet-vs-157731669',
@@ -490,6 +492,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 66,
+    mvtubeId: 'T7Da9soGtdhYAeW',
     title: 'Aizet in kimono vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc66-aizet-in-vs-157950269',
@@ -498,6 +501,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 67,
+    mvtubeId: 'GEB8hULvWxi6all',
     title: 'Aizet vs Alex wrestling & shibari',
     category: 'MIXED WRESTLING',
     patreonId: 'nc67-aizet-vs-157954076',
@@ -506,6 +510,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 68,
+    mvtubeId: 'RtGKy2KQ6ePE7qC',
     title: 'Angelina vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc68-angelina-vs-157976798',
