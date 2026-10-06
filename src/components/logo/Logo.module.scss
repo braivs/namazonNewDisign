@@ -18,6 +18,30 @@
     }
 }
 
+.stacked {
+    @media (min-width: 1200px) {
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        .text {
+            line-height: 1.05;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .stacked {
+        .break {
+            display: none;
+        }
+
+        .secondLine::before {
+            content: ' ';
+        }
+    }
+}
+
 @media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
     .logoContainer {
         justify-content: flex-start;
