@@ -192,13 +192,13 @@ export const en = {
       },
       videoAccess: {
         title: 'Video access',
-        price: '$45 / month',
+        price: '$50 / month',
         description:
           'Access to all Namazon Club videos from the beginning up to NC74 <em>except Siya\'s exclusive series</em>.',
       },
       siyaPack: {
         title: 'Siya pack',
-        price: '$50 / month',
+        price: '$45 / month',
         description: "Siya's exclusive 10-video series: NC83, NC84, NC60–NC64 and NC77–NC79.",
       },
     },

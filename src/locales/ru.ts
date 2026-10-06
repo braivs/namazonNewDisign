@@ -238,13 +238,13 @@ export const ru = {
       },
       videoAccess: {
         title: 'Video access',
-        price: '$45 / месяц',
+        price: '$50 / месяц',
         description:
           'Доступ ко всем видео клуба Намазон с самого начала до NC74, <em>за исключением эксклюзивной серии Siya</em>.',
       },
       siyaPack: {
         title: 'Siya pack',
-        price: '$50 / месяц',
+        price: '$45 / месяц',
         description: 'Эксклюзивная серия Siya из 10 видео: NC83, NC84, NC60–NC64 и NC77-NC79.',
       },
     },
