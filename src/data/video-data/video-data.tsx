@@ -519,6 +519,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 69,
+    mvtubeId: 'jm5WTflh37DiyXZ',
     title: 'Simona vs Alex - fight 1',
     category: 'MIXED WRESTLING',
     patreonId: 'nc69-simona-vs-1-159381795',
@@ -526,6 +527,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 70,
+    mvtubeId: 'q8MdwPpfizjKq2m',
     title: 'Simona vs Alex - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc70-simona-vs-2-159379562',
@@ -533,6 +535,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 71,
+    mvtubeId: 'TmtbrbyoEnHUlyt',
     title: 'Simona vs Alex - fight 3',
     category: 'MIXED WRESTLING',
     patreonId: 'nc71-simona-vs-159383997',
@@ -540,6 +543,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 72,
+    mvtubeId: 'VWM1y2kjueMdau2',
     title: 'Nastya vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc72-nastya-vs-159387030',
@@ -547,6 +551,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 73,
+    mvtubeId: 'OWy8w5uI2pz992m',
     title: 'Candy vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc73-candy-vs-160023333',
