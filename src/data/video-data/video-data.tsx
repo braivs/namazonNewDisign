@@ -559,6 +559,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 74,
+    mvtubeId: 'rUzulubbUoLf1HA',
     title: 'Radmila vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc74-radmila-vs-161324586',
@@ -566,6 +567,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 75,
+    mvtubeId: 'QDEk8iHLMIED4SR',
     title: 'Lilya vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc75-lilya-vs-161325573',
@@ -573,6 +575,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 76,
+    mvtubeId: '8M594Ps8rBBs6Ei',
     title: 'Sveta vs Alex',
     category: 'MIXED WRESTLING',
     patreonId: 'nc76-sveta-vs-161326775',
@@ -580,6 +583,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 77,
+    mvtubeId: 'eYRSoyR4qgZgH6Y',
     title: 'Siya vs Cherviak',
     category: 'MIXED WRESTLING',
     patreonId: 'nc77-siya-vs-163923789',
@@ -588,6 +592,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 78,
+    mvtubeId: 'ZDLxsL73AzLON5f',
     title: 'Sima vs Cherviak - fight 4',
     category: 'MIXED WRESTLING',
     patreonId: 'nc78-sima-vs-4-163971597',
