@@ -601,6 +601,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 79,
+    mvtubeId: 'nHov6GF3fADbSX9',
     title: 'Sima vs Cherviak - fight 5',
     category: 'MIXED WRESTLING',
     patreonId: 'nc79-sima-vs-5-163972314',
@@ -609,6 +610,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 80,
+    mvtubeId: 'iZ66VyCivErpsJl',
     title: 'Sima vs Alex - fight 6',
     category: 'MIXED WRESTLING',
     patreonId: 'nc80-sima-vs-6-163972724',
@@ -617,6 +619,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 81,
+    mvtubeId: 'bd9oUJxHsvNcyCK',
     title: 'Amrita vs Alex - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc81-amrita-vs-2-163974393',
@@ -625,6 +628,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 82,
+    mvtubeId: 'II8lCxJry3Nzy2x',
     title: 'Sveta vs Alex - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc82-sveta-vs-2-163975412',
@@ -633,6 +637,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 83,
+    mvtubeId: 'CF9dZ1yJpWIMgaK',
     title: 'Alfia vs Alex 2026',
     category: 'MIXED WRESTLING',
     patreonId: 'nc83-alfia-vs-166669247',
