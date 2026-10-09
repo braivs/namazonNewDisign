@@ -186,19 +186,19 @@ export const en = {
     tiers: {
       freshPack: {
         title: 'Fresh pack',
-        price: '$30 / month',
+        price: '$28 / month',
         description:
           'Access to 5 new videos (NC75, NC76, and NC80–NC82) not included in the Video Access tier.',
       },
       videoAccess: {
         title: 'Video access',
-        price: '$50 / month',
+        price: '$45 / month',
         description:
           'Access to all Namazon Club videos from the beginning up to NC74 <em>except Siya\'s exclusive series</em>.',
       },
       siyaPack: {
         title: 'Siya pack',
-        price: '$45 / month',
+        price: '$43 / month',
         description: "Siya's exclusive 10-video series: NC83, NC84, NC60–NC64 and NC77–NC79.",
       },
     },

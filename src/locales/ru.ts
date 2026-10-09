@@ -232,19 +232,19 @@ export const ru = {
     tiers: {
       freshPack: {
         title: 'Fresh pack',
-        price: '$30 / месяц',
+        price: '$28 / месяц',
         description:
           'Доступ к 5 новым видео (NC75, NC76 и NC80-NC82), не входящим в пакет Video access.',
       },
       videoAccess: {
         title: 'Video access',
-        price: '$50 / месяц',
+        price: '$45 / месяц',
         description:
           'Доступ ко всем видео клуба Намазон с самого начала до NC74, <em>за исключением эксклюзивной серии Siya</em>.',
       },
       siyaPack: {
         title: 'Siya pack',
-        price: '$45 / месяц',
+        price: '$43 / месяц',
         description: 'Эксклюзивная серия Siya из 10 видео: NC83, NC84, NC60–NC64 и NC77-NC79.',
       },
     },
