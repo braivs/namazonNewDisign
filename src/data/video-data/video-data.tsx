@@ -646,6 +646,7 @@ const video_data_src_all: Array<Video_data_src_all> = [
   },
   {
     id: 84,
+    mvtubeId: 'waK8JWvCpBGFfEQ',
     title: 'Rada vs Alex 2026 - fight 2',
     category: 'MIXED WRESTLING',
     patreonId: 'nc84-rada-vs-2-166667619',
