@@ -15,7 +15,7 @@ const contact_info = {
   facebook: "namazonclub",
   facebook_link: 'https://www.facebook.com/groups/namazonclub',
   x: 'namazonclub',
-  x_link: 'https://x.com/namazonclub',
+  x_link: 'https://x.com/namazon_club',
   reddit: 'r/NamazonClub',
   reddit_link: 'https://www.reddit.com/r/NamazonClub',
   vk: 'namazon',

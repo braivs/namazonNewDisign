@@ -21,7 +21,7 @@ const SocialLinks = () => {
 
   return (
     <div className={`header-top-mob ${s.socialLinks}`}>
-      <a className={s.socialLinkGroup} href="https://x.com/NamazonClub">
+      <a className={s.socialLinkGroup} href="https://x.com/namazon_club">
         <img className={s.socialIconSquare} src={x.src} alt="x" />
         <span>{t('social.x')}</span>
       </a>
