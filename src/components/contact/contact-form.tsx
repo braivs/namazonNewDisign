@@ -20,6 +20,8 @@ const contact_info = {
   reddit_link: 'https://www.reddit.com/r/NamazonClub',
   vk: 'namazon',
   vk_link: 'https://vk.com/namazon',
+  youtube: '@namazonmusic',
+  youtube_link: 'https://youtube.com/@namazonmusic',
 };
 
 const {
@@ -36,6 +38,8 @@ const {
   reddit_link,
   vk,
   vk_link,
+  youtube,
+  youtube_link,
 } = contact_info;
 
 type ContactCardProps = {
@@ -136,6 +140,16 @@ const contactCards: ContactCardConfig[] = [
     value: reddit,
     iconSrc: '/assets/img/icon/reddit_black_logo_icon.png',
     iconAlt: 'Reddit Icon',
+    iconClassName: styles.x,
+  },
+  {
+    id: 'youtube',
+    titleKey: 'youtube',
+    title: 'YouTube',
+    href: youtube_link,
+    value: youtube,
+    iconSrc: '/assets/img/icon/youtube_512_black.png',
+    iconAlt: 'YouTube Icon',
     iconClassName: styles.x,
   },
 ]
