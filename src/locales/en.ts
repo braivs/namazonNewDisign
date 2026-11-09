@@ -179,7 +179,7 @@ export const en = {
     youtube: 'YouTube',
     facebook: 'Facebook',
     vk: 'VK',
-    x: 'X',
+    // x: 'X',
     reddit: 'Reddit',
   },
   joinUs: {
@@ -230,7 +230,7 @@ export const en = {
   },
   header: {
     social: {
-      x: 'X.com',
+      // x: 'X.com',
       telegram: 'Telegram',
       reddit: 'Reddit',
       youtube: 'YouTube',

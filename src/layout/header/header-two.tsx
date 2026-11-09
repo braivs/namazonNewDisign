@@ -9,7 +9,7 @@ import {useTranslation} from 'react-i18next'
 import NavMenu from './nav-menu'
 import youtube from '../../../public/assets/img/icon/youtube_small_color.png'
 import telegram from '../../../public/assets/img/icon/telegram_color.png'
-import x from '../../../public/assets/img/icon/X_logo.png'
+// import x from '../../../public/assets/img/icon/X_logo.png'
 import reddit from '../../../public/assets/img/icon/reddit-icon.png'
 import s from './header-two.module.scss'
 import {Logo} from '@/components/logo/Logo'
@@ -21,10 +21,10 @@ const SocialLinks = () => {
 
   return (
     <div className={`header-top-mob ${s.socialLinks}`}>
-      <a className={s.socialLinkGroup} href="https://x.com/namazon_club">
+      {/* <a className={s.socialLinkGroup} href="https://x.com/namazon_club">
         <img className={s.socialIconSquare} src={x.src} alt="x" />
         <span>{t('social.x')}</span>
-      </a>
+      </a> */}
       <a className={s.socialLinkGroup} href="https://t.me/namazonclub_channel">
         <img className={s.socialIconSquare} src={telegram.src} alt="telegram" />
         <span>{t('social.telegram')}</span>

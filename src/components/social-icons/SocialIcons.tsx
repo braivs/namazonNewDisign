@@ -12,9 +12,9 @@ export const SocialIcons = () => {
       <a href="https://vk.com/namazon">
         <i className="fa-brands fa-vk"></i>
       </a>
-      <a href="https://x.com/namazon_club">
+      {/* <a href="https://x.com/namazon_club">
         <i className="fa-brands fa-x"></i>
-      </a>
+      </a> */}
       <a href="https://www.reddit.com/r/NamazonClub">
         <i className="fa-brands fa-reddit"></i>
       </a>

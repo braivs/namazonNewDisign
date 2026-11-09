@@ -225,7 +225,7 @@ export const ru = {
     youtube: 'YouTube',
     facebook: 'Facebook',
     vk: 'ВКонтакте',
-    x: 'X',
+    // x: 'X',
     reddit: 'Reddit',
   },
   joinUs: {
@@ -276,7 +276,7 @@ export const ru = {
   },
   header: {
     social: {
-      x: 'X.com',
+      // x: 'X.com',
       telegram: 'Telegram',
       reddit: 'Reddit',
       youtube: 'YouTube',
